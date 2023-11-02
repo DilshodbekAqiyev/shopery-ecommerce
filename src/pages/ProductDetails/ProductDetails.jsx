@@ -1,4 +1,4 @@
-import TabBar from "./Tabs";
+import TabBar from "./components/Tabs";
 
 function ProductDetails() {
   return (
