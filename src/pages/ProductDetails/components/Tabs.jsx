@@ -51,10 +51,10 @@ function TabBar() {
           <>
             {CheckData.map((data) => {
               return (
-                <>
+                <div key={data.title} className="flex items-center gap-2">
                   <p>{data.icon}</p>
                   <p>{data.title}</p>
-                </>
+                </div>
               );
             })}
           </>
