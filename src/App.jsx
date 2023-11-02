@@ -1,4 +1,3 @@
-
 import { Button } from "./components/ui/button";
 import Blog from "./pages/Blog/Blog";
 
@@ -9,4 +8,4 @@ export default function App() {
          <Blog />
       </div>
    );
-
+}
