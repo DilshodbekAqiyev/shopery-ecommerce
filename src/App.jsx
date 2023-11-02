@@ -1,11 +1,11 @@
-import { Button } from './components/ui/button';
-import Shop from './pages/Shop/Shop';
+import Blog from './pages/Blog/Blog';
+import ProductDetails from './pages/ProductDetails/ProductDetails';
 
 export default function App() {
   return (
     <div className='container my-3'>
-      <Button>Click Me</Button>
-      <Shop />
+      <Blog />
+      <ProductDetails />
     </div>
   );
 }
