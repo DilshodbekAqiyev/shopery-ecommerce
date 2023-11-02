@@ -1,5 +1,180 @@
 {
   "users": [],
-  "products": [],
+  "products": [
+    {
+      "id": 1,
+      "name": "Chinese Cabbage",
+      "category": "Vegetables",
+      "discountPrice": 17.28,
+      "originalPrice": 48.0,
+      "discountPercentage": 64,
+      "status": "",
+      "rating": 4,
+      "available": 5413,
+      "description": "Sed commodo aliquam dui ac porta. Fusce ipsum felis, imperdiet at posuere ac, viverra at mauris. Maecenas tincidunt ligula a sem vestibulum pharetra. Maecenas auctor tortor lacus, nec laoreet nisi porttitor vel. Etiam tincidunt metus vel dui interdum sollicitudin. Mauris sem ante, vestibulum nec orci vitae, aliquam mollis lacus. Sed et condimentum arcu, id molestie tellus. Nulla facilisi. Nam scelerisque vitae justo a convallis. Morbi urna ipsum, placerat quis commodo quis, egestas elementum leo. Donec convallis mollis enim. Aliquam id mi quam. Phasellus nec fringilla elit. Nulla mauris tellus, feugiat quis pharetra sed, gravida ac dui. Sed iaculis, metus faucibus elementum tincidunt, turpis mi viverra velit, pellentesque tristique neque mi eget nulla. Proin luctus elementum neque et pharetra. ",
+      "images": {
+        "src": "/assets/images/products/potato.png",
+        "imageDescription": "Big potato images",
+        "otherImages": [
+          {
+            "id": 1,
+            "src": "/assets/images/products/potatoFirst.png",
+            "otherImageDescription": "Picture of a large potato from the left"
+          },
+          {
+            "id": 2,
+            "src": "/assets/images/products/potatoSecond.png",
+            "otherImageDescription": "Picture of a large potato from the right"
+          },
+          {
+            "id": 3,
+            "src": "/assets/images/products/potatoThird.png",
+            "otherImageDescription": "Picture of a large potato from above"
+          },
+          {
+            "id": 4,
+            "src": "/assets/images/products/potatoSecond.png",
+            "otherImageDescription": "Picture of a big potato shot from the front"
+          }
+        ]
+      },
+      "brand": "/assets/images/products/brands/farmary.svg",
+      "tag": ["Vegetables", "Healthy", "Chinese", "Cabbage", "Green Cabbage"],
+      "reviews": [
+        {
+          "id": 1,
+          "userName": "Kristin Watson",
+          "userImage": "/assets/images/users/KristinWatson.svg",
+          "rating": 5,
+          "description": "Duis at ullamcorper nulla, eu dictum eros.",
+          "date": ""
+        },
+        {
+          "id": 2,
+          "userName": "Jane Cooper",
+          "userImage": "/assets/images/users/user.svg",
+          "rating": 4,
+          "description": "Keep the soil evenly moist for the healthiest growth. If the sun gets too hot, Chinese cabbage tends to 'bolt' or go to seed; in long periods of heat, some kind of shade may be helpful. Watch out for snails, as they will harm the plants.",
+          "date": ""
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Chinese Cabbage",
+      "category": "Vegetables",
+      "discountPrice": 17.28,
+      "originalPrice": 48.0,
+      "discountPercentage": 64,
+      "status": "",
+      "rating": 4,
+      "available": 5413,
+      "description": "Sed commodo aliquam dui ac porta. Fusce ipsum felis, imperdiet at posuere ac, viverra at mauris. Maecenas tincidunt ligula a sem vestibulum pharetra. Maecenas auctor tortor lacus, nec laoreet nisi porttitor vel. Etiam tincidunt metus vel dui interdum sollicitudin. Mauris sem ante, vestibulum nec orci vitae, aliquam mollis lacus. Sed et condimentum arcu, id molestie tellus. Nulla facilisi. Nam scelerisque vitae justo a convallis. Morbi urna ipsum, placerat quis commodo quis, egestas elementum leo. Donec convallis mollis enim. Aliquam id mi quam. Phasellus nec fringilla elit. Nulla mauris tellus, feugiat quis pharetra sed, gravida ac dui. Sed iaculis, metus faucibus elementum tincidunt, turpis mi viverra velit, pellentesque tristique neque mi eget nulla. Proin luctus elementum neque et pharetra. ",
+      "images": {
+        "src": "/assets/images/products/potato.png",
+        "imageDescription": "Big potato images",
+        "otherImages": [
+          {
+            "id": 1,
+            "src": "/assets/images/products/potatoFirst.png",
+            "otherImageDescription": "Picture of a large potato from the left"
+          },
+          {
+            "id": 2,
+            "src": "/assets/images/products/potatoSecond.png",
+            "otherImageDescription": "Picture of a large potato from the right"
+          },
+          {
+            "id": 3,
+            "src": "/assets/images/products/potatoThird.png",
+            "otherImageDescription": "Picture of a large potato from above"
+          },
+          {
+            "id": 4,
+            "src": "/assets/images/products/potatoSecond.png",
+            "otherImageDescription": "Picture of a big potato shot from the front"
+          }
+        ]
+      },
+      "brand": "/assets/images/products/brands/farmary.svg",
+      "tag": ["Vegetables", "Healthy", "Chinese", "Cabbage", "Green Cabbage"],
+      "reviews": [
+        {
+          "id": 1,
+          "userName": "Kristin Watson",
+          "userImage": "/assets/images/users/KristinWatson.svg",
+          "rating": 5,
+          "description": "Duis at ullamcorper nulla, eu dictum eros.",
+          "date": ""
+        },
+        {
+          "id": 2,
+          "userName": "Jane Cooper",
+          "userImage": "/assets/images/users/user.svg",
+          "rating": 4,
+          "description": "Keep the soil evenly moist for the healthiest growth. If the sun gets too hot, Chinese cabbage tends to 'bolt' or go to seed; in long periods of heat, some kind of shade may be helpful. Watch out for snails, as they will harm the plants.",
+          "date": ""
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Chinese Cabbage",
+      "category": "Vegetables",
+      "discountPrice": 17.28,
+      "originalPrice": 48.0,
+      "discountPercentage": 64,
+      "status": "",
+      "rating": 4,
+      "available": 5413,
+      "description": "Sed commodo aliquam dui ac porta. Fusce ipsum felis, imperdiet at posuere ac, viverra at mauris. Maecenas tincidunt ligula a sem vestibulum pharetra. Maecenas auctor tortor lacus, nec laoreet nisi porttitor vel. Etiam tincidunt metus vel dui interdum sollicitudin. Mauris sem ante, vestibulum nec orci vitae, aliquam mollis lacus. Sed et condimentum arcu, id molestie tellus. Nulla facilisi. Nam scelerisque vitae justo a convallis. Morbi urna ipsum, placerat quis commodo quis, egestas elementum leo. Donec convallis mollis enim. Aliquam id mi quam. Phasellus nec fringilla elit. Nulla mauris tellus, feugiat quis pharetra sed, gravida ac dui. Sed iaculis, metus faucibus elementum tincidunt, turpis mi viverra velit, pellentesque tristique neque mi eget nulla. Proin luctus elementum neque et pharetra. ",
+      "images": {
+        "src": "/assets/images/products/potato.png",
+        "imageDescription": "Big potato images",
+        "otherImages": [
+          {
+            "id": 1,
+            "src": "/assets/images/products/potatoFirst.png",
+            "otherImageDescription": "Picture of a large potato from the left"
+          },
+          {
+            "id": 2,
+            "src": "/assets/images/products/potatoSecond.png",
+            "otherImageDescription": "Picture of a large potato from the right"
+          },
+          {
+            "id": 3,
+            "src": "/assets/images/products/potatoThird.png",
+            "otherImageDescription": "Picture of a large potato from above"
+          },
+          {
+            "id": 4,
+            "src": "/assets/images/products/potatoSecond.png",
+            "otherImageDescription": "Picture of a big potato shot from the front"
+          }
+        ]
+      },
+      "brand": "/assets/images/products/brands/farmary.svg",
+      "tag": ["Vegetables", "Healthy", "Chinese", "Cabbage", "Green Cabbage"],
+      "reviews": [
+        {
+          "id": 1,
+          "userName": "Kristin Watson",
+          "userImage": "/assets/images/users/KristinWatson.svg",
+          "rating": 5,
+          "description": "Duis at ullamcorper nulla, eu dictum eros.",
+          "date": ""
+        },
+        {
+          "id": 2,
+          "userName": "Jane Cooper",
+          "userImage": "/assets/images/users/user.svg",
+          "rating": 4,
+          "description": "Keep the soil evenly moist for the healthiest growth. If the sun gets too hot, Chinese cabbage tends to 'bolt' or go to seed; in long periods of heat, some kind of shade may be helpful. Watch out for snails, as they will harm the plants.",
+          "date": ""
+        }
+      ]
+    }
+  ],
   "articles": []
 }
