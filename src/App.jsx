@@ -10,6 +10,7 @@ import RootLayout from "./components/layouts";
 import Blog from "./pages/Blog/Blog";
 import ProductDetails from "./pages/ProductDetails/ProductDetails";
 
+
 export default function App() {
    const routes = createBrowserRouter(
       createRoutesFromElements(
