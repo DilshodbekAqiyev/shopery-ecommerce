@@ -1,11 +1,10 @@
 import { Button } from '../../../components/ui/button'
 
-import BlogFilterIcon from '../../../../public/assets/icons/blog-icons/filter-icon'
-
 const BlogFilterButton = () => {
   return (
     <Button className="flex item-center gap-[12px]">
-      <span className="text-white font-bold">Filter</span> <BlogFilterIcon className="w-[20px] h-[17px]" />
+      <span className="text-white font-bold">Filter</span>{' '}
+      <img src="/assets/icons/filter.svg" alt="filter icon" className="inline-block ml-3 w-6 h-6" />
     </Button>
   )
 }
