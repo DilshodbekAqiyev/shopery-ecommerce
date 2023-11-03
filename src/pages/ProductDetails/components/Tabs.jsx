@@ -9,7 +9,7 @@ import { AdditionalInformationData, CheckData, FeedbackData, featureData } from 
 
 function TabBar() {
   return (
-    <Tabs defaultValue="description" className="w-full bg-white">
+    <Tabs defaultValue="description" className="w-full bg-white mb-20">
       <TabsList className="bg-white border-b-2 border-b-gray-300 w-full rounded-none">
         <TabsTrigger
           value="description"
@@ -32,7 +32,7 @@ function TabBar() {
       </TabsList>
       <TabsContent
         value="description"
-        className="text-textSmall text-grays-gray500 flex justify-between gap-[136px] py-2 data-[state=inactive]:hidden"
+        className="text-textSmall text-grays-gray500 flex mt-8 justify-between gap-[136px] py-2 data-[state=inactive]:hidden"
       >
         <div className="flex flex-col gap-5 items-start w-[660px]">
           <p>
@@ -82,7 +82,7 @@ function TabBar() {
           </div>
         </div>
       </TabsContent>
-      <TabsContent value="additionInfo" className="flex items-start justify-between py-2 data-[state=inactive]:hidden">
+      <TabsContent value="additionInfo" className="flex mt-8 items-start justify-between py-2 data-[state=inactive]:hidden">
         <div className="flex flex-col gap-y-3">
           {AdditionalInformationData.map(({title,value}) => {
             return <div key={title} className="flex items-center text-textSmall">
@@ -107,7 +107,7 @@ function TabBar() {
         </div>
         <div></div>
       </TabsContent>
-      <TabsContent value="customerFeedback" className="py-2 data-[state=inactive]:hidden">
+      <TabsContent value="customerFeedback" className="py-2 mt-8 data-[state=inactive]:hidden">
        <div className="w-[760px]">
        {FeedbackData.map(({rating,img,id,name,comment,latestSend}) => {
         return <div key={id} className="flex flex-col items-start gap-3 py-5 w-full border-b-2 border-b-grays-gray100 text-textSmall text-grays-gray500">
@@ -125,7 +125,7 @@ function TabBar() {
         </div>
        })}
        </div>
-       <Button className='mt-5' variant='outline'>Load More</Button>
+       <Button className='mt-5 bg-[#EFF7EF] hover:bg-primary hover:text-white transition-all' variant='ghost' size='md'>Load More</Button>
       </TabsContent>
     </Tabs>
   );
