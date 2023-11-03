@@ -125,7 +125,7 @@ function TabBar() {
         </div>
        })}
        </div>
-       <Button className='mt-5' variant='outline'>Load More</Button>
+       <Button className='mt-5 bg-[#EFF7EF] hover:bg-primary hover:text-white transition-all' variant='ghost' size='md'>Load More</Button>
       </TabsContent>
     </Tabs>
   );
