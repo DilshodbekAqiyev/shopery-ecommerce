@@ -1,4 +1,4 @@
-import TabBar from "./components/Tabs";
+import TabBar from './components/Tabs'
 
 function ProductDetails() {
   return (
@@ -6,7 +6,7 @@ function ProductDetails() {
       <TabBar />
       <h1 className="text-heading05 font-[600] text-center mb-8">Related Products</h1>
     </div>
-  );
+  )
 }
 
-export default ProductDetails;
+export default ProductDetails
