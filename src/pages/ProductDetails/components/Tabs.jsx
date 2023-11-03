@@ -3,7 +3,8 @@ import {
   TabsContent,
   TabsList,
   TabsTrigger,
-} from "../../components/ui/tabs";
+} from "../../../components/ui/tabs";
+import { CheckData } from "../__mock__/detailsData";
 
 function TabBar() {
   return (
@@ -29,7 +30,7 @@ function TabBar() {
         </TabsTrigger>
       </TabsList>
       <TabsContent value="description" className="text-textSmall">
-        <div>
+        <>
           <p>
             Sed commodo aliquam dui ac porta. Fusce ipsum felis, imperdiet at
             posuere ac, viverra at mauris. Maecenas tincidunt ligula a sem
@@ -47,8 +48,22 @@ function TabBar() {
             velit, pellentesque tristique neque mi eget nulla. Proin luctus
             elementum neque et pharetra.
           </p>
-        </div>
-        <div></div>
+          <>
+            {CheckData.map((data) => {
+              return (
+                <div key={data.title} className="flex items-center gap-2">
+                  <p>{data.icon}</p>
+                  <p>{data.title}</p>
+                </div>
+              );
+            })}
+          </>
+          <p>
+            Cras et diam maximus, accumsan sapien et, sollicitudin velit. Nulla
+            blandit eros non turpis lobortis iaculis at ut massa.
+          </p>
+        </>
+        <></>
       </TabsContent>
       <TabsContent value="additionInfo">Additional Information</TabsContent>
       <TabsContent value="customerFeedback">Customer Feedback</TabsContent>
