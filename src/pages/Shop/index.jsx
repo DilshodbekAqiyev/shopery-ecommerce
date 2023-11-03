@@ -1,21 +1,11 @@
 import { useEffect, useState } from 'react'
 import PopularTags from './PopularTags'
+import AllCategoriesComponent from './AllCategories'
 import { Button } from '../../components/ui/button'
-import {
-  Select,
-  SelectContent,
-  SelectGroup,
-  SelectItem,
-  SelectLabel,
-  SelectTrigger,
-  SelectValue,
-} from '../../components/ui/select'
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '../../components/ui/accordion'
-import { RadioGroup, RadioGroupItem } from '../../components/ui/radio-group'
-import { Label } from '../../components/ui/label'
-import { Slider } from '../../components/ui/slider'
-import { AllCategories, AllRating } from './__mock__'
-import { Checkbox } from '../../components/ui/checkbox'
+import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger, SelectValue } from '../../components/ui/select'
+import { Accordion } from '../../components/ui/accordion'
+import SliderComponent from './SliderComponent'
+import Rating from './Rating'
 
 function Shop() {
   // eslint-disable-next-line no-unused-vars
@@ -64,65 +54,9 @@ function Shop() {
       <div className="flex justify-between">
         <div className="w-[19%]">
           <Accordion type="multiple" className="w-full">
-            <AccordionItem value="item-1">
-              <AccordionTrigger className="hover:no-underline">All Categories</AccordionTrigger>
-              <AccordionContent>
-                <RadioGroup defaultValue="option-1" className="flex flex-col gap-3">
-                  {AllCategories.map(({ id, title, size }) => (
-                    <div className="flex items-center space-x-2" key={id}>
-                      <RadioGroupItem value={`option-${id}`} id={`option-${id}`} />
-                      <Label htmlFor={`option-${id}`} className="text-grays-gray900 text-textSmall cursor-pointer">
-                        {title}
-                        <span className="text-textSmall text-grays-gray500">({size})</span>
-                      </Label>
-                    </div>
-                  ))}
-                </RadioGroup>
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-2">
-              <AccordionTrigger className="hover:no-underline">Price</AccordionTrigger>
-              <AccordionContent>
-                <Slider
-                  defaultValue={[0, 1000]}
-                  max={1000}
-                  min={0}
-                  step={1}
-                  // value={range}
-                  // onValueChange={handleRangeChange}
-                  // formatLabel={(value) => `${value} `}
-                  className="my-3"
-                />
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-3">
-              <AccordionTrigger className="hover:no-underline">Rating</AccordionTrigger>
-              <AccordionContent className="flex flex-col gap-3">
-                <SelectGroup>
-                  {AllRating.map(({ id, name, rating, labelName }) => (
-                    <div key={id} className="flex items-center">
-                      <Checkbox id={labelName} />
-                      <SelectLabel
-                        htmlFor={labelName}
-                        className="flex items-center pl-2 cursor-pointer leading-5 text-grays-gray900 text-textSmall"
-                      >
-                        {Array(5)
-                          .fill(undefined)
-                          .map((_, index) => (
-                            <img
-                              key={index}
-                              src={`/assets/icons/${index < rating ? 'star' : 'star-fill'}.svg`}
-                              alt="Star"
-                            />
-                          ))}
-                        &nbsp;
-                        {name}
-                      </SelectLabel>
-                    </div>
-                  ))}
-                </SelectGroup>
-              </AccordionContent>
-            </AccordionItem>
+            <AllCategoriesComponent />
+            <SliderComponent />
+            <Rating />
             <PopularTags />
           </Accordion>
         </div>

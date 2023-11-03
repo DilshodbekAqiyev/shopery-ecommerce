@@ -1,4 +1,4 @@
-export const AllCategories = [
+export const AllCategoriesData = [
   {
     id: 1,
     title: 'Fresh Fruit',
