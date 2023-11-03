@@ -2,8 +2,7 @@ import TabBar from "./components/Tabs";
 
 function ProductDetails() {
   return (
-    <div>
-      <p>Product Details Section</p>
+    <div className=" max-w-[1320px] mx-auto">
       <TabBar />
     </div>
   );
