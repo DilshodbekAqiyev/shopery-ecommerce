@@ -125,7 +125,7 @@ function TabBar() {
         </div>
        })}
        </div>
-       <Button className='mt-5'>Load More</Button>
+       <Button className='mt-5' variant='outline'>Load More</Button>
       </TabsContent>
     </Tabs>
   );
