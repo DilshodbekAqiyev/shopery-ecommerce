@@ -1,10 +1,21 @@
 import { useEffect, useState } from 'react'
+import PopularTags from './PopularTags'
 import { Button } from '../../components/ui/button'
-import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger, SelectValue } from '../../components/ui/select'
+import {
+  Select,
+  SelectContent,
+  SelectGroup,
+  SelectItem,
+  SelectLabel,
+  SelectTrigger,
+  SelectValue,
+} from '../../components/ui/select'
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '../../components/ui/accordion'
 import { RadioGroup, RadioGroupItem } from '../../components/ui/radio-group'
 import { Label } from '../../components/ui/label'
 import { Slider } from '../../components/ui/slider'
+import { AllCategories, AllRating } from './__mock__'
+import { Checkbox } from '../../components/ui/checkbox'
 
 function Shop() {
   // eslint-disable-next-line no-unused-vars
@@ -22,7 +33,7 @@ function Shop() {
   }, [])
 
   return (
-    <div className="max-w-[1320px] mx-auto pt-8 bg-slate-100 transition-all ease-linear duration-500">
+    <div className="max-w-[1320px] mx-auto pt-8 transition-all ease-linear duration-500">
       <div className="pb-6 flex justify-between items-center">
         <div className="flex justify-between items-center gap-x-60">
           <Button className="rounded-[43px] font-semibold text-white text-[14px] px-6 py-3">
@@ -51,59 +62,26 @@ function Shop() {
         </div>
       </div>
       <div className="flex justify-between">
-        <div className="w-[24%]">
+        <div className="w-[19%]">
           <Accordion type="multiple" className="w-full">
             <AccordionItem value="item-1">
-              <AccordionTrigger>All Categories</AccordionTrigger>
+              <AccordionTrigger className="hover:no-underline">All Categories</AccordionTrigger>
               <AccordionContent>
-                <RadioGroup defaultValue="option-one">
-                  <div className="flex items-center space-x-2">
-                    <RadioGroupItem value="option-one" id="option-one" />
-                    <Label htmlFor="option-one" className="text-grays-gray900 text-textSmall">
-                      Fresh Fruit <span className="text-textSmall text-grays-gray500">(150)</span>
-                    </Label>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <RadioGroupItem value="option-two" id="option-two" />
-                    <Label htmlFor="option-two" className="text-grays-gray900 text-textSmall">
-                      Vegetables <span className="text-textSmall text-grays-gray500">(150)</span>
-                    </Label>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <RadioGroupItem value="option-three" id="option-three" />
-                    <Label htmlFor="option-three" className="text-grays-gray900 text-textSmall">
-                      Cooking <span className="text-textSmall text-grays-gray500">(150)</span>
-                    </Label>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <RadioGroupItem value="option-four" id="option-four" />
-                    <Label htmlFor="option-four" className="text-grays-gray900 text-textSmall">
-                      Snacks <span className="text-textSmall text-grays-gray500">(150)</span>
-                    </Label>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <RadioGroupItem value="option-five" id="option-five" />
-                    <Label htmlFor="option-five" className="text-grays-gray900 text-textSmall">
-                      Beverages <span className="text-textSmall text-grays-gray500">(150)</span>
-                    </Label>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <RadioGroupItem value="option-six" id="option-six" />
-                    <Label htmlFor="option-six" className="text-grays-gray900 text-textSmall">
-                      Beauty & Health <span className="text-textSmall text-grays-gray500">(150)</span>
-                    </Label>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <RadioGroupItem value="option-seven" id="option-seven" />
-                    <Label htmlFor="option-seven" className="text-grays-gray900 text-textSmall">
-                      Bread & Bakery <span className="text-textSmall text-grays-gray500">(150)</span>
-                    </Label>
-                  </div>
+                <RadioGroup defaultValue="option-1" className="flex flex-col gap-3">
+                  {AllCategories.map(({ id, title, size }) => (
+                    <div className="flex items-center space-x-2" key={id}>
+                      <RadioGroupItem value={`option-${id}`} id={`option-${id}`} />
+                      <Label htmlFor={`option-${id}`} className="text-grays-gray900 text-textSmall cursor-pointer">
+                        {title}
+                        <span className="text-textSmall text-grays-gray500">({size})</span>
+                      </Label>
+                    </div>
+                  ))}
                 </RadioGroup>
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2">
-              <AccordionTrigger>Is it styled?</AccordionTrigger>
+              <AccordionTrigger className="hover:no-underline">Price</AccordionTrigger>
               <AccordionContent>
                 <Slider
                   defaultValue={[0, 1000]}
@@ -113,18 +91,42 @@ function Shop() {
                   // value={range}
                   // onValueChange={handleRangeChange}
                   // formatLabel={(value) => `${value} `}
+                  className="my-3"
                 />
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-3">
-              <AccordionTrigger>Is it animated?</AccordionTrigger>
-              <AccordionContent>
-                Yes. It&apos;s animated by default, but you can disable it if you prefer.
+              <AccordionTrigger className="hover:no-underline">Rating</AccordionTrigger>
+              <AccordionContent className="flex flex-col gap-3">
+                <SelectGroup>
+                  {AllRating.map(({ id, name, rating, labelName }) => (
+                    <div key={id} className="flex items-center">
+                      <Checkbox id={labelName} />
+                      <SelectLabel
+                        htmlFor={labelName}
+                        className="flex items-center pl-2 cursor-pointer leading-5 text-grays-gray900 text-textSmall"
+                      >
+                        {Array(5)
+                          .fill(undefined)
+                          .map((_, index) => (
+                            <img
+                              key={index}
+                              src={`/assets/icons/${index < rating ? 'star' : 'star-fill'}.svg`}
+                              alt="Star"
+                            />
+                          ))}
+                        &nbsp;
+                        {name}
+                      </SelectLabel>
+                    </div>
+                  ))}
+                </SelectGroup>
               </AccordionContent>
             </AccordionItem>
+            <PopularTags />
           </Accordion>
         </div>
-        <div className="w-[75%] bg-gray-400 transition-width duration-500">Products</div>
+        <div className="w-[80%] bg-gray-400 transition-width duration-500">Products</div>
       </div>
     </div>
   )
