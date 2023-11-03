@@ -13,19 +13,19 @@ function TabBar() {
       <TabsList className="bg-white border-b-2 border-b-gray-300 w-full rounded-none">
         <TabsTrigger
           value="description"
-          className="data-[state=active]:bg-white data-[state=active]:shadow-none pb-3 rounded-none border-2 border-white border-b-gray-300 data-[state=active]:border-b-primary"
+          className="data-[state=active]:bg-white data-[state=active]:shadow-none data-[state=active]:border-b-[3px] pb-3 rounded-none border-2 border-white border-b-gray-300 data-[state=active]:border-b-primary"
         >
           Descriptions
         </TabsTrigger>
         <TabsTrigger
           value="additionInfo"
-          className="data-[state=active]:bg-white data-[state=active]:shadow-none pb-3 rounded-none border-2 border-white border-b-gray-300 data-[state=active]:border-b-primary"
+          className="data-[state=active]:bg-white data-[state=active]:shadow-none data-[state=active]:border-b-[3px] pb-3 rounded-none border-2 border-white border-b-gray-300 data-[state=active]:border-b-primary"
         >
           Additional Information
         </TabsTrigger>
         <TabsTrigger
           value="customerFeedback"
-          className="data-[state=active]:bg-white data-[state=active]:shadow-none pb-3 rounded-none border-2 border-white border-b-gray-300 data-[state=active]:border-b-primary"
+          className="data-[state=active]:bg-white data-[state=active]:shadow-none data-[state=active]:border-b-[3px] pb-3 rounded-none border-2 border-white border-b-gray-300 data-[state=active]:border-b-primary"
         >
           Customer Feedback
         </TabsTrigger>
@@ -99,7 +99,7 @@ function TabBar() {
                 <img src={img} alt="featureImg" loading="lazy"/>
                 <div className="flex flex-col gap-1">
                   <h4 className="font-[500] text-grays-gray900 text-textSmall">{title}</h4>
-                  <p className="text-[13px]">{description}</p>
+                  <p className="text-[13px] text-grays-gray600">{description}</p>
                 </div>
               </div>
             })}
