@@ -3,6 +3,8 @@ import BlogSearch from './Search'
 import BlogFilterButton from './FilterButton'
 import BlogTopCategories from './TopCategories'
 import BlogPopularTag from './PopularTag'
+import BlogOurGallery from './OurGallery'
+import BlogRecentlyAdded from './RecentlyAdded'
 
 // const cardData = [];
 
@@ -14,6 +16,8 @@ const Blog = () => {
         <BlogSearch />
         <BlogTopCategories />
         <BlogPopularTag />
+        <BlogOurGallery />
+        <BlogRecentlyAdded />
       </div>
 
       <div className="right w-[872px]">
