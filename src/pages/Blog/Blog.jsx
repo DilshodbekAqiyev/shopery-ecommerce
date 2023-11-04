@@ -1,3 +1,4 @@
+
 import BlogCard from "./BlogCard";
 import BlogSearch from "./Search";
 import BlogFilterButton from "./FilterButton";
@@ -35,7 +36,6 @@ const Blog = () => {
             </div>
          </div>
       </div>
-   );
-};
-
+   )
+   }
 export default Blog;

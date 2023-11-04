@@ -1,11 +1,26 @@
-import { Button } from "./components/ui/button";
+
+import {
+   createBrowserRouter,
+   RouterProvider,
+   createRoutesFromElements,
+   Route
+} from "react-router-dom";
+
+import RootLayout from "./components/layouts";
+
 import Blog from "./pages/Blog/Blog";
+import ProductDetails from "./pages/ProductDetails/ProductDetails";
+
 
 export default function App() {
-   return (
-      <div className="container my-3">
-         <Button>Click Me</Button>
-         <Blog />
-      </div>
-   );
+   const routes = createBrowserRouter(
+      createRoutesFromElements(
+         <Route path='/' element={<RootLayout />}>
+            <Route path='blog' element={<Blog />} />
+            <Route path='products' element={<ProductDetails />} />\
+         </Route>
+      )
+   )
+
+   return <RouterProvider router={routes} />
 }
