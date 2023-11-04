@@ -25,15 +25,8 @@ const Blog = () => {
         <BlogRecentlyAdded />
       </div>
 
-      <div className="right w-[872px] ">
-        <div className="rightTop flex item-center justify-between mb-[32px]">
-
-       
-
-
       <div className="right w-[872px]">
         <div className="rightTop flex item-center justify-between ">
-
           <div className="flex gap-[8px] item-center">
             <h3>Sort by</h3>
             <select id="sortBy" className="py-[10px] px-[16px]">
