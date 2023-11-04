@@ -5,7 +5,6 @@ const BlogRecentlyAdded = () => {
   const [state, setState] = useState([])
   const DATA = useContext(BlogContext)
   const { data } = DATA
-  console.log(state, 'sort')
 
   useEffect(() => {
     const newData = data.sort((a, b) => {
