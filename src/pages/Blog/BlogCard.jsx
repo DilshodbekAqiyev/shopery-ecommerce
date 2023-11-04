@@ -5,6 +5,7 @@ import comment from '../../../public/assets/icons/chatComment.svg'
 import Arrow from '../../../public/assets/icons/ArrowRight.svg'
 const BlogCard = () => {
   return (
+
     <div className="blogCard w-[424px]">
       <div className="blogCardTop w-[424px] h-[324px] rounded-t-[8px] relative">
         <img src={img} alt="img" className="rounded-t-[8px] w-[424px] h-[324px] " />
@@ -18,10 +19,12 @@ const BlogCard = () => {
           <li>
             <a href="#2" className="flex items-center gap-1">
               <img src={tag} alt="img" />
+
               <span>Food</span>
             </a>
           </li>
           <li>
+
             <a href="#2" className="flex items-center gap-1">
               <img src={user} alt="img" />
               <span>By Admin</span>
@@ -40,6 +43,8 @@ const BlogCard = () => {
         <a href="#2" className="flex gap-[12px] text-primary text-[16px] font-[600]">
           <span>Read More </span>
           <img src={Arrow} alt="img" />
+
+         
         </a>
       </div>
     </div>
