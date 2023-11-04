@@ -10,13 +10,18 @@ import BlogRecentlyAdded from './RecentlyAdded'
 
 const Blog = () => {
   return (
-    <div className="blog flex gap-[24px] mt-[34px]">
+    <div className="blog flex gap-[24px] mt-[34px] container">
       <div className="left w-[424px]">
         <BlogFilterButton />
         <BlogSearch />
+        <div className="line w-[100%] h-[1px] bg-gray-200 my-[20px]"></div>
         <BlogTopCategories />
+        <div className="line w-[100%] h-[1px] bg-gray-200 my-[20px]"></div>
         <BlogPopularTag />
+
+        <div className="line w-[100%] h-[1px] bg-gray-200 my-[20px]"></div>
         <BlogOurGallery />
+        <div className="line w-[100%] h-[1px] bg-gray-200 my-[20px]"></div>
         <BlogRecentlyAdded />
       </div>
 
