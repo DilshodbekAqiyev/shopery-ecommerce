@@ -10,7 +10,7 @@ import BlogRecentlyAdded from './RecentlyAdded'
 
 const Blog = () => {
   return (
-    <div className="blog flex gap-[24px] mt-[34px]">
+    <div className="blog flex gap-[24px] mt-[34px] container">
       <div className="left w-[424px]">
         <BlogFilterButton />
         <BlogSearch />
