@@ -1,3 +1,4 @@
+
 import BlogCard from './BlogCard'
 import BlogSearch from './Search'
 import BlogFilterButton from './FilterButton'
@@ -6,9 +7,14 @@ import BlogPopularTag from './PopularTag'
 import BlogOurGallery from './OurGallery'
 import BlogRecentlyAdded from './RecentlyAdded'
 
+
+
+
+
 // const cardData = [];
 
 const Blog = () => {
+
   return (
     <div className="blog flex gap-[24px] mt-[34px]">
       <div className="left w-[424px]">
