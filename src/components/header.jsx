@@ -24,7 +24,7 @@ function HeaderSection() {
               <div className="flex items-center">
                 <div className="flex">
                   <div>
-                    <img src={Sliderimg} alt="" className="w-[795px] h-[564px]" />
+                    <img src={Sliderimg} alt="" className="w-[794px] h-[564px]" />
                   </div>
                   <div className="w-[100px] h-[100px] rounded-[50%] pl-8 pt-8 bg-warning">
                     <p >70% <br /> of</p>
