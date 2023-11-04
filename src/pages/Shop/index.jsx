@@ -24,12 +24,7 @@ function Shop() {
   return (
     <div className="max-w-[1320px] mx-auto pt-8 transition-all ease-linear duration-500">
       <div className="pb-6 flex justify-between items-center">
-        <div className="flex justify-between items-center gap-x-60">
-          <TopComponent />
-        </div>
-        <div className="text-grays-gray600 font-normal">
-          <span className="text-grays-gray900 inline-block font-bold text-base">52</span> Results Found
-        </div>
+        <TopComponent />
       </div>
       <div className="flex justify-between">
         <div className="w-[19%]">
