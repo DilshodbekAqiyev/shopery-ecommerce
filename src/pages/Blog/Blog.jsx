@@ -14,14 +14,18 @@ const Blog = () => {
       <div className="left w-[424px]">
         <BlogFilterButton />
         <BlogSearch />
+        <div className="line w-[100%] h-[1px] bg-gray-200 my-[20px]"></div>
         <BlogTopCategories />
+        <div className="line w-[100%] h-[1px] bg-gray-200 my-[20px]"></div>
         <BlogPopularTag />
+        <div className="line w-[100%] h-[1px] bg-gray-200 my-[20px]"></div>
         <BlogOurGallery />
+        <div className="line w-[100%] h-[1px] bg-gray-200 my-[20px]"></div>
         <BlogRecentlyAdded />
       </div>
 
-      <div className="right w-[872px]">
-        <div className="rightTop flex item-center justify-between ">
+      <div className="right w-[872px] ">
+        <div className="rightTop flex item-center justify-between mb-[32px]">
           <div className="flex gap-[8px] item-center">
             <h3>Sort by</h3>
             <select id="sortBy" className="py-[10px] px-[16px]">
