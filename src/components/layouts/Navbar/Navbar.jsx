@@ -51,7 +51,7 @@ const Navbar = () => {
                 РУБЛЬ
               </SelectItem>
               <SelectItem value="som" className="cursor-pointer text-gray-600 font-normal text-xs">
-                SO'M
+                SO`M
               </SelectItem>
             </SelectContent>
           </Select>

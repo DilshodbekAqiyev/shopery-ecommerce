@@ -11,7 +11,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '.
 
 const Blog = () => {
   return (
-    <div className="blog flex gap-[24px] mt-[34px] container">
+    <div className="blog flex gap-[24px] mt-[34px] container mb-[80px]">
       <div className="left w-[424px]">
         <BlogFilterButton />
         <BlogSearch />
@@ -26,8 +26,8 @@ const Blog = () => {
         <BlogRecentlyAdded />
       </div>
 
-      <div className="right w-[872px]">
-        <div className="rightTop flex item-center justify-between ">
+      <div className="right w-[872px] ">
+        <div className="rightTop flex item-center justify-between h-[41px]">
           <div className="flex gap-4 items-center ">
             <h3>Sort by</h3>
             <Select>
@@ -41,13 +41,16 @@ const Blog = () => {
               </SelectContent>
             </Select>
           </div>
-          <div className="">
+          <div className="flex items-center">
             <h3>
               <span className="font-bold pr-1">{52}</span> Result Found
             </h3>
           </div>
         </div>
-        <div className="BlogCards mt-8">
+        <div className="BlogCards mt-8  gap-6 grid grid-cols-2">
+          <BlogCard />
+          <BlogCard />
+          <BlogCard />
           <BlogCard />
         </div>
       </div>
