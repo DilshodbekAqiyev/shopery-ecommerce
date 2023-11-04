@@ -3,18 +3,28 @@ import BlogSearch from './Search'
 import BlogFilterButton from './FilterButton'
 import BlogTopCategories from './TopCategories'
 import BlogPopularTag from './PopularTag'
+import BlogOurGallery from './OurGallery'
+import BlogRecentlyAdded from './RecentlyAdded'
 
 // const cardData = [];
 
 const Blog = () => {
   return (
-    <div className="blog flex gap-[24px] mt-[34px]">
+    <div className="blog flex gap-[24px] mt-[34px] container">
       <div className="left w-[424px]">
         <BlogFilterButton />
         <BlogSearch />
+        <div className="line w-[100%] h-[1px] bg-gray-200 my-[20px]"></div>
         <BlogTopCategories />
+        <div className="line w-[100%] h-[1px] bg-gray-200 my-[20px]"></div>
         <BlogPopularTag />
+
+        <div className="line w-[100%] h-[1px] bg-gray-200 my-[20px]"></div>
+        <BlogOurGallery />
+        <div className="line w-[100%] h-[1px] bg-gray-200 my-[20px]"></div>
+        <BlogRecentlyAdded />
       </div>
+
       <div className="right w-[872px]">
         <div className="rightTop flex item-center justify-between ">
           <div className="flex gap-[8px] item-center">
