@@ -1,9 +1,12 @@
+import Blog from './pages/Blog/Blog'
+
+import ProductDetails from './pages/ProductDetails/ProductDetails'
+
 import { createBrowserRouter, RouterProvider, createRoutesFromElements, Route } from 'react-router-dom'
 
 import RootLayout from './components/layouts'
 
-import Blog from './pages/Blog/Blog'
-import ProductDetails from './pages/ProductDetails/ProductDetails'
+import Shop from './pages/Shop'
 
 export default function App() {
   const routes = createBrowserRouter(
@@ -11,6 +14,7 @@ export default function App() {
       <Route path="/" element={<RootLayout />}>
         <Route path="blog" element={<Blog />} />
         <Route path="products" element={<ProductDetails />} />
+        <Route path="shop" element={<Shop />} />
       </Route>
     )
   )
