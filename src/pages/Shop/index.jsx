@@ -5,9 +5,9 @@ import { Accordion } from '../../components/ui/accordion'
 import SliderComponent from './SliderComponent'
 import Rating from './Rating'
 import TopComponent from './TopComponent'
+import ProductCard from '../../components/common/Cards/ProductCard'
 
 function Shop() {
-  // eslint-disable-next-line no-unused-vars
   const [data, setData] = useState([])
 
   const getData = async () => {
@@ -40,7 +40,13 @@ function Shop() {
             <PopularTags />
           </Accordion>
         </div>
-        <div className="w-[80%] bg-gray-400 transition-width duration-500">Products</div>
+        <div className="w-[80%]">
+          <div className="flex justify-around flex-wrap items-center">
+            {data?.map((item) => (
+              <ProductCard key={item.id} {...item} />
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   )
