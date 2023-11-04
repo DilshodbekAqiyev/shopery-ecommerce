@@ -6,9 +6,7 @@ import './styles/main.css'
 const rootEl = document.getElementById('root')
 
 if (rootEl) {
-  const root = ReactDOM.createRoot(rootEl);
+  const root = ReactDOM.createRoot(rootEl)
 
-  root.render(
-    <App />
-  )
+  root.render(<App />)
 }

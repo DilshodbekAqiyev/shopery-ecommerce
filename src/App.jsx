@@ -1,24 +1,14 @@
+import Blog from './pages/Blog/Blog'
 
-
-import { Button } from "./components/ui/button";
-import Blog from "./pages/Blog/Blog";
-
-import Blog from "./pages/Blog/Blog";
-import ProductDetails from "./pages/ProductDetails/ProductDetails";
+import ProductDetails from './pages/ProductDetails/ProductDetails'
 
 import { createBrowserRouter, RouterProvider, createRoutesFromElements, Route } from 'react-router-dom'
 
 import RootLayout from './components/layouts'
 
-import Blog from './pages/Blog/Blog'
-import ProductDetails from './pages/ProductDetails/ProductDetails'
 import Shop from './pages/Shop'
 
-
-
 export default function App() {
-
-
   const routes = createBrowserRouter(
     createRoutesFromElements(
       <Route path="/" element={<RootLayout />}>
@@ -31,4 +21,3 @@ export default function App() {
 
   return <RouterProvider router={routes} />
 }
-
