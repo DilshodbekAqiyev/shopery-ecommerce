@@ -6,9 +6,9 @@ function ProductDetails() {
     <div className=" max-w-[1320px] mx-auto">
       <div className="flex items-start gap-3 mt-[34px] mb-1">
         <SwiperContent />
-        <div>
+        <>
           <h1 className="text-heading05 font-[600]">Chinese Cabbage</h1>
-        </div>
+        </>
       </div>
       <TabBar />
       <h1 className="text-heading05 font-[600] text-center mb-8">Related Products</h1>

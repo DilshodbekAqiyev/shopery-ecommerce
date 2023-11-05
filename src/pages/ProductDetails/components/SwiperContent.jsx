@@ -38,6 +38,7 @@ function SwiperContent() {
                 <img
                   src={img}
                   alt="SliderImg"
+                  loading="lazy"
                   className="w-full h-full object-cover hover:scale-105 ease-in-out duration-300 hover:shadow-md"
                 />
               </div>
@@ -50,8 +51,8 @@ function SwiperContent() {
           className="cursor-pointer transition-all ease-in-out duration-300 hover:text-primary text-gray-400"
         />
       </div>
-      <div className="w-[556px] h-[556px]">
-        <img src={mainImg} alt="sliderImg" className="w-full h-full" />
+      <div className="w-[556px] h-[556px] border-2">
+        <img src={mainImg} alt="sliderImg" loading="lazy" className="w-full h-full" />
       </div>
     </div>
   )
