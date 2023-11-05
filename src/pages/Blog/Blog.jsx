@@ -18,7 +18,7 @@ const Blog = ({ data, filterData, setFilterData }) => {
         <Line />
         <BlogTopCategories filterData={filterData} />
         <Line />
-        <BlogPopularTag />
+        <BlogPopularTag data={data} setFilterData={setFilterData} />
         <Line />
         <BlogOurGallery />
         <Line />
@@ -50,10 +50,6 @@ const Blog = ({ data, filterData, setFilterData }) => {
           {filterData.map((prop, idx) => (
             <BlogCard key={idx} prop={prop} />
           ))}
-
-          {/* <BlogCard />
-          <BlogCard />
-          <BlogCard /> */}
         </div>
       </div>
     </div>
