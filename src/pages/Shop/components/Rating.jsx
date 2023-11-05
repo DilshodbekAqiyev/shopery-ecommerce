@@ -1,18 +1,17 @@
-import { AccordionContent, AccordionItem, AccordionTrigger } from '../../components/ui/accordion'
-import { SelectGroup, SelectLabel } from '../../components/ui/select'
-import { Checkbox } from '../../components/ui/checkbox'
-import { AllRating } from './__mock__'
+import { AccordionContent, AccordionItem, AccordionTrigger } from '../../../components/ui/accordion'
+
+import { AllRating } from '../__mock__'
 
 function Rating() {
   return (
     <AccordionItem value="item-3">
       <AccordionTrigger className="hover:no-underline">Rating</AccordionTrigger>
       <AccordionContent className="flex flex-col gap-3">
-        <SelectGroup>
+        <div className="flex flex-col gap-1">
           {AllRating.map(({ id, name, rating, labelName }) => (
             <div key={id} className="flex items-center">
-              <Checkbox id={labelName} />
-              <SelectLabel
+              <input type="checkbox" id={labelName} className="accent-primary text-white w-4 h-4" />
+              <label
                 htmlFor={labelName}
                 className="flex items-center pl-2 cursor-pointer leading-5 text-grays-gray900 text-textSmall"
               >
@@ -23,10 +22,10 @@ function Rating() {
                   ))}
                 &nbsp;
                 {name}
-              </SelectLabel>
+              </label>
             </div>
           ))}
-        </SelectGroup>
+        </div>
       </AccordionContent>
     </AccordionItem>
   )

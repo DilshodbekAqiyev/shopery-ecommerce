@@ -1,9 +1,4 @@
-import {
-  createBrowserRouter,
-  RouterProvider,
-  createRoutesFromElements,
-  Route
-} from 'react-router-dom'
+import { createBrowserRouter, RouterProvider, createRoutesFromElements, Route } from 'react-router-dom'
 
 // Pages
 import Home from './pages/Home/Home'
@@ -17,6 +12,9 @@ import PageNotFound from './components/common/PageNotFound'
 // Layouts
 import RootLayout from './components/layouts/RootLayout'
 
+//Contexts
+import ShopProvider from './contexts/shop/ShopContext'
+
 export default function App() {
   const routes = createBrowserRouter(
     createRoutesFromElements(
@@ -24,7 +22,14 @@ export default function App() {
         <Route index element={<Home />} />
         <Route path="blog" element={<Blog />} />
         <Route path="products" element={<ProductDetails />} />
-        <Route path="shop" element={<Shop />} />
+        <Route
+          path="shop"
+          element={
+            <ShopProvider>
+              <Shop />
+            </ShopProvider>
+          }
+        />
         <Route path="sign-in" element={<Signup />} />
         <Route path="sign-up" element={<Signin />} />
 
