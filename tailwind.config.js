@@ -27,6 +27,7 @@ module.exports = {
         warning: "#FF8A00",
         danger: "#EA4B48",
         white: "#FFFFFF",
+        video: "#002E0399" ,
         grays: {
           gray900: "#1A1A1A",
           gray800: "#333333",
