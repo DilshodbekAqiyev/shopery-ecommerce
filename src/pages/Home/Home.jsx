@@ -52,13 +52,18 @@ const Home = () => {
       <div className="container border">
          <FeaturedProducts dataFeatures={data} />
       </div>
-      <div className=" container border">
-         <Video src="https://youtu.be/0ptb_0gN7_4" width="1320px" height="740px" title="We’re the Best Organic Farm in the World"/>
+      <div className=" bg-latestWhiteGrayReverse">
+         <div className=" container py-[100px] ">
+            <Video src="https://youtu.be/0ptb_0gN7_4" width="1320px" height="740px" title="We’re the Best Organic Farm in the World"/>
+         </div>
       </div>
-      <div>
-         {Array.from(Array(3).keys()).map((item) => <LatestCard key={item} {...data}/>)}
+      <div className="flex items-center justify-start flex-col h-[712px] gap-[34px] bg-latestWhiteGray">
+         <p className="font-semibold text-[40px]">Latest News</p>
+        <div className=" flex gap-[24px] items-center justify-center ">
+           {Array.from(Array(3).keys()).map((item) => <LatestCard key={item} {...data}/>)}
+        </div>
       </div>
-      <div className="border bg-greenGrays-greenGray0.5">
+      <div className=" border-y bg-greenGrays-greenGray0.5">
          <SendEmail />
       </div>
    </div>)

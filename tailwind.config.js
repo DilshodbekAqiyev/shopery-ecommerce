@@ -12,6 +12,10 @@ module.exports = {
       },
     },
     extend: {
+      backgroundImage: {
+        "latestWhiteGray": "linear-gradient( white 50%, #EDF2EE 50%);",
+        "latestWhiteGrayReverse": "linear-gradient(to top, white 50%, #EDF2EE 50%);"
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
