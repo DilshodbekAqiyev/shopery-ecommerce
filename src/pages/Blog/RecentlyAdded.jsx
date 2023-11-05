@@ -1,9 +1,9 @@
-import img from '../../../public/assets/images/fruits.jpg'
-import calendar from '../../../public/assets/icons/calendar.svg'
+import img from '/assets/images/fruits.jpg'
+import calendar from '/assets/icons/calendar.svg'
 const BlogRecentlyAdded = () => {
   return (
     <div>
-      <h2>Recently Added</h2>
+      <h2 className="font-bold">Recently Added</h2>
       <div className=" mt-[16px]">
         <div className="flex items-center gap-[16px] mt-[16px]">
           <img src={img} alt="img" className="w-[100px] h-[72px] rounded-[6px]" />
