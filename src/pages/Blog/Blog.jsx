@@ -1,16 +1,17 @@
-import BlogCard from './BlogCard'
-import BlogSearch from './Search'
-import BlogFilterButton from './FilterButton'
-import BlogTopCategories from './TopCategories'
-import BlogPopularTag from './PopularTag'
-import BlogOurGallery from './OurGallery'
-import BlogRecentlyAdded from './RecentlyAdded'
+import BlogCard from './components/BlogCard'
+import BlogSearch from './components/Search'
+import BlogFilterButton from './components/FilterButton'
+import BlogTopCategories from './components/TopCategories'
+import BlogPopularTag from './components/PopularTag'
+import BlogOurGallery from './components/OurGallery'
+import BlogRecentlyAdded from './components/RecentlyAdded'
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../../components/ui/select'
 
 // const cardData = [];
 
 const Blog = () => {
   return (
-    <div className="blog flex gap-[24px] mt-[34px] container">
+    <div className="blog flex gap-[24px] mt-[34px] container mb-[80px]">
       <div className="left w-[424px]">
         <BlogFilterButton />
         <BlogSearch />
@@ -24,22 +25,31 @@ const Blog = () => {
         <BlogRecentlyAdded />
       </div>
 
-      <div className="right w-[872px]">
-        <div className="rightTop flex item-center justify-between ">
-          <div className="flex gap-[8px] item-center">
+      <div className="right w-[872px] ">
+        <div className="rightTop flex item-center justify-between h-[41px]">
+          <div className="flex gap-4 items-center ">
             <h3>Sort by</h3>
-            <select id="sortBy" className="py-[10px] px-[16px]">
-              <option value="Latest">Latest</option>
-              <option value="L">Latest</option>
-            </select>
+            <Select>
+              <SelectTrigger className="w-[180px]">
+                <SelectValue placeholder="Theme" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="light">Light</SelectItem>
+                <SelectItem value="dark">Dark</SelectItem>
+                <SelectItem value="system">System</SelectItem>
+              </SelectContent>
+            </Select>
           </div>
-          <div className="">
+          <div className="flex items-center">
             <h3>
-              <span className="font-bold pr-1">52</span> Result Found
+              <span className="font-bold pr-1">{52}</span> Result Found
             </h3>
           </div>
         </div>
-        <div className="BlogCards">
+        <div className="BlogCards mt-8  gap-6 grid grid-cols-2">
+          <BlogCard />
+          <BlogCard />
+          <BlogCard />
           <BlogCard />
         </div>
       </div>
