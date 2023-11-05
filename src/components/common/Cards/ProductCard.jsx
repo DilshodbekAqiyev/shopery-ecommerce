@@ -6,7 +6,7 @@ const ProductCard = (props) => {
   const [isHovered, setIsHovered] = useState(false)
 
   // eslint-disable-next-line react/prop-types
-  const { name, originalPrice, discountPrice, images, rating, status, statusColor } = props
+  const { name, originalPrice, discountPrice, images, rating, status, statusColor, featrues } = props
 
   const handleHover = () => {
     setIsHovered((prev) => !prev)
@@ -18,20 +18,19 @@ const ProductCard = (props) => {
 
   return (
     <div
-      className={`w-[312px] bg-white mt-[24px] shadow-lg rounded-[8px] p-4 relative cursor-pointer transition-transform border-[3px] border-solid border-branding-[#2C742F] hover:shadow-[#00B207] hover:shadow-md ${
-        isHovered ? 'hover:scale-105' : ''
-      }`}
+      className={`w-[330px] h-[428px] bg-white shadow-lg  p-4 relative cursor-pointer transition-transform border-[2px] border-solid border-branding-[#2C742F] hover:shadow-[#00B207] hover:shadow-md ${isHovered ? "border-[#2C742F]" : ''
+        } ${featrues ? 'border border-[#E6E6E6] w-1/5 h-auto' : ''}`}
       onMouseEnter={handleHover}
       onMouseLeave={handleMouseLeave}
     >
-      <img src={images.src} alt={images.imageDescription} className="w-full object-cover rounded-md" />
-      {status != '' ? <Badge className={`absolute top-2 left-2 bg-[${statusColor}]`}>{status}</Badge> : undefined}
-      <div className="mt-4 flex justify-between items-center">
+      <img src={images.src} alt={images.imageDescription} className="w-full object-cover rounded-md mt-[50px]" />
+      {status != '' ? <Badge className={`absolute bg-red-500 rounded-[2px] py-[3px] px-[8px] text-[14px] font-[400]   top-2 left-2 ]`}>{status}</Badge> : undefined}
+      <div className={`mt-[85px] flex justify-between items-center ${featrues ? "mt-[17px]" : " "}`}>
         <div>
-          <div className={`text-base font-semibold leading-6 ${isHovered ? 'text-[#00B207]' : ''}`}>{name}</div>
-          <div className="text-grays-gray900 text-xl font-semibold">
+          <div className={`text-base font-[400] text-[16px] leading-6 text-[#2B572E] ${featrues ? "text-[14px]" : " "} ${isHovered ? 'text-[#00B207]' : ''}`}>{name}</div>
+          <div className={`text-grays-gray900 text-[18px] font-[500] ${featrues ? "text-[16px]" : " "}`}>
             ${discountPrice}
-            &nbsp;&nbsp; $<span className="line-through">{originalPrice}</span>
+            &nbsp;&nbsp;<span className="line-through text-[16px] font-[400] text-[#7A997C]">${originalPrice}</span>
           </div>
           <div className="flex items-center">
             {Array(5)
@@ -42,9 +41,8 @@ const ProductCard = (props) => {
           </div>
         </div>
         <div
-          className={`p-3 rounded-full w-[40px] h-[40px] flex justify-center items-center ${
-            isHovered ? 'bg-[#00B207]' : 'bg-grays-gray0.5'
-          }`}
+          className={`p-3 rounded-full w-[40px] h-[40px] flex justify-center items-center ${isHovered ? 'bg-[#00B207]' : 'bg-grays-gray0.5'
+            }`}
         >
           <img
             src={`/assets/icons/${isHovered ? 'bag-white' : 'bag'}.svg`}
