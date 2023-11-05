@@ -5,7 +5,9 @@ const BlogPopularTag = ({ data, setFilterData }) => {
   const arr = []
   const obj = {}
   data.forEach((data) => {
-    arr.push(data.tags.join())
+    data.tags.forEach((tag) => {
+      arr.push(tag)
+    })
   })
 
   for (let i = 0; i < arr.length; i++) {
@@ -15,8 +17,9 @@ const BlogPopularTag = ({ data, setFilterData }) => {
       obj[arr[i]] = 1
     }
   }
+  const Tags = Object.keys(obj)
   console.log(arr)
-  console.log(obj)
+  console.log(Tags)
 
   return (
     <div>
@@ -24,15 +27,18 @@ const BlogPopularTag = ({ data, setFilterData }) => {
       <div className="flex flex-wrap gap-[8px] ">
         <Button className=" bg-gray-50  rounded-[30px] px-[16px] py-2 text-gray-900 "> Healthy</Button>
         <Button className="rounded-[30px] px-[16px] py-2   "> Meat</Button>
-        <Button className=" bg-gray-50  rounded-[30px] px-[16px] py-2 text-gray-900"> Healthy</Button>
-        <Button className=" bg-gray-50  rounded-[30px] px-[16px] py-2 text-gray-900"> Meat</Button>
-        <Button className=" bg-gray-50  rounded-[30px] px-[16px] py-2 text-gray-900"> Healthy</Button>
-        <Button className=" bg-gray-50  rounded-[30px] px-[16px] py-2 text-gray-900"> Meat</Button>
-        <Button className=" bg-gray-50  rounded-[30px] px-[16px] py-2 text-gray-900"> Healthy</Button>
-        <Button className=" bg-gray-50  rounded-[30px] px-[16px] py-2 text-gray-900"> Meat</Button>
-        <Button className=" bg-gray-50  rounded-[30px] px-[16px] py-2 text-gray-900"> Healthy</Button>
-        <Button className=" bg-gray-50  rounded-[30px] px-[16px] py-2 text-gray-900"> Meat</Button>
-        <Button className=" bg-gray-50  rounded-[30px] px-[16px] py-2 text-gray-900"> Healthy</Button>
+
+        {Tags.map((tag, idx) => {
+          return (
+            <Button
+              key={idx}
+              value={tag}
+              className=" bg-gray-50  rounded-[30px] px-[16px] py-2 text-gray-900 hover:text-white "
+            >
+              {tag}
+            </Button>
+          )
+        })}
       </div>
     </div>
   )

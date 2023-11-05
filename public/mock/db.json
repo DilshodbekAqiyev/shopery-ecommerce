@@ -189,7 +189,7 @@
       "category": "Cooking",
       "readingTime": 4,
       "content": "<p>lorem ipsum</p>",
-      "tags": ["healthy", "Dinner", "Meat"],
+      "tags": ["Healthy", "Dinner", "Meat"],
       "comments": [
         {
           "fullName": "John Doe",
