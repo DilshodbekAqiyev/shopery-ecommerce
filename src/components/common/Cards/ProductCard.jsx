@@ -18,20 +18,19 @@ const ProductCard = (props) => {
 
   return (
     <div
-      className={`w-[312px] bg-white mt-[24px] shadow-lg rounded-[8px] p-4 relative cursor-pointer transition-transform border-[3px] border-solid border-branding-[#2C742F] hover:shadow-[#00B207] hover:shadow-md ${
-        isHovered ? 'hover:scale-105' : ''
-      }`}
+      className={`w-[330px] h-[428px] bg-white shadow-lg  p-4 relative cursor-pointer transition-transform border-[2px] border-solid border-branding-[#2C742F] hover:shadow-[#00B207] hover:shadow-md ${isHovered ? "border-[#2C742F]" : ''
+        }`}
       onMouseEnter={handleHover}
       onMouseLeave={handleMouseLeave}
     >
-      <img src={images.src} alt={images.imageDescription} className="w-full object-cover rounded-md" />
+      <img src={images.src} alt={images.imageDescription} className="w-full object-cover rounded-md mt-[50px]" />
       {status != '' ? <Badge className={`absolute top-2 left-2 bg-[${statusColor}]`}>{status}</Badge> : undefined}
-      <div className="mt-4 flex justify-between items-center">
+      <div className="mt-[85px] flex justify-between items-center">
         <div>
-          <div className={`text-base font-semibold leading-6 ${isHovered ? 'text-[#00B207]' : ''}`}>{name}</div>
-          <div className="text-grays-gray900 text-xl font-semibold">
+          <div className={`text-base font-[400] text-[16px] leading-6 text-[#2B572E] ${isHovered ? 'text-[#00B207]' : ''}`}>{name}</div>
+          <div className="text-grays-gray900 text-[18px] font-[500]">
             ${discountPrice}
-            &nbsp;&nbsp; $<span className="line-through">{originalPrice}</span>
+            &nbsp;&nbsp;<span className="line-through text-[16px] font-[400] text-[#7A997C]">${originalPrice}</span>
           </div>
           <div className="flex items-center">
             {Array(5)
@@ -42,9 +41,8 @@ const ProductCard = (props) => {
           </div>
         </div>
         <div
-          className={`p-3 rounded-full w-[40px] h-[40px] flex justify-center items-center ${
-            isHovered ? 'bg-[#00B207]' : 'bg-grays-gray0.5'
-          }`}
+          className={`p-3 rounded-full w-[40px] h-[40px] flex justify-center items-center ${isHovered ? 'bg-[#00B207]' : 'bg-grays-gray0.5'
+            }`}
         >
           <img
             src={`/assets/icons/${isHovered ? 'bag-white' : 'bag'}.svg`}
