@@ -1,9 +1,10 @@
+import { CiLocationOn } from 'react-icons/ci'
+
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../../ui/select'
 
 import { useTranslation } from 'react-i18next'
 import { translationKeys } from '../../../utils/translation/translationKeys'
 
-import LocationIcon from '../../../../public/assets/icons/navbar-icons/LocationIcon'
 import { Link } from 'react-router-dom'
 
 const Navbar = () => {
@@ -18,7 +19,7 @@ const Navbar = () => {
       <div className="flex items-center justify-between container py-3 text-gray-600 text-xs font-normal">
         <div>
           <a href="#1" className="cursor-pointer hover:text-primary flex items-center gap-2">
-            <LocationIcon />
+            <CiLocationOn size={24} />
             <p>{t(translationKeys['Store Location: Lincoln- 344, Illinois, Chicago, USA'])}</p>
           </a>
         </div>

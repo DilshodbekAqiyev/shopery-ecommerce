@@ -19,7 +19,6 @@ const Blog = () => {
         <BlogTopCategories />
         <div className="line w-[100%] h-[1px] bg-gray-200 my-[20px]"></div>
         <BlogPopularTag />
-
         <div className="line w-[100%] h-[1px] bg-gray-200 my-[20px]"></div>
         <BlogOurGallery />
         <div className="line w-[100%] h-[1px] bg-gray-200 my-[20px]"></div>
