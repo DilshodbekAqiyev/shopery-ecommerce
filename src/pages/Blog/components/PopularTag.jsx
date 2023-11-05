@@ -1,9 +1,48 @@
 import PropTypes from 'prop-types'
 import { Button } from '../../../components/ui/button'
+import { useEffect, useState } from 'react'
 
 const BlogPopularTag = ({ data, setFilterData }) => {
+  const [clicked, setClicked] = useState([])
+
+  const change = () => {
+    let newFilterData = []
+    if (clicked == '') {
+      setFilterData([...data])
+    } else {
+      clicked.forEach((tags) => {
+        data.forEach((i) => {
+          if (i.tags.includes(tags)) {
+            newFilterData.push(i)
+          }
+        })
+      })
+
+      setFilterData([...newFilterData])
+    }
+  }
+
+  useEffect(() => {
+    change()
+  }, [clicked])
+
+  const onClickButton = (val) => {
+    if (clicked.indexOf(val) == -1) {
+      setClicked([...clicked, val])
+    } else {
+      const newBtn = []
+      clicked.forEach((tag) => {
+        if (tag !== val) {
+          newBtn.push(tag)
+        }
+      })
+      setClicked(newBtn)
+    }
+  }
+
   const arr = []
   const obj = {}
+
   data.forEach((data) => {
     data.tags.forEach((tag) => {
       arr.push(tag)
@@ -18,22 +57,26 @@ const BlogPopularTag = ({ data, setFilterData }) => {
     }
   }
   const Tags = Object.keys(obj)
+
   console.log(arr)
   console.log(Tags)
 
+  console.log(clicked, 'dd')
   return (
     <div>
       <h3 className="mb-[16px] mt-[20px] font-bold">Popular tag</h3>
       <div className="flex flex-wrap gap-[8px] ">
-        <Button className=" bg-gray-50  rounded-[30px] px-[16px] py-2 text-gray-900 "> Healthy</Button>
-        <Button className="rounded-[30px] px-[16px] py-2   "> Meat</Button>
-
         {Tags.map((tag, idx) => {
           return (
             <Button
               key={idx}
               value={tag}
-              className=" bg-gray-50  rounded-[30px] px-[16px] py-2 text-gray-900 hover:text-white "
+              onClick={() => onClickButton(tag)}
+              className={
+                clicked.includes(tag)
+                  ? `rounded-[30px] px-[16px] py-2  `
+                  : ` bg-gray-50  rounded-[30px] px-[16px] py-2 text-gray-900 hover:text-white`
+              }
             >
               {tag}
             </Button>
