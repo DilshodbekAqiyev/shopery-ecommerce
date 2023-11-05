@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 const BlogTopCategories = ({ filterData }) => {
   const arr = []
   const obj = {}
-  console.log(filterData)
+
   filterData.forEach((data) => {
     arr.push(data.category)
   })
