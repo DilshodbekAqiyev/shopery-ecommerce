@@ -35,12 +35,8 @@ const BlogCard = () => {
         </h4>
         <a href="#2" className="flex gap-[12px] text-primary text-[16px] font-[600]">
           <span>Read More </span>
-<<<<<<< HEAD:src/pages/Blog/BlogCard.jsx
-          <img src={'/assets/icons/ArrowRight.svg'} alt="img" />
-=======
 
           <img src="assets/icons/ArrowRight.svg" alt="img" />
->>>>>>> 00ad200de3a27e3c79f8e6c77a4095bf4164ebc7:src/pages/Blog/components/BlogCard.jsx
         </a>
       </div>
     </div>

@@ -1,7 +1,7 @@
 import { AccordionContent, AccordionItem, AccordionTrigger } from '../../components/ui/accordion'
 import { SelectGroup, SelectLabel } from '../../components/ui/select'
-import { AllRating } from './__mock__'
 import { Checkbox } from '../../components/ui/checkbox'
+import { AllRating } from './__mock__'
 
 function Rating() {
   return (
