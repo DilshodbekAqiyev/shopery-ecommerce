@@ -1,0 +1,33 @@
+<svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="20" height="21" fill="#E6E6E6"/>
+<g id="17_Blog_List" clip-path="url(#clip0_460_39913)">
+<rect width="1920" height="3676" transform="translate(-847 -772)" fill="white"/>
+<g id="Blog">
+<g id="Blog_2">
+<g id="Blog Card">
+<g id="Info">
+<path d="M-99 -24.5H-99.5V-24V138C-99.5 142.694 -95.6944 146.5 -91 146.5H317C321.694 146.5 325.5 142.694 325.5 138V-24V-24.5H325H-99Z" fill="white"/>
+<g id="Info_2">
+<g id="Info_3">
+<g id="Admin">
+<g id="user_3 1">
+<g id="Group">
+<path id="Vector" d="M9.9999 9.66667C11.8408 9.66667 13.3332 8.17428 13.3332 6.33333C13.3332 4.49238 11.8408 3 9.9999 3C8.15895 3 6.66656 4.49238 6.66656 6.33333C6.66656 8.17428 8.15895 9.66667 9.9999 9.66667Z" stroke="#B3B3B3" stroke-width="1.2"/>
+<path id="Vector_2" d="M12.4999 12.167H7.49995C5.19828 12.167 3.13745 14.292 4.65161 16.0245C5.68161 17.2028 7.38495 18.0003 9.99995 18.0003C12.6149 18.0003 14.3174 17.2028 15.3474 16.0245C16.8624 14.2912 14.8008 12.167 12.4999 12.167Z" stroke="#B3B3B3" stroke-width="1.2"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<path d="M-99 -24.5H-99.5V-24V138C-99.5 142.694 -95.6944 146.5 -91 146.5H317C321.694 146.5 325.5 142.694 325.5 138V-24V-24.5H325H-99Z" stroke="#E6E6E6"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_460_39913">
+<rect width="1920" height="3676" fill="white" transform="translate(-847 -772)"/>
+</clipPath>
+</defs>
+</svg>
