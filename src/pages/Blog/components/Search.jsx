@@ -1,4 +1,4 @@
-import FilterSearchIcon from '../../../public/assets/icons/blog-icons/filter-search-icon'
+import FilterSearchIcon from '../../../../public/assets/icons/blog-icons/filter-search-icon'
 
 const BlogSearch = () => {
   return (

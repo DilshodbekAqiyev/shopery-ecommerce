@@ -1,10 +1,10 @@
-import BlogCard from './BlogCard'
-import BlogSearch from './Search'
-import BlogFilterButton from './FilterButton'
-import BlogTopCategories from './TopCategories'
-import BlogPopularTag from './PopularTag'
-import BlogOurGallery from './OurGallery'
-import BlogRecentlyAdded from './RecentlyAdded'
+import BlogCard from './components/BlogCard'
+import BlogSearch from './components/Search'
+import BlogFilterButton from './components/FilterButton'
+import BlogTopCategories from './components/TopCategories'
+import BlogPopularTag from './components/PopularTag'
+import BlogOurGallery from './components/OurGallery'
+import BlogRecentlyAdded from './components/RecentlyAdded'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../../components/ui/select'
 
 // const cardData = [];

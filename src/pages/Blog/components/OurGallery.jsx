@@ -1,4 +1,4 @@
-import img from '../../../public/assets/images/fruits.jpg'
+import img from '../../../../public/assets/images/fruits.jpg'
 
 const BlogOurGallery = () => {
   return (

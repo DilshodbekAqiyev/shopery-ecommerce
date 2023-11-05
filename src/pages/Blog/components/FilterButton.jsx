@@ -1,5 +1,6 @@
-import { Button } from '../../components/ui/button'
-import BlogFilterIcon from '/public/assets/icons/blog-icons/filter-icon'
+import { Button } from '../../../components/ui/button'
+
+import BlogFilterIcon from '../../../../public/assets/icons/blog-icons/filter-icon'
 
 const BlogFilterButton = () => {
   return (
