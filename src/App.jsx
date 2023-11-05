@@ -12,7 +12,7 @@ import Blog from './pages/Blog/Blog'
 import ProductDetails from './pages/ProductDetails/ProductDetails'
 import Signup from './pages/Auth/Signup'
 import Signin from './pages/Auth/Signin'
-import PageNotFound from './components/common/PageNotFound'
+import PageNotFound from './pages/PageNotFound'
 
 // Layouts
 import RootLayout from './components/layouts/RootLayout'
