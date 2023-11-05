@@ -6,17 +6,17 @@ import SliderComponent from './SliderComponent'
 import Rating from './Rating'
 import TopComponent from './TopComponent'
 import ProductCard from '../../components/common/Cards/ProductCard'
+import { instance } from '../../utils/apiRequest'
 
 function Shop() {
   const [data, setData] = useState([])
 
   const getData = async () => {
-    fetch('http://localhost:3000/products')
-      .then((response) => response.json())
-      .then((data) => setData(data))
-      .catch((err) => console.log(err))
+    const data = await instance.get('products')
+    setData(data.data)
   }
 
+  console.log(data)
   useEffect(() => {
     getData()
   }, [])
