@@ -32,6 +32,7 @@ const imgGallareys = [
     src: '/assets/images/fruits.jpg',
   },
 ]
+
 const BlogOurGallery = () => {
   return (
     <div>
