@@ -6,7 +6,7 @@ const ProductCard = (props) => {
   const [isHovered, setIsHovered] = useState(false)
 
   // eslint-disable-next-line react/prop-types
-  const { name, originalPrice, discountPrice, images, rating, status, statusColor } = props
+  const { name, originalPrice, discountPrice, images, rating, status, statusColor, featrues } = props
 
   const handleHover = () => {
     setIsHovered((prev) => !prev)
@@ -19,16 +19,16 @@ const ProductCard = (props) => {
   return (
     <div
       className={`w-[330px] h-[428px] bg-white shadow-lg  p-4 relative cursor-pointer transition-transform border-[2px] border-solid border-branding-[#2C742F] hover:shadow-[#00B207] hover:shadow-md ${isHovered ? "border-[#2C742F]" : ''
-        }`}
+        } ${featrues ? 'border border-[#E6E6E6] w-1/5 h-auto' : ''}`}
       onMouseEnter={handleHover}
       onMouseLeave={handleMouseLeave}
     >
       <img src={images.src} alt={images.imageDescription} className="w-full object-cover rounded-md mt-[50px]" />
       {status != '' ? <Badge className={`absolute bg-red-500 rounded-[2px] py-[3px] px-[8px] text-[14px] font-[400]   top-2 left-2 ]`}>{status}</Badge> : undefined}
-      <div className="mt-[85px] flex justify-between items-center">
+      <div className={`mt-[85px] flex justify-between items-center ${featrues ? "mt-[17px]" : " "}`}>
         <div>
-          <div className={`text-base font-[400] text-[16px] leading-6 text-[#2B572E] ${isHovered ? 'text-[#00B207]' : ''}`}>{name}</div>
-          <div className="text-grays-gray900 text-[18px] font-[500]">
+          <div className={`text-base font-[400] text-[16px] leading-6 text-[#2B572E] ${featrues ? "text-[14px]" : " "} ${isHovered ? 'text-[#00B207]' : ''}`}>{name}</div>
+          <div className={`text-grays-gray900 text-[18px] font-[500] ${featrues ? "text-[16px]" : " "}`}>
             ${discountPrice}
             &nbsp;&nbsp;<span className="line-through text-[16px] font-[400] text-[#7A997C]">${originalPrice}</span>
           </div>
