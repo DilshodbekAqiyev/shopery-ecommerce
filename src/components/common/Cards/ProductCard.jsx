@@ -24,7 +24,7 @@ const ProductCard = (props) => {
       onMouseLeave={handleMouseLeave}
     >
       <img src={images.src} alt={images.imageDescription} className="w-full object-cover rounded-md mt-[50px]" />
-      {status != '' ? <Badge className={`absolute top-2 left-2 bg-[${statusColor}]`}>{status}</Badge> : undefined}
+      {status != '' ? <Badge className={`absolute bg-red-500 rounded-[2px] py-[3px] px-[8px] text-[14px] font-[400]   top-2 left-2 ]`}>{status}</Badge> : undefined}
       <div className="mt-[85px] flex justify-between items-center">
         <div>
           <div className={`text-base font-[400] text-[16px] leading-6 text-[#2B572E] ${isHovered ? 'text-[#00B207]' : ''}`}>{name}</div>
