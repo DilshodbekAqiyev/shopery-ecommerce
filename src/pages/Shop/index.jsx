@@ -16,7 +16,6 @@ function Shop() {
     setData(data.data)
   }
 
-  console.log(data)
   useEffect(() => {
     getData()
   }, [])
