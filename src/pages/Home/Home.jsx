@@ -49,7 +49,7 @@ const Home = () => {
             )
           })}
         </div>
-        <div className="container border">
+        <div className="border px-[146px]">
           <div className="flex">
             {Array.from(Array(4)).map((_, idx) => {
               return <ProductCard key={idx} {...data} />
@@ -65,8 +65,10 @@ const Home = () => {
       <div className="container border">
         <FeaturedProducts dataFeatures={dataFeatures} />
       </div>
-      <div style={{ marginLeft: '500px' }}>
+      <div className="flex overflow-hidden item-center justify-between">
+        <img className="w-[521px] h-[308px]" src="/assets/images/special/special_left.png" alt="" />
         <Timer />
+        <img className="w-[704px] h-[495px]" src="/assets/images/special/special_right.png" alt="" />
       </div>
     </div>
   )

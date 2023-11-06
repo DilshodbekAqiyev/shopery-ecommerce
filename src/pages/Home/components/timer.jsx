@@ -32,34 +32,26 @@ function Timer() {
 
   return (
     <div className="box   w-1/3 p-10">
-      <div
-        className="time"
-        style={{
-          borderRadius: '20px',
-          background: 'rgba(59, 59, 59, 0.50)',
-          backdropFilter: 'blur(5px)',
-          width: '295px',
-          padding: '30px',
-
-          display: 'flex',
-          justifyContent: 'space-between',
-        }}
-      >
-        <h1 className="time" style={{ fontSize: '38px', fontWeight: '700' }}>
-          {count1}
-        </h1>
-        <h1 className="time" style={{ fontSize: '38px', fontWeight: '700' }}>
-          :
-        </h1>
-        <h1 className="time" style={{ fontSize: '38px', fontWeight: '700' }}>
-          {count2}
-        </h1>
-        <h1 className="time" style={{ fontSize: '38px', fontWeight: '700' }}>
-          :
-        </h1>
-        <h1 className="time" style={{ fontSize: '38px', fontWeight: '700' }}>
-          {count3 == 'NaN' ? '' : count3}
-        </h1>
+      <div className="flex item-center justify-between w-[447px]">
+        <div className=" px-2 py-5 bg-white">
+          <h1 className=' text-center'>00</h1>
+          <p>days</p>
+        </div>
+        <h1>:</h1>
+        <div className=" px-2 py-5 bg-white">
+          <h1>{count1}</h1>
+          <p>hours</p>
+        </div>
+        <h1>:</h1>
+        <div className=" px-2 py-5 bg-white">
+          <h1>{count2}</h1>
+          <p>mins</p>
+        </div>
+        <h1>:</h1>
+        <div className=" px-2 py-5 bg-white">
+          <h1>{count3 == 'NaN' ? '' : count3}</h1>
+          <p>secs</p>
+        </div>
       </div>
     </div>
   )
