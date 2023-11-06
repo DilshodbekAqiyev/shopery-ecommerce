@@ -11,6 +11,7 @@ const BlogTopCategories = ({ data, setFilterData }) => {
       const newData = data.filter((d) => d.category == currentCategory)
       setFilterData([...newData])
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentCategory])
 
   const arrForData = []
@@ -43,7 +44,7 @@ const BlogTopCategories = ({ data, setFilterData }) => {
                 setCurrentCategory(category[0])
               }}
               className={`flex justify-between item-center pb-[10px ] py-[3px] rounded cursor-pointer hover:text-primary ${
-                category[0] == currentCategory ? 'text-primary bg-secondary ' : ''
+                category[0] == currentCategory ? 'text-primary bg-secondary font-[500]' : ''
               }`}
             >
               <p>{category[0]}</p>
