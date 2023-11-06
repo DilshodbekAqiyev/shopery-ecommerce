@@ -1,32 +1,50 @@
 import PropTypes from 'prop-types'
 
-const BlogTopCategories = ({ filterData }) => {
-  const arr = []
-  const obj = {}
+const BlogTopCategories = ({ filterData, data }) => {
+  const arrForFilter = []
+  const objForFilter = {}
 
-  filterData.forEach((data) => {
-    arr.push(data.category)
+  const arrForData = []
+  const objForData = {}
+
+  // filter-----------------------------------------------
+
+  filterData.forEach((d) => {
+    arrForFilter.push(d.category)
   })
 
-  for (let i = 0; i < arr.length; i++) {
-    if (obj[arr[i]]) {
-      obj[arr[i]] = obj[arr[i]] + 1
+  for (let i = 0; i < arrForFilter.length; i++) {
+    if (objForFilter[arrForFilter[i]]) {
+      objForFilter[arrForFilter[i]] = objForFilter[arrForFilter[i]] + 1
     } else {
-      obj[arr[i]] = 1
+      objForFilter[arrForFilter[i]] = 1
     }
   }
 
-  const categorys = Object.entries(obj)
+  // data ------------------------------------------------
+  data.forEach((data) => {
+    arrForData.push(data.category)
+  })
 
+  for (let i = 0; i < arrForData.length; i++) {
+    if (objForData[arrForData[i]]) {
+      objForData[arrForData[i]] = objForData[arrForData[i]] + 1
+    } else {
+      objForData[arrForData[i]] = 1
+    }
+  }
+  const dataKey = Object.keys(objForData)
+
+  // ---------------------------------------------------
   return (
     <div>
       <h3 className="mb-[20px] font-bold">Top Categories</h3>
       <ul className="flex flex-col gap-4">
-        {categorys.map((category, idx) => {
+        {dataKey.map((category, idx) => {
           return (
             <li key={idx} className="flex justify-between item-center pb-[16px ]">
-              <p>{category[0]}</p>
-              <p>({category[1]})</p>
+              <p>{category}</p>
+              <p>({objForFilter[category] ? objForFilter[category] : 0})</p>
             </li>
           )
         })}
@@ -39,4 +57,5 @@ export default BlogTopCategories
 
 BlogTopCategories.propTypes = {
   filterData: PropTypes.array,
+  data: PropTypes.array,
 }

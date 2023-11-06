@@ -16,7 +16,7 @@ const Blog = ({ data, filterData, setFilterData }) => {
         <BlogFilterButton data={data} setFilterData={setFilterData} />
         <BlogSearch filterData={filterData} setFilterData={setFilterData} />
         <Line />
-        <BlogTopCategories filterData={filterData} />
+        <BlogTopCategories filterData={filterData} data={data} />
         <Line />
         <BlogPopularTag data={data} setFilterData={setFilterData} />
         <Line />
