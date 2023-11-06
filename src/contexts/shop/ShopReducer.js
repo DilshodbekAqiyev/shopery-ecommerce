@@ -10,6 +10,8 @@ const shopReducer = (state, action) => {
       return { ...state, ratingFilter: action.payload }
     case 'SET_TAG_FILTER':
       return { ...state, tagFilter: action.payload }
+    case 'SET_FILTERED_DATA':
+      return { ...state, filteredProducts: action.payload }
     default:
       return state
   }

@@ -6,12 +6,16 @@ import { AccordionContent, AccordionItem, AccordionTrigger } from '../../../comp
 import { Slider } from '../../../components/ui/slider'
 
 function SliderComponent() {
-  const [values, setValues] = useState([0, 1000])
+  const [sliderValues, setSliderValues] = useState({
+    min: 0,
+    max: 0,
+  })
+  const [range, setRange] = useState([sliderValues?.min, sliderValues?.max])
   const { state, dispatch } = useShopContext()
 
   const onRangeChange = (newRange) => {
     dispatch({ type: 'SET_PRICE_FILTER', payload: newRange })
-    setValues(newRange)
+    setRange(newRange)
   }
 
   return (
@@ -19,14 +23,14 @@ function SliderComponent() {
       <AccordionTrigger className="hover:no-underline">Price</AccordionTrigger>
       <AccordionContent>
         <Slider
-          defaultValue={state.priceFilter}
-          range="true"
-          max={1000}
+          className="my-4"
+          defaultValue={[sliderValues.min, sliderValues.max]}
+          max={sliderValues?.max}
           min={0}
           step={1}
-          values={values}
+          values={range}
           onValueChange={onRangeChange}
-          className="my-4"
+          formatLabel={(value) => `${value} `}
         />
       </AccordionContent>
     </AccordionItem>

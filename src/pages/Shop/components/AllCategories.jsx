@@ -1,16 +1,14 @@
-import { useShopContext } from '../../../contexts/shop/ShopContext'
+import PropTypes from 'prop-types'
 
 import { AccordionContent, AccordionItem, AccordionTrigger } from '../../../components/ui/accordion'
-import { RadioGroup, RadioGroupItem } from '../../../components/ui/radio-group'
+import { RadioGroup } from '../../../components/ui/radio-group'
 import { Label } from '../../../components/ui/label'
 
 import { AllCategoriesData } from '../__mock__'
 
-function AllCategories() {
-  const { state, dispatch } = useShopContext()
-
+function AllCategories({ filterProducts }) {
   const handleCategoryChange = (selectedCategory) => {
-    dispatch({ type: 'SET_CATEGORY_FILTER', payload: selectedCategory })
+    filterProducts(selectedCategory)
   }
 
   return (
@@ -20,10 +18,12 @@ function AllCategories() {
         <RadioGroup defaultValue="option-1" className="flex flex-col gap-3">
           {AllCategoriesData.map(({ id, title, size }) => (
             <div className="flex items-center space-x-2" key={id}>
-              <RadioGroupItem
+              <input
+                type="radio"
+                className="w-5 h-5"
                 value={`option-${id}`}
                 id={`option-${id}`}
-                checked={state.categoryFilter === title}
+                name="category"
                 onChange={() => handleCategoryChange(title)}
               />
               <Label htmlFor={`option-${id}`} className="text-grays-gray900 text-textSmall cursor-pointer">
@@ -39,3 +39,7 @@ function AllCategories() {
 }
 
 export default AllCategories
+
+AllCategories.propTypes = {
+  filterProducts: PropTypes.func,
+}
