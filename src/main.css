@@ -77,4 +77,9 @@
     @apply bg-background text-foreground;
     font-family: 'Poppins', sans-serif;
   }
+
+  ::selection {
+    color: #fff;
+    background: #00b207;
+  }
 }

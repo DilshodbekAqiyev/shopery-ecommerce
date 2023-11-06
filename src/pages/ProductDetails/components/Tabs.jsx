@@ -136,7 +136,7 @@ function TabBar() {
           })}
         </div>
         <Button
-          className="mt-5 bg-[#EFF7EF] hover:bg-primary hover:text-white transition-all"
+          className="mt-5 bg-[#EFF7EF] hover:bg-primary hover:text-white transition-all ease-in-out duration-500 active:scale-95"
           variant="ghost"
           size="md"
         >
