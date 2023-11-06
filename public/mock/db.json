@@ -183,7 +183,7 @@
     {
       "id": 1,
       "title": "Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.",
-      "previewImage": "/assets/images/fruits.jpg",
+      "previewImage": "/assets/images/blog/img1.svg",
       "author": "kimdir@gmail.com",
       "createdDate": 132443534534,
       "category": "Cooking",
@@ -201,7 +201,7 @@
     {
       "id": 2,
       "title": "Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.",
-      "previewImage": "/assets/images/fruits.jpg",
+      "previewImage": "/assets/images/blog/img2.svg",
       "author": "nimadir@gmail.com",
       "createdDate": 132443534534,
       "category": "Beverages",
@@ -219,7 +219,7 @@
     {
       "id": 3,
       "title": "Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.",
-      "previewImage": "/assets/images/fruits.jpg",
+      "previewImage": "/assets/images/blog/img3.svg",
       "author": "nimadir@gmail.com",
       "createdDate": 122223534534,
       "category": "Vegetables",
@@ -237,7 +237,7 @@
     {
       "id": 4,
       "title": "Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.",
-      "previewImage": "/assets/images/fruits.jpg",
+      "previewImage": "/assets/images/blog/img4.svg",
       "author": "nimadir@gmail.com",
       "createdDate": 125523534534,
       "category": "Bread & Bakery",
@@ -255,7 +255,7 @@
     {
       "id": 5,
       "title": "Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.",
-      "previewImage": "/assets/images/fruits.jpg",
+      "previewImage": "/assets/images/blog/img5.svg",
       "author": "nimadir@gmail.com",
       "createdDate": 125523534534,
       "category": "Beauty & Health",
@@ -273,7 +273,7 @@
     {
       "id": 6,
       "title": "Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.",
-      "previewImage": "/assets/images/fruits.jpg",
+      "previewImage": "/assets/images/blog/img6.svg",
       "author": "nimadir@gmail.com",
       "createdDate": 125523534534,
       "category": "Fresh Fruit",
@@ -291,7 +291,7 @@
     {
       "id": 7,
       "title": "Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.",
-      "previewImage": "/assets/images/fruits.jpg",
+      "previewImage": "/assets/images/blog/img7.svg",
       "author": "nimadir@gmail.com",
       "createdDate": 125523534534,
       "category": "Vegetables",
@@ -309,7 +309,7 @@
     {
       "id": 8,
       "title": "Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.",
-      "previewImage": "/assets/images/fruits.jpg",
+      "previewImage": "/assets/images/blog/img8.svg",
       "author": "nimadir@gmail.com",
       "createdDate": 125523534534,
       "category": "Fresh Fruit",
@@ -327,7 +327,7 @@
     {
       "id": 9,
       "title": "Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.",
-      "previewImage": "/assets/images/fruits.jpg",
+      "previewImage": "/assets/images/blog/img9.svg",
       "author": "nimadir@gmail.com",
       "createdDate": 125523534534,
       "category": "Fresh Fruit",
@@ -345,7 +345,7 @@
     {
       "id": 10,
       "title": "Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.",
-      "previewImage": "/assets/images/fruits.jpg",
+      "previewImage": "/assets/images/blog/img10.svg",
       "author": "nimadir@gmail.com",
       "createdDate": 125523534534,
       "category": "Vegetables",

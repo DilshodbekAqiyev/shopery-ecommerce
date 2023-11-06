@@ -77,8 +77,8 @@ const BlogPopularTag = ({ data, setFilterData, filterData }) => {
               onClick={() => onClickButton(tag)}
               className={
                 clicked.includes(tag)
-                  ? `rounded-[30px] px-[16px] py-2  `
-                  : ` bg-gray-50  rounded-[30px] px-[16px] py-2 text-gray-900 hover:text-white`
+                  ? `rounded-[30px] px-[16px] py-2 font-[450] cursor-pointer `
+                  : ` bg-gray-50  rounded-[30px] px-[16px] py-2 text-gray-900 hover:text-white font-[450] cursor-pointer`
               }
             >
               {tag}

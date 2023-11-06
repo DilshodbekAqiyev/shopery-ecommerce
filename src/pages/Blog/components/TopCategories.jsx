@@ -41,10 +41,10 @@ const BlogTopCategories = ({ data, setFilterData }) => {
             <li
               key={idx}
               onClick={() => {
-                setCurrentCategory(category[0])
+                setCurrentCategory(currentCategory == category[0] ? '' : category[0])
               }}
-              className={`flex justify-between item-center pb-[10px ] py-[3px] rounded cursor-pointer hover:text-primary ${
-                category[0] == currentCategory ? 'text-primary bg-secondary font-[500]' : ''
+              className={`flex justify-between item-center pb-[10px ] py-[3px] rounded cursor-pointer font-[450] hover:text-primary ${
+                category[0] == currentCategory ? 'text-primary bg-secondary ' : ''
               }`}
             >
               <p>{category[0]}</p>
