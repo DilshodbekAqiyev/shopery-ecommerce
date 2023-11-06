@@ -1,25 +1,20 @@
 import PropTypes from 'prop-types'
+import { useEffect, useState } from 'react'
 
-const BlogTopCategories = ({ filterData, data }) => {
-  const arrForFilter = []
-  const objForFilter = {}
+const BlogTopCategories = ({ data, setFilterData }) => {
+  const [currentCategory, setCurrentCategory] = useState('')
+
+  useEffect(() => {
+    if (currentCategory == '') {
+      setFilterData([...data])
+    } else {
+      const newData = data.filter((d) => d.category == currentCategory)
+      setFilterData([...newData])
+    }
+  }, [currentCategory])
 
   const arrForData = []
   const objForData = {}
-
-  // filter-----------------------------------------------
-
-  filterData.forEach((d) => {
-    arrForFilter.push(d.category)
-  })
-
-  for (let i = 0; i < arrForFilter.length; i++) {
-    if (objForFilter[arrForFilter[i]]) {
-      objForFilter[arrForFilter[i]] = objForFilter[arrForFilter[i]] + 1
-    } else {
-      objForFilter[arrForFilter[i]] = 1
-    }
-  }
 
   // data ------------------------------------------------
   data.forEach((data) => {
@@ -33,7 +28,7 @@ const BlogTopCategories = ({ filterData, data }) => {
       objForData[arrForData[i]] = 1
     }
   }
-  const dataKey = Object.keys(objForData)
+  const dataKey = Object.entries(objForData)
 
   // ---------------------------------------------------
   return (
@@ -42,9 +37,17 @@ const BlogTopCategories = ({ filterData, data }) => {
       <ul className="flex flex-col gap-4">
         {dataKey.map((category, idx) => {
           return (
-            <li key={idx} className="flex justify-between item-center pb-[16px ]">
-              <p>{category}</p>
-              <p>({objForFilter[category] ? objForFilter[category] : 0})</p>
+            <li
+              key={idx}
+              onClick={() => {
+                setCurrentCategory(category[0])
+              }}
+              className={`flex justify-between item-center pb-[10px ] py-[3px] rounded cursor-pointer hover:text-primary ${
+                category[0] == currentCategory ? 'text-primary bg-secondary ' : ''
+              }`}
+            >
+              <p>{category[0]}</p>
+              <p>({category[1]})</p>
             </li>
           )
         })}
@@ -58,4 +61,5 @@ export default BlogTopCategories
 BlogTopCategories.propTypes = {
   filterData: PropTypes.array,
   data: PropTypes.array,
+  setFilterData: PropTypes.any,
 }
