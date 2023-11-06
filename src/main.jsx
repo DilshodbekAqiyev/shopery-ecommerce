@@ -3,7 +3,7 @@ import i18n from './utils/translation/i18n'
 import { I18nextProvider } from 'react-i18next'
 
 import App from './App.jsx'
-import './styles/main.css'
+import './main.css'
 
 const rootEl = document.getElementById('root')
 
