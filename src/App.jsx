@@ -3,7 +3,6 @@ import { createBrowserRouter, RouterProvider, createRoutesFromElements, Route } 
 // Pages
 import Home from './pages/Home/Home'
 import Shop from './pages/Shop'
-import Blog from './pages/Blog/Blog'
 import ProductDetails from './pages/ProductDetails/ProductDetails'
 import Signup from './pages/Auth/Signup'
 import Signin from './pages/Auth/Signin'
@@ -14,6 +13,7 @@ import RootLayout from './components/layouts/RootLayout'
 
 //Contexts
 import ShopProvider from './contexts/shop/ShopContext'
+import Blog from './pages/Blog'
 
 export default function App() {
   const routes = createBrowserRouter(
