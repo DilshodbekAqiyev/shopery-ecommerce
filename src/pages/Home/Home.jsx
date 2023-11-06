@@ -65,7 +65,7 @@ const Home = () => {
       <div className="container border">
         <FeaturedProducts dataFeatures={dataFeatures} />
       </div>
-      <div className="flex overflow-hidden item-center justify-between">
+      <div className="flex overflow-hidden items-center justify-between bg-slate-300 py-20">
         <img className="w-[521px] h-[308px]" src="/assets/images/special/special_left.png" alt="" />
         <Timer />
         <img className="w-[704px] h-[495px]" src="/assets/images/special/special_right.png" alt="" />

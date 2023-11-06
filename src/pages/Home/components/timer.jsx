@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { Button } from '../../../components/ui/button'
 
 function Timer() {
   const [count1, setCount1] = useState(2)
@@ -31,27 +32,32 @@ function Timer() {
   }, [count3])
 
   return (
-    <div className="box   w-1/3 p-10">
-      <div className="flex item-center justify-between w-[447px]">
-        <div className=" px-2 py-5 bg-white">
-          <h1 className=' text-center'>00</h1>
-          <p>days</p>
+    <div className="box">
+      <p className=" text-green-700 text-[16px] text-center">Best Deals</p>
+      <h1 className=" text-[40px] px-4 text-center font-semibold">Our Special Products Deal of the Month</h1>
+      <div className="flex justify-between w-[447px] items-center">
+        <div className=" px-4 py-2 bg-white rounded-[6px]">
+          <h1 className=" text-center text-[32px] text-green-500">00</h1>
+          <p className="text-[14px] text-slate-400">days</p>
         </div>
-        <h1>:</h1>
-        <div className=" px-2 py-5 bg-white">
-          <h1>{count1}</h1>
-          <p>hours</p>
+        <h1 className=" text-[20px]  text-slate-400">:</h1>
+        <div className=" px-4 py-2 bg-white rounded-[6px]">
+          <h1 className=" text-center text-[32px] text-green-500">{count1 < 10 ? '0' + count1 : count1}</h1>
+          <p className="text-[14px] text-slate-400">hours</p>
         </div>
-        <h1>:</h1>
-        <div className=" px-2 py-5 bg-white">
-          <h1>{count2}</h1>
-          <p>mins</p>
+        <h1 className=" text-[20px]  text-slate-400">:</h1>
+        <div className=" px-4 py-2 bg-white rounded-[6px]">
+          <h1 className=" text-center text-[32px] text-green-500">{count2 < 10 ? '0' + count2 : count2}</h1>
+          <p className="text-[14px] text-slate-400">mins</p>
         </div>
-        <h1>:</h1>
-        <div className=" px-2 py-5 bg-white">
-          <h1>{count3 == 'NaN' ? '' : count3}</h1>
-          <p>secs</p>
+        <h1 className=" text-[20px]  text-slate-400">:</h1>
+        <div className=" px-4 py-2 bg-white rounded-[6px]">
+          <h1 className=" text-center text-[32px] text-green-500">{count3 < 10 ? '0' + count3 : count3}</h1>
+          <p className="text-[14px] text-slate-400">secs</p>
         </div>
+      </div>
+      <div className="flex justify-center">
+        <Button className=" text-center my-6">shop now </Button>
       </div>
     </div>
   )
