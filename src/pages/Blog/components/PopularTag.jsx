@@ -58,10 +58,6 @@ const BlogPopularTag = ({ data, setFilterData }) => {
   }
   const Tags = Object.keys(obj)
 
-  console.log(arr)
-  console.log(Tags)
-
-  console.log(clicked, 'dd')
   return (
     <div>
       <h3 className="mb-[16px] mt-[20px] font-bold">Popular tag</h3>

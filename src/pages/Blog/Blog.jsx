@@ -14,7 +14,7 @@ const Blog = ({ data, filterData, setFilterData }) => {
     <div className="blog flex gap-[24px] max-w-[1320px] mx-auto mt-[34px]  mb-[80px]">
       <div className="left max-w-[424px]">
         <BlogFilterButton data={data} setFilterData={setFilterData} />
-        <BlogSearch />
+        <BlogSearch filterData={filterData} setFilterData={setFilterData} />
         <Line />
         <BlogTopCategories filterData={filterData} />
         <Line />
