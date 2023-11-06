@@ -8,8 +8,8 @@ function SendEmail() {
             <p className=" font-medium text-[24px]">Subcribe our Newsletter</p>
             <p className=" font-normal text-sm text-greenGrays-greenGray400">Pellentesque eu nibh eget mauris congue mattis matti.</p>
         </div>
-        <div className=" bg-white rounded-full pl-8 ">
-            <input className=" bg-transparent text-gray-500 w-[320px]" type="text" placeholder="Your email address"/>
+        <div className=" bg-white rounded-full p-0 ">
+            <input className=" outline-none p-4 px-8 bg-transparent text-gray-500 w-[320px]" type="text" placeholder="Your email address"/>
             <Button className=" rounded-full px-[40px] text-base font-medium">
               Subscribe
             </Button>
