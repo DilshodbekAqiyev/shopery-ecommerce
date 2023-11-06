@@ -39,7 +39,7 @@ const Home = () => {
                return <a href="#0"><span className="hover:border-b-2 hover:text-[#00B207] text-[#808080] text-[16px] font-[500] border-[#20B526] py-[8px] px-[12px]">{item}</span> {index < vegetablesData.length - 1 ? <span className="mx-[10px] text-[#B4CCB4] font-[400]">|</span> : ''}</a>
             })}
          </div>
-         <div className="container border">
+         <div className="container">
             <div className="flex">
                {Array.from(Array(4)).map((_) => {
                   return <ProductCard {...data} />
@@ -52,7 +52,7 @@ const Home = () => {
             </div>
          </div>
       </div>
-      <div className="container border">
+      <div className="container">
          <FeaturedProducts dataFeatures={dataFeatures} />
       </div>
    </div>)
