@@ -1,10 +1,24 @@
 import { BiLogoFacebook, BiLogoTwitter, BiLogoInstagram } from 'react-icons/bi'
 import { FaPinterestP } from 'react-icons/fa'
+import { PiHandbagBold } from 'react-icons/pi'
+import { AiOutlineHeart } from 'react-icons/ai'
 import { Badge } from '../../components/ui/badge'
+import { Button } from '../../components/ui/button'
 import SwiperContent from './components/SwiperContent'
 import TabBar from './components/Tabs'
+import { useState } from 'react'
 
 function ProductDetails() {
+  const [InputRef, setInputRef] = useState(1)
+
+  const handleMinus = () => {
+    setInputRef((prev) => --prev)
+  }
+
+  const handlePlus = () => {
+    setInputRef((prev) => ++prev)
+  }
+
   return (
     <div className=" max-w-[1320px] mx-auto">
       <div className="flex items-start gap-6 mt-[34px] mb-1">
@@ -62,8 +76,46 @@ function ProductDetails() {
               diam, blandit vel consequat nec, ultrices et ipsum. Nulla varius magna a consequat pulvinar.
             </p>
           </div>
-          <div></div>
-          <div></div>
+          <div className="flex items-center justify-between w-full gap-3 border-t-2 border-b-2 py-5">
+            <div className="flex items-center">
+              <Button
+                className="rounded-full p-0 w-10 h-10 mr-[-45px] z-10"
+                variant="ghost"
+                onClick={() => handleMinus()}
+              >
+                -
+              </Button>
+              <input
+                type="number"
+                defaultValue={1}
+                value={InputRef}
+                className="rounded-full w-36 px-12 py-3 border-2 focus:outline-none"
+              />
+              <Button
+                className="rounded-full p-0 w-10 h-10 z-10 ml-[-45px]"
+                variant="ghost"
+                onClick={() => handlePlus()}
+              >
+                +
+              </Button>
+            </div>
+            <Button variant="fill" className="flex items-center w-full gap-3">
+              <p>Add to Cart</p> <PiHandbagBold size={17} />
+            </Button>
+            <div className="p-4 w-fit bg-[#E9F8EA] rounded-full cursor-pointer">
+              <AiOutlineHeart size={20} className="text-hardPrimary" />
+            </div>
+          </div>
+          <div>
+            <div className="flex items-center gap-1">
+              <h3 className="font-[600]">Category:</h3>
+              <p className="text-gray-400">Vegetables</p>
+            </div>
+            <div className="flex items-center gap-1">
+              <h3 className="font-[600]">Tag:</h3>
+              <p className="text-gray-400">Vegetables Healthy Chinese Cabbage Green Cabbage</p>
+            </div>
+          </div>
         </div>
       </div>
       <TabBar />
