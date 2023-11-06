@@ -1,5 +1,10 @@
 import Timer from './components/timer'
-
+import ProductCard from '../../components/common/Cards/ProductCard'
+import FeaturedProducts from './FeaturedProducts'
+import Video from '../../components/common/video/video'
+import SendEmail from '../../components/common/sendEmail/sendEmail'
+import LatestCard from '../../components/common/Cards/LatestCard'
+import OurSpecial from './components/OurSpecial'
 const dataFeatures = {
   name: 'Green Apple',
   originalPrice: 20.99,
@@ -12,11 +17,6 @@ const dataFeatures = {
   statusColor: 'green',
   featrues: true,
 }
-import ProductCard from '../../components/common/Cards/ProductCard'
-import FeaturedProducts from './FeaturedProducts'
-import Video from '../../components/common/video/video'
-import SendEmail from '../../components/common/sendEmail/sendEmail'
-import LatestCard from '../../components/common/Cards/LatestCard'
 
 const data = {
   name: 'Green Apple',
@@ -75,6 +75,12 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <OurSpecial />
+      <div className="flex overflow-hidden items-center justify-between bg-slate-300 py-20">
+        <img className="w-[521px] h-[308px]" src="/assets/images/special/special_left.png" alt="" />
+        <Timer />
+        <img className="w-[704px] h-[495px]" src="/assets/images/special/special_right.png" alt="" />
+      </div>
       <div className="container">
         <FeaturedProducts dataFeatures={dataFeatures} />
       </div>
@@ -99,11 +105,6 @@ const Home = () => {
       </div>
       <div className=" border-y bg-greenGrays-greenGray0.5">
         <SendEmail />
-      </div>
-      <div className="flex overflow-hidden items-center justify-between bg-slate-300 py-20">
-        <img className="w-[521px] h-[308px]" src="/assets/images/special/special_left.png" alt="" />
-        <Timer />
-        <img className="w-[704px] h-[495px]" src="/assets/images/special/special_right.png" alt="" />
       </div>
     </div>
   )
