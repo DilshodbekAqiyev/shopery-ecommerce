@@ -7,7 +7,9 @@ const BlogSearch = ({ filterData, setFilterData }) => {
 
   const onChangeInput = () => {
     if (inputVal !== '') {
-      const newData = filterData.filter((data) => data.tags.includes(inputVal))
+      const newData = filterData.filter((data) => {
+        return data.title.toLowerCase().includes(inputVal.toLowerCase())
+      })
       setFilterData([...newData])
     }
   }

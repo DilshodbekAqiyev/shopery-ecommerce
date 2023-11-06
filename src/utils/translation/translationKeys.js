@@ -4,4 +4,5 @@ export const translationKeys = {
   'Sign Up': 'Sign Up',
   'Store Location: Lincoln- 344, Illinois, Chicago, USA': 'Store Location: Lincoln- 344, Illinois, Chicago, USA',
   Home: 'Home',
+  'Shopping cart': 'Shopping cart',
 }
