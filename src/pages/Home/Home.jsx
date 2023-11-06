@@ -4,6 +4,8 @@ import Video from "../../components/common/video/video";
 import SendEmail from "../../components/common/sendEmail/sendEmail";
 import LatestCard from "../../components/common/Cards/LatestCard";
 import { useState } from "react";
+import OurSpecial from "./components/OurSpecial";
+import Timer from "./components/timer";
 
 const data = {
    name: "Green Apple",
@@ -25,37 +27,56 @@ const data = {
    }
 }
 
-const vegetablesData = [
-   "All", "Vegetables", "Fruit", "Meat & Fish", " View All"
-]
+
+const vegetablesData = ['All', 'Vegetables', 'Fruit', 'Meat & Fish', ' View All']
 const Home = () => {
    const [matches , setMatches] = useState(window.matchMedia("(min-width: 570px)").matches)
    window.matchMedia("(min-width: 570px)").addEventListener('change', (e) => setMatches(e.matches));
    
    return (<div>
       <div className="bg-[#EDF2EE] py-[100px]">
-         <h1 className="font-[600] text-[40px] text-center  mb-[24px]">Introducing Our Products</h1>
-         <div className="text-center mb-[50px]">
-            {vegetablesData.map((item, index) => {
-               return <a key={index} href="#0"><span className="hover:border-b-2 hover:text-[#00B207] text-[#808080] text-[16px] font-[500] border-[#20B526] py-[8px] px-[12px]">{item}</span> {index < vegetablesData.length - 1 ? <span className="mx-[10px] text-[#B4CCB4] font-[400]">|</span> : ''}</a>
+        <h1 className="font-[600] text-[40px] text-center  mb-[24px]">Introducing Our Products</h1>
+        <div className="text-center mb-[50px]">
+          {vegetablesData.map((item, index) => {
+            return (
+              // eslint-disable-next-line react/jsx-key
+              <a href="#0" key={index}>
+                <span className="hover:border-b-2 hover:text-[#00B207] text-[#808080] text-[16px] font-[500] border-[#20B526] py-[8px] px-[12px]">
+                  {item}
+                </span>{' '}
+                {index < vegetablesData.length - 1 ? (
+                  <span className="mx-[10px] text-[#B4CCB4] font-[400]">|</span>
+                ) : (
+                  ''
+                )}
+              </a>
+            )
+          })}
+        </div>
+
+        <div className="border px-[146px]">
+          <div className="flex">
+            {Array.from(Array(4)).map((_, idx) => {
+              return <ProductCard key={idx} {...data} />
             })}
-         </div>
-         <div className="container border">
-            <div className="flex">
-               {Array.from(Array(4)).map((_ , idx) => {
-                  return <ProductCard key={idx} {...data} />
-               })}
-            </div>
-            <div className="flex">
-               {Array.from(Array(4)).map((_ , idx) => {
-                  return <ProductCard key={idx} {...data} />
-               })}
-            </div>
-         </div>
+          </div>
+          <div className="flex">
+            {Array.from(Array(4)).map((_, idx) => {
+              return <ProductCard key={idx} {...data} />
+            })}
+          </div>
+        </div>
       </div>
-      <div className="container border">
-         <FeaturedProducts dataFeatures={data} />
+      <OurSpecial />
+      <div className="flex overflow-hidden items-center justify-between bg-slate-300 py-20">
+        <img className="w-[521px] h-[308px]" src="/assets/images/special/special_left.png" alt="" />
+        <Timer />
+        <img className="w-[704px] h-[495px]" src="/assets/images/special/special_right.png" alt="" />
       </div>
+      <div className="container">
+        <FeaturedProducts dataFeatures={data} />
+      </div>
+
       <div className=" bg-latestWhiteGrayReverse">
          <div className=" container py-[100px] ">
             <Video src="https://youtu.be/0ptb_0gN7_4" width="1320px" height={matches ? "740px" : "500px"} title="We’re the Best Organic Farm in the World"/>
@@ -68,9 +89,10 @@ const Home = () => {
         </div>
       </div>
       <div className=" border-y bg-greenGrays-greenGray0.5">
-         <SendEmail />
+        <SendEmail />
       </div>
-   </div>)
-};
+    </div>
+  )
+}
 
-export default Home;
+export default Home
