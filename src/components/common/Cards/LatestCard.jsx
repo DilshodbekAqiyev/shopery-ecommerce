@@ -3,9 +3,8 @@ import { Link } from 'react-router-dom';
 import { BsArrowRight } from "react-icons/bs"
 
 function LatestCard({title , description , date : { month , day}, images : {src} }) {
-    
   return (
-      <div className='w-[424px] h-[512px] p-6 drop-shadow-xl bg-white '>
+    <div className='w-[424px] h-[512px] p-6 drop-shadow-xl bg-white '>
         <div className=' relative h-[276px] rounded-[4px] border'>
             <img src={src} alt="img" className='w-full object-cover h-full' />
             <div className=' absolute bottom-4 left-4 rounded-[4px] bg-white flex flex-col items-center justify-center py-2 px-6 drop-shadow-lg'>
@@ -19,7 +18,7 @@ function LatestCard({title , description , date : { month , day}, images : {src}
             <p>Read More</p>
             <BsArrowRight className='w-[30px] h-[25px]'/>
         </Link>
-      </div>
+    </div>
   )
 }
 
