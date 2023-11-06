@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Button } from '../../../components/ui/button'
-
+import { ArrowRight } from 'lucide-react'
 function Timer() {
   const [count1, setCount1] = useState(2)
   const [count2, setCount2] = useState(18)
@@ -57,7 +57,9 @@ function Timer() {
         </div>
       </div>
       <div className="flex justify-center">
-        <Button className=" text-center my-6">shop now </Button>
+        <Button className=" text-center my-6">
+          shop now <ArrowRight />
+        </Button>
       </div>
     </div>
   )
