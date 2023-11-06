@@ -1,0 +1,15 @@
+.NavigationMenu .NavigationMenuList {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.NavigationMenu .NavigationMenuList .NavigationMenuItem .NavigationMenuTrigger {
+  height: 56px;
+  color: white;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 0;
+}
