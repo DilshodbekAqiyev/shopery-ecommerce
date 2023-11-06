@@ -75,41 +75,16 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      <div className="flex overflow-hidden items-center justify-between bg-slate-300 py-20">
+        <img className="w-[521px] h-[308px]" src="/assets/images/special/special_left.png" alt="" />
+        <Timer />
+        <img className="w-[704px] h-[495px]" src="/assets/images/special/special_right.png" alt="" />
+      </div>
       <div className="container border">
         <FeaturedProducts dataFeatures={dataFeatures} />
-        <h1 className="font-[600] text-[40px] text-center  mb-[24px]">Introducing Our Products</h1>
-        <div className="text-center mb-[50px]">
-          {vegetablesData.map((item, index) => {
-            return (
-              <a key={index} href="#0">
-                <span className="hover:border-b-2 hover:text-[#00B207] text-[#808080] text-[16px] font-[500] border-[#20B526] py-[8px] px-[12px]">
-                  {item}
-                </span>{' '}
-                {index < vegetablesData.length - 1 ? (
-                  <span className="mx-[10px] text-[#B4CCB4] font-[400]">|</span>
-                ) : (
-                  ''
-                )}
-              </a>
-            )
-          })}
-        </div>
-        <div className="container border">
-          <div className="flex">
-            {Array.from(Array(4)).map((_, idx) => {
-              return <ProductCard key={idx} {...data} />
-            })}
-          </div>
-          <div className="flex">
-            {Array.from(Array(4)).map((_, idx) => {
-              return <ProductCard key={idx} {...data} />
-            })}
-          </div>
-        </div>
       </div>
-      <div className="container border">
-        <FeaturedProducts dataFeatures={data} />
-      </div>
+
       <div className=" bg-latestWhiteGrayReverse">
         <div className=" container py-[100px] ">
           <Video
@@ -130,11 +105,6 @@ const Home = () => {
       </div>
       <div className=" border-y bg-greenGrays-greenGray0.5">
         <SendEmail />
-      </div>
-      <div className="flex overflow-hidden items-center justify-between bg-slate-300 py-20">
-        <img className="w-[521px] h-[308px]" src="/assets/images/special/special_left.png" alt="" />
-        <Timer />
-        <img className="w-[704px] h-[495px]" src="/assets/images/special/special_right.png" alt="" />
       </div>
     </div>
   )
