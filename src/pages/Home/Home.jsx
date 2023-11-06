@@ -75,13 +75,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-
-      <div className="flex overflow-hidden items-center justify-between bg-slate-300 py-20">
-        <img className="w-[521px] h-[308px]" src="/assets/images/special/special_left.png" alt="" />
-        <Timer />
-        <img className="w-[704px] h-[495px]" src="/assets/images/special/special_right.png" alt="" />
-      </div>
-      <div className="container border">
+      <div className="container">
         <FeaturedProducts dataFeatures={dataFeatures} />
       </div>
 
@@ -105,6 +99,11 @@ const Home = () => {
       </div>
       <div className=" border-y bg-greenGrays-greenGray0.5">
         <SendEmail />
+      </div>
+      <div className="flex overflow-hidden items-center justify-between bg-slate-300 py-20">
+        <img className="w-[521px] h-[308px]" src="/assets/images/special/special_left.png" alt="" />
+        <Timer />
+        <img className="w-[704px] h-[495px]" src="/assets/images/special/special_right.png" alt="" />
       </div>
     </div>
   )
