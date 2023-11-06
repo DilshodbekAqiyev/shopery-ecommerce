@@ -22,12 +22,12 @@ const ProductCard = (props) => {
 
   return (
     <div
-      className={`w-[330px] h-[428px] bg-white shadow-lg  px-4 relative cursor-pointer transition-transform border-[2px] border-solid border-branding-[#2C742F] hover:shadow-[#00B207] hover:shadow-md ${isHovered ? "border-[#2C742F]" : ''
+      className={`w-[330px] h-[428.5px] bg-white shadow-lg  px-4 relative cursor-pointer transition-transform border-[2px] border-solid border-branding-[#2C742F] hover:shadow-[#00B207] hover:shadow-md ${isHovered ? "border-[#2C742F]" : ''
         } ${featrues ? 'border border-[#E6E6E6] w-1/5 h-auto' : ''}`}
       onMouseEnter={handleHover}
       onMouseLeave={handleMouseLeave}
     >
-      <LazyLoadImage delayTime={300} src={images.src} alt={images.imageDescription} effect="blur" className="w-full h-[250px] object-contain rounded-md mt-[50px]" />
+      <LazyLoadImage delayTime={300} src={images.src} alt={images.imageDescription} effect="blur" className="w-full  h-[250px] object-contain rounded-md mt-[50px]" />
       {status != '' ? <Badge className={`absolute bg-red-500 rounded-[2px] py-[3px] px-[8px] text-[14px] font-[400]  top-2 left-2 ]`}>{status}</Badge> : undefined}
       <div className={`mt-[20px] flex justify-between items-center ${featrues ? "mt-[10px]" : " "}`}>
         <div>
