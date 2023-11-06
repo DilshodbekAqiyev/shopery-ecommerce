@@ -3,6 +3,7 @@ import FeaturedProducts from "./FeaturedProducts";
 import Video from "../../components/common/video/video";
 import SendEmail from "../../components/common/sendEmail/sendEmail";
 import LatestCard from "../../components/common/Cards/LatestCard";
+import { useState } from "react";
 
 const data = {
    name: "Green Apple",
@@ -28,6 +29,9 @@ const vegetablesData = [
    "All", "Vegetables", "Fruit", "Meat & Fish", " View All"
 ]
 const Home = () => {
+   const [matches , setMatches] = useState(window.matchMedia("(min-width: 570px)").matches)
+   window.matchMedia("(min-width: 570px)").addEventListener('change', (e) => setMatches(e.matches));
+   
    return (<div>
       <div className="bg-[#EDF2EE] py-[100px]">
          <h1 className="font-[600] text-[40px] text-center  mb-[24px]">Introducing Our Products</h1>
@@ -54,12 +58,12 @@ const Home = () => {
       </div>
       <div className=" bg-latestWhiteGrayReverse">
          <div className=" container py-[100px] ">
-            <Video src="https://youtu.be/0ptb_0gN7_4" width="1320px" height="740px" title="We’re the Best Organic Farm in the World"/>
+            <Video src="https://youtu.be/0ptb_0gN7_4" width="1320px" height={matches ? "740px" : "500px"} title="We’re the Best Organic Farm in the World"/>
          </div>
       </div>
-      <div className="flex items-center justify-start flex-col h-[712px] gap-[34px] bg-latestWhiteGray">
+      <div className="flex items-center justify-start flex-col h-[712px] max-xl:h-auto gap-[34px] bg-latestWhiteGray">
          <p className="font-semibold text-[40px]">Latest News</p>
-        <div className=" flex gap-[24px] items-center justify-center ">
+        <div className=" flex gap-[24px] items-center justify-center max-xl:flex-wrap">
            {Array.from(Array(3).keys()).map((item) => <LatestCard key={item} {...data}/>)}
         </div>
       </div>
