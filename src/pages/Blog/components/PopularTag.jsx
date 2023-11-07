@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import { Button } from '../../../components/ui/button'
 import { useEffect, useState } from 'react'
 
-const BlogPopularTag = ({ data, setFilterData }) => {
+const BlogPopularTag = ({ data, setFilterData, filterData }) => {
   const [clicked, setClicked] = useState([])
 
   const change = () => {
@@ -22,7 +22,14 @@ const BlogPopularTag = ({ data, setFilterData }) => {
     }
   }
 
+  console.log(clicked)
   useEffect(() => {
+    // const newFilterData = []
+    // filterData.forEach((d) => {
+    //   newFilterData.push(newFilterData?.includes(d) ? '' : d)
+    // })
+    // console.log(newFilterData, '1111')
+    // setFilterData(newFilterData)
     change()
   }, [clicked])
 
@@ -70,8 +77,8 @@ const BlogPopularTag = ({ data, setFilterData }) => {
               onClick={() => onClickButton(tag)}
               className={
                 clicked.includes(tag)
-                  ? `rounded-[30px] px-[16px] py-2  `
-                  : ` bg-gray-50  rounded-[30px] px-[16px] py-2 text-gray-900 hover:text-white`
+                  ? `rounded-[30px] px-[16px] py-2 font-[450] cursor-pointer `
+                  : ` bg-gray-50  rounded-[30px] px-[16px] py-2 text-gray-900 hover:text-white font-[450] cursor-pointer`
               }
             >
               {tag}
@@ -86,5 +93,6 @@ const BlogPopularTag = ({ data, setFilterData }) => {
 export default BlogPopularTag
 BlogPopularTag.propTypes = {
   data: PropTypes.array,
+  filterData: PropTypes.array,
   setFilterData: PropTypes.any,
 }

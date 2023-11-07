@@ -1,7 +1,6 @@
-/* eslint-disable react/prop-types */
+import PropTypes from 'prop-types'
 import { useState } from 'react'
 import { Badge } from '../../ui/badge'
-import React from 'react'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import 'react-lazy-load-image-component/src/effects/blur.css'
 import { useNavigate } from 'react-router-dom'
@@ -10,7 +9,6 @@ const ProductCard = (props) => {
   const [isHovered, setIsHovered] = useState(false)
   const navigate = useNavigate()
 
-  // eslint-disable-next-line react/prop-types
   const { id, name, originalPrice, discountPrice, images, rating, status, statusColor, featrues } = props
 
   const handleHover = () => {
@@ -27,7 +25,7 @@ const ProductCard = (props) => {
 
   return (
     <div
-      className={`w-[330px] h-[428.5px] bg-white shadow-lg  px-4 relative cursor-pointer transition-transform border-[2px] border-solid border-branding-[#2C742F] hover:shadow-[#00B207] hover:shadow-md ${
+      className={`w-[330px] bg-white shadow-lg  p-4 relative cursor-pointer transition-transform border-[2px] border-solid border-branding-[#2C742F] hover:shadow-[#00B207] hover:shadow-md ${
         isHovered ? 'border-[#2C742F]' : ''
       } ${featrues ? 'border border-[#E6E6E6] w-1/5 h-auto' : ''}`}
       onMouseEnter={handleHover}
@@ -99,3 +97,15 @@ const ProductCard = (props) => {
 }
 
 export default ProductCard
+
+ProductCard.propTypes = {
+  id: PropTypes.number,
+  name: PropTypes.string,
+  originalPrice: PropTypes.number,
+  discountPrice: PropTypes.number,
+  images: PropTypes.string,
+  rating: PropTypes.number,
+  status: PropTypes.string,
+  statusColor: PropTypes.string,
+  featrues: PropTypes.bool,
+}
