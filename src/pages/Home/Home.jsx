@@ -1,11 +1,12 @@
-import ProductCard from '../../components/common/Cards/ProductCard'
-import FeaturedProducts from './FeaturedProducts'
-import Video from '../../components/common/video/video'
-import SendEmail from '../../components/common/sendEmail/sendEmail'
-import LatestCard from '../../components/common/Cards/LatestCard'
-import { useState } from 'react'
-import OurSpecial from './components/OurSpecial'
-import Timer from './components/timer'
+import ProductCard from "../../components/common/Cards/ProductCard";
+import FeaturedProducts from "./FeaturedProducts";
+import Video from "../../components/common/video/video";
+import SendEmail from "../../components/common/sendEmail/sendEmail";
+import LatestCard from "../../components/common/Cards/LatestCard";
+import { useEffect, useState } from "react";
+import OurSpecial from "./components/OurSpecial";
+import Timer from "./components/timer";
+
 const data = {
   name: 'Green Apple',
   originalPrice: 20.99,
@@ -29,9 +30,14 @@ const data = {
 
 const vegetablesData = ['All', 'Vegetables', 'Fruit', 'Meat & Fish', ' View All']
 const Home = () => {
-  const [matches, setMatches] = useState(window.matchMedia('(min-width: 570px)').matches)
-  window.matchMedia('(min-width: 570px)').addEventListener('change', (e) => setMatches(e.matches))
+  
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
+   const [matches , setMatches] = useState(window.matchMedia("(min-width: 570px)").matches)
+   window.matchMedia("(min-width: 570px)").addEventListener('change', (e) => setMatches(e.matches));
+   
   return (
     <div>
       <div className="bg-[#EDF2EE] py-[100px]">
