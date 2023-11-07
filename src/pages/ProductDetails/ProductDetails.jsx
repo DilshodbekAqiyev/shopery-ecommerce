@@ -6,7 +6,7 @@ import TabBar from './components/Tabs'
 
 function ProductDetails() {
   // const [data, setData] = useState([])
-  // const { productID } = useParams()
+  // const { id } = useParams()
 
   // const getProductData = async () => {
   //   const data = await instance.get(`products`)

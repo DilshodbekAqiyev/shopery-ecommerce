@@ -21,7 +21,6 @@ export default function App() {
       <Route path="/" element={<RootLayout />}>
         <Route index element={<Home />} />
         <Route path="blog" element={<Blog />} />
-        <Route path="products" element={<ProductDetails />} />
         <Route
           path="shop"
           element={
@@ -30,11 +29,12 @@ export default function App() {
             </ShopProvider>
           }
         />
+        <Route path="product/:id" element={<ProductDetails />} />
         <Route path="sign-in" element={<Signup />} />
         <Route path="sign-up" element={<Signin />} />
 
-        <Route path="notfound" element={<PageNotFound />} />
-        <Route path="*" element={<Navigate to={'/notfound'} />} />
+        <Route path="PageNotFound" element={<PageNotFound />} />
+        <Route path="*" element={<Navigate to={'/PageNotFound'} />} />
       </Route>
     )
   )
