@@ -1,5 +1,3 @@
-import { CiLocationOn } from 'react-icons/ci'
-
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../../ui/select'
 import {
   NavigationMenu,
@@ -17,21 +15,15 @@ import { translationKeys } from '../../../utils/translation/translationKeys'
 import { Link } from 'react-router-dom'
 import LogoIcon from './images/LogoIcon'
 import { Button } from '../../ui/button'
-import { AiOutlineHeart } from 'react-icons/ai'
+import { AiOutlineHeart, AiOutlineMenu, AiOutlinePlus } from 'react-icons/ai'
 import { BsHandbag } from 'react-icons/bs'
 import { FiPhoneCall } from 'react-icons/fi'
-import { CiSearch } from 'react-icons/ci'
+import { CiSearch, CiLocationOn } from 'react-icons/ci'
 import { LuApple } from 'react-icons/lu'
-import { TbSalad } from 'react-icons/tb'
-import { TbMeat } from 'react-icons/tb'
-import { PiFishSimpleDuotone } from 'react-icons/pi'
+import { TbSalad, TbIceCream, TbMeat } from 'react-icons/tb'
+import { PiFishSimpleDuotone, PiCookingPot } from 'react-icons/pi'
 import { SiBuymeacoffee } from 'react-icons/si'
-import { TbIceCream } from 'react-icons/tb'
-import { GiCupcake } from 'react-icons/gi'
-import { GiCakeSlice } from 'react-icons/gi'
-import { PiCookingPot } from 'react-icons/pi'
-import { AiOutlineMenu } from 'react-icons/ai'
-import { AiOutlinePlus } from 'react-icons/ai'
+import { GiCupcake, GiCakeSlice } from 'react-icons/gi'
 
 const Navbar = () => {
   const { t, i18n } = useTranslation()
