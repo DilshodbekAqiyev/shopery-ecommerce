@@ -6,8 +6,9 @@ import BlogTopCategories from './components/TopCategories'
 import BlogPopularTag from './components/PopularTag'
 import BlogOurGallery from './components/OurGallery'
 import BlogRecentlyAdded from './components/RecentlyAdded'
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../../components/ui/select'
+
 import Line from './components/Line'
+import SelectBlog from './components/SelectBlog'
 
 const Blog = ({ data, filterData, setFilterData }) => {
   return (
@@ -16,9 +17,9 @@ const Blog = ({ data, filterData, setFilterData }) => {
         <BlogFilterButton data={data} setFilterData={setFilterData} />
         <BlogSearch filterData={filterData} setFilterData={setFilterData} />
         <Line />
-        <BlogTopCategories filterData={filterData} />
+        <BlogTopCategories data={data} setFilterData={setFilterData} />
         <Line />
-        <BlogPopularTag data={data} setFilterData={setFilterData} />
+        <BlogPopularTag data={data} setFilterData={setFilterData} filterData={filterData} />
         <Line />
         <BlogOurGallery />
         <Line />
@@ -29,16 +30,7 @@ const Blog = ({ data, filterData, setFilterData }) => {
         <div className="rightTop flex item-center justify-between h-[41px]">
           <div className="flex gap-4 items-center ">
             <h3>Sort by</h3>
-            <Select>
-              <SelectTrigger className="w-[180px]">
-                <SelectValue placeholder="Theme" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="light">Light</SelectItem>
-                <SelectItem value="dark">Dark</SelectItem>
-                <SelectItem value="system">System</SelectItem>
-              </SelectContent>
-            </Select>
+            <SelectBlog />
           </div>
           <div className="flex items-center">
             <h3>

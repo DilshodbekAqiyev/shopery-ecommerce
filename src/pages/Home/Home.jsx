@@ -53,7 +53,6 @@ const Home = () => {
             )
           })}
         </div>
-
         <div className="border px-[146px]">
           <div className="flex">
             {Array.from(Array(4)).map((_, idx) => {
