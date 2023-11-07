@@ -35,7 +35,7 @@ function Timer() {
     <div className="box">
       <p className=" text-green-700 text-[16px] text-center">Best Deals</p>
       <h1 className=" text-[40px] px-4 text-center font-semibold">Our Special Products Deal of the Month</h1>
-      <div className="flex justify-between w-[447px] items-center">
+      <div className="flex justify-between w-[447px] items-center mx-auto">
         <div className=" px-4 py-2 bg-white rounded-[6px]">
           <h1 className=" text-center text-[32px] text-green-500">00</h1>
           <p className="text-[14px] text-slate-400">days</p>
