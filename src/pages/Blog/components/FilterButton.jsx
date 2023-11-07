@@ -1,8 +1,10 @@
-import PropTypes from 'prop-types'
-
+import { useContext } from 'react'
 import { Button } from '../../../components/ui/button'
+import BlogContext from '../context/BlogContext'
 
-const BlogFilterButton = ({ data, setFilterData }) => {
+const BlogFilterButton = () => {
+  const DATA = useContext(BlogContext)
+  const { data, setFilterData } = DATA
   return (
     <Button
       className="flex item-center gap-[12px]"
@@ -18,8 +20,3 @@ const BlogFilterButton = ({ data, setFilterData }) => {
 }
 
 export default BlogFilterButton
-
-BlogFilterButton.propTypes = {
-  data: PropTypes.array,
-  setFilterData: PropTypes.func,
-}

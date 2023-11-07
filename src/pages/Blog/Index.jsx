@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import Blog from './Blog'
 import axios from 'axios'
+import BlogContext from './context/BlogContext'
 
 const Index = () => {
   const [data, setData] = useState([])
@@ -20,10 +21,18 @@ const Index = () => {
     setFilterData(data)
   }, [data])
 
+  const BlogData = {
+    data,
+    filterData,
+    setFilterData,
+  }
+
   return (
-    <div>
-      <Blog data={data} filterData={filterData} setFilterData={setFilterData} />
-    </div>
+    <BlogContext.Provider value={BlogData}>
+      <div>
+        <Blog />
+      </div>
+    </BlogContext.Provider>
   )
 }
 
