@@ -1,24 +1,64 @@
 import { useEffect, useState } from 'react'
-import PopularTags from './PopularTags'
-import AllCategoriesComponent from './AllCategories'
-import { Accordion } from '../../components/ui/accordion'
-import SliderComponent from './SliderComponent'
-import Rating from './Rating'
-import TopComponent from './TopComponent'
-import ProductCard from '../../components/common/Cards/ProductCard'
+import { useShopContext } from '../../contexts/shop/ShopContext'
 import { instance } from '../../utils/apiRequest'
+import { Accordion } from '../../components/ui/accordion'
+import ProductCard from '../../components/common/Cards/ProductCard'
+import PopularTags from './components/PopularTags'
+import AllCategoriesComponent from './components/AllCategories'
+import SliderComponent from './components/SliderComponent'
+import Rating from './components/Rating'
+import TopComponent from './components/TopComponent'
 
 function Shop() {
-  const [data, setData] = useState([])
+  const { state, dispatch } = useShopContext()
+  const [newData, setNewData] = useState([])
+  console.log(state)
 
-  const getData = async () => {
-    const data = await instance.get('products')
-    setData(data.data)
+  useEffect(() => {
+    const getData = async () => {
+      const response = await instance.get('products')
+      const newData = response.data
+      setNewData(newData)
+      dispatch({ type: 'SET_DATA', payload: newData })
+    }
+
+    getData()
+  }, [dispatch])
+
+  useEffect(() => {
+    dispatch({ type: 'SET_FILTERED_DATA', payload: newData })
+  }, [dispatch, newData])
+
+  const filterProductsByCategory = (selectedCategory) => {
+    const filteredData = state.data.filter((product) => product.category === selectedCategory)
+    dispatch({ type: 'SET_CATEGORY_FILTER', payload: selectedCategory })
+    dispatch({ type: 'SET_FILTERED_DATA', payload: filteredData })
+  }
+
+  const filterProductsByRating = (selectedRating) => {
+    let filteredData
+
+    selectedRating
+      ? (filteredData = state.data.filter((product) => product.rating >= selectedRating))
+      : (filteredData = state.data)
+
+    dispatch({ type: 'SET_RATING_FILTER', payload: selectedRating })
+    dispatch({ type: 'SET_FILTERED_DATA', payload: filteredData })
   }
 
   useEffect(() => {
-    getData()
-  }, [])
+    const filterData = () => {
+      let filteredData = newData
+      if (state.categoryFilter !== 'All Categories') {
+        filteredData = filteredData.filter((product) => product.category === state.categoryFilter)
+      }
+      if (state.ratingFilter) {
+        filteredData = filteredData.filter((product) => product.rating >= state.ratingFilter)
+      }
+      dispatch({ type: 'SET_FILTERED_DATA', payload: filteredData })
+    }
+    filterData()
+  }, [state.categoryFilter, state.ratingFilter, newData, dispatch])
 
   return (
     <div className="max-w-[1320px] mx-auto pt-8 transition-all ease-linear duration-500">
@@ -28,17 +68,25 @@ function Shop() {
       <div className="flex justify-between">
         <div className="w-[19%]">
           <Accordion type="multiple" className="w-full">
-            <AllCategoriesComponent />
+            <AllCategoriesComponent filterProducts={filterProductsByCategory} />
             <SliderComponent />
-            <Rating />
+            <Rating filterProducts={filterProductsByRating} />
             <PopularTags />
           </Accordion>
         </div>
         <div className="w-[80%]">
-          <div className="flex justify-around flex-wrap items-center">
-            {data?.map((item) => (
-              <ProductCard key={item.id} {...item} />
-            ))}
+          <div className="flex justify-around flex-wrap items-center gap-5">
+            {state.categoryFilter === 'All Categories' ? (
+              state.data?.length ? (
+                state.data.map((item) => <ProductCard key={item.id} {...item} />)
+              ) : (
+                <h1>No products match the selected filters.</h1>
+              )
+            ) : state.filteredProducts?.length ? (
+              state.filteredProducts.map((item) => <ProductCard key={item.id} {...item} />)
+            ) : (
+              <h1>No results were found for these queries</h1>
+            )}
           </div>
         </div>
       </div>
