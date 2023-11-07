@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider, createRoutesFromElements, Route } from 'react-router-dom'
+import { createBrowserRouter, RouterProvider, createRoutesFromElements, Route, Navigate } from 'react-router-dom'
 
 // Pages
 import Home from './pages/Home/Home'
@@ -23,7 +23,6 @@ export default function App() {
       <Route path="/" element={<RootLayout />}>
         <Route index element={<Home />} />
         <Route path="blog" element={<Blog />} />
-        <Route path="products" element={<ProductDetails />} />
         <Route
           path="shop"
           element={
@@ -32,11 +31,14 @@ export default function App() {
             </ShopProvider>
           }
         />
+        <Route path="product/:id" element={<ProductDetails />} />
         <Route path="sign-in" element={<Signup />} />
         <Route path="sign-up" element={<Signin />} />
+
         <Route path="about" element={<About />} />
         <Route path="checkout" element={<Checkout />} />
-        <Route path="*" element={<PageNotFound />} />
+        <Route path="PageNotFound" element={<PageNotFound />} />
+        <Route path="*" element={<Navigate to={'/PageNotFound'} />} />
       </Route>
     )
   )
