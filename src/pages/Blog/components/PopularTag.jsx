@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import { Button } from '../../../components/ui/button'
 import { useEffect, useState } from 'react'
 
-const BlogPopularTag = ({ data, setFilterData, filterData }) => {
+const BlogPopularTag = ({ data, setFilterData }) => {
   const [clicked, setClicked] = useState([])
 
   const change = () => {
@@ -22,7 +22,7 @@ const BlogPopularTag = ({ data, setFilterData, filterData }) => {
     }
   }
 
-  console.log(clicked)
+
   useEffect(() => {
     // const newFilterData = []
     // filterData.forEach((d) => {
@@ -31,6 +31,7 @@ const BlogPopularTag = ({ data, setFilterData, filterData }) => {
     // console.log(newFilterData, '1111')
     // setFilterData(newFilterData)
     change()
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [clicked])
 
   const onClickButton = (val) => {
