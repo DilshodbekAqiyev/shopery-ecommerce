@@ -22,7 +22,7 @@ const BlogPopularTag = ({ data, setFilterData }) => {
     }
   }
 
-
+  console.log(clicked)
   useEffect(() => {
     // const newFilterData = []
     // filterData.forEach((d) => {
@@ -31,7 +31,7 @@ const BlogPopularTag = ({ data, setFilterData }) => {
     // console.log(newFilterData, '1111')
     // setFilterData(newFilterData)
     change()
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [clicked])
 
   const onClickButton = (val) => {

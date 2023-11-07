@@ -1,36 +1,41 @@
 export const AllCategoriesData = [
   {
     id: 1,
-    title: 'Fresh Fruit',
+    title: 'All Categories',
     size: 150,
   },
   {
     id: 2,
-    title: 'Vegetables',
+    title: 'Fresh Fruit',
     size: 150,
   },
   {
     id: 3,
-    title: 'Cooking',
+    title: 'Vegetables',
     size: 150,
   },
   {
     id: 4,
-    title: 'Snacks',
+    title: 'Cooking',
     size: 150,
   },
   {
     id: 5,
-    title: 'Beverages',
+    title: 'Snacks',
     size: 150,
   },
   {
     id: 6,
-    title: 'Beauty & Health',
+    title: 'Beverages',
     size: 150,
   },
   {
     id: 7,
+    title: 'Beauty & Health',
+    size: 150,
+  },
+  {
+    id: 8,
     title: 'Bread & Bakery',
     size: 150,
   },

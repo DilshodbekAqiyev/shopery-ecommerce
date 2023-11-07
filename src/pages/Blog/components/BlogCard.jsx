@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types'
+import { Link } from 'react-router-dom'
 
 const BlogCard = ({ prop }) => {
   const { title, previewImage, id, comments } = prop
@@ -27,18 +28,18 @@ const BlogCard = ({ prop }) => {
             </a>
           </li>
           <li>
-            <a href="#2 " className="flex items-center gap-1">
+            <Link to="Single Blog" className="flex items-center gap-1">
               <img src={'/assets/icons/chatComment.svg'} alt="img" />
               <span>{comments.length} Comments</span>
-            </a>
+            </Link>
           </li>
         </ul>
         <h4 className="text-[18px] mt-2 mb-5 font-[500]">{title}</h4>
-        <a href={`${id}`} className="flex gap-[12px] text-primary text-[16px] font-[600]">
+        <Link to={`/blog/${id}`} className="flex gap-[12px] text-primary text-[16px] font-[600]">
           <span>Read More </span>
 
           <img src="assets/icons/ArrowRight.svg" alt="img" />
-        </a>
+        </Link>
       </div>
     </div>
   )
