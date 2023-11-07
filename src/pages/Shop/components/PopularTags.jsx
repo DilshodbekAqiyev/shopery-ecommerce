@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import { AccordionContent, AccordionItem, AccordionTrigger } from '../../components/ui/accordion'
-import { Badge } from '../../components/ui/badge'
-import { PopularTagsData } from './__mock__'
+import { AccordionContent, AccordionItem, AccordionTrigger } from '../../../components/ui/accordion'
+import { Badge } from '../../../components/ui/badge'
+import { PopularTagsData } from '../__mock__'
 
 function PopularTags() {
   const [badgeVariant, setBadgeVariant] = useState('secondary')
