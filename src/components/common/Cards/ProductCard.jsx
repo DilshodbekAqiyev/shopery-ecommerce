@@ -30,7 +30,7 @@ const ProductCard = (props) => {
       } ${featrues ? 'border border-[#E6E6E6] w-1/5 h-auto' : ''}`}
       onMouseEnter={handleHover}
       onMouseLeave={handleMouseLeave}
-      onClick={() => navigate('/products/' + id)}
+      onClick={() => navigate('/product/' + id)}
     >
       <LazyLoadImage
         delayTime={300}
