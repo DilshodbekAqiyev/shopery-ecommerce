@@ -33,6 +33,7 @@ import { GiCakeSlice } from 'react-icons/gi'
 import { PiCookingPot } from 'react-icons/pi'
 import { AiOutlineMenu } from 'react-icons/ai'
 import { AiOutlinePlus } from 'react-icons/ai'
+import BreadCrump from '../../common/BreadCrump/BreadCrump'
 
 const Navbar = () => {
   const { t, i18n } = useTranslation()
@@ -261,6 +262,9 @@ const Navbar = () => {
             </a>
           </div>
         </div>
+      </div>
+      <div>
+        <BreadCrump />
       </div>
     </div>
   )

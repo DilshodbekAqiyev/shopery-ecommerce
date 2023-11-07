@@ -1,0 +1,21 @@
+#breadCrump {
+  background-image: url('/assets/images/fruits.jpg');
+  position: relative;
+}
+#breadCrump #div {
+  z-index: 100;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0)
+  );
+}
+#crump::after {
+  content: '>';
+  margin-left: 10px;
+}
+#crump:last-child::after {
+  display: none;
+}
