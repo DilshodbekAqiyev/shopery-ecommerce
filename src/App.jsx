@@ -9,6 +9,8 @@ import Signin from './pages/Auth/Signin'
 import PageNotFound from './pages/PageNotFound'
 import About from './pages/About/About'
 import Checkout from './pages/Checkout/Checkout'
+import Wishlist from './pages/Wishlist/Wishlist'
+import ShoppingCart from './pages/ShoppingCart/ShoppingCart'
 
 // Layouts
 import RootLayout from './components/layouts/RootLayout'
@@ -34,9 +36,10 @@ export default function App() {
         <Route path="product/:id" element={<ProductDetails />} />
         <Route path="sign-in" element={<Signup />} />
         <Route path="sign-up" element={<Signin />} />
-
         <Route path="about" element={<About />} />
         <Route path="checkout" element={<Checkout />} />
+        <Route path="wishlist" element={<Wishlist />} />
+        <Route path="shopping-cart" element={<ShoppingCart />} />
         <Route path="PageNotFound" element={<PageNotFound />} />
         <Route path="*" element={<Navigate to={'/PageNotFound'} />} />
       </Route>
