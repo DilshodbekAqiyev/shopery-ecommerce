@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider, createRoutesFromElements, Route } from 'react-router-dom'
+import { createBrowserRouter, RouterProvider, createRoutesFromElements, Route, Navigate } from 'react-router-dom'
 
 // Pages
 import Home from './pages/Home/Home'
@@ -6,7 +6,9 @@ import Shop from './pages/Shop'
 import ProductDetails from './pages/ProductDetails/ProductDetails'
 import Signup from './pages/Auth/Signup'
 import Signin from './pages/Auth/Signin'
-import PageNotFound from './components/common/PageNotFound'
+import PageNotFound from './pages/PageNotFound'
+import About from './pages/About/About'
+import Checkout from './pages/Checkout/Checkout'
 
 // Layouts
 import RootLayout from './components/layouts/RootLayout'
@@ -21,8 +23,6 @@ export default function App() {
       <Route path="/" element={<RootLayout />}>
         <Route index element={<Home />} />
         <Route path="blog" element={<Blog />} />
-        <Route path="blog:articleId" element={<ProductDetails />} />
-        <Route path="products" element={<ProductDetails />} />
         <Route
           path="shop"
           element={
@@ -31,10 +31,14 @@ export default function App() {
             </ShopProvider>
           }
         />
+        <Route path="product/:id" element={<ProductDetails />} />
         <Route path="sign-in" element={<Signup />} />
         <Route path="sign-up" element={<Signin />} />
 
-        <Route path="*" element={<PageNotFound />} />
+        <Route path="about" element={<About />} />
+        <Route path="checkout" element={<Checkout />} />
+        <Route path="PageNotFound" element={<PageNotFound />} />
+        <Route path="*" element={<Navigate to={'/PageNotFound'} />} />
       </Route>
     )
   )
