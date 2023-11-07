@@ -1,8 +1,12 @@
-import PropTypes from 'prop-types'
-import { useState } from 'react'
+import { useContext, useState } from 'react'
 import { FiSearch } from 'react-icons/fi'
+import BlogContext from '../context/BlogContext'
 
-const BlogSearch = ({ filterData, setFilterData }) => {
+const BlogSearch = () => {
+  const DATA = useContext(BlogContext)
+
+  const { setFilterData, filterData } = DATA
+
   const [inputVal, setInputVal] = useState('')
 
   const onChangeInput = () => {
@@ -27,8 +31,3 @@ const BlogSearch = ({ filterData, setFilterData }) => {
 }
 
 export default BlogSearch
-
-BlogSearch.propTypes = {
-  filterData: PropTypes.array,
-  setFilterData: PropTypes.any,
-}

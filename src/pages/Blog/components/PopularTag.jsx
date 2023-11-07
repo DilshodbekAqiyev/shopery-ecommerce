@@ -1,8 +1,12 @@
-import PropTypes from 'prop-types'
 import { Button } from '../../../components/ui/button'
-import { useEffect, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
+import BlogContext from '../context/BlogContext'
 
-const BlogPopularTag = ({ data, setFilterData }) => {
+const BlogPopularTag = () => {
+  const DATA = useContext(BlogContext)
+
+  const { data, setFilterData } = DATA
+
   const [clicked, setClicked] = useState([])
 
   const change = () => {
@@ -92,8 +96,3 @@ const BlogPopularTag = ({ data, setFilterData }) => {
 }
 
 export default BlogPopularTag
-BlogPopularTag.propTypes = {
-  data: PropTypes.array,
-  filterData: PropTypes.array,
-  setFilterData: PropTypes.any,
-}

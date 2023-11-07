@@ -2,14 +2,14 @@ import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 
 const BlogCard = ({ prop }) => {
-  const { title, previewImage, id, comments } = prop
+  const { title, previewImage, id, comments, createdDate } = prop
   return (
     <div className="blogCard w-[424px]">
       <div className="blogCardTop w-[424px] h-[324px] rounded-t-[8px] relative">
         <img src={previewImage} alt="img" className="rounded-t-[8px] max-w-[424px] h-[324px] " />
         <div className="absolute bottom-[24px] left-[24px] z-5 bg-white text-gray-900 flex flex-col items-center justify-center pt-[6px] px-[15px] pb-[10px] rounded">
-          <h4 className="text-[20px] ">18</h4>
-          <p className="text-[12px] text-grays-gray500">NOV</p>
+          <h4 className="text-[20px] ">{createdDate.slice(8, 10)}</h4>
+          <p className="text-[14px] text-grays-gray500">{createdDate.slice(4, 7)}</p>
         </div>
       </div>
       <div className="blogCartBottom p-6 border-[1px] rounded-b-[8px]">

@@ -1,7 +1,11 @@
-import PropTypes from 'prop-types'
-import { useEffect, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
+import BlogContext from '../context/BlogContext'
 
-const BlogTopCategories = ({ data, setFilterData }) => {
+const BlogTopCategories = () => {
+  const DATA = useContext(BlogContext)
+
+  const { data, setFilterData } = DATA
+
   const [currentCategory, setCurrentCategory] = useState('')
 
   useEffect(() => {
@@ -58,9 +62,3 @@ const BlogTopCategories = ({ data, setFilterData }) => {
 }
 
 export default BlogTopCategories
-
-BlogTopCategories.propTypes = {
-  filterData: PropTypes.array,
-  data: PropTypes.array,
-  setFilterData: PropTypes.any,
-}
