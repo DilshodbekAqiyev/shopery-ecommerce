@@ -8,6 +8,7 @@ import Signup from './pages/Auth/Signup'
 import Signin from './pages/Auth/Signin'
 import PageNotFound from './pages/PageNotFound'
 import About from './pages/About/About'
+import Checkout from './pages/Checkout/Checkout'
 
 // Layouts
 import RootLayout from './components/layouts/RootLayout'
@@ -34,7 +35,7 @@ export default function App() {
         <Route path="sign-in" element={<Signup />} />
         <Route path="sign-up" element={<Signin />} />
         <Route path="about" element={<About />} />
-
+        <Route path="checkout" element={<Checkout />} />
         <Route path="*" element={<PageNotFound />} />
       </Route>
     )
