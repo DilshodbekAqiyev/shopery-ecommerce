@@ -46,7 +46,7 @@ const Blog = () => {
             </h3>
           </div>
         </div>
-        <div className="BlogCards mt-8  gap-6 grid grid-cols-2">
+        <div className="BlogCards mt-[42px]  gap-6 grid grid-cols-2 ">
           {filterData.map((prop, idx) => (
             <BlogCard key={idx} prop={prop} />
           ))}
