@@ -8,6 +8,7 @@ import ProductDetails from './pages/ProductDetails/ProductDetails'
 import Signup from './pages/Auth/Signup'
 import Signin from './pages/Auth/Signin'
 import PageNotFound from './components/common/PageNotFound'
+import About from './pages/About/About'
 
 // Layouts
 import RootLayout from './components/layouts/RootLayout'
@@ -22,6 +23,7 @@ export default function App() {
         <Route path="shop" element={<Shop />} />
         <Route path="sign-in" element={<Signup />} />
         <Route path="sign-up" element={<Signin />} />
+        <Route path="about" element={<About />} />
 
         <Route path="*" element={<PageNotFound />} />
       </Route>

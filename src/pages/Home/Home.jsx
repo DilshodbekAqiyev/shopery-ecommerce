@@ -5,6 +5,7 @@ import Video from '../../components/common/video/video'
 import SendEmail from '../../components/common/sendEmail/sendEmail'
 import LatestCard from '../../components/common/Cards/LatestCard'
 import OurSpecial from './components/OurSpecial'
+import { useEffect } from 'react'
 const dataFeatures = {
   name: 'Green Apple',
   originalPrice: 20.99,
@@ -41,6 +42,9 @@ const data = {
 
 const vegetablesData = ['All', 'Vegetables', 'Fruit', 'Meat & Fish', ' View All']
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div>
       <div className="bg-[#EDF2EE] py-[100px]">
