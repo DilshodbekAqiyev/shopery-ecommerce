@@ -16,8 +16,23 @@ import RootLayout from './components/layouts/RootLayout'
 //Contexts
 import ShopProvider from './contexts/shop/ShopContext'
 import Blog from './pages/Blog'
+import { useEffect, useState } from 'react'
+import { instance } from './utils/apiRequest'
 
 export default function App() {
+  // const productContext = createContext()
+  const [data, setData] = useState([])
+
+  const getProductData = async () => {
+    const data = await instance.get(`products`)
+    console.log(data.data)
+    setData(data.data)
+  }
+
+  useEffect(() => {
+    getProductData()
+  }, [])
+
   const routes = createBrowserRouter(
     createRoutesFromElements(
       <Route path="/" element={<RootLayout />}>
@@ -31,7 +46,7 @@ export default function App() {
             </ShopProvider>
           }
         />
-        <Route path="product/:id" element={<ProductDetails />} />
+        <Route path="product/:id" element={<ProductDetails data={data} />} />
         <Route path="sign-in" element={<Signup />} />
         <Route path="sign-up" element={<Signin />} />
 
