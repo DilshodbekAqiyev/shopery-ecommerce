@@ -19,7 +19,6 @@ function Shop() {
       const response = await instance.get('products')
       const newData = response.data
       setNewData(newData)
-      dispatch({ type: 'SET_DATA', payload: newData })
     }
 
     getData()

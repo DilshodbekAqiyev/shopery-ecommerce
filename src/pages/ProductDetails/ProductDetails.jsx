@@ -1,29 +1,39 @@
-// import { useEffect, useState } from 'react'
-// import { instance } from '../../utils/apiRequest'
+/* eslint-disable no-extra-semi */
+import PropTypes from 'prop-types'
 import ModalDetails from './components/ModalDetails'
 import TabBar from './components/Tabs'
-// import { useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
+import { instance } from '../../utils/apiRequest'
+import { useEffect, useState } from 'react'
 
 function ProductDetails() {
-  // const [data, setData] = useState([])
-  // const { id } = useParams()
+  const { productID } = useParams()
+  const [foundProduct, setFoundProduct] = useState({})
+  // const context = createContext()
 
-  // const getProductData = async () => {
-  //   const data = await instance.get(`products`)
-  //   setData(data.data)
-  // }
+  console.log(foundProduct)
 
-  // useEffect(() => {
-  //   getProductData()
-  // }, [])
+  useEffect(() => {
+    // eslint-disable-next-line no-extra-semi
+    ;(async () => {
+      const response = await instance.get(`products/${productID}`)
+      setFoundProduct(response.data)
+    })()
+  }, [productID])
 
   return (
-    <div className=" max-w-[1320px] mx-auto">
-      <ModalDetails />
-      <TabBar />
+    <div className="max-w-[1320px] mx-auto">
+      <>
+        <ModalDetails product={foundProduct} />
+        <TabBar />
+      </>
       <h1 className="text-heading05 font-[600] text-center mb-8">Related Products</h1>
     </div>
   )
+}
+
+ProductDetails.propTypes = {
+  data: PropTypes.array,
 }
 
 export default ProductDetails

@@ -1,6 +1,8 @@
 #breadCrump {
   background-image: url('/assets/images/fruits.jpg');
   position: relative;
+  background-position: center;
+  background-size: cover;
 }
 #breadCrump #div {
   z-index: 100;
