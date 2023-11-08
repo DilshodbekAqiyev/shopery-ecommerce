@@ -1,31 +1,23 @@
-import {
-  createBrowserRouter,
-  RouterProvider,
-  createRoutesFromElements,
-  Route,
-  Navigate,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider, createRoutesFromElements, Route, Navigate } from 'react-router-dom'
 
 // Pages
-import Home from "./pages/Home/Home";
-import Shop from "./pages/Shop";
-import ProductDetails from "./pages/ProductDetails/ProductDetails";
-import Signup from "./pages/Auth/Signup";
-import Signin from "./pages/Auth/Signin";
+import Home from './pages/Home/Home'
+import Shop from './pages/Shop'
+import ProductDetails from './pages/ProductDetails/ProductDetails'
+import Signup from './pages/Auth/Signup'
+import Signin from './pages/Auth/Signin'
 import PageNotFound from './pages/PageNotFound'
 import About from './pages/About/About'
 import Checkout from './pages/Checkout/Checkout'
 import Wishlist from './pages/Wishlist/Wishlist'
 import ShoppingCart from './pages/ShoppingCart/ShoppingCart'
 
-
 // Layouts
-import RootLayout from "./components/layouts/RootLayout";
-import Dashboard from "./pages/Dashboard/Dashboard";
-import UserAddress from "./pages/Dashboard/components/UserAddress";
-import DashboardInfo from "./pages/Dashboard/components/DashboardInfo";
-import OrderDetail from "./pages/Dashboard/components/OrderDetail";
-import OrderHistory from "./pages/Dashboard/components/OrderHistory";
+import RootLayout from './components/layouts/RootLayout'
+import Dashboard from './pages/Dashboard/Dashboard'
+import UserAddress from './pages/Dashboard/components/UserAddress'
+import DashboardInfo from './pages/Dashboard/components/DashboardInfo'
+import OrderDetail from './pages/Dashboard/components/OrderDetail'
 
 //Contexts
 import ShopProvider from './contexts/shop/ShopContext'
@@ -43,9 +35,9 @@ export default function App() {
             <ShopProvider>
               <Shop />
             </ShopProvider>
-        }
+          }
         />
-        <Route path="product/:id" element={<ProductDetails />} />
+        <Route path="product/:productID" element={<ProductDetails />} />
         <Route path="sign-in" element={<Signup />} />
         <Route path="sign-up" element={<Signin />} />
         {/* <Route pa
@@ -72,10 +64,9 @@ export default function App() {
         <Route path="shopping-cart" element={<ShoppingCart />} />
         <Route path="PageNotFound" element={<PageNotFound />} />
         <Route path="*" element={<Navigate to={'/PageNotFound'} />} />
-
       </Route>
     )
-  );
+  )
 
-  return <RouterProvider router={routes} />;
+  return <RouterProvider router={routes} />
 }
