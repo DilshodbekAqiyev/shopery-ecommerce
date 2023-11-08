@@ -1,6 +1,6 @@
-const SinglePage = () => {
+const SingleBlog = () => {
   return (
-    <div className="singlePage w-[872px]">
+    <div className="singleBlog w-[872px]">
       <div>
         <img src="/assets/images/blog/img3.svg" alt="img" />
       </div>
@@ -8,4 +8,4 @@ const SinglePage = () => {
   )
 }
 
-export default SinglePage
+export default SingleBlog
