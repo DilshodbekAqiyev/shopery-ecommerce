@@ -21,14 +21,21 @@ import OrderDetail from './pages/Dashboard/components/OrderDetail'
 
 //Contexts
 import ShopProvider from './contexts/shop/ShopContext'
-import Blog from './pages/Blog'
+
+import Index from './pages/Blog/Index'
+import BlogCards from './pages/Blog/components/BlogCards'
+import SingleBlog from './pages/Blog/Single Blog/SingleBlog'
 
 export default function App() {
   const routes = createBrowserRouter(
     createRoutesFromElements(
       <Route path="/" element={<RootLayout />}>
         <Route index element={<Home />} />
-        <Route path="blog" element={<Blog />} />
+
+        <Route path="blog" element={<Index />}>
+          <Route index element={<BlogCards />}></Route>
+          <Route path="SingleBlog/:CardID" element={<SingleBlog />} />
+        </Route>
         <Route
           path="shop"
           element={
