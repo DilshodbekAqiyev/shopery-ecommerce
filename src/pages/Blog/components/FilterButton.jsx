@@ -14,7 +14,7 @@ const BlogFilterButton = () => {
       }}
     >
       <span className="text-white font-bold">Filter</span>
-      <img src="/assets/icons/filter.svg" alt="filter icon" className="inline-block ml-3 w-6 h-6" />
+      <img src="/assets/icons/filter.svg" alt="filter icon" className="inline-block ml-3 w-6 h-6" loading="lazy" />
     </Button>
   )
 }
