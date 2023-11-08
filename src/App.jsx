@@ -6,6 +6,7 @@ import Shop from './pages/Shop'
 import ProductDetails from './pages/ProductDetails/ProductDetails'
 import Signup from './pages/Auth/Signup'
 import Signin from './pages/Auth/Signin'
+
 import PageNotFound from './pages/PageNotFound'
 import About from './pages/About/About'
 import Checkout from './pages/Checkout/Checkout'

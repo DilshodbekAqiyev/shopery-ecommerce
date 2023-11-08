@@ -74,37 +74,39 @@ const Home = () => {
       <OurSpecial />
 
       <div className="bg-slate-300 ">
-        <div className="mx-auto w-[1518px] flex overflow-hidden items-center justify-between py-20">
-          <img className="w-[521px] h-[308px]" src="/assets/images/special/special_left.png" alt="" />
-          <Timer />
-          <img className="w-[700px] mb-[-80px]" src="/assets/images/special/special_right.png" alt="" />
+        <div className="mx-auto  flex overflow-hidden items-center justify-between py-20">
+          <div className="mx-auto w-[1518px] flex overflow-hidden items-center justify-between py-20">
+            <img className="w-[521px] h-[308px]" src="/assets/images/special/special_left.png" alt="" />
+            <Timer />
+            <img className="w-[700px] mb-[-80px]" src="/assets/images/special/special_right.png" alt="" />
+          </div>
         </div>
-      </div>
 
-      <div className="container">
-        <FeaturedProducts dataFeatures={data} />
-      </div>
+        <div className="container">
+          <FeaturedProducts dataFeatures={data} />
+        </div>
 
-      <div className=" bg-latestWhiteGrayReverse">
-        <div className=" container py-[100px] ">
-          <Video
-            src="https://youtu.be/0ptb_0gN7_4"
-            width="1320px"
-            height={matches ? '740px' : '500px'}
-            title="We’re the Best Organic Farm in the World"
-          />
+        <div className=" bg-latestWhiteGrayReverse">
+          <div className=" container py-[100px] ">
+            <Video
+              src="https://youtu.be/0ptb_0gN7_4"
+              width="1320px"
+              height={matches ? '740px' : '500px'}
+              title="We’re the Best Organic Farm in the World"
+            />
+          </div>
         </div>
-      </div>
-      <div className="flex items-center justify-start flex-col h-[712px] max-xl:h-auto gap-[34px] bg-latestWhiteGray">
-        <p className="font-semibold text-[40px]">Latest News</p>
-        <div className=" flex gap-[24px] items-center justify-center max-xl:flex-wrap">
-          {Array.from(Array(3).keys()).map((item) => (
-            <LatestCard key={item} {...data} />
-          ))}
+        <div className="flex items-center justify-start flex-col h-[712px] max-xl:h-auto gap-[34px] bg-latestWhiteGray">
+          <p className="font-semibold text-[40px]">Latest News</p>
+          <div className=" flex gap-[24px] items-center justify-center max-xl:flex-wrap">
+            {Array.from(Array(3).keys()).map((item) => (
+              <LatestCard key={item} {...data} />
+            ))}
+          </div>
         </div>
-      </div>
-      <div className=" border-y bg-greenGrays-greenGray0.5">
-        <SendEmail />
+        <div className=" border-y bg-greenGrays-greenGray0.5">
+          <SendEmail />
+        </div>
       </div>
     </div>
   )
