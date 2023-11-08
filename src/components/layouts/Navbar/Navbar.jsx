@@ -24,7 +24,6 @@ import { TbSalad, TbIceCream, TbMeat } from 'react-icons/tb'
 import { PiFishSimpleDuotone, PiCookingPot } from 'react-icons/pi'
 import { SiBuymeacoffee } from 'react-icons/si'
 import { GiCupcake, GiCakeSlice } from 'react-icons/gi'
-
 const Navbar = () => {
   const { t, i18n } = useTranslation()
   const changeLanguage = (lang) => {
