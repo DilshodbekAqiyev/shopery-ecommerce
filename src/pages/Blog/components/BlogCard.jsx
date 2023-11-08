@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types'
-import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 const BlogCard = ({ prop }) => {
+  const navigate = useNavigate()
   const { title, previewImage, id, comments, createdDate } = prop
   return (
     <div className="blogCard w-[100%]">
@@ -28,18 +29,18 @@ const BlogCard = ({ prop }) => {
             </a>
           </li>
           <li>
-            <Link to="Single Blog" className="flex items-center gap-1">
+            <a onClick={() => navigate('SingleBlog/' + id)} className="flex items-center gap-1">
               <img src={'/assets/icons/chatComment.svg'} alt="img" loading="lazy" />
               <span>{comments.length} Comments</span>
-            </Link>
+            </a>
           </li>
         </ul>
         <h4 className="text-[18px] mt-2 mb-5 font-[500]">{title}</h4>
-        <Link to={`/blog/${id}`} className="flex gap-[12px] text-primary text-[16px] font-[600]">
+        <a onClick={() => navigate('SingleBlog/' + id)} className="flex gap-[12px] text-primary text-[16px] font-[600]">
           <span>Read More </span>
 
           <img src="assets/icons/ArrowRight.svg" alt="img" loading="lazy" />
-        </Link>
+        </a>
       </div>
     </div>
   )
