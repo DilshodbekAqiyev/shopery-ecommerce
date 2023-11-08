@@ -5,7 +5,6 @@ function Timer() {
   const [count1, setCount1] = useState(2)
   const [count2, setCount2] = useState(18)
   const [count3, setCount3] = useState(46)
-
   useEffect(() => {
     const interval = setInterval(() => {
       if (count1 > 0 || count2 > 0 || count3 > 0) {
