@@ -18,8 +18,6 @@ function BreadCrump() {
       )
     })
 
-  console.log(location)
-
   return (
     <div id="breadCrump">
       <div

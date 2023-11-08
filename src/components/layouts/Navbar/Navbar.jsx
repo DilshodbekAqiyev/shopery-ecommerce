@@ -1,5 +1,3 @@
-import { CiLocationOn } from 'react-icons/ci'
-
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../../ui/select'
 import {
   NavigationMenu,
@@ -10,30 +8,22 @@ import {
   NavigationMenuTrigger,
 } from '../../ui/navigation-menu'
 import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from '../../ui/sheet'
-import styles from './Navbar.module.css'
 
 import { useTranslation } from 'react-i18next'
 import { translationKeys } from '../../../utils/translation/translationKeys'
 
 import { Link } from 'react-router-dom'
-import LogoIcon from '../../../../public/assets/images/navbar/LogoIcon'
+import LogoIcon from './images/LogoIcon'
 import { Button } from '../../ui/button'
-import { AiOutlineHeart } from 'react-icons/ai'
+import { AiOutlineHeart, AiOutlineMenu, AiOutlinePlus } from 'react-icons/ai'
 import { BsHandbag } from 'react-icons/bs'
 import { FiPhoneCall } from 'react-icons/fi'
-import { CiSearch } from 'react-icons/ci'
+import { CiSearch, CiLocationOn } from 'react-icons/ci'
 import { LuApple } from 'react-icons/lu'
-import { TbSalad } from 'react-icons/tb'
-import { TbMeat } from 'react-icons/tb'
-import { PiFishSimpleDuotone } from 'react-icons/pi'
+import { TbSalad, TbIceCream, TbMeat } from 'react-icons/tb'
+import { PiFishSimpleDuotone, PiCookingPot } from 'react-icons/pi'
 import { SiBuymeacoffee } from 'react-icons/si'
-import { TbIceCream } from 'react-icons/tb'
-import { GiCupcake } from 'react-icons/gi'
-import { GiCakeSlice } from 'react-icons/gi'
-import { PiCookingPot } from 'react-icons/pi'
-import { AiOutlineMenu } from 'react-icons/ai'
-import { AiOutlinePlus } from 'react-icons/ai'
-import BreadCrump from '../../common/BreadCrump/BreadCrump'
+import { GiCupcake, GiCakeSlice } from 'react-icons/gi'
 
 const Navbar = () => {
   const { t, i18n } = useTranslation()
@@ -44,7 +34,7 @@ const Navbar = () => {
 
   return (
     <div className="flex flex-col max-w-full">
-      <div className="bg-gray-800 py-3 text-gray-600 text-xs font-normal">
+      <div className="bg-gray-800 py-3 text-gray-300 text-xs font-normal">
         <div className="flex items-center justify-between max-w-[1320px] m-auto">
           <div>
             <a href="#1" className="cursor-pointer hover:text-primary flex items-center gap-2 transition-all">
@@ -54,34 +44,34 @@ const Navbar = () => {
           </div>
           <div className="flex items-center gap-5">
             <Select onValueChange={(e) => changeLanguage(e)}>
-              <SelectTrigger className="w-max p-0 text-gray-600 font-normal bg-gray-800 text-xs hover:text-primary outline-none border-none gap-[6px] flex items-center justify-center">
+              <SelectTrigger className="focus:ring-offset-0 h-full rounded-none placeholder:text-muted-foreground focus:outline-none focus:ring-0 disabled:opacity-100 w-max p-0 text-gray-300 font-normal bg-gray-800 text-xs hover:text-primary outline-none border-input border-none gap-[6px] flex items-center justify-center">
                 <SelectValue placeholder="Eng" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="en" className="cursor-pointer text-gray-600 font-normal text-xs">
+                <SelectItem value="en" selectValue className="cursor-pointer text-gray-300 font-normal text-xs">
                   Eng
                 </SelectItem>
-                <SelectItem value="ru" className="cursor-pointer text-gray-600 font-normal text-xs">
+                <SelectItem value="ru" className="cursor-pointer text-gray-300 font-normal text-xs">
                   Рус
                 </SelectItem>
-                <SelectItem value="uz" className="cursor-pointer text-gray-600 font-normal text-xs">
+                <SelectItem value="uz" className="cursor-pointer text-gray-300 font-normal text-xs">
                   Uzb
                 </SelectItem>
               </SelectContent>
             </Select>
             
             <Select>
-              <SelectTrigger className="w-max p-0 bg-gray-800 text-gray-600 font-normal text-xs hover:text-primary outline-none border-none gap-[6px] flex items-center justify-center">
+              <SelectTrigger className="focus:ring-offset-0 h-full rounded-none placeholder:text-muted-foreground focus:outline-none focus:ring-0 disabled:opacity-100 w-max p-0 text-gray-300 font-normal bg-gray-800 text-xs hover:text-primary outline-none border-input border-none gap-[6px] flex items-center justify-center">
                 <SelectValue placeholder="USD" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="usd" className="cursor-pointer text-gray-600 font-normal text-xs">
+                <SelectItem value="usd" className="cursor-pointer text-gray-300 font-normal text-xs">
                   USD
                 </SelectItem>
-                <SelectItem value="rubl" className="cursor-pointer text-gray-600 font-normal text-xs">
+                <SelectItem value="rubl" className="cursor-pointer text-gray-300 font-normal text-xs">
                   РУБЛЬ
                 </SelectItem>
-                <SelectItem value="som" className="cursor-pointer text-gray-600 font-normal text-xs">
+                <SelectItem value="som" className="cursor-pointer text-gray-300 font-normal text-xs">
                   SO'M
                 </SelectItem>
               </SelectContent>
@@ -106,14 +96,18 @@ const Navbar = () => {
               {<LogoIcon />}
             </Link>
           </div>
-          <div className="flex items-center justify-between gap-1 pl-4 w-[400px] border border-gray-200 rounded-[6px]">
-            <CiSearch size={32} />
-            <input
-              type="text"
-              className="bg-transparent w-full p-2 outline-none border-none text-gray-500 text-[15px]"
-              placeholder={t(translationKeys['Search'])}
-            />
-            <Button className="rounded-l-[0px]">{t(translationKeys['Search'])}</Button>
+          <div className="flex items-center justify-between  ">
+            <div className="flex items-center justify-between px-4 border-r-primary py-1 gap-1 border border-gray-200 rounded-l-[6px] w-[366px]">
+              <CiSearch size={32} />
+              <input
+                type="text"
+                className="bg-transparent w-full p-2 outline-none border-none text-gray-500 text-[15px]"
+                placeholder={t(translationKeys['Search'])}
+              />
+            </div>
+            <div className="">
+              <Button className="rounded-l-[0px]">{t(translationKeys['Search'])}</Button>
+            </div>
           </div>
           <div className="flex items-center gap-4">
             <div className="cursor-pointer relative">
@@ -140,12 +134,10 @@ const Navbar = () => {
       </div>
       <div className="bg-gray-50">
         <div className="max-w-[1320px] m-auto flex items-center justify-between">
-          <NavigationMenu className={styles.NavigationMenu}>
-            <NavigationMenuList className={styles.NavigationMenuList}>
-              <NavigationMenuItem className={styles.NavigationMenuItem}>
-                <NavigationMenuTrigger
-                  className={`${styles.NavigationMenuTrigger} text-white hover:text-gray-800 bg-primary inline-flex h-10 w-max items-center justify-center px-4 py-2 text-sm font-medium transition-colors hover:bg-accent-foreground      hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-auto disabled:opacity data-[active]:bg-accent-foreground data-[state=open]:bg-accent-foreground`}
-                >
+          <NavigationMenu className="">
+            <NavigationMenuList className="gap-5">
+              <NavigationMenuItem className="">
+                <NavigationMenuTrigger className="rounded-none disabled:opacity-100 text-white bg-primary inline-flex h-full gap-2 w-max px-6 py-4 items-center justify-center hover:bg-primary hover:text-white focus:bg-primary focus:text-white data-[state=open]:bg-gray-900">
                   <AiOutlineMenu size={20} />
                   All Categories
                 </NavigationMenuTrigger>
@@ -181,7 +173,7 @@ const Navbar = () => {
                     </NavigationMenuLink>
                   </Link>
                   <Link to="/shop">
-                    <NavigationMenuLink className="flex items-center gap-3 px-5 py-3 w-[240px] cursor-pointer hover:bg-primary hover:text-whit">
+                    <NavigationMenuLink className="flex items-center gap-3 px-5 py-3 w-[240px] cursor-pointer hover:bg-primary hover:text-white">
                       <TbIceCream size={20} />
                       <p>Yogurt & Ice Cream</p>
                     </NavigationMenuLink>
@@ -212,31 +204,99 @@ const Navbar = () => {
                   </Link>
                 </NavigationMenuContent>
               </NavigationMenuItem>
-              <NavigationMenuItem className="max-md:hidden">
-                <NavigationMenuTrigger className="relative bg-transparent focus:outline-none focus-within:bg-transparent hover:text-primary p-0 flex items-center gap-2">
+              <NavigationMenuItem className="max-md:hidden relative">
+                <NavigationMenuTrigger className="bg-transparent hover:text-primary p-0 flex items-center gap-2 group h-full rounded-none hover:bg-transparent data-[state=open]:bg-transparent">
                   <Link to="/">Home</Link>
                 </NavigationMenuTrigger>
+                <NavigationMenuContent className="flex flex-col">
+                  <NavigationMenuLink className="px-5 py-3 w-[240px] cursor-pointer hover:bg-primary hover:text-white">
+                    Link 1
+                  </NavigationMenuLink>
+                  <NavigationMenuLink className="px-5 py-3 w-[240px] cursor-pointer hover:bg-primary hover:text-white">
+                    Link 2
+                  </NavigationMenuLink>
+                  <NavigationMenuLink className="px-5 py-3 w-[240px] cursor-pointer hover:bg-primary hover:text-white">
+                    Link 3
+                  </NavigationMenuLink>
+                  <NavigationMenuLink className="px-5 py-3 w-[240px] cursor-pointer hover:bg-primary hover:text-white">
+                    Link 4
+                  </NavigationMenuLink>
+                  <NavigationMenuLink className="px-5 py-3 w-[240px] cursor-pointer hover:bg-primary hover:text-white">
+                    Link 5
+                  </NavigationMenuLink>
+                </NavigationMenuContent>
               </NavigationMenuItem>
-              <NavigationMenuItem className="max-md:hidden">
-                <NavigationMenuTrigger className="bg-transparent focus:outline-none focus:bg-transparent hover:text-primary hover:bg-transparent p-0 flex items-center gap-2">
+              <NavigationMenuItem className="max-md:hidden relative">
+                <NavigationMenuTrigger className="bg-transparent hover:text-primary p-0 flex items-center gap-2 group h-full rounded-none hover:bg-transparent data-[state=open]:bg-transparent">
                   <Link to="/shop">Shop</Link>
                 </NavigationMenuTrigger>
+                <NavigationMenuContent className="flex flex-col">
+                  <NavigationMenuLink className="px-5 py-3 w-[240px] cursor-pointer hover:bg-primary hover:text-white">
+                    Link 1
+                  </NavigationMenuLink>
+                  <NavigationMenuLink className="px-5 py-3 w-[240px] cursor-pointer hover:bg-primary hover:text-white">
+                    Link 2
+                  </NavigationMenuLink>
+                  <NavigationMenuLink className="px-5 py-3 w-[240px] cursor-pointer hover:bg-primary hover:text-white">
+                    Link 3
+                  </NavigationMenuLink>
+                  <NavigationMenuLink className="px-5 py-3 w-[240px] cursor-pointer hover:bg-primary hover:text-white">
+                    Link 4
+                  </NavigationMenuLink>
+                  <NavigationMenuLink className="px-5 py-3 w-[240px] cursor-pointer hover:bg-primary hover:text-white">
+                    Link 5
+                  </NavigationMenuLink>
+                </NavigationMenuContent>
               </NavigationMenuItem>
-              <NavigationMenuItem className="max-md:hidden">
-                <NavigationMenuTrigger className="bg-transparent focus:outline-none focus-within:bg-transparent hover:text-primary p-0 flex items-center gap-2">
+              <NavigationMenuItem className="max-md:hidden relative">
+                <NavigationMenuTrigger className="bg-transparent hover:text-primary p-0 flex items-center gap-2 group h-full rounded-none hover:bg-transparent data-[state=open]:bg-transparent">
                   <Link to="/products">Pages</Link>
                 </NavigationMenuTrigger>
+                <NavigationMenuContent className="flex flex-col">
+                  <NavigationMenuLink className="px-5 py-3 w-[240px] cursor-pointer hover:bg-primary hover:text-white">
+                    Link 1
+                  </NavigationMenuLink>
+                  <NavigationMenuLink className="px-5 py-3 w-[240px] cursor-pointer hover:bg-primary hover:text-white">
+                    Link 2
+                  </NavigationMenuLink>
+                  <NavigationMenuLink className="px-5 py-3 w-[240px] cursor-pointer hover:bg-primary hover:text-white">
+                    Link 3
+                  </NavigationMenuLink>
+                  <NavigationMenuLink className="px-5 py-3 w-[240px] cursor-pointer hover:bg-primary hover:text-white">
+                    Link 4
+                  </NavigationMenuLink>
+                  <NavigationMenuLink className="px-5 py-3 w-[240px] cursor-pointer hover:bg-primary hover:text-white">
+                    Link 5
+                  </NavigationMenuLink>
+                </NavigationMenuContent>
               </NavigationMenuItem>
-              <NavigationMenuItem className="max-md:hidden">
-                <NavigationMenuTrigger className="bg-transparent focus:outline-none focus-within:bg-transparent hover:text-primary p-0 flex items-center gap-2">
+              <NavigationMenuItem className="max-md:hidden relative">
+                <NavigationMenuTrigger className="bg-transparent hover:text-primary p-0 flex items-center gap-2 group h-full rounded-none hover:bg-transparent data-[state=open]:bg-transparent">
                   <Link to="/blog">Blog</Link>
                 </NavigationMenuTrigger>
+                <NavigationMenuContent className="flex flex-col">
+                  <NavigationMenuLink className="px-5 py-3 w-[240px] cursor-pointer hover:bg-primary hover:text-white">
+                    Link 1
+                  </NavigationMenuLink>
+                  <NavigationMenuLink className="px-5 py-3 w-[240px] cursor-pointer hover:bg-primary hover:text-white">
+                    Link 2
+                  </NavigationMenuLink>
+                  <NavigationMenuLink className="px-5 py-3 w-[240px] cursor-pointer hover:bg-primary hover:text-white">
+                    Link 3
+                  </NavigationMenuLink>
+                  <NavigationMenuLink className="px-5 py-3 w-[240px] cursor-pointer hover:bg-primary hover:text-white">
+                    Link 4
+                  </NavigationMenuLink>
+                  <NavigationMenuLink className="px-5 py-3 w-[240px] cursor-pointer hover:bg-primary hover:text-white">
+                    Link 5
+                  </NavigationMenuLink>
+                </NavigationMenuContent>
               </NavigationMenuItem>
 
-              <NavigationMenuItem className="max-md:hidden bg-transparent cursor-pointer hover:text-primary p-0">
+              <NavigationMenuItem className="max-md:hidden h-full bg-transparent cursor-pointer hover:text-primary p-0">
                 <Link to="/about">About Us</Link>
               </NavigationMenuItem>
-              <NavigationMenuItem className="max-md:hidden bg-transparent cursor-pointer hover:text-primary p-0">
+              <NavigationMenuItem className="max-md:hidden h-full bg-transparent cursor-pointer hover:text-primary p-0">
                 <Link to="/contact">Contact Us</Link>
               </NavigationMenuItem>
             </NavigationMenuList>
@@ -263,9 +323,6 @@ const Navbar = () => {
             </a>
           </div>
         </div>
-      </div>
-      <div>
-        <BreadCrump />
       </div>
     </div>
   )
