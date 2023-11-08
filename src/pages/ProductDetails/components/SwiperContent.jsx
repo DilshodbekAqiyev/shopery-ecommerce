@@ -1,13 +1,17 @@
+import PropTypes from 'prop-types'
 import { FaChevronUp, FaChevronDown } from 'react-icons/fa'
-import { ProductSliderImgData } from '../__mock__/detailsData'
-import { useState } from 'react'
-import mainBigImg from '/assets/images/products/productSliderImg.png'
+import { useEffect, useState } from 'react'
 
-function SwiperContent() {
-  const [mainImg, setMainImg] = useState(mainBigImg)
+function SwiperContent({ product }) {
+  const { images } = product
+  const [mainImg, setMainImg] = useState(product.images?.src)
+
+  useEffect(() => {
+    setMainImg(product.images?.src)
+  }, [product])
 
   const handlePutImg = (img) => {
-    img !== null ? setMainImg(img) : setMainImg(mainBigImg)
+    img !== null ? setMainImg(img) : setMainImg(product.images?.src)
   }
 
   const sliderTop = () => {
@@ -32,12 +36,12 @@ function SwiperContent() {
           className="flex flex-col items-start gap-3 h-[400px] overflow-auto scroll-smooth transition-all ease-in-out duration-300 scrollbar-hide"
           id="slider"
         >
-          {ProductSliderImgData.map(({ id, img }) => {
+          {images?.otherImages?.map(({ id, src, otherImageDescription }) => {
             return (
-              <div key={id} className={`w-[90px] h-[90px] cursor-pointer`} onClick={() => handlePutImg(img)}>
+              <div key={id} className={`w-[90px] h-[90px] cursor-pointer`} onClick={() => handlePutImg(src)}>
                 <img
-                  src={img}
-                  alt="SliderImg"
+                  src={src}
+                  alt={otherImageDescription}
                   loading="lazy"
                   className="w-full h-full object-cover hover:scale-105 ease-in-out duration-300 hover:shadow-md"
                 />
@@ -56,6 +60,10 @@ function SwiperContent() {
       </div>
     </div>
   )
+}
+
+SwiperContent.propTypes = {
+  product: PropTypes.any,
 }
 
 export default SwiperContent
