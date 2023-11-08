@@ -1,5 +1,30 @@
 {
-  "users": [],
+  "users": [
+    {
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "johndoe@gmail.com",
+      "role": "Customer",
+      "phoneNumber": 80355501223,
+      "password": "X34sfsdfy34t7dsgfh",
+      "token": "x@fSDFYsd345d23saFsa326ASDghad23saFsa326ASDghasd%6Assd%6AsD",
+      "avatar": "/assets/images/users/user1.png",
+      "billingAddress": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "companyName": "Zakirsoft",
+        "streetAddress": "4140 Parl",
+        "country": "United States",
+        "city": "Washington",
+        "zipCode": "20003",
+        "email": "dianne.russell@gmail.com",
+        "phone": 6935551232
+      },
+      "wishlist": [],
+      "shoppingCart": [],
+      "checkout": []
+    }
+  ],
   "products": [
     {
       "id": 1,
@@ -66,7 +91,13 @@
         ]
       },
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": ["Vegetables", "Healthy", "Chinese", "Cabbage", "Green Cabbage"],
+      "tag": [
+        "Vegetables",
+        "Healthy",
+        "Chinese",
+        "Cabbage",
+        "Green Cabbage"
+      ],
       "reviews": [
         {
           "id": 1,
@@ -151,7 +182,13 @@
         ]
       },
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": ["Vegetables", "Healthy", "Chinese", "Cabbage", "Green Cabbage"],
+      "tag": [
+        "Vegetables",
+        "Healthy",
+        "Chinese",
+        "Cabbage",
+        "Green Cabbage"
+      ],
       "reviews": [
         {
           "id": 1,
@@ -236,7 +273,13 @@
         ]
       },
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": ["Vegetables", "Healthy", "Chinese", "Cabbage", "Green Cabbage"],
+      "tag": [
+        "Vegetables",
+        "Healthy",
+        "Chinese",
+        "Cabbage",
+        "Green Cabbage"
+      ],
       "reviews": [
         {
           "id": 1,
@@ -321,7 +364,12 @@
         ]
       },
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": ["Vegetables", "Healthy", "Cabbage", "Green Cabbage"],
+      "tag": [
+        "Vegetables",
+        "Healthy",
+        "Cabbage",
+        "Green Cabbage"
+      ],
       "reviews": [
         {
           "id": 1,
@@ -406,7 +454,12 @@
         ]
       },
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": ["Vegetables", "Healthy", "Cabbage", "Green Cabbage"],
+      "tag": [
+        "Vegetables",
+        "Healthy",
+        "Cabbage",
+        "Green Cabbage"
+      ],
       "reviews": [
         {
           "id": 1,
@@ -491,7 +544,12 @@
         ]
       },
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": ["Vegetables", "Healthy", "Cabbage", "Green Cabbage"],
+      "tag": [
+        "Vegetables",
+        "Healthy",
+        "Cabbage",
+        "Green Cabbage"
+      ],
       "reviews": [
         {
           "id": 1,
@@ -576,7 +634,12 @@
         ]
       },
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": ["Vegetables", "Healthy", "Cabbage", "Green Cabbage"],
+      "tag": [
+        "Vegetables",
+        "Healthy",
+        "Cabbage",
+        "Green Cabbage"
+      ],
       "reviews": [
         {
           "id": 1,
@@ -661,7 +724,12 @@
         ]
       },
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": ["Vegetables", "Healthy", "Cabbage", "Green Cabbage"],
+      "tag": [
+        "Vegetables",
+        "Healthy",
+        "Cabbage",
+        "Green Cabbage"
+      ],
       "reviews": [
         {
           "id": 1,
@@ -692,7 +760,11 @@
       "category": "Cooking",
       "readingTime": 4,
       "content": "<p>lorem ipsum</p>",
-      "tags": ["Healthy", "Dinner", "Meat"],
+      "tags": [
+        "Healthy",
+        "Dinner",
+        "Meat"
+      ],
       "comments": [
         {
           "fullName": "John Doe",
@@ -710,7 +782,11 @@
       "category": "Beverages",
       "readingTime": 5,
       "content": "<p>lorem ipsum</p>",
-      "tags": ["Lounch", "Kid foods", "Vegetarian"],
+      "tags": [
+        "Lounch",
+        "Kid foods",
+        "Vegetarian"
+      ],
       "comments": [
         {
           "fullName": "John Doe",
@@ -728,7 +804,11 @@
       "category": "Vegetables",
       "readingTime": 6,
       "content": "<p>lorem ipsum</p>",
-      "tags": ["Tiffin", "Vitamins", "Bread"],
+      "tags": [
+        "Tiffin",
+        "Vitamins",
+        "Bread"
+      ],
       "comments": [
         {
           "fullName": "John Doe",
@@ -746,7 +826,11 @@
       "category": "Bread & Bakery",
       "readingTime": 6,
       "content": "<p>lorem ipsum</p>",
-      "tags": ["Snacks", "Tiffin", "Low fat"],
+      "tags": [
+        "Snacks",
+        "Tiffin",
+        "Low fat"
+      ],
       "comments": [
         {
           "fullName": "John Doe",
@@ -764,7 +848,11 @@
       "category": "Beauty & Health",
       "readingTime": 6,
       "content": "<p>lorem ipsum</p>",
-      "tags": ["Kid foods", "Healthy", "Low fat"],
+      "tags": [
+        "Kid foods",
+        "Healthy",
+        "Low fat"
+      ],
       "comments": [
         {
           "fullName": "John Doe",
@@ -782,7 +870,11 @@
       "category": "Fresh Fruit",
       "readingTime": 4,
       "content": "<p>lorem ipsum</p>",
-      "tags": ["Fresh Fruit", "Meat", "Bread"],
+      "tags": [
+        "Fresh Fruit",
+        "Meat",
+        "Bread"
+      ],
       "comments": [
         {
           "fullName": "John Doe",
@@ -800,7 +892,11 @@
       "category": "Vegetables",
       "readingTime": 6,
       "content": "<p>lorem ipsum</p>",
-      "tags": ["Meat", "Dinner", "Vegetarian"],
+      "tags": [
+        "Meat",
+        "Dinner",
+        "Vegetarian"
+      ],
       "comments": [
         {
           "fullName": "John Doe",
@@ -818,7 +914,11 @@
       "category": "Fresh Fruit",
       "readingTime": 6,
       "content": "<p>lorem ipsum</p>",
-      "tags": ["Healthy", "Snacks", "Tiffin"],
+      "tags": [
+        "Healthy",
+        "Snacks",
+        "Tiffin"
+      ],
       "comments": [
         {
           "fullName": "John Doe",
@@ -836,7 +936,11 @@
       "category": "Fresh Fruit",
       "readingTime": 4,
       "content": "<p>lorem ipsum</p>",
-      "tags": ["Launch", "Snacks", "Bread"],
+      "tags": [
+        "Launch",
+        "Snacks",
+        "Bread"
+      ],
       "comments": [
         {
           "fullName": "John Doe",
@@ -854,7 +958,11 @@
       "category": "Vegetables",
       "readingTime": 4,
       "content": "<p>lorem ipsum</p>",
-      "tags": ["Vegetarian", "Vitamins", "Dinner"],
+      "tags": [
+        "Vegetarian",
+        "Vitamins",
+        "Dinner"
+      ],
       "comments": [
         {
           "fullName": "John Doe",
@@ -869,16 +977,16 @@
       {
         "title": "100% Trusted Organic Food Store",
         "content": "Morbi porttitor ligula in nunc varius sagittis. Proin dui nisi, laoreet ut tempor ac, cursus vitae eros. Cras quis ultricies elit. Proin ac lectus arcu. Maecenas aliquet vel tellus at accumsan. Donec a eros non massa vulputate ornare. Vivamus ornare commodo ante, at commodo felis congue vitae.",
-        "image": "/assets/images/about/nimadir.png"
+        "image": "/assets/images/About/img_about.png"
       },
       {
         "title": "100% Trusted Organic Food Store",
-        "content": "Morbi porttitor ligula in nunc varius sagittis. Proin dui nisi, laoreet ut tempor ac, cursus vitae eros. Cras quis ultricies elit. Proin ac lectus arcu. Maecenas aliquet vel tellus at accumsan. Donec a eros non massa vulputate ornare. Vivamus ornare commodo ante, at commodo felis congue vitae.",
-        "image": "/assets/images/about/nimadir.png"
+        "content": "Pellentesque a ante vulputate leo porttitor luctus sed eget eros. Nulla et rhoncus neque. Duis non diam eget est luctus tincidunt a a mi. Nulla eu eros consequat tortor tincidunt feugiat. ",
+        "image": "/assets/images/About/img_about2.png"
       },
       {
-        "title": "100% Trusted Organic Food Store",
-        "content": "Morbi porttitor ligula in nunc varius sagittis. Proin dui nisi, laoreet ut tempor ac, cursus vitae eros. Cras quis ultricies elit. Proin ac lectus arcu. Maecenas aliquet vel tellus at accumsan. Donec a eros non massa vulputate ornare. Vivamus ornare commodo ante, at commodo felis congue vitae.",
+        "title": "We Delivered, You Enjoy Your Order.",
+        "content": "Ut suscipit egestas suscipit. Sed posuere pellentesque nunc, ultrices consectetur velit dapibus eu. Mauris sollicitudin dignissim diam, ac mattis eros accumsan rhoncus. Curabitur auctor bibendum nunc eget elementum.",
         "image": "/assets/images/about/nimadir.png",
         "button": {
           "text": "Shop Now",

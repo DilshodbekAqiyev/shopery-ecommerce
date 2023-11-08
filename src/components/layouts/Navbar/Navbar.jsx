@@ -58,6 +58,7 @@ const Navbar = () => {
                 </SelectItem>
               </SelectContent>
             </Select>
+            
             <Select>
               <SelectTrigger className="focus:ring-offset-0 h-full rounded-none placeholder:text-muted-foreground focus:outline-none focus:ring-0 disabled:opacity-100 w-max p-0 text-gray-300 font-normal bg-gray-800 text-xs hover:text-primary outline-none border-input border-none gap-[6px] flex items-center justify-center">
                 <SelectValue placeholder="USD" />
