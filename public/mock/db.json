@@ -40,7 +40,13 @@
         ]
       },
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": ["Vegetables", "Healthy", "Chinese", "Cabbage", "Green Cabbage"],
+      "tag": [
+        "Vegetables",
+        "Healthy",
+        "Chinese",
+        "Cabbage",
+        "Green Cabbage"
+      ],
       "reviews": [
         {
           "id": 1,
@@ -63,7 +69,7 @@
     {
       "id": 2,
       "name": "Chanise Cabbage",
-      "category": "Vegetables",
+      "category": "Cooking",
       "discountPrice": 17.28,
       "originalPrice": 48.0,
       "discountPercentage": 64,
@@ -99,7 +105,13 @@
         ]
       },
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": ["Vegetables", "Healthy", "Chinese", "Cabbage", "Green Cabbage"],
+      "tag": [
+        "Vegetables",
+        "Healthy",
+        "Chinese",
+        "Cabbage",
+        "Green Cabbage"
+      ],
       "reviews": [
         {
           "id": 1,
@@ -158,7 +170,333 @@
         ]
       },
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": ["Vegetables", "Healthy", "Chinese", "Cabbage", "Green Cabbage"],
+      "tag": [
+        "Vegetables",
+        "Healthy",
+        "Chinese",
+        "Cabbage",
+        "Green Cabbage"
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "userName": "Kristin Watson",
+          "userImage": "/assets/images/users/KristinWatson.svg",
+          "rating": 5,
+          "description": "Duis at ullamcorper nulla, eu dictum eros.",
+          "date": ""
+        },
+        {
+          "id": 2,
+          "userName": "Jane Cooper",
+          "userImage": "/assets/images/users/user.svg",
+          "rating": 4,
+          "description": "Keep the soil evenly moist for the healthiest growth. If the sun gets too hot, Chinese cabbage tends to 'bolt' or go to seed; in long periods of heat, some kind of shade may be helpful. Watch out for snails, as they will harm the plants.",
+          "date": ""
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Eggplant",
+      "category": "Vegetables",
+      "discountPrice": 14.99,
+      "originalPrice": 20.99,
+      "discountPercentage": 64,
+      "status": "",
+      "statusColor": "1A1A1A",
+      "rating": 3,
+      "available": 4013,
+      "description": "Sed commodo aliquam dui ac porta. Fusce ipsum felis, imperdiet at posuere ac, viverra at mauris. Maecenas tincidunt ligula a sem vestibulum pharetra. Maecenas auctor tortor lacus, nec laoreet nisi porttitor vel. Etiam tincidunt metus vel dui interdum sollicitudin. Mauris sem ante, vestibulum nec orci vitae, aliquam mollis lacus. Sed et condimentum arcu, id molestie tellus. Nulla facilisi. Nam scelerisque vitae justo a convallis. Morbi urna ipsum, placerat quis commodo quis, egestas elementum leo. Donec convallis mollis enim. Aliquam id mi quam. Phasellus nec fringilla elit. Nulla mauris tellus, feugiat quis pharetra sed, gravida ac dui. Sed iaculis, metus faucibus elementum tincidunt, turpis mi viverra velit, pellentesque tristique neque mi eget nulla. Proin luctus elementum neque et pharetra. ",
+      "images": {
+        "src": "/assets/images/products/eggplant.png",
+        "imageDescription": "Eggplant images",
+        "otherImages": [
+          {
+            "id": 1,
+            "src": "/assets/images/products/potatoFirst.png",
+            "otherImageDescription": "Picture of a large potato from the left"
+          },
+          {
+            "id": 2,
+            "src": "/assets/images/products/potatoSecond.png",
+            "otherImageDescription": "Picture of a large potato from the right"
+          },
+          {
+            "id": 3,
+            "src": "/assets/images/products/potatoThird.png",
+            "otherImageDescription": "Picture of a large potato from above"
+          },
+          {
+            "id": 4,
+            "src": "/assets/images/products/potatoSecond.png",
+            "otherImageDescription": "Picture of a big potato shot from the front"
+          }
+        ]
+      },
+      "brand": "/assets/images/products/brands/farmary.svg",
+      "tag": [
+        "Vegetables",
+        "Healthy",
+        "Cabbage",
+        "Green Cabbage"
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "userName": "Kristin Watson",
+          "userImage": "/assets/images/users/KristinWatson.svg",
+          "rating": 5,
+          "description": "Duis at ullamcorper nulla, eu dictum eros.",
+          "date": ""
+        },
+        {
+          "id": 2,
+          "userName": "Jane Cooper",
+          "userImage": "/assets/images/users/user.svg",
+          "rating": 4,
+          "description": "Keep the soil evenly moist for the healthiest growth. If the sun gets too hot, Chinese cabbage tends to 'bolt' or go to seed; in long periods of heat, some kind of shade may be helpful. Watch out for snails, as they will harm the plants.",
+          "date": ""
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Fresh Cauliflower",
+      "category": "Vegetables",
+      "discountPrice": 24.99,
+      "originalPrice": 30.99,
+      "discountPercentage": 64,
+      "status": "",
+      "statusColor": "1A1A1A",
+      "rating": 3,
+      "available": 4013,
+      "description": "Sed commodo aliquam dui ac porta. Fusce ipsum felis, imperdiet at posuere ac, viverra at mauris. Maecenas tincidunt ligula a sem vestibulum pharetra. Maecenas auctor tortor lacus, nec laoreet nisi porttitor vel. Etiam tincidunt metus vel dui interdum sollicitudin. Mauris sem ante, vestibulum nec orci vitae, aliquam mollis lacus. Sed et condimentum arcu, id molestie tellus. Nulla facilisi. Nam scelerisque vitae justo a convallis. Morbi urna ipsum, placerat quis commodo quis, egestas elementum leo. Donec convallis mollis enim. Aliquam id mi quam. Phasellus nec fringilla elit. Nulla mauris tellus, feugiat quis pharetra sed, gravida ac dui. Sed iaculis, metus faucibus elementum tincidunt, turpis mi viverra velit, pellentesque tristique neque mi eget nulla. Proin luctus elementum neque et pharetra. ",
+      "images": {
+        "src": "/assets/images/products/freshCauliflower.png",
+        "imageDescription": "Eggplant images",
+        "otherImages": [
+          {
+            "id": 1,
+            "src": "/assets/images/products/potatoFirst.png",
+            "otherImageDescription": "Picture of a large potato from the left"
+          },
+          {
+            "id": 2,
+            "src": "/assets/images/products/potatoSecond.png",
+            "otherImageDescription": "Picture of a large potato from the right"
+          },
+          {
+            "id": 3,
+            "src": "/assets/images/products/potatoThird.png",
+            "otherImageDescription": "Picture of a large potato from above"
+          },
+          {
+            "id": 4,
+            "src": "/assets/images/products/potatoSecond.png",
+            "otherImageDescription": "Picture of a big potato shot from the front"
+          }
+        ]
+      },
+      "brand": "/assets/images/products/brands/farmary.svg",
+      "tag": [
+        "Vegetables",
+        "Healthy",
+        "Cabbage",
+        "Green Cabbage"
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "userName": "Kristin Watson",
+          "userImage": "/assets/images/users/KristinWatson.svg",
+          "rating": 5,
+          "description": "Duis at ullamcorper nulla, eu dictum eros.",
+          "date": ""
+        },
+        {
+          "id": 2,
+          "userName": "Jane Cooper",
+          "userImage": "/assets/images/users/user.svg",
+          "rating": 4,
+          "description": "Keep the soil evenly moist for the healthiest growth. If the sun gets too hot, Chinese cabbage tends to 'bolt' or go to seed; in long periods of heat, some kind of shade may be helpful. Watch out for snails, as they will harm the plants.",
+          "date": ""
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Green Apple",
+      "category": "Vegetables",
+      "discountPrice": 24.99,
+      "originalPrice": 30.99,
+      "discountPercentage": 64,
+      "status": "",
+      "statusColor": "1A1A1A",
+      "rating": 5,
+      "available": 3045,
+      "description": "Sed commodo aliquam dui ac porta. Fusce ipsum felis, imperdiet at posuere ac, viverra at mauris. Maecenas tincidunt ligula a sem vestibulum pharetra. Maecenas auctor tortor lacus, nec laoreet nisi porttitor vel. Etiam tincidunt metus vel dui interdum sollicitudin. Mauris sem ante, vestibulum nec orci vitae, aliquam mollis lacus. Sed et condimentum arcu, id molestie tellus. Nulla facilisi. Nam scelerisque vitae justo a convallis. Morbi urna ipsum, placerat quis commodo quis, egestas elementum leo. Donec convallis mollis enim. Aliquam id mi quam. Phasellus nec fringilla elit. Nulla mauris tellus, feugiat quis pharetra sed, gravida ac dui. Sed iaculis, metus faucibus elementum tincidunt, turpis mi viverra velit, pellentesque tristique neque mi eget nulla. Proin luctus elementum neque et pharetra. ",
+      "images": {
+        "src": "/assets/images/products/greenApple.png",
+        "imageDescription": "Eggplant images",
+        "otherImages": [
+          {
+            "id": 1,
+            "src": "/assets/images/products/potatoFirst.png",
+            "otherImageDescription": "Picture of a large potato from the left"
+          },
+          {
+            "id": 2,
+            "src": "/assets/images/products/potatoSecond.png",
+            "otherImageDescription": "Picture of a large potato from the right"
+          },
+          {
+            "id": 3,
+            "src": "/assets/images/products/potatoThird.png",
+            "otherImageDescription": "Picture of a large potato from above"
+          },
+          {
+            "id": 4,
+            "src": "/assets/images/products/potatoSecond.png",
+            "otherImageDescription": "Picture of a big potato shot from the front"
+          }
+        ]
+      },
+      "brand": "/assets/images/products/brands/farmary.svg",
+      "tag": [
+        "Vegetables",
+        "Healthy",
+        "Cabbage",
+        "Green Cabbage"
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "userName": "Kristin Watson",
+          "userImage": "/assets/images/users/KristinWatson.svg",
+          "rating": 5,
+          "description": "Duis at ullamcorper nulla, eu dictum eros.",
+          "date": ""
+        },
+        {
+          "id": 2,
+          "userName": "Jane Cooper",
+          "userImage": "/assets/images/users/user.svg",
+          "rating": 4,
+          "description": "Keep the soil evenly moist for the healthiest growth. If the sun gets too hot, Chinese cabbage tends to 'bolt' or go to seed; in long periods of heat, some kind of shade may be helpful. Watch out for snails, as they will harm the plants.",
+          "date": ""
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Fresh Mango",
+      "category": "Vegetables",
+      "discountPrice": 24.99,
+      "originalPrice": 30.99,
+      "discountPercentage": 64,
+      "status": "",
+      "statusColor": "1A1A1A",
+      "rating": 5,
+      "available": 3045,
+      "description": "Sed commodo aliquam dui ac porta. Fusce ipsum felis, imperdiet at posuere ac, viverra at mauris. Maecenas tincidunt ligula a sem vestibulum pharetra. Maecenas auctor tortor lacus, nec laoreet nisi porttitor vel. Etiam tincidunt metus vel dui interdum sollicitudin. Mauris sem ante, vestibulum nec orci vitae, aliquam mollis lacus. Sed et condimentum arcu, id molestie tellus. Nulla facilisi. Nam scelerisque vitae justo a convallis. Morbi urna ipsum, placerat quis commodo quis, egestas elementum leo. Donec convallis mollis enim. Aliquam id mi quam. Phasellus nec fringilla elit. Nulla mauris tellus, feugiat quis pharetra sed, gravida ac dui. Sed iaculis, metus faucibus elementum tincidunt, turpis mi viverra velit, pellentesque tristique neque mi eget nulla. Proin luctus elementum neque et pharetra. ",
+      "images": {
+        "src": "/assets/images/products/freshMango.png",
+        "imageDescription": "Eggplant images",
+        "otherImages": [
+          {
+            "id": 1,
+            "src": "/assets/images/products/potatoFirst.png",
+            "otherImageDescription": "Picture of a large potato from the left"
+          },
+          {
+            "id": 2,
+            "src": "/assets/images/products/potatoSecond.png",
+            "otherImageDescription": "Picture of a large potato from the right"
+          },
+          {
+            "id": 3,
+            "src": "/assets/images/products/potatoThird.png",
+            "otherImageDescription": "Picture of a large potato from above"
+          },
+          {
+            "id": 4,
+            "src": "/assets/images/products/potatoSecond.png",
+            "otherImageDescription": "Picture of a big potato shot from the front"
+          }
+        ]
+      },
+      "brand": "/assets/images/products/brands/farmary.svg",
+      "tag": [
+        "Vegetables",
+        "Healthy",
+        "Cabbage",
+        "Green Cabbage"
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "userName": "Kristin Watson",
+          "userImage": "/assets/images/users/KristinWatson.svg",
+          "rating": 5,
+          "description": "Duis at ullamcorper nulla, eu dictum eros.",
+          "date": ""
+        },
+        {
+          "id": 2,
+          "userName": "Jane Cooper",
+          "userImage": "/assets/images/users/user.svg",
+          "rating": 4,
+          "description": "Keep the soil evenly moist for the healthiest growth. If the sun gets too hot, Chinese cabbage tends to 'bolt' or go to seed; in long periods of heat, some kind of shade may be helpful. Watch out for snails, as they will harm the plants.",
+          "date": ""
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Green Capsicum",
+      "category": "Vegetables",
+      "discountPrice": 24.99,
+      "originalPrice": 30.99,
+      "discountPercentage": 64,
+      "status": "",
+      "statusColor": "1A1A1A",
+      "rating": 2,
+      "available": 3045,
+      "description": "Sed commodo aliquam dui ac porta. Fusce ipsum felis, imperdiet at posuere ac, viverra at mauris. Maecenas tincidunt ligula a sem vestibulum pharetra. Maecenas auctor tortor lacus, nec laoreet nisi porttitor vel. Etiam tincidunt metus vel dui interdum sollicitudin. Mauris sem ante, vestibulum nec orci vitae, aliquam mollis lacus. Sed et condimentum arcu, id molestie tellus. Nulla facilisi. Nam scelerisque vitae justo a convallis. Morbi urna ipsum, placerat quis commodo quis, egestas elementum leo. Donec convallis mollis enim. Aliquam id mi quam. Phasellus nec fringilla elit. Nulla mauris tellus, feugiat quis pharetra sed, gravida ac dui. Sed iaculis, metus faucibus elementum tincidunt, turpis mi viverra velit, pellentesque tristique neque mi eget nulla. Proin luctus elementum neque et pharetra. ",
+      "images": {
+        "src": "/assets/images/products/greenCapsicum.png",
+        "imageDescription": "Eggplant images",
+        "otherImages": [
+          {
+            "id": 1,
+            "src": "/assets/images/products/potatoFirst.png",
+            "otherImageDescription": "Picture of a large potato from the left"
+          },
+          {
+            "id": 2,
+            "src": "/assets/images/products/potatoSecond.png",
+            "otherImageDescription": "Picture of a large potato from the right"
+          },
+          {
+            "id": 3,
+            "src": "/assets/images/products/potatoThird.png",
+            "otherImageDescription": "Picture of a large potato from above"
+          },
+          {
+            "id": 4,
+            "src": "/assets/images/products/potatoSecond.png",
+            "otherImageDescription": "Picture of a big potato shot from the front"
+          }
+        ]
+      },
+      "brand": "/assets/images/products/brands/farmary.svg",
+      "tag": [
+        "Vegetables",
+        "Healthy",
+        "Cabbage",
+        "Green Cabbage"
+      ],
       "reviews": [
         {
           "id": 1,
@@ -183,13 +521,17 @@
     {
       "id": 1,
       "title": "Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.",
-      "previewImage": "/assets/images/fruits.jpg",
+      "previewImage": "/assets/images/blog/img1.svg",
       "author": "kimdir@gmail.com",
-      "createdDate": 132443534534,
+      "createdDate": "Tue Nov 07 2023 15:05:24 GMT+0500 (GMT+05:00)",
       "category": "Cooking",
       "readingTime": 4,
       "content": "<p>lorem ipsum</p>",
-      "tags": ["Healthy", "Dinner", "Meat"],
+      "tags": [
+        "Healthy",
+        "Dinner",
+        "Meat"
+      ],
       "comments": [
         {
           "fullName": "John Doe",
@@ -201,13 +543,17 @@
     {
       "id": 2,
       "title": "Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.",
-      "previewImage": "/assets/images/fruits.jpg",
+      "previewImage": "/assets/images/blog/img2.svg",
       "author": "nimadir@gmail.com",
-      "createdDate": 132443534534,
+      "createdDate": "Tue Nov 07 2023 15:05:24 GMT+0500 (GMT+05:00)",
       "category": "Beverages",
       "readingTime": 5,
       "content": "<p>lorem ipsum</p>",
-      "tags": ["Lounch", "Kid foods", "Vegetarian"],
+      "tags": [
+        "Lounch",
+        "Kid foods",
+        "Vegetarian"
+      ],
       "comments": [
         {
           "fullName": "John Doe",
@@ -219,13 +565,17 @@
     {
       "id": 3,
       "title": "Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.",
-      "previewImage": "/assets/images/fruits.jpg",
+      "previewImage": "/assets/images/blog/img3.svg",
       "author": "nimadir@gmail.com",
-      "createdDate": 122223534534,
+      "createdDate": "Tue Nov 07 2023 15:05:24 GMT+0500 (GMT+05:00)",
       "category": "Vegetables",
       "readingTime": 6,
       "content": "<p>lorem ipsum</p>",
-      "tags": ["Tiffin", "Vitamins", "Bread"],
+      "tags": [
+        "Tiffin",
+        "Vitamins",
+        "Bread"
+      ],
       "comments": [
         {
           "fullName": "John Doe",
@@ -237,13 +587,17 @@
     {
       "id": 4,
       "title": "Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.",
-      "previewImage": "/assets/images/fruits.jpg",
+      "previewImage": "/assets/images/blog/img4.svg",
       "author": "nimadir@gmail.com",
-      "createdDate": 125523534534,
+      "createdDate": "Mon Nov 06 2023 15:05:24 GMT+0500 (GMT+05:00)",
       "category": "Bread & Bakery",
       "readingTime": 6,
       "content": "<p>lorem ipsum</p>",
-      "tags": ["Snacks", "Tiffin", "Low fat"],
+      "tags": [
+        "Snacks",
+        "Tiffin",
+        "Low fat"
+      ],
       "comments": [
         {
           "fullName": "John Doe",
@@ -255,13 +609,17 @@
     {
       "id": 5,
       "title": "Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.",
-      "previewImage": "/assets/images/fruits.jpg",
+      "previewImage": "/assets/images/blog/img5.svg",
       "author": "nimadir@gmail.com",
-      "createdDate": 125523534534,
+      "createdDate": "Mon Nov 06 2023 15:05:24 GMT+0500 (GMT+05:00)",
       "category": "Beauty & Health",
       "readingTime": 6,
       "content": "<p>lorem ipsum</p>",
-      "tags": ["Kid foods", "Healthy", "Low fat"],
+      "tags": [
+        "Kid foods",
+        "Healthy",
+        "Low fat"
+      ],
       "comments": [
         {
           "fullName": "John Doe",
@@ -273,13 +631,17 @@
     {
       "id": 6,
       "title": "Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.",
-      "previewImage": "/assets/images/fruits.jpg",
+      "previewImage": "/assets/images/blog/img6.svg",
       "author": "nimadir@gmail.com",
-      "createdDate": 125523534534,
+      "createdDate": "Wen Nov 01 2023 15:05:24 GMT+0500 (GMT+05:00)",
       "category": "Fresh Fruit",
       "readingTime": 4,
       "content": "<p>lorem ipsum</p>",
-      "tags": ["Fresh Fruit", "Meat", "Bread"],
+      "tags": [
+        "Fresh Fruit",
+        "Meat",
+        "Bread"
+      ],
       "comments": [
         {
           "fullName": "John Doe",
@@ -291,13 +653,17 @@
     {
       "id": 7,
       "title": "Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.",
-      "previewImage": "/assets/images/fruits.jpg",
+      "previewImage": "/assets/images/blog/img7.svg",
       "author": "nimadir@gmail.com",
-      "createdDate": 125523534534,
+      "createdDate": "Wen Nov 01 2023 15:05:24 GMT+0500 (GMT+05:00)",
       "category": "Vegetables",
       "readingTime": 6,
       "content": "<p>lorem ipsum</p>",
-      "tags": ["Meat", "Dinner", "Vegetarian"],
+      "tags": [
+        "Meat",
+        "Dinner",
+        "Vegetarian"
+      ],
       "comments": [
         {
           "fullName": "John Doe",
@@ -309,13 +675,17 @@
     {
       "id": 8,
       "title": "Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.",
-      "previewImage": "/assets/images/fruits.jpg",
+      "previewImage": "/assets/images/blog/img8.svg",
       "author": "nimadir@gmail.com",
-      "createdDate": 125523534534,
+      "createdDate": "Wen Nov 01 2023 15:05:24 GMT+0500 (GMT+05:00)",
       "category": "Fresh Fruit",
       "readingTime": 6,
       "content": "<p>lorem ipsum</p>",
-      "tags": ["Healthy", "Snacks", "Tiffin"],
+      "tags": [
+        "Healthy",
+        "Snacks",
+        "Tiffin"
+      ],
       "comments": [
         {
           "fullName": "John Doe",
@@ -327,13 +697,17 @@
     {
       "id": 9,
       "title": "Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.",
-      "previewImage": "/assets/images/fruits.jpg",
+      "previewImage": "/assets/images/blog/img9.svg",
       "author": "nimadir@gmail.com",
-      "createdDate": 125523534534,
+      "createdDate": "Wen Nov 01 2023 15:05:24 GMT+0500 (GMT+05:00)",
       "category": "Fresh Fruit",
       "readingTime": 4,
       "content": "<p>lorem ipsum</p>",
-      "tags": ["Launch", "Snacks", "Bread"],
+      "tags": [
+        "Launch",
+        "Snacks",
+        "Bread"
+      ],
       "comments": [
         {
           "fullName": "John Doe",
@@ -345,13 +719,17 @@
     {
       "id": 10,
       "title": "Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.",
-      "previewImage": "/assets/images/fruits.jpg",
+      "previewImage": "/assets/images/blog/img10.svg",
       "author": "nimadir@gmail.com",
-      "createdDate": 125523534534,
+      "createdDate": "Mon Nov 06 2023 15:05:24 GMT+0500 (GMT+05:00)",
       "category": "Vegetables",
       "readingTime": 4,
       "content": "<p>lorem ipsum</p>",
-      "tags": ["Vegetarian", "Vitamins", "Dinner"],
+      "tags": [
+        "Vegetarian",
+        "Vitamins",
+        "Dinner"
+      ],
       "comments": [
         {
           "fullName": "John Doe",
@@ -360,5 +738,28 @@
         }
       ]
     }
-  ]
+  ],
+  "aboutUs": {
+    "welcome": [
+      {
+        "title": "100% Trusted Organic Food Store",
+        "content": "Morbi porttitor ligula in nunc varius sagittis. Proin dui nisi, laoreet ut tempor ac, cursus vitae eros. Cras quis ultricies elit. Proin ac lectus arcu. Maecenas aliquet vel tellus at accumsan. Donec a eros non massa vulputate ornare. Vivamus ornare commodo ante, at commodo felis congue vitae.",
+        "image": "/assets/images/about/nimadir.png"
+      },
+      {
+        "title": "100% Trusted Organic Food Store",
+        "content": "Morbi porttitor ligula in nunc varius sagittis. Proin dui nisi, laoreet ut tempor ac, cursus vitae eros. Cras quis ultricies elit. Proin ac lectus arcu. Maecenas aliquet vel tellus at accumsan. Donec a eros non massa vulputate ornare. Vivamus ornare commodo ante, at commodo felis congue vitae.",
+        "image": "/assets/images/about/nimadir.png"
+      },
+      {
+        "title": "100% Trusted Organic Food Store",
+        "content": "Morbi porttitor ligula in nunc varius sagittis. Proin dui nisi, laoreet ut tempor ac, cursus vitae eros. Cras quis ultricies elit. Proin ac lectus arcu. Maecenas aliquet vel tellus at accumsan. Donec a eros non massa vulputate ornare. Vivamus ornare commodo ante, at commodo felis congue vitae.",
+        "image": "/assets/images/about/nimadir.png",
+        "button": {
+          "text": "Shop Now",
+          "link": "/shop"
+        }
+      }
+    ]
+  }
 }
