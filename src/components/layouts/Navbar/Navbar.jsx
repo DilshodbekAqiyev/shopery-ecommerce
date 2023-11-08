@@ -69,6 +69,7 @@ const Navbar = () => {
                 </SelectItem>
               </SelectContent>
             </Select>
+            
             <Select>
               <SelectTrigger className="w-max p-0 bg-gray-800 text-gray-600 font-normal text-xs hover:text-primary outline-none border-none gap-[6px] flex items-center justify-center">
                 <SelectValue placeholder="USD" />
