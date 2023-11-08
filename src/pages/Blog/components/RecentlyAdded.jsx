@@ -24,7 +24,7 @@ const BlogRecentlyAdded = () => {
         {state.map(({ id, title, previewImage, createdDate }) => {
           return (
             <div key={id} className="flex items-center gap-[16px] mt-[16px] font-[500]">
-              <img src={previewImage} alt="img" className="w-[100px] h-[72px] rounded-[6px]" />
+              <img src={previewImage} alt="img" className="w-[100px] h-[72px] rounded-[6px]" loading="lazy" />
               <div>
                 <h4 className="text-[14px]">{title}</h4>
                 <div className="flex items-center gap-[6px]">

@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import { useState } from 'react'
 import { BiLogoFacebook, BiLogoInstagram, BiLogoTwitter } from 'react-icons/bi'
 import { FaPinterestP } from 'react-icons/fa'
@@ -7,8 +8,25 @@ import { Button } from '../../../components/ui/button'
 import SwiperContent from './SwiperContent'
 import { Badge } from '../../../components/ui/badge'
 
-function ModalDetails() {
+function ModalDetails({ product }) {
   const [InputRef, setInputRef] = useState(1)
+  const {
+    name,
+    status,
+    available,
+    rating,
+    reviews,
+    originalPrice,
+    brand,
+    discountPercentage,
+    tag,
+    category,
+    discountPrice,
+    littleDesCription,
+  } = product
+  let tags = tag?.reduce((acc, curr) => {
+    return (curr += ' ' + acc)
+  })
 
   const handleMinus = () => {
     setInputRef((prev) => --prev)
@@ -20,36 +38,51 @@ function ModalDetails() {
   return (
     <>
       <div className="flex items-start gap-6 mt-[34px] mb-1">
-        <SwiperContent />
+        <SwiperContent product={product} />
         <div className="w-full flex flex-col items-start gap-6">
           <div className="flex flex-col items-start w-full border-b-2">
             <div className="flex items-center gap-2 mb-3">
-              <h1 className="text-heading05 font-[600]">Chinese Cabbage</h1>
-              <Badge
-                className={'bg-softPrimary text-hardPrimary rounded-sm py-[2px] px-2 font-[400] hover:bg-softPrimary'}
-              >
-                In Stock
-              </Badge>
+              <h1 className="text-heading05 font-[600]">{name}</h1>
+              {status ? (
+                <Badge
+                  className={`bg-softPrimary text-hardPrimary rounded-sm py-[2px] px-2 font-[400] hover:bg-softPrimary`}
+                >
+                  {status}
+                </Badge>
+              ) : (
+                <Badge
+                  className={` bg-softPrimary text-hardPrimary rounded-sm py-[2px] px-2 font-[400] hover:bg-softPrimary`}
+                >
+                  In Stock
+                </Badge>
+              )}
             </div>
             <div className="text-gray-500 flex items-center gap-3">
-              <h1>⭐⭐⭐⭐⭐ 4 Review</h1>
+              <h1 className="flex items-center">
+                {Array(5)
+                  .fill(undefined)
+                  .map((_, index) => (
+                    <img key={index} src={`/assets/icons/${index < rating ? 'star' : 'star-fill'}.svg`} alt="Star" />
+                  ))}
+                &nbsp;{reviews?.length}&nbsp;review{reviews?.length <= 1 ? '' : 's'}
+              </h1>
               <span>•</span>
               <div className="flex items-center gap-1">
                 <h4 className="text-black font-[500]">SKU:</h4>
-                <span>251594</span>
+                <span>{available}</span>
               </div>
             </div>
             <div className="flex w-full items-center gap-1 py-5">
-              <h2 className="text-grays-gray300 text-[20px] line-through">$48.00</h2>
-              <h2 className="text-hardPrimary font-[500] text-[24px] mr-3">$17.28</h2>
-              <Badge className={'bg-red-200 text-red-600'}>64% Off</Badge>
+              <h2 className="text-grays-gray300 text-[20px] line-through">{`$${originalPrice}`}</h2>
+              <h2 className="text-hardPrimary font-[500] text-[24px] mr-3">{`$${discountPrice}`}</h2>
+              <Badge className={'bg-red-200 text-red-600'}>{`${discountPercentage}% Off`}</Badge>
             </div>
           </div>
           <div>
             <div className="flex items-center justify-between w-full">
               <div className="flex items-center gap-[10px]">
                 <h3>Brand:</h3>
-                <img src="/assets/images/products/brands/BrandIcon.svg" alt="BrandIcon" loading="lazy" />
+                <img src={brand} alt="BrandIcon" loading="lazy" />
               </div>
               <div className="flex items-center gap-[10px]">
                 <h2>Share Item:</h2>
@@ -69,10 +102,7 @@ function ModalDetails() {
                 </div>
               </div>
             </div>
-            <p className="text-gray-500 mt-4">
-              Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla nibh
-              diam, blandit vel consequat nec, ultrices et ipsum. Nulla varius magna a consequat pulvinar.
-            </p>
+            <p className="text-gray-500 mt-4">{littleDesCription}</p>
           </div>
           <div className="flex items-center justify-between w-full gap-3 border-t-2 border-b-2 py-5">
             <div className="flex items-center">
@@ -106,17 +136,21 @@ function ModalDetails() {
           <div>
             <div className="flex items-center gap-1">
               <h3 className="font-[600]">Category:</h3>
-              <p className="text-gray-400">Vegetables</p>
+              <p className="text-gray-500">{category}</p>
             </div>
             <div className="flex items-center gap-1">
               <h3 className="font-[600]">Tag:</h3>
-              <p className="text-gray-400">Vegetables Healthy Chinese Cabbage Green Cabbage</p>
+              <p className="text-gray-500">{tags}</p>
             </div>
           </div>
         </div>
       </div>
     </>
   )
+}
+
+ModalDetails.propTypes = {
+  product: PropTypes.any,
 }
 
 export default ModalDetails
