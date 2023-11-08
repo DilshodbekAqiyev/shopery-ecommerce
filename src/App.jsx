@@ -1,12 +1,17 @@
-import { createBrowserRouter, RouterProvider, createRoutesFromElements, Route, Navigate } from 'react-router-dom'
+import {
+  createBrowserRouter,
+  RouterProvider,
+  createRoutesFromElements,
+  Route,
+  Navigate,
+} from "react-router-dom";
 
 // Pages
-import Home from './pages/Home/Home'
-import Shop from './pages/Shop'
-import Blog from './pages/Blog/Blog'
-import ProductDetails from './pages/ProductDetails/ProductDetails'
-import Signup from './pages/Auth/Signup'
-import Signin from './pages/Auth/Signin'
+import Home from "./pages/Home/Home";
+import Shop from "./pages/Shop";
+import ProductDetails from "./pages/ProductDetails/ProductDetails";
+import Signup from "./pages/Auth/Signup";
+import Signin from "./pages/Auth/Signin";
 import PageNotFound from './pages/PageNotFound'
 import About from './pages/About/About'
 import Checkout from './pages/Checkout/Checkout'
@@ -22,6 +27,7 @@ import OrderDetail from './pages/Dashboard/components/OrderDetail'
 
 //Contexts
 import ShopProvider from './contexts/shop/ShopContext'
+import Blog from './pages/Blog'
 
 export default function App() {
   const routes = createBrowserRouter(
@@ -35,7 +41,7 @@ export default function App() {
             <ShopProvider>
               <Shop />
             </ShopProvider>
-          }
+        }
         />
         <Route path="product/:productID" element={<ProductDetails />} />
         <Route path="sign-in" element={<Signup />} />
