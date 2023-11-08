@@ -20,7 +20,7 @@ const Blog = () => {
   console.log(new Date('Mon Nov 06 2023 15:05:24 GMT+0500 (GMT+05:00)').toDateString())
 
   return (
-    <div className="blog flex gap-[24px] max-w-[1320px] mx-auto mt-[34px]  mb-[80px]">
+    <div className="blog flex gap-[32px] max-w-[1320px] mx-auto mt-[34px]  mb-[80px]">
       <div className="left max-w-[424px]">
         <BlogFilterButton />
         <BlogSearch />
@@ -34,7 +34,7 @@ const Blog = () => {
         <BlogRecentlyAdded />
       </div>
 
-      <div className="right w-[872px] ">
+      <div className="right w-[100%] ">
         <div className="rightTop flex item-center justify-between h-[41px]">
           <div className="flex gap-4 items-center ">
             <h3>Sort by</h3>
@@ -46,7 +46,7 @@ const Blog = () => {
             </h3>
           </div>
         </div>
-        <div className="BlogCards mt-[42px]  gap-6 grid grid-cols-2 ">
+        <div className="BlogCards mt-[42px]  gap-6 grid grid-cols-2  ">
           {filterData.map((prop, idx) => (
             <BlogCard key={idx} prop={prop} />
           ))}
