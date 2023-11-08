@@ -18,6 +18,7 @@ const initialState = {
   ratingFilter: null,
   tagFilter: null,
   filteredProducts: [],
+  selectedProduct: {},
 }
 
 const ShopProvider = ({ children }) => {

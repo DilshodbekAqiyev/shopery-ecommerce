@@ -1,5 +1,30 @@
 {
-  "users": [],
+  "users": [
+    {
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "johndoe@gmail.com",
+      "role": "Customer",
+      "phoneNumber": 80355501223,
+      "password": "X34sfsdfy34t7dsgfh",
+      "token": "x@fSDFYsd345d23saFsa326ASDghad23saFsa326ASDghasd%6Assd%6AsD",
+      "avatar": "/assets/images/users/user1.png",
+      "billingAddress": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "companyName": "Zakirsoft",
+        "streetAddress": "4140 Parl",
+        "country": "United States",
+        "city": "Washington",
+        "zipCode": "20003",
+        "email": "dianne.russell@gmail.com",
+        "phone": 6935551232
+      },
+      "wishlist": [],
+      "shoppingCart": [],
+      "checkout": []
+    }
+  ],
   "products": [
     {
       "id": 1,
@@ -40,7 +65,13 @@
         ]
       },
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": ["Vegetables", "Healthy", "Chinese", "Cabbage", "Green Cabbage"],
+      "tag": [
+        "Vegetables",
+        "Healthy",
+        "Chinese",
+        "Cabbage",
+        "Green Cabbage"
+      ],
       "reviews": [
         {
           "id": 1,
@@ -99,7 +130,13 @@
         ]
       },
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": ["Vegetables", "Healthy", "Chinese", "Cabbage", "Green Cabbage"],
+      "tag": [
+        "Vegetables",
+        "Healthy",
+        "Chinese",
+        "Cabbage",
+        "Green Cabbage"
+      ],
       "reviews": [
         {
           "id": 1,
@@ -158,7 +195,13 @@
         ]
       },
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": ["Vegetables", "Healthy", "Chinese", "Cabbage", "Green Cabbage"],
+      "tag": [
+        "Vegetables",
+        "Healthy",
+        "Chinese",
+        "Cabbage",
+        "Green Cabbage"
+      ],
       "reviews": [
         {
           "id": 1,
@@ -217,7 +260,12 @@
         ]
       },
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": ["Vegetables", "Healthy", "Cabbage", "Green Cabbage"],
+      "tag": [
+        "Vegetables",
+        "Healthy",
+        "Cabbage",
+        "Green Cabbage"
+      ],
       "reviews": [
         {
           "id": 1,
@@ -276,7 +324,12 @@
         ]
       },
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": ["Vegetables", "Healthy", "Cabbage", "Green Cabbage"],
+      "tag": [
+        "Vegetables",
+        "Healthy",
+        "Cabbage",
+        "Green Cabbage"
+      ],
       "reviews": [
         {
           "id": 1,
@@ -335,7 +388,12 @@
         ]
       },
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": ["Vegetables", "Healthy", "Cabbage", "Green Cabbage"],
+      "tag": [
+        "Vegetables",
+        "Healthy",
+        "Cabbage",
+        "Green Cabbage"
+      ],
       "reviews": [
         {
           "id": 1,
@@ -394,7 +452,12 @@
         ]
       },
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": ["Vegetables", "Healthy", "Cabbage", "Green Cabbage"],
+      "tag": [
+        "Vegetables",
+        "Healthy",
+        "Cabbage",
+        "Green Cabbage"
+      ],
       "reviews": [
         {
           "id": 1,
@@ -453,7 +516,12 @@
         ]
       },
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": ["Vegetables", "Healthy", "Cabbage", "Green Cabbage"],
+      "tag": [
+        "Vegetables",
+        "Healthy",
+        "Cabbage",
+        "Green Cabbage"
+      ],
       "reviews": [
         {
           "id": 1,
@@ -480,11 +548,15 @@
       "title": "Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.",
       "previewImage": "/assets/images/blog/img1.svg",
       "author": "kimdir@gmail.com",
-      "createdDate": 132443534534,
+      "createdDate": "Tue Nov 07 2023 15:05:24 GMT+0500 (GMT+05:00)",
       "category": "Cooking",
       "readingTime": 4,
       "content": "<p>lorem ipsum</p>",
-      "tags": ["Healthy", "Dinner", "Meat"],
+      "tags": [
+        "Healthy",
+        "Dinner",
+        "Meat"
+      ],
       "comments": [
         {
           "fullName": "John Doe",
@@ -498,11 +570,15 @@
       "title": "Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.",
       "previewImage": "/assets/images/blog/img2.svg",
       "author": "nimadir@gmail.com",
-      "createdDate": 132443534534,
+      "createdDate": "Tue Nov 07 2023 15:05:24 GMT+0500 (GMT+05:00)",
       "category": "Beverages",
       "readingTime": 5,
       "content": "<p>lorem ipsum</p>",
-      "tags": ["Lounch", "Kid foods", "Vegetarian"],
+      "tags": [
+        "Lounch",
+        "Kid foods",
+        "Vegetarian"
+      ],
       "comments": [
         {
           "fullName": "John Doe",
@@ -516,11 +592,15 @@
       "title": "Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.",
       "previewImage": "/assets/images/blog/img3.svg",
       "author": "nimadir@gmail.com",
-      "createdDate": 122223534534,
+      "createdDate": "Tue Nov 07 2023 15:05:24 GMT+0500 (GMT+05:00)",
       "category": "Vegetables",
       "readingTime": 6,
       "content": "<p>lorem ipsum</p>",
-      "tags": ["Tiffin", "Vitamins", "Bread"],
+      "tags": [
+        "Tiffin",
+        "Vitamins",
+        "Bread"
+      ],
       "comments": [
         {
           "fullName": "John Doe",
@@ -534,11 +614,15 @@
       "title": "Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.",
       "previewImage": "/assets/images/blog/img4.svg",
       "author": "nimadir@gmail.com",
-      "createdDate": 125523534534,
+      "createdDate": "Mon Nov 06 2023 15:05:24 GMT+0500 (GMT+05:00)",
       "category": "Bread & Bakery",
       "readingTime": 6,
       "content": "<p>lorem ipsum</p>",
-      "tags": ["Snacks", "Tiffin", "Low fat"],
+      "tags": [
+        "Snacks",
+        "Tiffin",
+        "Low fat"
+      ],
       "comments": [
         {
           "fullName": "John Doe",
@@ -552,11 +636,15 @@
       "title": "Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.",
       "previewImage": "/assets/images/blog/img5.svg",
       "author": "nimadir@gmail.com",
-      "createdDate": 125523534534,
+      "createdDate": "Mon Nov 06 2023 15:05:24 GMT+0500 (GMT+05:00)",
       "category": "Beauty & Health",
       "readingTime": 6,
       "content": "<p>lorem ipsum</p>",
-      "tags": ["Kid foods", "Healthy", "Low fat"],
+      "tags": [
+        "Kid foods",
+        "Healthy",
+        "Low fat"
+      ],
       "comments": [
         {
           "fullName": "John Doe",
@@ -570,11 +658,15 @@
       "title": "Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.",
       "previewImage": "/assets/images/blog/img6.svg",
       "author": "nimadir@gmail.com",
-      "createdDate": 125523534534,
+      "createdDate": "Wen Nov 01 2023 15:05:24 GMT+0500 (GMT+05:00)",
       "category": "Fresh Fruit",
       "readingTime": 4,
       "content": "<p>lorem ipsum</p>",
-      "tags": ["Fresh Fruit", "Meat", "Bread"],
+      "tags": [
+        "Fresh Fruit",
+        "Meat",
+        "Bread"
+      ],
       "comments": [
         {
           "fullName": "John Doe",
@@ -588,11 +680,15 @@
       "title": "Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.",
       "previewImage": "/assets/images/blog/img7.svg",
       "author": "nimadir@gmail.com",
-      "createdDate": 125523534534,
+      "createdDate": "Wen Nov 01 2023 15:05:24 GMT+0500 (GMT+05:00)",
       "category": "Vegetables",
       "readingTime": 6,
       "content": "<p>lorem ipsum</p>",
-      "tags": ["Meat", "Dinner", "Vegetarian"],
+      "tags": [
+        "Meat",
+        "Dinner",
+        "Vegetarian"
+      ],
       "comments": [
         {
           "fullName": "John Doe",
@@ -606,11 +702,15 @@
       "title": "Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.",
       "previewImage": "/assets/images/blog/img8.svg",
       "author": "nimadir@gmail.com",
-      "createdDate": 125523534534,
+      "createdDate": "Wen Nov 01 2023 15:05:24 GMT+0500 (GMT+05:00)",
       "category": "Fresh Fruit",
       "readingTime": 6,
       "content": "<p>lorem ipsum</p>",
-      "tags": ["Healthy", "Snacks", "Tiffin"],
+      "tags": [
+        "Healthy",
+        "Snacks",
+        "Tiffin"
+      ],
       "comments": [
         {
           "fullName": "John Doe",
@@ -624,11 +724,15 @@
       "title": "Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.",
       "previewImage": "/assets/images/blog/img9.svg",
       "author": "nimadir@gmail.com",
-      "createdDate": 125523534534,
+      "createdDate": "Wen Nov 01 2023 15:05:24 GMT+0500 (GMT+05:00)",
       "category": "Fresh Fruit",
       "readingTime": 4,
       "content": "<p>lorem ipsum</p>",
-      "tags": ["Launch", "Snacks", "Bread"],
+      "tags": [
+        "Launch",
+        "Snacks",
+        "Bread"
+      ],
       "comments": [
         {
           "fullName": "John Doe",
@@ -642,11 +746,15 @@
       "title": "Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.",
       "previewImage": "/assets/images/blog/img10.svg",
       "author": "nimadir@gmail.com",
-      "createdDate": 125523534534,
+      "createdDate": "Mon Nov 06 2023 15:05:24 GMT+0500 (GMT+05:00)",
       "category": "Vegetables",
       "readingTime": 4,
       "content": "<p>lorem ipsum</p>",
-      "tags": ["Vegetarian", "Vitamins", "Dinner"],
+      "tags": [
+        "Vegetarian",
+        "Vitamins",
+        "Dinner"
+      ],
       "comments": [
         {
           "fullName": "John Doe",

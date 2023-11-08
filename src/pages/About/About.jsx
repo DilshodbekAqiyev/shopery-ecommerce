@@ -39,6 +39,7 @@ function About() {
           src={data.welcome?.[1].image}
           alt="img"
           effect="blur"
+          className="h-[685px] w-full"
         />
         <div>
           <h1 className="mt-[80px] text-[56px] font-[600] leading-[67px] w-[544px]">{data.welcome?.[1].title}</h1>
