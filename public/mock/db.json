@@ -90,14 +90,34 @@
           }
         ]
       },
-      "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": [
-        "Vegetables",
-        "Healthy",
-        "Chinese",
-        "Cabbage",
-        "Green Cabbage"
+      "additionalInformation": [
+        {
+          "title": "Weight:",
+          "description": "02"
+        },
+        {
+          "title": "Color:",
+          "description": "Yellow"
+        },
+        {
+          "title": "Type:",
+          "description": "Organic"
+        },
+        {
+          "title": "Category:",
+          "description": "Vegetables"
+        },
+        {
+          "title": "Stock Status:",
+          "description": "Available (2,413)"
+        },
+        {
+          "title": "Tags:",
+          "description": "Green Cabbage Cabbage Chinese Healthy Vegetables"
+        }
       ],
+      "brand": "/assets/images/products/brands/farmary.svg",
+      "tag": ["Vegetables", "Healthy", "Chinese", "Cabbage", "Green Cabbage"],
       "reviews": [
         {
           "id": 1,
@@ -181,14 +201,34 @@
           }
         ]
       },
-      "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": [
-        "Vegetables",
-        "Healthy",
-        "Chinese",
-        "Cabbage",
-        "Green Cabbage"
+      "additionalInformation": [
+        {
+          "title": "Weight:",
+          "description": "03"
+        },
+        {
+          "title": "Color:",
+          "description": "Green"
+        },
+        {
+          "title": "Type:",
+          "description": "Organic"
+        },
+        {
+          "title": "Category:",
+          "description": "Vegetables"
+        },
+        {
+          "title": "Stock Status:",
+          "description": "Available (5,413)"
+        },
+        {
+          "title": "Tags:",
+          "description": "Green Cabbage Cabbage Chinese Healthy Vegetables"
+        }
       ],
+      "brand": "/assets/images/products/brands/farmary.svg",
+      "tag": ["Vegetables", "Healthy", "Chinese", "Cabbage", "Green Cabbage"],
       "reviews": [
         {
           "id": 1,
@@ -272,14 +312,34 @@
           }
         ]
       },
-      "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": [
-        "Vegetables",
-        "Healthy",
-        "Chinese",
-        "Cabbage",
-        "Green Cabbage"
+      "additionalInformation": [
+        {
+          "title": "Weight:",
+          "description": "01"
+        },
+        {
+          "title": "Color:",
+          "description": "Green"
+        },
+        {
+          "title": "Type:",
+          "description": "Organic"
+        },
+        {
+          "title": "Category:",
+          "description": "Vegetables"
+        },
+        {
+          "title": "Stock Status:",
+          "description": "Available (3,413)"
+        },
+        {
+          "title": "Tags:",
+          "description": "Green Cabbage Cabbage Chinese Healthy Vegetables"
+        }
       ],
+      "brand": "/assets/images/products/brands/farmary.svg",
+      "tag": ["Vegetables", "Healthy", "Chinese", "Cabbage", "Green Cabbage"],
       "reviews": [
         {
           "id": 1,
@@ -318,58 +378,79 @@
         "otherImages": [
           {
             "id": 1,
-            "src": "/assets/images/products/potatoFirst.png",
+            "src": "/assets/images/products/eggplant.png",
             "otherImageDescription": "Picture of a large potato from the left"
           },
           {
             "id": 2,
-            "src": "/assets/images/products/potatoSecond.png",
+            "src": "https://imgs.search.brave.com/8luRKJnNy1kwSwC85zi6RaQS5ZhuDEb2dgFPJ-l-BmA/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAwLzc4LzM3Lzc0/LzM2MF9GXzc4Mzc3/NDU5X1laMmd4ZTQ2/UEptZ3RwWGplSEM1/bDZxUU9MdElmcGUz/LmpwZw",
             "otherImageDescription": "Picture of a large potato from the right"
           },
           {
             "id": 3,
-            "src": "/assets/images/products/potatoThird.png",
+            "src": "https://imgs.search.brave.com/E21ARpN9hOeHeQ2gprDnE5KzQ5Bnjhe2g0U1jlanLJU/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTcx/MjY5NDA1L3Bob3Rv/L2VnZ3BsYW50cy5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/RU1KZU5KQm10SHd0/MnpzNnRUd1BSQjE4/VGE2bEcxQmtpSmdI/ampUSkhMUT0",
             "otherImageDescription": "Picture of a large potato from above"
           },
           {
             "id": 4,
-            "src": "/assets/images/products/potatoSecond.png",
+            "src": "https://imgs.search.brave.com/pKOlQ6jBREwzxqMYaeQKUB004AfqEg0oLo7HT_XCXrw/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNDgz/OTEwODg3L3Bob3Rv/L2NoaW5lc2UtZWdn/cGxhbnQuanBnP3M9/NjEyeDYxMiZ3PTAm/az0yMCZjPTRJYnBD/VzhQajUtdXBBQndq/UEVKUHJTYUp4Y0s0/bmMzYUR6dFo2ZHNU/Qnc9",
             "otherImageDescription": "Picture of a big potato shot from the front"
           },
           {
             "id": 5,
-            "src": "/assets/images/products/potatoFirst.png",
+            "src": "https://imgs.search.brave.com/IOwA8oPlEKvxPKoGX_62E67KbWv_vkcKFd5s8ZPCqVg/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTcz/ODc5ODg3L3Bob3Rv/L2VnZ3BsYW50cy1p/c29sYXRlZC5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9QTFs/VnhTbDNKM0dsdVlR/XzlsZlIycmxCSWY3/VlZFVW9KcmtlVXp2/YmRXUT0",
             "otherImageDescription": "Picture of a large potato from the left"
           },
           {
             "id": 6,
-            "src": "/assets/images/products/potatoSecond.png",
-            "otherImageDescription": "Picture of a large potato from the right"
-          },
-          {
-            "id": 7,
-            "src": "/assets/images/products/potatoSecond.png",
-            "otherImageDescription": "Picture of a big potato shot from the front"
-          },
-          {
-            "id": 8,
-            "src": "/assets/images/products/potatoFirst.png",
+            "src": "/assets/images/products/eggplant.png",
             "otherImageDescription": "Picture of a large potato from the left"
           },
           {
-            "id": 9,
-            "src": "/assets/images/products/potatoSecond.png",
+            "id": 7,
+            "src": "https://imgs.search.brave.com/8luRKJnNy1kwSwC85zi6RaQS5ZhuDEb2dgFPJ-l-BmA/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAwLzc4LzM3Lzc0/LzM2MF9GXzc4Mzc3/NDU5X1laMmd4ZTQ2/UEptZ3RwWGplSEM1/bDZxUU9MdElmcGUz/LmpwZw",
             "otherImageDescription": "Picture of a large potato from the right"
+          },
+          {
+            "id": 8,
+            "src": "https://imgs.search.brave.com/E21ARpN9hOeHeQ2gprDnE5KzQ5Bnjhe2g0U1jlanLJU/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTcx/MjY5NDA1L3Bob3Rv/L2VnZ3BsYW50cy5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/RU1KZU5KQm10SHd0/MnpzNnRUd1BSQjE4/VGE2bEcxQmtpSmdI/ampUSkhMUT0",
+            "otherImageDescription": "Picture of a large potato from above"
+          },
+          {
+            "id": 9,
+            "src": "https://imgs.search.brave.com/pKOlQ6jBREwzxqMYaeQKUB004AfqEg0oLo7HT_XCXrw/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNDgz/OTEwODg3L3Bob3Rv/L2NoaW5lc2UtZWdn/cGxhbnQuanBnP3M9/NjEyeDYxMiZ3PTAm/az0yMCZjPTRJYnBD/VzhQajUtdXBBQndq/UEVKUHJTYUp4Y0s0/bmMzYUR6dFo2ZHNU/Qnc9",
+            "otherImageDescription": "Picture of a big potato shot from the front"
           }
         ]
       },
-      "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": [
-        "Vegetables",
-        "Healthy",
-        "Cabbage",
-        "Green Cabbage"
+      "additionalInformation": [
+        {
+          "title": "Weight:",
+          "description": "04"
+        },
+        {
+          "title": "Color:",
+          "description": "Pruple"
+        },
+        {
+          "title": "Type:",
+          "description": "Organic"
+        },
+        {
+          "title": "Category:",
+          "description": "Vegetables"
+        },
+        {
+          "title": "Stock Status:",
+          "description": "Available (4,413)"
+        },
+        {
+          "title": "Tags:",
+          "description": "Green Cabbage Cabbage Chinese Healthy Vegetables"
+        }
       ],
+      "brand": "/assets/images/products/brands/farmary.svg",
+      "tag": ["Vegetables", "Healthy", "Cabbage", "Green Cabbage"],
       "reviews": [
         {
           "id": 1,
@@ -408,58 +489,79 @@
         "otherImages": [
           {
             "id": 1,
-            "src": "/assets/images/products/potatoFirst.png",
+            "src": "/assets/images/products/freshCauliflower.png",
             "otherImageDescription": "Picture of a large potato from the left"
           },
           {
             "id": 2,
-            "src": "/assets/images/products/potatoSecond.png",
+            "src": "https://imgs.search.brave.com/My7PkMgsWr32wHpwytRRojyEEztWkJxuvMdHJeVS24k/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NzE3TUJYY2hua0wu/anBn",
             "otherImageDescription": "Picture of a large potato from the right"
           },
           {
             "id": 3,
-            "src": "/assets/images/products/potatoThird.png",
+            "src": "https://imgs.search.brave.com/Wws2DYw4EXZ6h8UZV4gqWYmrtm82oo708zFdzB0d6wM/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAwLzU1Lzk0LzU3/LzM2MF9GXzU1OTQ1/NzUzXzhXT3hNb2I3/a0FzVmVYVU1mU1Zh/dUR6RTRESWpiTHha/LmpwZw",
             "otherImageDescription": "Picture of a large potato from above"
           },
           {
             "id": 4,
-            "src": "/assets/images/products/potatoSecond.png",
+            "src": "https://imgs.search.brave.com/aucuxyOTH5uZCZRiKd7uQeKH9HucmRxItRAq2Rhe5c4/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAwLzU2LzIwLzYz/LzM2MF9GXzU2MjA2/MzA1X2R3TE9yUWpl/WDhWbE9NUXBwclpq/TWhVR1N4ek51WnZO/LmpwZw",
             "otherImageDescription": "Picture of a big potato shot from the front"
           },
           {
             "id": 5,
-            "src": "/assets/images/products/potatoFirst.png",
+            "src": "https://imgs.search.brave.com/lkuctnmsxDVT3K5r6egcjbt76IAO6emLORatj2jdfNo/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTU3/NjE1OTc3L3Bob3Rv/L2lzb2xhdGVkLWNh/dWxpZmxvd2VyLmpw/Zz9zPTYxMng2MTIm/dz0wJms9MjAmYz1K/VnNGTk91UHRJRGh2/OVNmVEN1OWpreG9R/a3Brc0h3cTI3cl91/bjJmS1R3PQ",
             "otherImageDescription": "Picture of a large potato from the left"
           },
           {
             "id": 6,
-            "src": "/assets/images/products/potatoSecond.png",
-            "otherImageDescription": "Picture of a large potato from the right"
-          },
-          {
-            "id": 7,
-            "src": "/assets/images/products/potatoSecond.png",
-            "otherImageDescription": "Picture of a big potato shot from the front"
-          },
-          {
-            "id": 8,
-            "src": "/assets/images/products/potatoFirst.png",
+            "src": "/assets/images/products/freshCauliflower.png",
             "otherImageDescription": "Picture of a large potato from the left"
           },
           {
-            "id": 9,
-            "src": "/assets/images/products/potatoSecond.png",
+            "id": 7,
+            "src": "https://imgs.search.brave.com/My7PkMgsWr32wHpwytRRojyEEztWkJxuvMdHJeVS24k/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NzE3TUJYY2hua0wu/anBn",
             "otherImageDescription": "Picture of a large potato from the right"
+          },
+          {
+            "id": 8,
+            "src": "https://imgs.search.brave.com/Wws2DYw4EXZ6h8UZV4gqWYmrtm82oo708zFdzB0d6wM/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAwLzU1Lzk0LzU3/LzM2MF9GXzU1OTQ1/NzUzXzhXT3hNb2I3/a0FzVmVYVU1mU1Zh/dUR6RTRESWpiTHha/LmpwZw",
+            "otherImageDescription": "Picture of a large potato from above"
+          },
+          {
+            "id": 9,
+            "src": "https://imgs.search.brave.com/aucuxyOTH5uZCZRiKd7uQeKH9HucmRxItRAq2Rhe5c4/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAwLzU2LzIwLzYz/LzM2MF9GXzU2MjA2/MzA1X2R3TE9yUWpl/WDhWbE9NUXBwclpq/TWhVR1N4ek51WnZO/LmpwZw",
+            "otherImageDescription": "Picture of a big potato shot from the front"
           }
         ]
       },
-      "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": [
-        "Vegetables",
-        "Healthy",
-        "Cabbage",
-        "Green Cabbage"
+      "additionalInformation": [
+        {
+          "title": "Weight:",
+          "description": "03"
+        },
+        {
+          "title": "Color:",
+          "description": "Green"
+        },
+        {
+          "title": "Type:",
+          "description": "Organic"
+        },
+        {
+          "title": "Category:",
+          "description": "Vegetables"
+        },
+        {
+          "title": "Stock Status:",
+          "description": "Available (1,413)"
+        },
+        {
+          "title": "Tags:",
+          "description": "Green Cabbage Cabbage Chinese Healthy Vegetables"
+        }
       ],
+      "brand": "/assets/images/products/brands/farmary.svg",
+      "tag": ["Vegetables", "Healthy", "Cabbage", "Green Cabbage"],
       "reviews": [
         {
           "id": 1,
@@ -482,7 +584,7 @@
     {
       "id": 6,
       "name": "Green Apple",
-      "category": "Vegetables",
+      "category": "Fresh Fruit",
       "discountPrice": 24.99,
       "originalPrice": 30.99,
       "discountPercentage": 64,
@@ -498,58 +600,79 @@
         "otherImages": [
           {
             "id": 1,
-            "src": "/assets/images/products/potatoFirst.png",
+            "src": "/assets/images/products/greenApple.png",
             "otherImageDescription": "Picture of a large potato from the left"
           },
           {
             "id": 2,
-            "src": "/assets/images/products/potatoSecond.png",
+            "src": "https://imgs.search.brave.com/qjxI5qBbJlXSRzpIUgPiU8Ivdyonj_uxJZdMeT8EGw4/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTc4/Mzk1OTUzL3Bob3Rv/L2dyZWVuLWFwcGxl/LmpwZz9zPTYxMng2/MTImdz0wJms9MjAm/Yz10bGZ6OGo0amgt/emtMUFRscUdKaUJZ/dl9TMkU1SXVILWs1/akJiMzBoU0FVPQ",
             "otherImageDescription": "Picture of a large potato from the right"
           },
           {
             "id": 3,
-            "src": "/assets/images/products/potatoThird.png",
+            "src": "https://imgs.search.brave.com/hM83_znBMnm1QbRrWWUDhk3dv1B-IRFvfbGkZYw3X6M/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAwLzcxLzM4LzEy/LzM2MF9GXzcxMzgx/MjQ0X3lHSUJzeHg0/ZGprQ28wMzg1QWVM/cTBnUk5PMzRrNEVZ/LmpwZw",
             "otherImageDescription": "Picture of a large potato from above"
           },
           {
             "id": 4,
-            "src": "/assets/images/products/potatoSecond.png",
+            "src": "https://imgs.search.brave.com/PAhinduKXC-1Os22Y-EJjIPfuAHRqZhEcwN48yo1_lE/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTU1/Mzg3NzY0L3Bob3Rv/L2dyZWVuLWFwcGxl/LWNyb3NzLXNlY3Rp/b24tY2xpcHBpbmct/cGF0aC1pbmNsdWRl/ZC5qcGc_cz02MTJ4/NjEyJnc9MCZrPTIw/JmM9dEhEeGZ1S0tQ/UHVEWnFHWmVBUGtV/TDRqS2VFSFptSVRo/VHRpWTdiRUc4dz0",
             "otherImageDescription": "Picture of a big potato shot from the front"
           },
           {
             "id": 5,
-            "src": "/assets/images/products/potatoFirst.png",
+            "src": "https://imgs.search.brave.com/E2-xxI7GJ__3cFKBnYMZEWzTekJyodcskUvN_BMPf2A/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAwLzYyLzcyLzA2/LzM2MF9GXzYyNzIw/Njc4X2pVYVNUb1VE/d2hJSVZEaEFvTm0y/ZkRScU4wb2hRZHB6/LmpwZw",
             "otherImageDescription": "Picture of a large potato from the left"
           },
           {
             "id": 6,
-            "src": "/assets/images/products/potatoSecond.png",
-            "otherImageDescription": "Picture of a large potato from the right"
-          },
-          {
-            "id": 7,
-            "src": "/assets/images/products/potatoSecond.png",
-            "otherImageDescription": "Picture of a big potato shot from the front"
-          },
-          {
-            "id": 8,
-            "src": "/assets/images/products/potatoFirst.png",
+            "src": "/assets/images/products/greenApple.png",
             "otherImageDescription": "Picture of a large potato from the left"
           },
           {
-            "id": 9,
-            "src": "/assets/images/products/potatoSecond.png",
+            "id": 7,
+            "src": "https://imgs.search.brave.com/qjxI5qBbJlXSRzpIUgPiU8Ivdyonj_uxJZdMeT8EGw4/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTc4/Mzk1OTUzL3Bob3Rv/L2dyZWVuLWFwcGxl/LmpwZz9zPTYxMng2/MTImdz0wJms9MjAm/Yz10bGZ6OGo0amgt/emtMUFRscUdKaUJZ/dl9TMkU1SXVILWs1/akJiMzBoU0FVPQ",
             "otherImageDescription": "Picture of a large potato from the right"
+          },
+          {
+            "id": 8,
+            "src": "https://imgs.search.brave.com/hM83_znBMnm1QbRrWWUDhk3dv1B-IRFvfbGkZYw3X6M/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAwLzcxLzM4LzEy/LzM2MF9GXzcxMzgx/MjQ0X3lHSUJzeHg0/ZGprQ28wMzg1QWVM/cTBnUk5PMzRrNEVZ/LmpwZw",
+            "otherImageDescription": "Picture of a large potato from above"
+          },
+          {
+            "id": 9,
+            "src": "https://imgs.search.brave.com/PAhinduKXC-1Os22Y-EJjIPfuAHRqZhEcwN48yo1_lE/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTU1/Mzg3NzY0L3Bob3Rv/L2dyZWVuLWFwcGxl/LWNyb3NzLXNlY3Rp/b24tY2xpcHBpbmct/cGF0aC1pbmNsdWRl/ZC5qcGc_cz02MTJ4/NjEyJnc9MCZrPTIw/JmM9dEhEeGZ1S0tQ/UHVEWnFHWmVBUGtV/TDRqS2VFSFptSVRo/VHRpWTdiRUc4dz0",
+            "otherImageDescription": "Picture of a big potato shot from the front"
           }
         ]
       },
-      "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": [
-        "Vegetables",
-        "Healthy",
-        "Cabbage",
-        "Green Cabbage"
+      "additionalInformation": [
+        {
+          "title": "Weight:",
+          "description": "05"
+        },
+        {
+          "title": "Color:",
+          "description": "Green"
+        },
+        {
+          "title": "Type:",
+          "description": "Organic"
+        },
+        {
+          "title": "Category:",
+          "description": "Fresh Fruit"
+        },
+        {
+          "title": "Stock Status:",
+          "description": "Available (6,413)"
+        },
+        {
+          "title": "Tags:",
+          "description": "Green Cabbage Cabbage Chinese Healthy Vegetables"
+        }
       ],
+      "brand": "/assets/images/products/brands/farmary.svg",
+      "tag": ["Vegetables", "Healthy", "Cabbage", "Green Cabbage"],
       "reviews": [
         {
           "id": 1,
@@ -572,7 +695,7 @@
     {
       "id": 7,
       "name": "Fresh Mango",
-      "category": "Vegetables",
+      "category": "Fresh Fruit",
       "discountPrice": 24.99,
       "originalPrice": 30.99,
       "discountPercentage": 64,
@@ -588,58 +711,79 @@
         "otherImages": [
           {
             "id": 1,
-            "src": "/assets/images/products/potatoFirst.png",
+            "src": "/assets/images/products/freshMango.png",
             "otherImageDescription": "Picture of a large potato from the left"
           },
           {
             "id": 2,
-            "src": "/assets/images/products/potatoSecond.png",
+            "src": "https://imgs.search.brave.com/YpMRZdfJpIPLdLIhbf0VWoU8-NhHS4G_4BG8LOHiNdI/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTY4/MzcwMTM4L3Bob3Rv/L21hbmdvLmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz1FTnEy/QnJVVjhkTkgycnRo/X1pZQkJ0UzlSV0R3/Q2JJMjVTZnVseGly/bW5RPQ",
             "otherImageDescription": "Picture of a large potato from the right"
           },
           {
             "id": 3,
-            "src": "/assets/images/products/potatoThird.png",
+            "src": "https://imgs.search.brave.com/9-Mh94pJGPaT17MUqjIqrstB23c7oWzBGb47vzd5gG0/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTI3/MzgyMzYzNC9waG90/by9tYW5nby1vbi13/aGl0ZS1iYWNrZ3Jv/dW5kLmpwZz9zPTYx/Mng2MTImdz0wJms9/MjAmYz1DR1dUeGpn/aEFUZ1lYUlNESWpG/QnFuZlE2X3Nsbnk2/SlBOY1dUUGJtTzRv/PQ",
             "otherImageDescription": "Picture of a large potato from above"
           },
           {
             "id": 4,
-            "src": "/assets/images/products/potatoSecond.png",
+            "src": "https://imgs.search.brave.com/vbNRI0INTOuBqLv14KrR0NskUF5p9vW0Vkz3ttPfzK4/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTMx/ODkzNTI5MS9waG90/by9tYW5nby1mcnVp/dC5qcGc_cz02MTJ4/NjEyJnc9MCZrPTIw/JmM9TGYxaWVPRFY3/cERtd3h5YW5yUEJV/V1FQMk1HT0tpMmNM/WHdXSGxoZ2NGUT0",
             "otherImageDescription": "Picture of a big potato shot from the front"
           },
           {
             "id": 5,
-            "src": "/assets/images/products/potatoFirst.png",
+            "src": "https://imgs.search.brave.com/SZGYZFMq_0EWMptHPtO2GBSVqjJ6DFaLQ-6VuZZR_iI/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA1LzIzLzQwLzY4/LzM2MF9GXzUyMzQw/NjgyN181Mmp0MllG/d0F0blJNVWo2UTNL/dDhqOFR2QTVqQTR2/Zi5qcGc",
             "otherImageDescription": "Picture of a large potato from the left"
           },
           {
             "id": 6,
-            "src": "/assets/images/products/potatoSecond.png",
-            "otherImageDescription": "Picture of a large potato from the right"
-          },
-          {
-            "id": 7,
-            "src": "/assets/images/products/potatoSecond.png",
-            "otherImageDescription": "Picture of a big potato shot from the front"
-          },
-          {
-            "id": 8,
-            "src": "/assets/images/products/potatoFirst.png",
+            "src": "/assets/images/products/freshMango.png",
             "otherImageDescription": "Picture of a large potato from the left"
           },
           {
-            "id": 9,
-            "src": "/assets/images/products/potatoSecond.png",
+            "id": 7,
+            "src": "https://imgs.search.brave.com/YpMRZdfJpIPLdLIhbf0VWoU8-NhHS4G_4BG8LOHiNdI/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTY4/MzcwMTM4L3Bob3Rv/L21hbmdvLmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz1FTnEy/QnJVVjhkTkgycnRo/X1pZQkJ0UzlSV0R3/Q2JJMjVTZnVseGly/bW5RPQ",
             "otherImageDescription": "Picture of a large potato from the right"
+          },
+          {
+            "id": 8,
+            "src": "https://imgs.search.brave.com/9-Mh94pJGPaT17MUqjIqrstB23c7oWzBGb47vzd5gG0/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTI3/MzgyMzYzNC9waG90/by9tYW5nby1vbi13/aGl0ZS1iYWNrZ3Jv/dW5kLmpwZz9zPTYx/Mng2MTImdz0wJms9/MjAmYz1DR1dUeGpn/aEFUZ1lYUlNESWpG/QnFuZlE2X3Nsbnk2/SlBOY1dUUGJtTzRv/PQ",
+            "otherImageDescription": "Picture of a large potato from above"
+          },
+          {
+            "id": 9,
+            "src": "https://imgs.search.brave.com/vbNRI0INTOuBqLv14KrR0NskUF5p9vW0Vkz3ttPfzK4/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTMx/ODkzNTI5MS9waG90/by9tYW5nby1mcnVp/dC5qcGc_cz02MTJ4/NjEyJnc9MCZrPTIw/JmM9TGYxaWVPRFY3/cERtd3h5YW5yUEJV/V1FQMk1HT0tpMmNM/WHdXSGxoZ2NGUT0",
+            "otherImageDescription": "Picture of a big potato shot from the front"
           }
         ]
       },
-      "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": [
-        "Vegetables",
-        "Healthy",
-        "Cabbage",
-        "Green Cabbage"
+      "additionalInformation": [
+        {
+          "title": "Weight:",
+          "description": "03"
+        },
+        {
+          "title": "Color:",
+          "description": "Orange"
+        },
+        {
+          "title": "Type:",
+          "description": "Organic"
+        },
+        {
+          "title": "Category:",
+          "description": "Fresh Fruit"
+        },
+        {
+          "title": "Stock Status:",
+          "description": "Available (7,413)"
+        },
+        {
+          "title": "Tags:",
+          "description": "Green Cabbage Cabbage Chinese Healthy Vegetables"
+        }
       ],
+      "brand": "/assets/images/products/brands/farmary.svg",
+      "tag": ["Vegetables", "Healthy", "Cabbage", "Green Cabbage"],
       "reviews": [
         {
           "id": 1,
@@ -678,58 +822,79 @@
         "otherImages": [
           {
             "id": 1,
-            "src": "/assets/images/products/potatoFirst.png",
+            "src": "/assets/images/products/greenCapsicum.png",
             "otherImageDescription": "Picture of a large potato from the left"
           },
           {
             "id": 2,
-            "src": "/assets/images/products/potatoSecond.png",
+            "src": "https://imgs.search.brave.com/fljX5yOBZ-4fA7Al67m5tpqQbdY8ZrnHwYThBlFzzdU/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTcy/NDAyODQ4L3Bob3Rv/L2dyZWVuLWJlbGwt/cGVwcGVyLmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz1WTi11/QjdzT3lrcTk4SjZf/YXVXRFoyUEVUYXlt/SHVYbERtVG9XVU9r/ODdnPQ",
             "otherImageDescription": "Picture of a large potato from the right"
           },
           {
             "id": 3,
-            "src": "/assets/images/products/potatoThird.png",
+            "src": "https://imgs.search.brave.com/xGpx1CjKsjfyVgh5LGuZIrIwk_kV0eVKUREJHHXzNno/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4u/c2hvcGlmeS5jb20v/cy9maWxlcy8xLzE1/NzUvMDYwMy9wcm9k/dWN0cy9kb3dubG9h/ZF80MDljY2RkMi01/ZDJiLTRhMTItYmFm/YS0zNjIwNzZhZjVm/NTguanBnP3Y9MTY4/NjA0MTQyNSZ3aWR0/aD0yNDAmaGVpZ2h0/PTI0MA",
             "otherImageDescription": "Picture of a large potato from above"
           },
           {
             "id": 4,
-            "src": "/assets/images/products/potatoSecond.png",
+            "src": "https://imgs.search.brave.com/c7wxZB-YDxhTM4ck1-dtkrQhnfrEUIGceLLux9EumKk/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNDc1/ODY5MDMwL3Bob3Rv/L2dyZWVuLWJlbGwt/cGVwcGVyLmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz1mWlBK/QThrckt3aXMwSGo4/TVpDbmtodTQwNlhs/ZTF5SWJGN2VLbkpS/dWdRPQ",
             "otherImageDescription": "Picture of a big potato shot from the front"
           },
           {
             "id": 5,
-            "src": "/assets/images/products/potatoFirst.png",
+            "src": "https://imgs.search.brave.com/c_Vj3E5q1xsTVTawfzfmKeR_W2NxUH13ZfYwsrrIU5Y/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvOTE1/NTQ3MzQ2L3Bob3Rv/L2lzb2xhdGVkLWdy/ZWVuLWNhcHNpY3Vt/LWNvdXBsZS1vbi13/aGl0ZS1iYWNrZ3Jv/dW5kLmpwZz9zPTYx/Mng2MTImdz0wJms9/MjAmYz1ER2NTbGhM/MTFNc3FsYllMTEtR/amJ0RmNxdUs3NTY0/dGRkNjRYN0xrd1o0/PQ",
             "otherImageDescription": "Picture of a large potato from the left"
           },
           {
             "id": 6,
-            "src": "/assets/images/products/potatoSecond.png",
-            "otherImageDescription": "Picture of a large potato from the right"
-          },
-          {
-            "id": 7,
-            "src": "/assets/images/products/potatoSecond.png",
-            "otherImageDescription": "Picture of a big potato shot from the front"
-          },
-          {
-            "id": 8,
-            "src": "/assets/images/products/potatoFirst.png",
+            "src": "/assets/images/products/greenCapsicum.png",
             "otherImageDescription": "Picture of a large potato from the left"
           },
           {
-            "id": 9,
-            "src": "/assets/images/products/potatoSecond.png",
+            "id": 7,
+            "src": "https://imgs.search.brave.com/fljX5yOBZ-4fA7Al67m5tpqQbdY8ZrnHwYThBlFzzdU/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTcy/NDAyODQ4L3Bob3Rv/L2dyZWVuLWJlbGwt/cGVwcGVyLmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz1WTi11/QjdzT3lrcTk4SjZf/YXVXRFoyUEVUYXlt/SHVYbERtVG9XVU9r/ODdnPQ",
             "otherImageDescription": "Picture of a large potato from the right"
+          },
+          {
+            "id": 8,
+            "src": "https://imgs.search.brave.com/xGpx1CjKsjfyVgh5LGuZIrIwk_kV0eVKUREJHHXzNno/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4u/c2hvcGlmeS5jb20v/cy9maWxlcy8xLzE1/NzUvMDYwMy9wcm9k/dWN0cy9kb3dubG9h/ZF80MDljY2RkMi01/ZDJiLTRhMTItYmFm/YS0zNjIwNzZhZjVm/NTguanBnP3Y9MTY4/NjA0MTQyNSZ3aWR0/aD0yNDAmaGVpZ2h0/PTI0MA",
+            "otherImageDescription": "Picture of a large potato from above"
+          },
+          {
+            "id": 9,
+            "src": "https://imgs.search.brave.com/c7wxZB-YDxhTM4ck1-dtkrQhnfrEUIGceLLux9EumKk/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNDc1/ODY5MDMwL3Bob3Rv/L2dyZWVuLWJlbGwt/cGVwcGVyLmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz1mWlBK/QThrckt3aXMwSGo4/TVpDbmtodTQwNlhs/ZTF5SWJGN2VLbkpS/dWdRPQ",
+            "otherImageDescription": "Picture of a big potato shot from the front"
           }
         ]
       },
-      "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": [
-        "Vegetables",
-        "Healthy",
-        "Cabbage",
-        "Green Cabbage"
+      "additionalInformation": [
+        {
+          "title": "Weight:",
+          "description": "02"
+        },
+        {
+          "title": "Color:",
+          "description": "Green"
+        },
+        {
+          "title": "Type:",
+          "description": "Organic"
+        },
+        {
+          "title": "Category:",
+          "description": "Vegetables"
+        },
+        {
+          "title": "Stock Status:",
+          "description": "Available (3,413)"
+        },
+        {
+          "title": "Tags:",
+          "description": "Green Cabbage Cabbage Chinese Healthy Vegetables"
+        }
       ],
+      "brand": "/assets/images/products/brands/farmary.svg",
+      "tag": ["Vegetables", "Healthy", "Cabbage", "Green Cabbage"],
       "reviews": [
         {
           "id": 1,
@@ -760,11 +925,7 @@
       "category": "Cooking",
       "readingTime": 4,
       "content": "<p>lorem ipsum</p>",
-      "tags": [
-        "Healthy",
-        "Dinner",
-        "Meat"
-      ],
+      "tags": ["Healthy", "Dinner", "Meat"],
       "comments": [
         {
           "fullName": "John Doe",
@@ -782,11 +943,7 @@
       "category": "Beverages",
       "readingTime": 5,
       "content": "<p>lorem ipsum</p>",
-      "tags": [
-        "Lounch",
-        "Kid foods",
-        "Vegetarian"
-      ],
+      "tags": ["Lounch", "Kid foods", "Vegetarian"],
       "comments": [
         {
           "fullName": "John Doe",
@@ -804,11 +961,7 @@
       "category": "Vegetables",
       "readingTime": 6,
       "content": "<p>lorem ipsum</p>",
-      "tags": [
-        "Tiffin",
-        "Vitamins",
-        "Bread"
-      ],
+      "tags": ["Tiffin", "Vitamins", "Bread"],
       "comments": [
         {
           "fullName": "John Doe",
@@ -826,11 +979,7 @@
       "category": "Bread & Bakery",
       "readingTime": 6,
       "content": "<p>lorem ipsum</p>",
-      "tags": [
-        "Snacks",
-        "Tiffin",
-        "Low fat"
-      ],
+      "tags": ["Snacks", "Tiffin", "Low fat"],
       "comments": [
         {
           "fullName": "John Doe",
@@ -848,11 +997,7 @@
       "category": "Beauty & Health",
       "readingTime": 6,
       "content": "<p>lorem ipsum</p>",
-      "tags": [
-        "Kid foods",
-        "Healthy",
-        "Low fat"
-      ],
+      "tags": ["Kid foods", "Healthy", "Low fat"],
       "comments": [
         {
           "fullName": "John Doe",
@@ -870,11 +1015,7 @@
       "category": "Fresh Fruit",
       "readingTime": 4,
       "content": "<p>lorem ipsum</p>",
-      "tags": [
-        "Fresh Fruit",
-        "Meat",
-        "Bread"
-      ],
+      "tags": ["Fresh Fruit", "Meat", "Bread"],
       "comments": [
         {
           "fullName": "John Doe",
@@ -892,11 +1033,7 @@
       "category": "Vegetables",
       "readingTime": 6,
       "content": "<p>lorem ipsum</p>",
-      "tags": [
-        "Meat",
-        "Dinner",
-        "Vegetarian"
-      ],
+      "tags": ["Meat", "Dinner", "Vegetarian"],
       "comments": [
         {
           "fullName": "John Doe",
@@ -914,11 +1051,7 @@
       "category": "Fresh Fruit",
       "readingTime": 6,
       "content": "<p>lorem ipsum</p>",
-      "tags": [
-        "Healthy",
-        "Snacks",
-        "Tiffin"
-      ],
+      "tags": ["Healthy", "Snacks", "Tiffin"],
       "comments": [
         {
           "fullName": "John Doe",
@@ -936,11 +1069,7 @@
       "category": "Fresh Fruit",
       "readingTime": 4,
       "content": "<p>lorem ipsum</p>",
-      "tags": [
-        "Launch",
-        "Snacks",
-        "Bread"
-      ],
+      "tags": ["Launch", "Snacks", "Bread"],
       "comments": [
         {
           "fullName": "John Doe",
@@ -958,11 +1087,7 @@
       "category": "Vegetables",
       "readingTime": 4,
       "content": "<p>lorem ipsum</p>",
-      "tags": [
-        "Vegetarian",
-        "Vitamins",
-        "Dinner"
-      ],
+      "tags": ["Vegetarian", "Vitamins", "Dinner"],
       "comments": [
         {
           "fullName": "John Doe",

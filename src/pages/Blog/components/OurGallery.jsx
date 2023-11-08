@@ -24,7 +24,7 @@ const BlogOurGallery = () => {
       <div className="flex flex-wrap my-[20px] gap-[8px]">
         {state.map(({ previewImage, id }) => (
           <NavLink to={`/blog/${id}`} key={id} className="cursor-pointer">
-            <img src={previewImage} alt="img" className="w-[100px] h-[100px] rounded-[6px] " />
+            <img src={previewImage} alt="img" className="w-[100px] h-[100px] rounded-[6px] " loading="lazy" />
           </NavLink>
         ))}
       </div>

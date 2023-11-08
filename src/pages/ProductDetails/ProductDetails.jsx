@@ -25,7 +25,7 @@ function ProductDetails() {
     <div className="max-w-[1320px] mx-auto">
       <>
         <ModalDetails product={foundProduct} />
-        <TabBar />
+        <TabBar product={foundProduct} />
       </>
       <h1 className="text-heading05 font-[600] text-center mb-8">Related Products</h1>
     </div>
