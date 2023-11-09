@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider, createRoutesFromElements, Route } from 'react-router-dom'
+import { createBrowserRouter, RouterProvider, createRoutesFromElements, Route, Navigate } from 'react-router-dom'
 
 // Pages
 import Home from './pages/Home/Home'
@@ -43,7 +43,7 @@ export default function App() {
             <ShopProvider>
               <Shop />
             </ShopProvider>
-        }
+          }
         />
         <Route path="product/:productID" element={<ProductDetails />} />
         <Route path="sign-in" element={<Signup />} />
