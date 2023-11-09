@@ -6,6 +6,7 @@ import Shop from './pages/Shop'
 import ProductDetails from './pages/ProductDetails/ProductDetails'
 import Signup from './pages/Auth/Signup'
 import Signin from './pages/Auth/Signin'
+
 import PageNotFound from './pages/PageNotFound'
 import About from './pages/About/About'
 import Checkout from './pages/Checkout/Checkout'
@@ -42,7 +43,7 @@ export default function App() {
             <ShopProvider>
               <Shop />
             </ShopProvider>
-          }
+        }
         />
         <Route path="product/:productID" element={<ProductDetails />} />
         <Route path="sign-in" element={<Signup />} />
@@ -69,7 +70,7 @@ export default function App() {
         <Route path="wishlist" element={<Wishlist />} />
         <Route path="shopping-cart" element={<ShoppingCart />} />
         <Route path="PageNotFound" element={<PageNotFound />} />
-        {/* <Route path="*" element={<Navigate to={'/PageNotFound'} />} /> */}
+        <Route path="*" element={<Navigate to={'/PageNotFound'} />} />
       </Route>
     )
   )
