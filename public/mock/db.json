@@ -117,13 +117,7 @@
         }
       ],
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": [
-        "Vegetables",
-        "Healthy",
-        "Chinese",
-        "Cabbage",
-        "Green Cabbage"
-      ],
+      "tag": ["Vegetables", "Healthy", "Chinese", "Cabbage", "Green Cabbage"],
       "reviews": [
         {
           "id": 1,
@@ -234,13 +228,7 @@
         }
       ],
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": [
-        "Vegetables",
-        "Healthy",
-        "Chinese",
-        "Cabbage",
-        "Green Cabbage"
-      ],
+      "tag": ["Vegetables", "Healthy", "Chinese", "Cabbage", "Green Cabbage"],
       "reviews": [
         {
           "id": 1,
@@ -351,13 +339,7 @@
         }
       ],
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": [
-        "Vegetables",
-        "Healthy",
-        "Chinese",
-        "Cabbage",
-        "Green Cabbage"
-      ],
+      "tag": ["Vegetables", "Healthy", "Chinese", "Cabbage", "Green Cabbage"],
       "reviews": [
         {
           "id": 1,
@@ -468,12 +450,7 @@
         }
       ],
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": [
-        "Vegetables",
-        "Healthy",
-        "Cabbage",
-        "Green Cabbage"
-      ],
+      "tag": ["Vegetables", "Healthy", "Cabbage", "Green Cabbage"],
       "reviews": [
         {
           "id": 1,
@@ -584,12 +561,7 @@
         }
       ],
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": [
-        "Vegetables",
-        "Healthy",
-        "Cabbage",
-        "Green Cabbage"
-      ],
+      "tag": ["Vegetables", "Healthy", "Cabbage", "Green Cabbage"],
       "reviews": [
         {
           "id": 1,
@@ -700,12 +672,7 @@
         }
       ],
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": [
-        "Vegetables",
-        "Healthy",
-        "Cabbage",
-        "Green Cabbage"
-      ],
+      "tag": ["Vegetables", "Healthy", "Cabbage", "Green Cabbage"],
       "reviews": [
         {
           "id": 1,
@@ -816,12 +783,7 @@
         }
       ],
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": [
-        "Vegetables",
-        "Healthy",
-        "Cabbage",
-        "Green Cabbage"
-      ],
+      "tag": ["Vegetables", "Healthy", "Cabbage", "Green Cabbage"],
       "reviews": [
         {
           "id": 1,
@@ -932,12 +894,7 @@
         }
       ],
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": [
-        "Vegetables",
-        "Healthy",
-        "Cabbage",
-        "Green Cabbage"
-      ],
+      "tag": ["Vegetables", "Healthy", "Cabbage", "Green Cabbage"],
       "reviews": [
         {
           "id": 1,
@@ -988,9 +945,7 @@
         }
       ],
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": [
-        "Vegetables"
-      ],
+      "tag": ["Vegetables"],
       "reviews": []
     },
     {
@@ -1024,9 +979,7 @@
         }
       ],
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": [
-        "Vegetables"
-      ],
+      "tag": ["Vegetables"],
       "reviews": []
     },
     {
@@ -1060,9 +1013,7 @@
         }
       ],
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": [
-        "Vegetables"
-      ],
+      "tag": ["Vegetables"],
       "reviews": []
     }
   ],
@@ -1076,11 +1027,7 @@
       "category": "Cooking",
       "readingTime": 4,
       "content": "<p>lorem ipsum</p>",
-      "tags": [
-        "Healthy",
-        "Dinner",
-        "Meat"
-      ],
+      "tags": ["Healthy", "Dinner", "Meat"],
       "comments": [
         {
           "fullName": "John Doe",
@@ -1098,11 +1045,7 @@
       "category": "Beverages",
       "readingTime": 5,
       "content": "<p>lorem ipsum</p>",
-      "tags": [
-        "Lounch",
-        "Kid foods",
-        "Vegetarian"
-      ],
+      "tags": ["Lounch", "Kid foods", "Vegetarian"],
       "comments": [
         {
           "fullName": "John Doe",
@@ -1120,11 +1063,7 @@
       "category": "Vegetables",
       "readingTime": 6,
       "content": "<p>lorem ipsum</p>",
-      "tags": [
-        "Tiffin",
-        "Vitamins",
-        "Bread"
-      ],
+      "tags": ["Tiffin", "Vitamins", "Bread"],
       "comments": [
         {
           "fullName": "John Doe",
@@ -1142,11 +1081,7 @@
       "category": "Bread & Bakery",
       "readingTime": 6,
       "content": "<p>lorem ipsum</p>",
-      "tags": [
-        "Snacks",
-        "Tiffin",
-        "Low fat"
-      ],
+      "tags": ["Snacks", "Tiffin", "Low fat"],
       "comments": [
         {
           "fullName": "John Doe",
@@ -1164,11 +1099,7 @@
       "category": "Beauty & Health",
       "readingTime": 6,
       "content": "<p>lorem ipsum</p>",
-      "tags": [
-        "Kid foods",
-        "Healthy",
-        "Low fat"
-      ],
+      "tags": ["Kid foods", "Healthy", "Low fat"],
       "comments": [
         {
           "fullName": "John Doe",
@@ -1186,11 +1117,7 @@
       "category": "Fresh Fruit",
       "readingTime": 4,
       "content": "<p>lorem ipsum</p>",
-      "tags": [
-        "Fresh Fruit",
-        "Meat",
-        "Bread"
-      ],
+      "tags": ["Fresh Fruit", "Meat", "Bread"],
       "comments": [
         {
           "fullName": "John Doe",
@@ -1208,11 +1135,7 @@
       "category": "Vegetables",
       "readingTime": 6,
       "content": "<p>lorem ipsum</p>",
-      "tags": [
-        "Meat",
-        "Dinner",
-        "Vegetarian"
-      ],
+      "tags": ["Meat", "Dinner", "Vegetarian"],
       "comments": [
         {
           "fullName": "John Doe",
@@ -1230,11 +1153,7 @@
       "category": "Fresh Fruit",
       "readingTime": 6,
       "content": "<p>lorem ipsum</p>",
-      "tags": [
-        "Healthy",
-        "Snacks",
-        "Tiffin"
-      ],
+      "tags": ["Healthy", "Snacks", "Tiffin"],
       "comments": [
         {
           "fullName": "John Doe",
@@ -1252,11 +1171,7 @@
       "category": "Fresh Fruit",
       "readingTime": 4,
       "content": "<p>lorem ipsum</p>",
-      "tags": [
-        "Launch",
-        "Snacks",
-        "Bread"
-      ],
+      "tags": ["Launch", "Snacks", "Bread"],
       "comments": [
         {
           "fullName": "John Doe",
@@ -1274,11 +1189,7 @@
       "category": "Vegetables",
       "readingTime": 4,
       "content": "<p>lorem ipsum</p>",
-      "tags": [
-        "Vegetarian",
-        "Vitamins",
-        "Dinner"
-      ],
+      "tags": ["Vegetarian", "Vitamins", "Dinner"],
       "comments": [
         {
           "fullName": "John Doe",
@@ -1315,58 +1226,189 @@
         "id": 1,
         "title": "Jenny Wilson",
         "category": "Ceo & Founder",
-        "linkImg":
-          "/assets/images/About/cards_img1.png"
+        "linkImg": "/assets/images/About/cards_img1.png"
       },
       {
         "id": 2,
         "title": "Jane Cooper",
         "category": "Worker",
-        "linkImg":
-          "/assets/images/About/cards_img2.png"
+        "linkImg": "/assets/images/About/cards_img2.png"
       },
       {
         "id": 3,
         "title": "Cody Fisher",
         "category": "Security Guard",
-        "linkImg":
-          "/assets/images/About/cards_img3.png"
+        "linkImg": "/assets/images/About/cards_img3.png"
       },
       {
         "id": 4,
         "title": "Robert Fox",
         "category": "Senior Farmer Manager",
-        "linkImg":
-          "/assets/images/About/cards_img4.png"
+        "linkImg": "/assets/images/About/cards_img4.png"
       },
       {
         "id": 5,
         "title": "Jenny Wilson",
         "category": "Ceo & Founder",
-        "linkImg":
-          "/assets/images/About/cards_img1.png"
+        "linkImg": "/assets/images/About/cards_img1.png"
       },
       {
         "id": 6,
         "title": "Jane Cooper",
         "category": "Worker",
-        "linkImg":
-          "/assets/images/About/cards_img2.png"
+        "linkImg": "/assets/images/About/cards_img2.png"
       },
       {
         "id": 7,
         "title": "Cody Fisher",
         "category": "Security Guard",
-        "linkImg":
-          "/assets/images/About/cards_img3.png"
+        "linkImg": "/assets/images/About/cards_img3.png"
       },
       {
         "id": 8,
         "title": "Robert Fox",
         "category": "Senior Farmer Manager",
-        "linkImg":
-          "/assets/images/About/cards_img4.png"
+        "linkImg": "/assets/images/About/cards_img4.png"
       }
     ]
-  }
+  },
+  "navbar": [
+    {
+      "id": 1,
+      "class": "mainMenu",
+      "name": "All Categories",
+      "link": "",
+      "type": "dropdown",
+      "dropdown": [
+        {
+          "id": 1,
+          "image": "LuApple",
+          "link": "",
+          "name": "Fresh Fruit"
+        },
+        {
+          "id": 2,
+          "image": "TbSalad",
+          "link": "",
+          "name": "Vegetables"
+        },
+        {
+          "id": 3,
+          "image": "LuApple",
+          "link": "",
+          "name": "River Fish"
+        },
+        {
+          "id": 4,
+          "image": "TbMeat",
+          "link": "",
+          "name": "Chicken & Meat"
+        },
+        {
+          "id": 5,
+          "image": "SiBuymeacoffee",
+          "link": "",
+          "name": "Drink & Watert"
+        },
+        {
+          "id": 6,
+          "image": "TbIceCream",
+          "link": "",
+          "name": "Yogurt & Ice Cream"
+        },
+        {
+          "id": 7,
+          "link": "",
+          "image": "GiCakeSlice",
+          "name": "Cake & Bread"
+        },
+        {
+          "id": 8,
+          "image": "GiCupcake",
+          "link": "",
+          "name": "Butter & Cream"
+        },
+        {
+          "id": 9,
+          "image": "PiCookingPot",
+          "link": "",
+          "name": "Cooking"
+        },
+        {
+          "id": 10,
+          "image": "AiOutlinePlus",
+          "link": "",
+          "name": "View all Categor"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Home",
+      "link": "",
+      "type": "dropdown",
+      "dropdown": [
+        { "name": "Ladoo", "link": "" },
+        { "name": "Besan Ladoo", "link": "" },
+        { "name": "Ghee Besan Ladoo", "link": "" },
+        { "name": "Nariyal Ladoo", "link": "" },
+        { "name": "Kaju Katli", "link": "" },
+        { "name": "Rasgulla", "link": "" }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Shop",
+      "link": "shop",
+      "type": "dropdown",
+      "dropdown": [
+        { "name": "Ladoo", "link": "" },
+        { "name": "Besan Ladoo", "link": "" },
+        { "name": "Ghee Besan Ladoo", "link": "" },
+        { "name": "Nariyal Ladoo", "link": "" },
+        { "name": "Kaju Katli", "link": "" },
+        { "name": "Rasgulla", "link": "" }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Pages",
+      "link": "",
+      "type": "dropdown",
+      "dropdown": [
+        { "name": "Ladoo", "link": "" },
+        { "name": "Besan Ladoo", "link": "" },
+        { "name": "Ghee Besan Ladoo", "link": "" },
+        { "name": "Nariyal Ladoo", "link": "" },
+        { "name": "Kaju Katli", "link": "" },
+        { "name": "Rasgulla", "link": "" }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Blog",
+      "link": "blog",
+      "type": "dropdown",
+      "dropdown": [
+        { "name": "Ladoo", "link": "" },
+        { "name": "Besan Ladoo", "link": "" },
+        { "name": "Ghee Besan Ladoo", "link": "" },
+        { "name": "Nariyal Ladoo", "link": "" },
+        { "name": "Kaju Katli", "link": "" },
+        { "name": "Rasgulla", "link": "" }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "About Us",
+      "link": "about",
+      "type": "single"
+    },
+    {
+      "id": 7,
+      "name": "Contact Us",
+      "link": "",
+      "type": "single"
+    }
+  ]
 }
