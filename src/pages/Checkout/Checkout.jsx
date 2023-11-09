@@ -14,8 +14,6 @@ function Checkout() {
     setCity(states)
   }
 
-
-  
   const initialState = {
     firstName: '',
     lastName: '',
