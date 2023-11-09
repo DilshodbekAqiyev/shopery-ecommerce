@@ -12,6 +12,11 @@ module.exports = {
       },
     },
     extend: {
+      backgroundImage: {
+        latestWhiteGray: 'linear-gradient( white 50%, #EDF2EE 50%);',
+        latestWhiteGrayReverse: 'linear-gradient(to top, white 50%, #EDF2EE 50%);',
+        breadCrumpBgIm: 'url("/assets/images/fruits.jpg")',
+      },
       colors: {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
@@ -24,6 +29,7 @@ module.exports = {
         warning: '#FF8A00',
         danger: '#EA4B48',
         white: '#FFFFFF',
+        video: '#002E0399',
         grays: {
           gray900: '#1A1A1A',
           gray800: '#333333',
