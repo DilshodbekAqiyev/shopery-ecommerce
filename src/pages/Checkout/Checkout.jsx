@@ -7,7 +7,6 @@ import { data } from './components/CountryData'
 import { useReducer, useState } from 'react'
 import { CHECKOUT_TYPES } from '../../contexts/checkoutUser/checkoutType'
 import { CheckoutReducer } from '../../contexts/checkoutUser/CheckoutInfo'
-
 function Checkout() {
   const [city, setCity] = useState([])
   function setCountry(country) {
