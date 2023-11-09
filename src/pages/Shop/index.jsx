@@ -19,7 +19,6 @@ function Shop() {
       const response = await instance.get('products')
       const newData = response.data
       setNewData(newData)
-      dispatch({ type: 'SET_DATA', payload: newData })
     }
 
     getData()
@@ -77,7 +76,7 @@ function Shop() {
         <div className="w-[80%]">
           <div className="flex justify-around flex-wrap items-center gap-5">
             {state.categoryFilter === 'All Categories' ? (
-              state.data?.length ? (
+              state?.data?.length ? (
                 state.data.map((item) => <ProductCard key={item.id} {...item} />)
               ) : (
                 <h1>No products match the selected filters.</h1>

@@ -1,11 +1,13 @@
+import { useEffect, useState } from 'react'
 import ProductCard from '../../components/common/Cards/ProductCard'
 import FeaturedProducts from './FeaturedProducts'
 import Video from '../../components/common/video/video'
 import SendEmail from '../../components/common/sendEmail/sendEmail'
 import LatestCard from '../../components/common/Cards/LatestCard'
-import { useEffect, useState } from 'react'
 import OurSpecial from './components/OurSpecial'
 import Timer from './components/timer'
+import SwiperTop from '../../components/ui/swiper'
+import Featured from '../../components/common/featured/featured'
 
 const data = {
   name: 'Green Apple',
@@ -39,6 +41,12 @@ const Home = () => {
 
   return (
     <div>
+      <div className="relative max-w-[1320px] m-auto">
+        <SwiperTop />
+        <div>
+          <Featured />
+        </div>
+      </div>
       <div className="bg-[#EDF2EE] py-[100px]">
         <h1 className="font-[600] text-[40px] text-center  mb-[24px]">Introducing Our Products</h1>
         <div className="text-center mb-[50px]">
@@ -74,16 +82,18 @@ const Home = () => {
       <OurSpecial />
 
       <div className="bg-slate-300 ">
-        <div className="mx-auto  flex overflow-hidden items-center justify-between py-20">
+        <div className="mx-auto  flex overflow-hidden items-center justify-between">
           <div className="mx-auto w-[1518px] flex overflow-hidden items-center justify-between py-20">
-            <img className="w-[521px] h-[308px]" src="/assets/images/special/special_left.png" alt="" />
+            <img className="w-[521px]" src="/assets/images/special/special_left.png" alt="" />
             <Timer />
             <img className="w-[700px] mb-[-80px]" src="/assets/images/special/special_right.png" alt="" />
           </div>
         </div>
 
-        <div className="container">
-          <FeaturedProducts dataFeatures={data} />
+        <div className="bg-white">
+          <div className="container">
+            <FeaturedProducts dataFeatures={data} />
+          </div>
         </div>
 
         <div className=" bg-latestWhiteGrayReverse">

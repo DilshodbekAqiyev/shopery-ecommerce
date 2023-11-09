@@ -1,7 +1,10 @@
 import { useEffect, useState } from 'react'
-import Blog from './Blog'
+
 import axios from 'axios'
 import BlogContext from './context/BlogContext'
+import { Outlet } from 'react-router-dom'
+
+import BlogControl from './components/BlogControl'
 
 const Index = () => {
   const [data, setData] = useState([])
@@ -29,8 +32,9 @@ const Index = () => {
 
   return (
     <BlogContext.Provider value={BlogData}>
-      <div>
-        <Blog />
+      <div className="blog flex gap-[32px] max-w-[1320px] mx-auto mt-[34px]  mb-[80px]">
+        <BlogControl />
+        <Outlet />
       </div>
     </BlogContext.Provider>
   )
