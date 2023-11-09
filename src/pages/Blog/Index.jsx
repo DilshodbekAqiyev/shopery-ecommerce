@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react'
 import axios from 'axios'
 import BlogContext from './context/BlogContext'
 import { Outlet } from 'react-router-dom'
+
 import BlogControl from './components/BlogControl'
 
 const Index = () => {
