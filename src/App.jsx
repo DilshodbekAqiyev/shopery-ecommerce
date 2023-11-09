@@ -20,7 +20,7 @@ import Dashboard from "./pages/Dashboard/Dashboard";
 import UserAddress from "./pages/Dashboard/components/UserAddress";
 import DashboardInfo from "./pages/Dashboard/components/DashboardInfo";
 import OrderDetail from "./pages/Dashboard/components/OrderDetail";
-import OrderHistory from "./pages/Dashboard/components/OrderHistory";
+import Settings from "./pages/Dashboard/components/Settings";
 
 export default function App() {
   const routes = createBrowserRouter(
@@ -48,6 +48,7 @@ export default function App() {
             <Route path="order-detail" index element={<OrderDetail></OrderDetail>} />
           </Route>
           <Route path="wishlist" element={<UserAddress />} />
+          <Route path="settings" element={<Settings/>}/>
       </Route>
         <Route path="*" element={<PageNotFound />} />
       </Route>

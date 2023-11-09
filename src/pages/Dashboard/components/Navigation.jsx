@@ -58,17 +58,20 @@ function Navigation() {
         </div>
         <p>Shopping Cart</p>
       </div>
-      <div onMouseEnter={handleHover} onMouseLeave={handleMouseLeave} className="transition-all cursor-pointer bg-white hover:bg-[#EDF2EE]  border-l-2 border-l-white hover:border-l-4 hover:border-l-lime-600 py-[16px]  flex  items-center gap-[10px] ">
-        <div className="ml-[20px] ">
-          <SettingsIcon isHovered={isHovered}></SettingsIcon>
+      <Link to={'settings'}>
+        <div onMouseEnter={handleHover} onMouseLeave={handleMouseLeave} className="transition-all cursor-pointer bg-white hover:bg-[#EDF2EE]  border-l-2 border-l-white hover:border-l-4 hover:border-l-lime-600 py-[16px]  flex  items-center gap-[10px] ">
+          <div className="ml-[20px] ">
+            <SettingsIcon isHovered={isHovered}></SettingsIcon>
+          </div>
+          <p>Settings</p>
         </div>
-        <p>Settings</p>
-      </div>
+      </Link>
       <div   onMouseEnter={handleHover} onMouseLeave={handleMouseLeave} className=" transition-all cursor-pointer bg-white hover:bg-[#EDF2EE]  border-l-2 border-l-white hover:border-l-4 hover:border-l-lime-600  py-[16px]  flex  items-center gap-[10px] ">
         <div className="ml-[20px]">
           <LogOutIcon isHovered={isHovered}></LogOutIcon>
         </div>
         <p>Log-out</p>
+        
       </div>
     </div>
   )
