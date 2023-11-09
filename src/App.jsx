@@ -43,7 +43,7 @@ export default function App() {
             <ShopProvider>
               <Shop />
             </ShopProvider>
-          }
+        }
         />
         <Route path="product/:productID" element={<ProductDetails />} />
         <Route path="sign-in" element={<Signup />} />
@@ -70,7 +70,7 @@ export default function App() {
         <Route path="wishlist" element={<Wishlist />} />
         <Route path="shopping-cart" element={<ShoppingCart />} />
         <Route path="PageNotFound" element={<PageNotFound />} />
-        {/* <Route path="*" element={<Navigate to={'/PageNotFound'} />} /> */}
+        <Route path="*" element={<Navigate to={'/PageNotFound'} />} />
       </Route>
     )
   )
