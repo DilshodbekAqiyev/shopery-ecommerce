@@ -12,7 +12,6 @@ import TopComponent from './components/TopComponent'
 function Shop() {
   const { state, dispatch } = useShopContext()
   const [newData, setNewData] = useState([])
-  console.log(state)
 
   useEffect(() => {
     const getData = async () => {
