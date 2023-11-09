@@ -2,13 +2,16 @@ import { useEffect, useState } from "react"
 import { instance } from "../../utils/apiRequest"
 import Container from "../../components/common/Container"
 import { LazyLoadImage } from "react-lazy-load-image-component"
+import { Button } from "../../components/ui/button"
+import { Link } from "react-router-dom"
 
 function About() {
   const [data, setData] = useState({})
 
   const getData = async () => {
-    const res = await instance.get('aboutUs')
+    const res = await instance.get('/aboutUs')
     setData(res.data)
+    console.log(res.data);
   }
 
   useEffect(() => {
@@ -94,7 +97,61 @@ function About() {
           </div>
         </div>
       </div>
+      <Container>
+        <div className="mt-[160px] flex items-center  justify-between gap-[29px] ">
+          <div className="">
+            <h1 className="w-[552px] leading-[57px] text-[48px] font-[600]">We Delivered, You Enjoy Your Order.</h1>
+            <p className="w-[536px] mt-[20px] text-[16px] font-[400] text-gray-600">Ut suscipit egestas suscipit. Sed posuere pellentesque nunc, ultrices consectetur velit dapibus eu. Mauris sollicitudin dignissim diam, ac mattis eros accumsan rhoncus. Curabitur auctor bibendum nunc eget elementum.</p>
+            <div className="flex items-center mt-[20px] gap-[8px]">
+              <img src="/assets/images/About/about-check.svg" alt="img" />
+              <p className="text-gray-600 text-[14px]" >Sed in metus pellentesque.</p>
+            </div>
+            <div className="flex items-center mt-[16px] gap-[8px]">
+              <img src="/assets/images/About/about-check.svg" alt="img" />
+              <p className="text-gray-600 text-[14px]">Fusce et ex commodo, aliquam nulla efficitur, tempus lorem.</p>
+            </div>
+            <div className="flex items-center mt-[16px] gap-[8px]">
+              <img src="/assets/images/About/about-check.svg" alt="img" />
+              <p className="text-gray-600 text-[14px]">Maecenas ut nunc fringilla erat varius.</p>
+            </div>
+            <Link to={"/shop"}>
+              <Button className="mt-[24px]  rounded-[43px]">Shop Now <img className="ml-[16px]" src="/assets/images/About/about-icon.svg" alt="img" /></Button>
+            </Link>
+          </div>
+          <div className=" w-[895px] ">
+            <LazyLoadImage
+              delayTime={300}
+              src="/assets/images/About/fruit-about-img.png"
+              alt="img"
+              effect="blur"
+              className="w-full"
+            />
+          </div>
+        </div>
+      </Container>
+      <div className="bg-gradient-to-r from-[#F2F2F2] to-[#FFF] ">
+        <Container>
+          <div className="pt-[80px] text-center">
+            <h1 className="text-[48px] font-[600]">Our Awesome Team</h1>
+            <p className="w-[640px] mx-auto text-gray-600 text-[16px]">Pellentesque a ante vulputate leo porttitor luctus sed eget eros. Nulla et rhoncus neque. Duis non diam eget est luctus tincidunt a a mi.</p>
+          </div>
+
+          <div className=" mt-[100px] mb-[100px] flex overflow-hidden gap-[24px] pr-[10px]">
+            {data.cards?.map((item) => (<div key={item.id}>
+              <div className="border w-[312px] h-[368px] bg-white rounded-[8px] mt-[20px] shadow-[0_20px_48px_0_rgba(0,38,3,0.08)]">
+                <img src={item.linkImg} alt="" />
+                <div className="pt-[16px] pl-[20px]">
+                  <h3 className="text-[18px] font-[500]">{item.title}</h3>
+                  <p className="text-gray-500 text-[14px]">{item.category}</p>
+                </div>
+              </div>
+            </div>))}
+          </div>
+        </Container>
+      </div>
+
     </div>
+
 
   )
 }
