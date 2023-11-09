@@ -1,4 +1,8 @@
 import PropTypes from 'prop-types'
+import { BsChatSquare } from 'react-icons/bs'
+
+import { GoTag } from 'react-icons/go'
+import { HiOutlineUser } from 'react-icons/hi2'
 import { useNavigate } from 'react-router-dom'
 
 const BlogCard = ({ prop }) => {
@@ -16,21 +20,20 @@ const BlogCard = ({ prop }) => {
       <div className="blogCartBottom p-6 border-[1px] rounded-b-[8px]">
         <ul className="flex gap-[16px]">
           <li>
-            <a href="#2" className="flex items-center gap-1">
-              <img src={'/assets/icons/tag.svg'} alt="img" loading="lazy" />
-
+            <a href="#2" className="flex items-center gap-1  hover:text-primary ">
+              <GoTag className="w-[16px] h-[16px] font-bold" />
               <span>Food</span>
             </a>
           </li>
           <li>
-            <a href="#2" className="flex items-center gap-1">
-              <img src={'/assets/icons/user.svg'} alt="img" loading="lazy" />
+            <a href="#2" className="flex items-center gap-1 hover:text-primary">
+              <HiOutlineUser className="w-[16px] h-[16px]  font-bold" />
               <span>By Admin</span>
             </a>
           </li>
           <li>
-            <a onClick={() => navigate('SingleBlog/' + id)} className="flex items-center gap-1">
-              <img src={'/assets/icons/chatComment.svg'} alt="img" loading="lazy" />
+            <a onClick={() => navigate('SingleBlog/' + id)} className="flex items-center gap-1 hover:text-primary">
+              <BsChatSquare className="w-[16px] h-[16px]  font-bold" />
               <span>{comments.length} Comments</span>
             </a>
           </li>
