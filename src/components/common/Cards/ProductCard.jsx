@@ -1,13 +1,16 @@
 import PropTypes from 'prop-types'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Badge } from '../../ui/badge'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import 'react-lazy-load-image-component/src/effects/blur.css'
 import { useNavigate } from 'react-router-dom'
-import { Dialog, DialogContent, DialogTrigger } from '../../ui/dialog'
+import { Dialog, DialogContent, DialogHeader, DialogTrigger } from '../../ui/dialog'
+import ModalDetails from '../../../pages/ProductDetails/components/ModalDetails'
+import { instance } from '../../../utils/apiRequest'
 
 const ProductCard = (props) => {
   const [isHovered, setIsHovered] = useState(false)
+  const [foundProduct, setFoundProduct] = useState({})
   const navigate = useNavigate()
 
   const { id, name, originalPrice, discountPrice, images, rating, status, featrues } = props
@@ -23,8 +26,15 @@ const ProductCard = (props) => {
   const handleClick = (e) => {
     e.stopPropagation()
     console.log(e)
-    setIsHovered(false)
   }
+
+  useEffect(() => {
+    // eslint-disable-next-line no-extra-semi
+    ;(async () => {
+      const response = await instance.get(`products/${id}`)
+      setFoundProduct(response.data)
+    })()
+  }, [id])
 
   return (
     <>
@@ -75,7 +85,7 @@ const ProductCard = (props) => {
             className={`p-3 rounded-full w-[40px] h-[40px] flex justify-center items-center ${
               isHovered ? 'bg-[#00B207]' : 'bg-grays-gray0.5'
             }`}
-            // onClick={handleClick}
+            onClick={handleClick}
           >
             <img
               src={`/assets/icons/${isHovered ? 'bag-white' : 'bag'}.svg`}
@@ -85,7 +95,7 @@ const ProductCard = (props) => {
             />
           </div>
         </div>
-        {isHovered && (
+        {isHovered ? (
           <div className="absolute top-3 right-3 z-10 rounded-full  transition-transform">
             <div className="bg-white rounded-full p-2 shadow-md hover:scale-110 cursor-pointer" onClick={handleClick}>
               <img src="/assets/icons/heart.svg" alt="heart image" loading="lazy" className="w-[20px] h-[20px]" />
@@ -99,12 +109,20 @@ const ProductCard = (props) => {
                   <img src="/assets/icons/eye.svg" alt="eye image" loading="lazy" className="w-[20px] h-[20px]" />
                 </div>
               </DialogTrigger>
-              <DialogContent className="sm:max-w-[425px]">
-                <h1>hell world</h1>
+              <DialogContent
+                onClick={(e) => {
+                  e.stopPropagation()
+                  setIsHovered(false)
+                }}
+                className="sm:max-w-[1200px]"
+              >
+                <DialogHeader onClick={handleClick} className={'w-full h-full'}>
+                  <ModalDetails product={foundProduct} />
+                </DialogHeader>
               </DialogContent>
             </Dialog>
           </div>
-        )}
+        ) : null}
       </div>
     </>
   )
