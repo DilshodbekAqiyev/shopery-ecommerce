@@ -1,3 +1,4 @@
+
 export const data = [
   {
     state: 'Alabama',
