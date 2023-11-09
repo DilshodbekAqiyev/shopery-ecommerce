@@ -13,6 +13,9 @@ function Checkout() {
     const states = data.filter((el) => el.state === country)
     setCity(states)
   }
+
+
+  
   const initialState = {
     firstName: '',
     lastName: '',
