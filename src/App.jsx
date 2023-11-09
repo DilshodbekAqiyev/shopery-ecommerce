@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider, createRoutesFromElements, Route } from 'react-router-dom'
+import { createBrowserRouter, RouterProvider, createRoutesFromElements, Route, Navigate } from 'react-router-dom'
 
 // Pages
 import Home from './pages/Home/Home'
@@ -19,6 +19,7 @@ import Dashboard from './pages/Dashboard/Dashboard'
 import UserAddress from './pages/Dashboard/components/UserAddress'
 import DashboardInfo from './pages/Dashboard/components/DashboardInfo'
 import OrderDetail from './pages/Dashboard/components/OrderDetail'
+import AddProduct from './pages/Dashboard/components/AddProduct'
 
 //Contexts
 import ShopProvider from './contexts/shop/ShopContext'
@@ -43,7 +44,7 @@ export default function App() {
             <ShopProvider>
               <Shop />
             </ShopProvider>
-        }
+          }
         />
         <Route path="product/:productID" element={<ProductDetails />} />
         <Route path="sign-in" element={<Signup />} />
@@ -64,6 +65,7 @@ export default function App() {
             <Route path="order-detail" index element={<OrderDetail></OrderDetail>} />
           </Route>
           <Route path="wishlist" element={<UserAddress />} />
+          <Route path="addProduct" element={<AddProduct />} />
         </Route>
         <Route path="about" element={<About />} />
         <Route path="checkout" element={<Checkout />} />
