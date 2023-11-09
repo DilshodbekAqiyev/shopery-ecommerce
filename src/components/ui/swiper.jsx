@@ -7,6 +7,7 @@ import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules'
+import { Navigation, Pagination, Autoplay, Mousewheel, Keyboard } from 'swiper/modules'
 import { Button } from './button'
 import { ArrowRight } from 'lucide-react'
 
@@ -14,12 +15,18 @@ function SwiperTop() {
   return (
     <div className="pt-[68px] pb-[68px]">
       <Swiper
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+        }}
+        loop={true}
         cssMode={true}
         navigation={true}
         pagination={true}
         mousewheel={true}
         keyboard={true}
         modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+        modules={[Navigation, Autoplay, Pagination, Mousewheel, Keyboard]}
         className="mySwiper"
       >
         <SwiperSlide>
@@ -32,6 +39,8 @@ function SwiperTop() {
                 <span className="text-[32px] mt-[5px]">70%</span> <span className="mt-[-10px] text-[18px]">off</span>
               </div>
               <p className="mb-[8px] mt-[-120px]  text-[#00B207]">Welcome to shopery</p>
+            <div>
+              <p className="mb-[8px] text-[#00B207]">Welcome to shopery</p>
               <h1 className="family-poppins mb-[20px] text-4xl font-semibold">
                 Fresh & Healthy <br /> Organic Food
               </h1>
@@ -52,6 +61,8 @@ function SwiperTop() {
                 <span className="text-[32px] mt-[5px]">70%</span> <span className="mt-[-10px] text-[18px]">off</span>
               </div>
               <p className="mb-[8px] mt-[-120px]  text-[#00B207]">Welcome to shopery</p>
+            <div>
+              <p className="mb-[8px] text-[#00B207]">Welcome to shopery</p>
               <h1 className="family-poppins mb-[20px] text-4xl font-semibold">
                 Fresh & Healthy <br /> Organic Food
               </h1>
@@ -72,6 +83,8 @@ function SwiperTop() {
                 <span className="text-[32px] mt-[5px]">70%</span> <span className="mt-[-10px] text-[18px]">off</span>
               </div>
               <p className="mb-[8px] mt-[-120px]  text-[#00B207]">Welcome to shopery</p>
+            <div>
+              <p className="mb-[8px] text-[#00B207]">Welcome to shopery</p>
               <h1 className="family-poppins mb-[20px] text-4xl font-semibold">
                 Fresh & Healthy <br /> Organic Food
               </h1>
