@@ -1,4 +1,3 @@
-import React, { useRef, useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import foodFoto from '../../../public/assets/images/special/topSwiperFoto.png'
 import foodFoto2 from '../../../public/assets/images/special/topSwiperFoto2.png'
