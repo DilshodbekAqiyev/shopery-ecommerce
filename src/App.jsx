@@ -2,7 +2,8 @@ import {
   createBrowserRouter,
   RouterProvider,
   createRoutesFromElements,
-  Route
+  Route,
+  Navigate
 } from 'react-router-dom'
 
 // Pages
@@ -55,8 +56,8 @@ export default function App() {
           }
         />
         <Route path="product/:id" element={<ProductDetails data={data} />} />
-        <Route path="sign-in" element={<Signup />} />
-        <Route path="sign-up" element={<Signin />} />
+        <Route path="sign-up" element={<Signup />} />
+        <Route path="sign-in" element={<Signin />} />
 
         <Route path="about" element={<About />} />
         <Route path="checkout" element={<Checkout />} />
