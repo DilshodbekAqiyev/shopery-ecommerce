@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider, createRoutesFromElements, Route, Navigate } from 'react-router-dom'
+import { createBrowserRouter, RouterProvider, createRoutesFromElements, Route } from 'react-router-dom'
 
 // Pages
 import Home from './pages/Home/Home'
@@ -6,6 +6,7 @@ import Shop from './pages/Shop'
 import ProductDetails from './pages/ProductDetails/ProductDetails'
 import Signup from './pages/Auth/Signup'
 import Signin from './pages/Auth/Signin'
+
 import PageNotFound from './pages/PageNotFound'
 import About from './pages/About/About'
 import Checkout from './pages/Checkout/Checkout'
@@ -43,7 +44,7 @@ export default function App() {
             <ShopProvider>
               <Shop />
             </ShopProvider>
-          }
+        }
         />
         <Route path="product/:productID" element={<ProductDetails />} />
         <Route path="sign-in" element={<Signup />} />
@@ -66,7 +67,6 @@ export default function App() {
           <Route path="wishlist" element={<UserAddress />} />
           <Route path="addProduct" element={<AddProduct />} />
         </Route>
-        <Route path="*" element={<PageNotFound />} />
         <Route path="about" element={<About />} />
         <Route path="checkout" element={<Checkout />} />
         <Route path="wishlist" element={<Wishlist />} />
