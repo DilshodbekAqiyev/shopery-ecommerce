@@ -1,12 +1,11 @@
 import PropTypes from 'prop-types'
 import { useState } from 'react'
-import { BiLogoFacebook, BiLogoInstagram, BiLogoTwitter } from 'react-icons/bi'
-import { FaPinterestP } from 'react-icons/fa'
 import { PiHandbagBold } from 'react-icons/pi'
 import { AiOutlineHeart } from 'react-icons/ai'
 import { Button } from '../../../components/ui/button'
 import SwiperContent from './SwiperContent'
 import { Badge } from '../../../components/ui/badge'
+import SocialMediaIcons from '../../../components/common/SocialMediaIcons'
 
 function ModalDetails({ product }) {
   const [InputRef, setInputRef] = useState(1)
@@ -86,20 +85,7 @@ function ModalDetails({ product }) {
               </div>
               <div className="flex items-center gap-[10px]">
                 <h2>Share Item:</h2>
-                <div className="flex items-center gap-1">
-                  <div className="hover:bg-primary text-grays-gray700 p-2 cursor-pointer rounded-full transition-all ease-in-out duration-500 hover:text-white">
-                    <BiLogoFacebook fontSize={24} />
-                  </div>
-                  <div className="hover:bg-primary text-grays-gray700 p-2 cursor-pointer rounded-full transition-all ease-in-out duration-500 hover:text-white">
-                    <BiLogoTwitter fontSize={24} />
-                  </div>
-                  <div className="hover:bg-primary text-grays-gray700 p-2 cursor-pointer rounded-full transition-all ease-in-out duration-500 hover:text-white">
-                    <FaPinterestP fontSize={24} />
-                  </div>
-                  <div className="hover:bg-primary text-grays-gray700 p-2 cursor-pointer rounded-full transition-all ease-in-out duration-500 hover:text-white">
-                    <BiLogoInstagram fontSize={24} />
-                  </div>
-                </div>
+                <SocialMediaIcons />
               </div>
             </div>
             <p className="text-gray-500 mt-4">{littleDesCription}</p>

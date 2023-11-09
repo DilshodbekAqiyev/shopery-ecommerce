@@ -64,13 +64,12 @@ export default function App() {
           </Route>
           <Route path="wishlist" element={<UserAddress />} />
         </Route>
-        <Route path="*" element={<PageNotFound />} />
         <Route path="about" element={<About />} />
         <Route path="checkout" element={<Checkout />} />
         <Route path="wishlist" element={<Wishlist />} />
         <Route path="shopping-cart" element={<ShoppingCart />} />
         <Route path="PageNotFound" element={<PageNotFound />} />
-        <Route path="*" element={<Navigate to={'/PageNotFound'} />} />
+        {/* <Route path="*" element={<Navigate to={'/PageNotFound'} />} /> */}
       </Route>
     )
   )
