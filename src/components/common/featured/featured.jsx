@@ -6,7 +6,7 @@ import Paccages from './paccages'
 
 function Featured() {
   return (
-    <div className=" flex mx-0 border border-red-500">
+    <div className=" flex mx-0 ">
       <div className="w-[330px] h-[222px] border border-[#E6E6E6] p-[40px] hover:bg-[#00B207] hover:cursor-pointer hover:text-white">
         <div className="w-[70px] h-[70px] border border-[#DAE5DA] rounded-[50%]   bg-white flex items-center justify-center mb-4">
           <DeliveryTruck />
