@@ -12,7 +12,6 @@ import TopComponent from './components/TopComponent'
 function Shop() {
   const { state, dispatch } = useShopContext()
   const [newData, setNewData] = useState([])
-  console.log(state)
 
   useEffect(() => {
     const getData = async () => {
@@ -76,7 +75,7 @@ function Shop() {
         <div className="w-[80%]">
           <div className="flex justify-around flex-wrap items-center gap-5">
             {state.categoryFilter === 'All Categories' ? (
-              state.data?.length ? (
+              state?.data?.length ? (
                 state.data.map((item) => <ProductCard key={item.id} {...item} />)
               ) : (
                 <h1>No products match the selected filters.</h1>

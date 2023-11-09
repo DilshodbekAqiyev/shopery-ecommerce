@@ -1,4 +1,3 @@
-import React, { useRef, useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import foodFoto from '../../../public/assets/images/special/topSwiperFoto.png'
 import foodFoto2 from '../../../public/assets/images/special/topSwiperFoto2.png'
@@ -6,7 +5,7 @@ import foodFoto3 from '../../../public/assets/images/special/topSwiperFoto3.png'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
-import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules'
+import { Navigation, Pagination, Autoplay, Mousewheel, Keyboard } from 'swiper/modules'
 import { Button } from './button'
 import { ArrowRight } from 'lucide-react'
 
@@ -14,12 +13,17 @@ function SwiperTop() {
   return (
     <div className="pt-[68px] pb-[68px]">
       <Swiper
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+        }}
+        loop={true}
         cssMode={true}
         navigation={true}
         pagination={true}
         mousewheel={true}
         keyboard={true}
-        modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+        modules={[Navigation, Autoplay, Pagination, Mousewheel, Keyboard]}
         className="mySwiper"
       >
         <SwiperSlide>

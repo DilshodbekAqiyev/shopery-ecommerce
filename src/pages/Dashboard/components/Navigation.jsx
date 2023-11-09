@@ -35,36 +35,66 @@ function Navigation() {
       </Link>
 
       <Link to={'order-history'}>
-        <div  onMouseEnter={handleHover}
-          onMouseLeave={handleMouseLeave} className="transition-all cursor-pointer bg-white hover:bg-[#EDF2EE]  border-l-2 border-l-white hover:border-l-4 hover:border-l-lime-600 py-[16px] flex  items-center gap-[10px] ">
+        <div
+          onMouseEnter={handleHover}
+          onMouseLeave={handleMouseLeave}
+          className="transition-all cursor-pointer bg-white hover:bg-[#EDF2EE]  border-l-2 border-l-white hover:border-l-4 hover:border-l-lime-600 py-[16px] flex  items-center gap-[10px] "
+        >
           <div className="ml-[20px]">
-            <OrderIcon  isHovered={isHovered}></OrderIcon>
+            <OrderIcon isHovered={isHovered}></OrderIcon>
           </div>
           <p>Order History</p>
         </div>
       </Link>
       <Link to={'wishlist'}>
-        <div  onMouseEnter={handleHover}
-          onMouseLeave={handleMouseLeave} className="transition-all bg-white hover:bg-[#EDF2EE] cursor-pointer border-l-2 border-l-white hover:border-l-4 hover:border-l-lime-600  py-[16px]  flex  items-center gap-[10px] ">
+        <div
+          onMouseEnter={handleHover}
+          onMouseLeave={handleMouseLeave}
+          className="transition-all bg-white hover:bg-[#EDF2EE] cursor-pointer border-l-2 border-l-white hover:border-l-4 hover:border-l-lime-600  py-[16px]  flex  items-center gap-[10px] "
+        >
           <div className="ml-[20px]">
-            <WishlistIcon  isHovered={isHovered}></WishlistIcon>
+            <WishlistIcon isHovered={isHovered}></WishlistIcon>
           </div>
           <p>Wishlist</p>
         </div>
       </Link>
-      <div onMouseEnter={handleHover} onMouseLeave={handleMouseLeave}  className="transition-all bg-white cursor-pointer hover:bg-[#EDF2EE]  border-l-2 border-l-white hover:border-l-4 hover:border-l-lime-600  py-[16px]  flex  items-center gap-[10px] ">
+      <div
+        onMouseEnter={handleHover}
+        onMouseLeave={handleMouseLeave}
+        className="transition-all bg-white cursor-pointer hover:bg-[#EDF2EE]  border-l-2 border-l-white hover:border-l-4 hover:border-l-lime-600  py-[16px]  flex  items-center gap-[10px] "
+      >
         <div className="ml-[20px]">
           <ShoppingCartIcon isHovered={isHovered}></ShoppingCartIcon>
         </div>
         <p>Shopping Cart</p>
       </div>
-      <div onMouseEnter={handleHover} onMouseLeave={handleMouseLeave} className="transition-all cursor-pointer bg-white hover:bg-[#EDF2EE]  border-l-2 border-l-white hover:border-l-4 hover:border-l-lime-600 py-[16px]  flex  items-center gap-[10px] ">
+      <Link to={'addProduct'}>
+        <div
+          onMouseEnter={handleHover}
+          onMouseLeave={handleMouseLeave}
+          className="transition-all bg-white hover:bg-[#EDF2EE] cursor-pointer border-l-2 border-l-white hover:border-l-4 hover:border-l-lime-600  py-[16px]  flex  items-center gap-[10px] "
+        >
+          <div className="ml-[20px]">
+            <ShoppingCartIcon isHovered={isHovered} />
+          </div>
+          <p>Add Product</p>
+        </div>
+      </Link>
+      <div
+        onMouseEnter={handleHover}
+        onMouseLeave={handleMouseLeave}
+        className="transition-all cursor-pointer bg-white hover:bg-[#EDF2EE]  border-l-2 border-l-white hover:border-l-4 hover:border-l-lime-600 py-[16px]  flex  items-center gap-[10px] "
+      >
         <div className="ml-[20px] ">
           <SettingsIcon isHovered={isHovered}></SettingsIcon>
         </div>
         <p>Settings</p>
       </div>
-      <div   onMouseEnter={handleHover} onMouseLeave={handleMouseLeave} className=" transition-all cursor-pointer bg-white hover:bg-[#EDF2EE]  border-l-2 border-l-white hover:border-l-4 hover:border-l-lime-600  py-[16px]  flex  items-center gap-[10px] ">
+      <div
+        onMouseEnter={handleHover}
+        onMouseLeave={handleMouseLeave}
+        className=" transition-all cursor-pointer bg-white hover:bg-[#EDF2EE]  border-l-2 border-l-white hover:border-l-4 hover:border-l-lime-600  py-[16px]  flex  items-center gap-[10px] "
+      >
         <div className="ml-[20px]">
           <LogOutIcon isHovered={isHovered}></LogOutIcon>
         </div>
