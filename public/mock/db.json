@@ -20,7 +20,15 @@
         "email": "dianne.russell@gmail.com",
         "phone": 6935551232
       },
-      "wishlist": [],
+      "wishlist": [
+        {
+          "id": 1,
+          "name": "Big Potatos",
+          "category": "Vegetables",
+          "discountPrice": 14.99,
+          "originalPrice": 48
+        }
+      ],
       "shoppingCart": [],
       "checkout": [],
       "orders": []
