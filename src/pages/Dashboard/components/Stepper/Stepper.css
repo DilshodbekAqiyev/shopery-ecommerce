@@ -1,0 +1,25 @@
+.step-item {
+    @apply relative flex flex-col justify-center items-center w-[200px]
+}
+.step-item:not(:first-child):before{
+    @apply content-[''] bg-slate-200 absolute w-full   rounded-lg h-[7px] right-2/4 top-1/3  -translate-y-2/4 ;
+}
+.step{
+    @apply  w-10 h-10  flex  items-center justify-center  font-semibold text-primary  border-dashed border-2 border-primary  z-10  relative  bg-white  rounded-full  
+}
+.btn{
+    @apply bg-green-600 rounded-lg hover:bg-green-800 text-gray-100  font-medium px-7 py-1  mt-5
+}
+.active .step {
+    @apply bg-green-100;
+}
+.complete .step {
+    @apply  bg-green-600  
+}
+.complete p {
+    @apply text-grays-gray900
+}
+
+.complete:not(:first-child):before{
+    @apply bg-green-600  ;
+}
