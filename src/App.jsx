@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider, createRoutesFromElements, Route } from 'react-router-dom'
+import { createBrowserRouter, RouterProvider, createRoutesFromElements, Route, Navigate } from 'react-router-dom'
 
 // Pages
 import Home from './pages/Home/Home'
@@ -41,7 +41,8 @@ export default function App() {
         <Route path="sign-up" element={<Signup />} />
         <Route path="sign-in" element={<Signin />} />
         <Route path="about" element={<About />} />
-        <Route path="*" element={<PageNotFound />} />
+        <Route path="PageNotFound" element={<PageNotFound />} />
+        <Route path="*" element={<Navigate to={'/PageNotFound'} />} />
 
         <Route element={<PrivateRoutes />}>
           <Route path="dashboard" element={<Dashboard />}>
