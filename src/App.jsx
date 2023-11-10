@@ -34,6 +34,7 @@ import OrderDetail from "./pages/Dashboard/components/OrderDetail";
 import UserAddress from "./pages/Dashboard/components/UserAddress";
 import Settings from "./pages/Dashboard/components/Settings";
 import OrderHistory from "./pages/Dashboard/components/OrderHistory";
+import History from "./pages/Dashboard/components/History";
 
 
 export default function App() {
@@ -60,7 +61,8 @@ export default function App() {
         <Route path="dashboard" element={<Dashboard />}>
           <Route index element={<DashboardInfo />} />
           <Route path="order-history" element={<OrderHistory />}>
-            <Route path="order-detail" index element={<OrderDetail></OrderDetail>} />
+            <Route path="history" index  element = {<History></History>}/>
+            <Route path="order-detail"  element={<OrderDetail></OrderDetail>} />
           </Route>
           <Route path="settings" element={<Settings></Settings>}/>
           <Route path="wishlist" element={<UserAddress />} />
