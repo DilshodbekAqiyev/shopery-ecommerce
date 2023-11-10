@@ -1,5 +1,7 @@
 {
-  "users": [],
+  "users": [
+    3
+  ],
   "products": [
     {
       "id": 1,
@@ -40,7 +42,13 @@
         ]
       },
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": ["Vegetables", "Healthy", "Chinese", "Cabbage", "Green Cabbage"],
+      "tag": [
+        "Vegetables",
+        "Healthy",
+        "Chinese",
+        "Cabbage",
+        "Green Cabbage"
+      ],
       "reviews": [
         {
           "id": 1,
@@ -99,7 +107,13 @@
         ]
       },
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": ["Vegetables", "Healthy", "Chinese", "Cabbage", "Green Cabbage"],
+      "tag": [
+        "Vegetables",
+        "Healthy",
+        "Chinese",
+        "Cabbage",
+        "Green Cabbage"
+      ],
       "reviews": [
         {
           "id": 1,
@@ -158,7 +172,13 @@
         ]
       },
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": ["Vegetables", "Healthy", "Chinese", "Cabbage", "Green Cabbage"],
+      "tag": [
+        "Vegetables",
+        "Healthy",
+        "Chinese",
+        "Cabbage",
+        "Green Cabbage"
+      ],
       "reviews": [
         {
           "id": 1,
