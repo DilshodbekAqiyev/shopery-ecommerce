@@ -6,7 +6,7 @@ import SendEmail from '../../components/common/sendEmail/sendEmail'
 import LatestCard from '../../components/common/Cards/LatestCard'
 import OurSpecial from './components/OurSpecial'
 import Timer from './components/timer'
-import SwiperTop from '../../components/ui/swiper'
+// import SwiperTop from '../../components/ui/swiper'
 import Featured from '../../components/common/featured/featured'
 
 const data = {
@@ -42,7 +42,7 @@ const Home = () => {
   return (
     <div>
       <div className="relative max-w-[1320px] m-auto">
-        <SwiperTop />
+        {/* <SwiperTop /> */}
         <div>
           <Featured />
         </div>
