@@ -83,6 +83,7 @@ function AddProduct() {
     e.preventDefault()
     try {
       const formData = new FormData()
+
       formData.append('file', imageSelected)
       formData.append('upload_preset', CLOUDINARY_UPLOAD_NAME)
 
