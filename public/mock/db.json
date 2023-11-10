@@ -20,7 +20,32 @@
         "email": "dianne.russell@gmail.com",
         "phone": 6935551232
       },
-      "wishlist": [] ,
+      "wishlist": [],
+      "shoppingCart": [],
+      "checkout": [],
+      "orders": []
+    },
+    {
+      "firstName": "John1",
+      "lastName": "Doe1",
+      "email": "johndoe1@gmail.com",
+      "role": "Customer1",
+      "phoneNumber": 80355501221,
+      "password": "X34sfsdfy34t7dsgf1",
+      "token": "x@fSDFYsd345d23saFsa326ASDghad23saFsa326ASDghasd%6Assd%6As1",
+      "avatar": "/assets/images/users/user1.png",
+      "billingAddress": {
+        "firstName": "John1",
+        "lastName": "Doe1",
+        "companyName": "Zakirsoft1",
+        "streetAddress": "4140 Parl1",
+        "country": "United States1",
+        "city": "Washington1",
+        "zipCode": "200031",
+        "email": "dianne.russell@gmail.com1",
+        "phone": 6935551231
+      },
+      "wishlist": [],
       "shoppingCart": [],
       "checkout": [],
       "orders": []
@@ -118,13 +143,7 @@
         }
       ],
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": [
-        "Vegetables",
-        "Healthy",
-        "Chinese",
-        "Cabbage",
-        "Green Cabbage"
-      ],
+      "tag": ["Vegetables", "Healthy", "Chinese", "Cabbage", "Green Cabbage"],
       "reviews": [
         {
           "id": 1,
@@ -235,13 +254,7 @@
         }
       ],
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": [
-        "Vegetables",
-        "Healthy",
-        "Chinese",
-        "Cabbage",
-        "Green Cabbage"
-      ],
+      "tag": ["Vegetables", "Healthy", "Chinese", "Cabbage", "Green Cabbage"],
       "reviews": [
         {
           "id": 1,
@@ -352,13 +365,7 @@
         }
       ],
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": [
-        "Vegetables",
-        "Healthy",
-        "Chinese",
-        "Cabbage",
-        "Green Cabbage"
-      ],
+      "tag": ["Vegetables", "Healthy", "Chinese", "Cabbage", "Green Cabbage"],
       "reviews": [
         {
           "id": 1,
@@ -469,12 +476,7 @@
         }
       ],
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": [
-        "Vegetables",
-        "Healthy",
-        "Cabbage",
-        "Green Cabbage"
-      ],
+      "tag": ["Vegetables", "Healthy", "Cabbage", "Green Cabbage"],
       "reviews": [
         {
           "id": 1,
@@ -585,12 +587,7 @@
         }
       ],
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": [
-        "Vegetables",
-        "Healthy",
-        "Cabbage",
-        "Green Cabbage"
-      ],
+      "tag": ["Vegetables", "Healthy", "Cabbage", "Green Cabbage"],
       "reviews": [
         {
           "id": 1,
@@ -701,12 +698,7 @@
         }
       ],
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": [
-        "Vegetables",
-        "Healthy",
-        "Cabbage",
-        "Green Cabbage"
-      ],
+      "tag": ["Vegetables", "Healthy", "Cabbage", "Green Cabbage"],
       "reviews": [
         {
           "id": 1,
@@ -817,12 +809,7 @@
         }
       ],
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": [
-        "Vegetables",
-        "Healthy",
-        "Cabbage",
-        "Green Cabbage"
-      ],
+      "tag": ["Vegetables", "Healthy", "Cabbage", "Green Cabbage"],
       "reviews": [
         {
           "id": 1,
@@ -933,12 +920,7 @@
         }
       ],
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": [
-        "Vegetables",
-        "Healthy",
-        "Cabbage",
-        "Green Cabbage"
-      ],
+      "tag": ["Vegetables", "Healthy", "Cabbage", "Green Cabbage"],
       "reviews": [
         {
           "id": 1,
@@ -989,9 +971,7 @@
         }
       ],
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": [
-        "Vegetables"
-      ],
+      "tag": ["Vegetables"],
       "reviews": []
     },
     {
@@ -1025,9 +1005,7 @@
         }
       ],
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": [
-        "Vegetables"
-      ],
+      "tag": ["Vegetables"],
       "reviews": []
     },
     {
@@ -1061,9 +1039,7 @@
         }
       ],
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": [
-        "Vegetables"
-      ],
+      "tag": ["Vegetables"],
       "reviews": []
     }
   ],
@@ -1077,11 +1053,7 @@
       "category": "Cooking",
       "readingTime": 4,
       "content": "<p>lorem ipsum</p>",
-      "tags": [
-        "Healthy",
-        "Dinner",
-        "Meat"
-      ],
+      "tags": ["Healthy", "Dinner", "Meat"],
       "comments": [
         {
           "fullName": "John Doe",
@@ -1099,11 +1071,7 @@
       "category": "Beverages",
       "readingTime": 5,
       "content": "<p>lorem ipsum</p>",
-      "tags": [
-        "Lounch",
-        "Kid foods",
-        "Vegetarian"
-      ],
+      "tags": ["Lounch", "Kid foods", "Vegetarian"],
       "comments": [
         {
           "fullName": "John Doe",
@@ -1121,11 +1089,7 @@
       "category": "Vegetables",
       "readingTime": 6,
       "content": "<p>lorem ipsum</p>",
-      "tags": [
-        "Tiffin",
-        "Vitamins",
-        "Bread"
-      ],
+      "tags": ["Tiffin", "Vitamins", "Bread"],
       "comments": [
         {
           "fullName": "John Doe",
@@ -1143,11 +1107,7 @@
       "category": "Bread & Bakery",
       "readingTime": 6,
       "content": "<p>lorem ipsum</p>",
-      "tags": [
-        "Snacks",
-        "Tiffin",
-        "Low fat"
-      ],
+      "tags": ["Snacks", "Tiffin", "Low fat"],
       "comments": [
         {
           "fullName": "John Doe",
@@ -1165,11 +1125,7 @@
       "category": "Beauty & Health",
       "readingTime": 6,
       "content": "<p>lorem ipsum</p>",
-      "tags": [
-        "Kid foods",
-        "Healthy",
-        "Low fat"
-      ],
+      "tags": ["Kid foods", "Healthy", "Low fat"],
       "comments": [
         {
           "fullName": "John Doe",
@@ -1187,11 +1143,7 @@
       "category": "Fresh Fruit",
       "readingTime": 4,
       "content": "<p>lorem ipsum</p>",
-      "tags": [
-        "Fresh Fruit",
-        "Meat",
-        "Bread"
-      ],
+      "tags": ["Fresh Fruit", "Meat", "Bread"],
       "comments": [
         {
           "fullName": "John Doe",
@@ -1209,11 +1161,7 @@
       "category": "Vegetables",
       "readingTime": 6,
       "content": "<p>lorem ipsum</p>",
-      "tags": [
-        "Meat",
-        "Dinner",
-        "Vegetarian"
-      ],
+      "tags": ["Meat", "Dinner", "Vegetarian"],
       "comments": [
         {
           "fullName": "John Doe",
@@ -1231,11 +1179,7 @@
       "category": "Fresh Fruit",
       "readingTime": 6,
       "content": "<p>lorem ipsum</p>",
-      "tags": [
-        "Healthy",
-        "Snacks",
-        "Tiffin"
-      ],
+      "tags": ["Healthy", "Snacks", "Tiffin"],
       "comments": [
         {
           "fullName": "John Doe",
@@ -1253,11 +1197,7 @@
       "category": "Fresh Fruit",
       "readingTime": 4,
       "content": "<p>lorem ipsum</p>",
-      "tags": [
-        "Launch",
-        "Snacks",
-        "Bread"
-      ],
+      "tags": ["Launch", "Snacks", "Bread"],
       "comments": [
         {
           "fullName": "John Doe",
@@ -1275,11 +1215,7 @@
       "category": "Vegetables",
       "readingTime": 4,
       "content": "<p>lorem ipsum</p>",
-      "tags": [
-        "Vegetarian",
-        "Vitamins",
-        "Dinner"
-      ],
+      "tags": ["Vegetarian", "Vitamins", "Dinner"],
       "comments": [
         {
           "fullName": "John Doe",
