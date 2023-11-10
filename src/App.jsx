@@ -6,10 +6,8 @@ import Shop from './pages/Shop'
 import ProductDetails from './pages/ProductDetails/ProductDetails'
 import Signup from './pages/Auth/Signup'
 import Signin from './pages/Auth/Signin'
-import UserAddress from './pages/Dashboard/components/UserAddress'
-import DashboardInfo from './pages/Dashboard/components/DashboardInfo'
-import OrderDetail from './pages/Dashboard/components/OrderDetail'
-import Settings from './pages/Dashboard/components/Settings'
+
+import PageNotFound from './pages/PageNotFound'
 import About from './pages/About/About'
 import Checkout from './pages/Checkout/Checkout'
 import Wishlist from './pages/Wishlist/Wishlist'
@@ -25,7 +23,12 @@ import ShopProvider from './contexts/shop/ShopContext'
 import Index from './pages/Blog/Index'
 import BlogCards from './pages/Blog/components/BlogCards'
 import SingleBlog from './pages/Blog/Single Blog/SingleBlog'
-import PageNotFound from './pages/PageNotFound'
+import DashboardInfo from './pages/Dashboard/components/DashboardInfo'
+import OrderDetail from './pages/Dashboard/components/OrderDetail'
+import UserAddress from './pages/Dashboard/components/UserAddress'
+import Settings from './pages/Dashboard/components/Settings'
+import OrderHistory from './pages/Dashboard/components/OrderHistory'
+import History from './pages/Dashboard/components/History'
 
 export default function App() {
   const routes = createBrowserRouter(
@@ -46,15 +49,16 @@ export default function App() {
           }
         />
         <Route path="product/:productID" element={<ProductDetails />} />
-        <Route path="sign-up" element={<Signup />} />
-        <Route path="sign-in" element={<Signin />} />
+        <Route path="sign-in" element={<Signup />} />
+        <Route path="sign-up" element={<Signin />} />
         <Route path="dashboard" element={<Dashboard />}>
           <Route index element={<DashboardInfo />} />
-          <Route path="order-history" element={<OrderDetail />}>
-            <Route path="order-detail" index element={<OrderDetail />} />
+          <Route path="order-history" element={<OrderHistory />}>
+            <Route path="history" index element={<History></History>} />
+            <Route path="order-detail" element={<OrderDetail></OrderDetail>} />
           </Route>
+          <Route path="settings" element={<Settings></Settings>} />
           <Route path="wishlist" element={<UserAddress />} />
-          <Route path="settings" element={<Settings />} />
           <Route path="addProduct" element={<AddProduct />} />
         </Route>
         <Route path="about" element={<About />} />
@@ -62,7 +66,7 @@ export default function App() {
         <Route path="wishlist" element={<Wishlist />} />
         <Route path="shopping-cart" element={<ShoppingCart />} />
         <Route path="PageNotFound" element={<PageNotFound />} />
-        <Route path="*" element={<Navigate to={'/PageNotFound'} />} />
+        {/* <Route path="*" element={<Navigate to={'/PageNotFound'} />} /> */}
       </Route>
     )
   )

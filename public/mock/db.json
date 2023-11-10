@@ -32,6 +32,31 @@
       "shoppingCart": [],
       "checkout": [],
       "orders": []
+    },
+    {
+      "firstName": "John1",
+      "lastName": "Doe1",
+      "email": "johndoe1@gmail.com",
+      "role": "Customer1",
+      "phoneNumber": 80355501221,
+      "password": "X34sfsdfy34t7dsgf1",
+      "token": "x@fSDFYsd345d23saFsa326ASDghad23saFsa326ASDghasd%6Assd%6As1",
+      "avatar": "/assets/images/users/user1.png",
+      "billingAddress": {
+        "firstName": "John1",
+        "lastName": "Doe1",
+        "companyName": "Zakirsoft1",
+        "streetAddress": "4140 Parl1",
+        "country": "United States1",
+        "city": "Washington1",
+        "zipCode": "200031",
+        "email": "dianne.russell@gmail.com1",
+        "phone": 6935551231
+      },
+      "wishlist": [],
+      "shoppingCart": [],
+      "checkout": [],
+      "orders": []
     }
   ],
   "products": [
@@ -922,108 +947,6 @@
           "date": ""
         }
       ]
-    },
-    {
-      "id": 1699545417557,
-      "name": "test",
-      "category": "Cooking",
-      "discountPrice": "100.00",
-      "originalPrice": 1000,
-      "discountPercentage": 0,
-      "status": "",
-      "statusColor": "1A1A1A",
-      "rating": 1,
-      "available": 1,
-      "littleDescription": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla nibh diam, blandit vel consequat nec, ultrices et ipsum. Nulla varius magna a consequat pulvinar.",
-      "description": "Sed commodo aliquam dui ac porta. Fusce ipsum felis, imperdiet at posuere ac, viverra at mauris. Maecenas tincidunt ligula a sem vestibulum pharetra. Maecenas auctor tortor lacus, nec laoreet nisi porttitor vel. Etiam tincidunt metus vel dui interdum sollicitudin. Mauris sem ante, vestibulum nec orci vitae, aliquam mollis lacus. Sed et condimentum arcu, id molestie tellus. Nulla facilisi. Nam scelerisque vitae justo a convallis. Morbi urna ipsum, placerat quis commodo quis, egestas elementum leo. Donec convallis mollis enim. Aliquam id mi quam. Phasellus nec fringilla elit. Nulla mauris tellus, feugiat quis pharetra sed, gravida ac dui. Sed iaculis, metus faucibus elementum tincidunt, turpis mi viverra velit, pellentesque tristique neque mi eget nulla. Proin luctus elementum neque et pharetra.",
-      "images": {
-        "src": "",
-        "imageDescription": "Image",
-        "otherImages": [
-          {
-            "id": 1,
-            "src": "/assets/images/products/potato.png",
-            "otherImageDescription": "Picture of a large potato from the left"
-          }
-        ]
-      },
-      "additionalInformation": [
-        {
-          "title": "Weight:",
-          "description": "02"
-        }
-      ],
-      "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": ["Vegetables"],
-      "reviews": []
-    },
-    {
-      "id": 1699545530736,
-      "name": "dv",
-      "category": "Cooking",
-      "discountPrice": "25.39",
-      "originalPrice": 11111,
-      "discountPercentage": 0,
-      "status": "",
-      "statusColor": "1A1A1A",
-      "rating": 1,
-      "available": 1,
-      "littleDescription": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla nibh diam, blandit vel consequat nec, ultrices et ipsum. Nulla varius magna a consequat pulvinar.",
-      "description": "Sed commodo aliquam dui ac porta. Fusce ipsum felis, imperdiet at posuere ac, viverra at mauris. Maecenas tincidunt ligula a sem vestibulum pharetra. Maecenas auctor tortor lacus, nec laoreet nisi porttitor vel. Etiam tincidunt metus vel dui interdum sollicitudin. Mauris sem ante, vestibulum nec orci vitae, aliquam mollis lacus. Sed et condimentum arcu, id molestie tellus. Nulla facilisi. Nam scelerisque vitae justo a convallis. Morbi urna ipsum, placerat quis commodo quis, egestas elementum leo. Donec convallis mollis enim. Aliquam id mi quam. Phasellus nec fringilla elit. Nulla mauris tellus, feugiat quis pharetra sed, gravida ac dui. Sed iaculis, metus faucibus elementum tincidunt, turpis mi viverra velit, pellentesque tristique neque mi eget nulla. Proin luctus elementum neque et pharetra.",
-      "images": {
-        "src": "http://res.cloudinary.com/dezjflp5d/image/upload/v1699545475/u0jdlpyaswh9veqnc7ad.png",
-        "imageDescription": "Image",
-        "otherImages": [
-          {
-            "id": 1,
-            "src": "/assets/images/products/potato.png",
-            "otherImageDescription": "Picture of a large potato from the left"
-          }
-        ]
-      },
-      "additionalInformation": [
-        {
-          "title": "Weight:",
-          "description": "02"
-        }
-      ],
-      "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": ["Vegetables"],
-      "reviews": []
-    },
-    {
-      "id": 1699545507877,
-      "name": "test",
-      "category": "Vegetables",
-      "discountPrice": "100.00",
-      "originalPrice": 12,
-      "discountPercentage": 0,
-      "status": "",
-      "statusColor": "1A1A1A",
-      "rating": 1,
-      "available": 1,
-      "littleDescription": "",
-      "description": "Sed commodo aliquam dui ac porta. Fusce ipsum felis, imperdiet at posuere ac, viverra at mauris. Maecenas tincidunt ligula a sem vestibulum pharetra. Maecenas auctor tortor lacus, nec laoreet nisi porttitor vel. Etiam tincidunt metus vel dui interdum sollicitudin. Mauris sem ante, vestibulum nec orci vitae, aliquam mollis lacus. Sed et condimentum arcu, id molestie tellus. Nulla facilisi. Nam scelerisque vitae justo a convallis. Morbi urna ipsum, placerat quis commodo quis, egestas elementum leo. Donec convallis mollis enim. Aliquam id mi quam. Phasellus nec fringilla elit. Nulla mauris tellus, feugiat quis pharetra sed, gravida ac dui. Sed iaculis, metus faucibus elementum tincidunt, turpis mi viverra velit, pellentesque tristique neque mi eget nulla. Proin luctus elementum neque et pharetra.",
-      "images": {
-        "src": "",
-        "imageDescription": "Image",
-        "otherImages": [
-          {
-            "id": 1,
-            "src": "/assets/images/products/potato.png",
-            "otherImageDescription": "Picture of a large potato from the left"
-          }
-        ]
-      },
-      "additionalInformation": [
-        {
-          "title": "Weight:",
-          "description": "02"
-        }
-      ],
-      "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": ["Vegetables"],
-      "reviews": []
     }
   ],
   "articles": [
@@ -1039,9 +962,39 @@
       "tags": ["Healthy", "Dinner", "Meat"],
       "comments": [
         {
+          "id": "c1",
+          "userImg": "",
           "fullName": "John Doe",
-          "date": 23453342532,
-          "comment": "lorem ipsum lorem ipsum, lorem ipsum"
+          "date": "26 Apr, 2021",
+          "comment": "In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam."
+        },
+        {
+          "id": "c2",
+          "userImg": "",
+          "fullName": "Devon Lane",
+          "date": "24 Apr, 2021",
+          "comment": "Quisque eget tortor lobortis, facilisis metus eu, elementum est. Nunc sit amet erat quis ex convallis suscipit. Nam hendrerit, velit ut aliquam euismod, nibh tortor rutrum nisi, ac sodales nunc eros porta nisi. Sed scelerisque, est eget aliquam venenatis, est sem tempor eros."
+        },
+        {
+          "id": "c3",
+          "userImg": "",
+          "fullName": "Jacob Jones",
+          "date": "20 Apr, 2021",
+          "comment": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."
+        },
+        {
+          "id": "c4",
+          "userImg": "",
+          "fullName": "Jane Cooper",
+          "date": "18 Apr, 2021",
+          "comment": "Pellentesque feugiat, nibh vel vehicula pretium, nibh nibh bibendum elit, a volutpat arcu dui nec orci. Aenean dui odio, ullamcorper quis turpis ac, volutpat imperdiet ex."
+        },
+        {
+          "id": "c5",
+          "userImg": "",
+          "fullName": "Darrell Steward",
+          "date": "7 Apr, 2021",
+          "comment": "Nulla molestie interdum ultricies. "
         }
       ]
     },
