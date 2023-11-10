@@ -3,7 +3,6 @@ import {
   RouterProvider,
   createRoutesFromElements,
   Route,
-  Navigate,
 } from "react-router-dom";
 
 // Pages
@@ -73,7 +72,7 @@ export default function App() {
         <Route path="wishlist" element={<Wishlist />} />
         <Route path="shopping-cart" element={<ShoppingCart />} />
         <Route path="PageNotFound" element={<PageNotFound />} />
-        <Route path="*" element={<Navigate to={'/PageNotFound'} />} />
+        {/* <Route path="*" element={<Navigate to={'/PageNotFound'} />} /> */}
       </Route>
     )
   );
