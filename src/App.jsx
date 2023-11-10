@@ -22,7 +22,6 @@ import AddProduct from './pages/Dashboard/components/AddProduct'
 
 //Contexts
 import ShopProvider from './contexts/shop/ShopContext'
-
 import Index from './pages/Blog/Index'
 import BlogCards from './pages/Blog/components/BlogCards'
 import SingleBlog from './pages/Blog/Single Blog/SingleBlog'
@@ -47,11 +46,10 @@ export default function App() {
           }
         />
         <Route path="product/:productID" element={<ProductDetails />} />
-        <Route path="sign-in" element={<Signup />} />
-        <Route path="sign-up" element={<Signin />} />
+        <Route path="sign-up" element={<Signup />} />
+        <Route path="sign-in" element={<Signin />} />
         <Route path="dashboard" element={<Dashboard />}>
           <Route index element={<DashboardInfo />} />
-
           <Route path="order-history" element={<OrderDetail />}>
             <Route path="order-detail" index element={<OrderDetail></OrderDetail>} />
           </Route>
