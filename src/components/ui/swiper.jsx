@@ -37,7 +37,6 @@ function SwiperTop() {
               </div>
               <p className="mb-[8px] mt-[-120px]  text-[#00B207]">Welcome to shopery</p>
               <div>
-                <p className="mb-[8px] text-[#00B207]">Welcome to shopery</p>
                 <h1 className="family-poppins mb-[20px] text-4xl font-semibold">
                   Fresh & Healthy <br /> Organic Food
                 </h1>
@@ -55,12 +54,11 @@ function SwiperTop() {
               <img src={foodFoto2} alt="" />
             </div>
             <div className="">
-              <div className="w-[100px] h-[100px] flex-col  text-[#fff] bg-[#FF8A00]  items-center flex rounded-[50%]  ml-[-150px] items-center justify-center">
+              <div className="w-[100px] h-[100px] flex-col  text-[#fff] bg-[#FF8A00]  flex rounded-[50%]  ml-[-150px] items-center justify-center">
                 <span className="text-[32px] mt-[5px]">70%</span> <span className="mt-[-10px] text-[18px]">off</span>
               </div>
               <p className="mb-[8px] mt-[-120px]  text-[#00B207]">Welcome to shopery</p>
               <div>
-                <p className="mb-[8px] text-[#00B207]">Welcome to shopery</p>
                 <h1 className="family-poppins mb-[20px] text-4xl font-semibold">
                   Fresh & Healthy <br /> Organic Food
                 </h1>
@@ -78,12 +76,11 @@ function SwiperTop() {
               <img src={foodFoto3} alt="" />
             </div>
             <div className="">
-              <div className="w-[100px] h-[100px] flex-col  text-[#fff] bg-[#FF8A00]  items-center flex rounded-[50%]  ml-[-150px] items-center justify-center">
+              <div className="w-[100px] h-[100px] flex-col  text-[#fff] bg-[#FF8A00]  flex rounded-[50%]  ml-[-150px] items-center justify-center">
                 <span className="text-[32px] mt-[5px]">70%</span> <span className="mt-[-10px] text-[18px]">off</span>
               </div>
               <p className="mb-[8px] mt-[-120px]  text-[#00B207]">Welcome to shopery</p>
               <div>
-                <p className="mb-[8px] text-[#00B207]">Welcome to shopery</p>
                 <h1 className="family-poppins mb-[20px] text-4xl font-semibold">
                   Fresh & Healthy <br /> Organic Food
                 </h1>
