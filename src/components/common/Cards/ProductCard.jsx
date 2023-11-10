@@ -100,7 +100,12 @@ const ProductCard = (props) => {
             <div className="bg-white rounded-full p-2 shadow-md hover:scale-110 cursor-pointer" onClick={handleClick}>
               <img src="/assets/icons/heart.svg" alt="heart image" loading="lazy" className="w-[20px] h-[20px]" />
             </div>
-            <Dialog>
+            <Dialog
+              onClick={(e) => {
+                e.stopPropagation()
+                setIsHovered(false)
+              }}
+            >
               <DialogTrigger asChild>
                 <div
                   className="bg-white rounded-full p-2 mt-3 shadow-md hover:scale-110 cursor-pointer"

@@ -30,9 +30,9 @@ function Checkout() {
       const correctedData = response?.data?.filter((el) => el.token === TOKEN)
       setCor(correctedData[0].billingAddress)
       setNewData(correctedData)
+      console.log(correctedData[0].billingAddress)
     })()
   }, [])
-  console.log({ ...initialState, ...state })
 
   const editUser = async () => {
     axios
@@ -44,11 +44,12 @@ function Checkout() {
         console.log(response)
       })
       .catch((error) => {
-        
         console.error(error)
       })
   }
 
+
+  
   const { city, companyName, country, email, firstName, lastName, phone, streetAddress, zipCode } = cor
   return (
     <div className="container flex justify-between mt-5">
