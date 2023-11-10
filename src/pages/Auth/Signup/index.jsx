@@ -9,7 +9,7 @@ import Container from "../../../components/common/Container";
 
 export default function Signup() {
   const createUser = () => {
-    alert('Error')
+    console.log('Hi')
   }
 
   return (
