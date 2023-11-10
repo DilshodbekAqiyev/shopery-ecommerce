@@ -22,7 +22,8 @@
       },
       "wishlist": [],
       "shoppingCart": [],
-      "checkout": []
+      "checkout": [],
+      "orders": []
     }
   ],
   "products": [

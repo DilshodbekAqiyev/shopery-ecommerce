@@ -18,7 +18,7 @@ function Navigation() {
   }
 
   return (
-    <div className=" border-solid border-2 border-gray100 rounded-[10px] mt-10 h-[440px] w-[312px] ">
+    <div className=" border-solid border-2 border-gray100 rounded-[10px] mt-10 h-[490px] w-[312px] ">
       <h3 className="mb-[16px]  ml-[20px] mt-[25px] text-[20px] font-semibold">Navigation</h3>
 
       <Link to="">
@@ -47,6 +47,7 @@ function Navigation() {
         </div>
       </Link>
       <Link to={'wishlist'}>
+
         <div
           onMouseEnter={handleHover}
           onMouseLeave={handleMouseLeave}
@@ -68,6 +69,14 @@ function Navigation() {
         </div>
         <p>Shopping Cart</p>
       </div>
+      <Link to={'settings'}>
+        <div onMouseEnter={handleHover} onMouseLeave={handleMouseLeave} className="transition-all cursor-pointer bg-white hover:bg-[#EDF2EE]  border-l-2 border-l-white hover:border-l-4 hover:border-l-lime-600 py-[16px]  flex  items-center gap-[10px] ">
+          <div className="ml-[20px] ">
+            <SettingsIcon isHovered={isHovered}></SettingsIcon>
+          </div>
+          <p>Settings</p>
+        </div>
+      </Link>
       <Link to={'addProduct'}>
         <div
           onMouseEnter={handleHover}
@@ -80,26 +89,19 @@ function Navigation() {
           <p>Add Product</p>
         </div>
       </Link>
-      <div
-        onMouseEnter={handleHover}
-        onMouseLeave={handleMouseLeave}
-        className="transition-all cursor-pointer bg-white hover:bg-[#EDF2EE]  border-l-2 border-l-white hover:border-l-4 hover:border-l-lime-600 py-[16px]  flex  items-center gap-[10px] "
-      >
-        <div className="ml-[20px] ">
-          <SettingsIcon isHovered={isHovered}></SettingsIcon>
+      
+      <Link to={'log-out'}>
+        <div
+          onMouseEnter={handleHover}
+          onMouseLeave={handleMouseLeave}
+          className="transition-all cursor-pointer bg-white hover:bg-[#EDF2EE]  border-l-2 border-l-white hover:border-l-4 hover:border-l-lime-600 py-[16px] flex  items-center gap-[10px] "
+        >
+          <div className="ml-[20px]">
+            <LogOutIcon isHovered={isHovered}></LogOutIcon>
+          </div>
+          <p> Log Out</p>
         </div>
-        <p>Settings</p>
-      </div>
-      <div
-        onMouseEnter={handleHover}
-        onMouseLeave={handleMouseLeave}
-        className=" transition-all cursor-pointer bg-white hover:bg-[#EDF2EE]  border-l-2 border-l-white hover:border-l-4 hover:border-l-lime-600  py-[16px]  flex  items-center gap-[10px] "
-      >
-        <div className="ml-[20px]">
-          <LogOutIcon isHovered={isHovered}></LogOutIcon>
-        </div>
-        <p>Log-out</p>
-      </div>
+      </Link>
     </div>
   )
 }
