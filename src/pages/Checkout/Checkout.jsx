@@ -27,30 +27,31 @@ function Checkout() {
     ;(async () => {
       const response = await instance.get(`users`)
 
-      
       const correctedData = response?.data?.filter((el) => el.token === TOKEN)
       setCor(correctedData[0].billingAddress)
       setNewData(correctedData)
-      console.log(correctedData[0].billingAddress)
+      // console.log(correctedData[0].billingAddress)
     })()
   }, [])
 
   const editUser = async () => {
+    newData[0].billingAddress = { ...initialState, ...state }
+    // console.log({ ...newData })
+
+    // console.log({ ...newData, billingAddress: { ...initialState, ...state } })
     axios
-      .put(`https://jsonplaceholder.typicode.com/posts/${TOKEN}`, {
+      .patch(`https://jsonplaceholder.typicode.com/posts/${TOKEN}`, {
         ...newData,
-        billingAddress: { ...initialState, ...state },
       })
       .then((response) => {
-        console.log(response)
+        console.log(response.data)
       })
       .catch((error) => {
+        
         console.error(error)
       })
   }
 
-
-  
   const { city, companyName, country, email, firstName, lastName, phone, streetAddress, zipCode } = cor
   return (
     <div className="container flex justify-between mt-5">
