@@ -34,5 +34,5 @@ export const initialProductState = {
   brand: '/assets/images/products/brands/farmary.svg',
   tag: ['Vegetables'],
   reviews: [],
-  access_token: localStorage.getItem('access_token'),
+  author: localStorage.getItem('access_token'),
 }

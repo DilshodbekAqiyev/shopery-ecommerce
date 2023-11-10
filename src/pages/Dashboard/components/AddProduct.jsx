@@ -13,7 +13,6 @@ function AddProduct() {
   const [imageSelected, setImageSelected] = useState('')
   const [product, setProduct] = useState(initialProductState)
   const fileInputRef = useRef()
-  console.log(product)
 
   useEffect(() => {
     // eslint-disable-next-line no-extra-semi
