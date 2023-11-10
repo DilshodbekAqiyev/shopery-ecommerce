@@ -12,9 +12,10 @@ import { instance } from '../../utils/apiRequest'
 import axios from 'axios'
 function Checkout() {
   const [city1, setCity1] = useState([])
+  const [token, setToken] = useState('')
   const [cor, setCor] = useState({})
   const [newData, setNewData] = useState({})
-  const TOKEN = `x@fSDFYsd345d23saFsa326ASDghad23saFsa326ASDghasd%6Assd%6AsD`
+
   function setCountry(country) {
     const states = data.filter((el) => el.state === country)
     setCity1(states)
@@ -23,30 +24,24 @@ function Checkout() {
   const initialState = { ...cor }
   const [state, dispatch] = useReducer(CheckoutReducer, initialState)
   useEffect(() => {
+    setToken(localStorage.getItem('token'))
     // eslint-disable-next-line no-extra-semi
     ;(async () => {
       const response = await instance.get(`users`)
-
-      const correctedData = response?.data?.filter((el) => el.token === TOKEN)
+      const correctedData = response?.data?.filter((el) => el.token === token)
       setCor(correctedData[0].billingAddress)
       setNewData(correctedData)
-      // console.log(correctedData[0].billingAddress)
     })()
   }, [])
-
   const editUser = async () => {
     newData[0].billingAddress = { ...initialState, ...state }
     // console.log({ ...newData })
-    // console.log({ ...newData, billingAddress: { ...initialState, ...state } })
     axios
-      .patch(`https://jsonplaceholder.typicode.com/posts/${TOKEN}`, {
-        ...newData,
-      })
+      .patch(`https://jsonplaceholder.typicode.com/posts/${token}`, newData)
       .then((response) => {
         console.log(response.data)
       })
       .catch((error) => {
-        
         console.error(error)
       })
   }
@@ -147,7 +142,6 @@ function Checkout() {
                 placeholder="zip code"
               />
             </label>
-            
           </div>
         </div>
         <div className=" flex mt-5 justify-between">
