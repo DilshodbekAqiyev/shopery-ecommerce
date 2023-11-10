@@ -196,10 +196,11 @@ function Checkout() {
           </label>
         </div>
         <div className=" h-[1px] bg-slate-300 my-8"></div>
-        
+
         <div>
           <h1 className=" text-[24px] font-medium">Additional Info</h1>
           <div className=" mt-5">
+            
 
             <label>
               <p className=" mb-2">Order Notes (Optional)</p>
