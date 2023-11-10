@@ -7,6 +7,8 @@ import { Label } from '../../../components/ui/label'
 import { Button } from '../../../components/ui/button'
 import { Textarea } from '../../../components/ui/textarea'
 
+import { CLOUDINARY_UPLOAD_NAME } from '../../../utils/constants'
+
 const initialProductState = {
   id: new Date().getTime(),
   name: '',
@@ -42,8 +44,6 @@ const initialProductState = {
   tag: ['Vegetables'],
   reviews: [],
 }
-
-const CLOUDINARY_UPLOAD_NAME = 'shopery'
 
 function AddProduct() {
   const [imageSelected, setImageSelected] = useState('')
@@ -100,12 +100,11 @@ function AddProduct() {
           },
         })
 
-        // Now, continue with the product submission
         const productResponse = await instance.post('products', product)
 
         if (productResponse.status === 201) {
           console.log('Product added successfully!')
-          resetProductState() // Reset input values to default state
+          resetProductState()
         } else {
           console.error('Failed to add product')
         }
