@@ -22,7 +22,8 @@
       },
       "wishlist": [] ,
       "shoppingCart": [],
-      "checkout": []
+      "checkout": [],
+      "orders": []
     }
   ],
   "products": [
@@ -1315,57 +1316,49 @@
         "id": 1,
         "title": "Jenny Wilson",
         "category": "Ceo & Founder",
-        "linkImg":
-          "/assets/images/About/cards_img1.png"
+        "linkImg": "/assets/images/About/cards_img1.png"
       },
       {
         "id": 2,
         "title": "Jane Cooper",
         "category": "Worker",
-        "linkImg":
-          "/assets/images/About/cards_img2.png"
+        "linkImg": "/assets/images/About/cards_img2.png"
       },
       {
         "id": 3,
         "title": "Cody Fisher",
         "category": "Security Guard",
-        "linkImg":
-          "/assets/images/About/cards_img3.png"
+        "linkImg": "/assets/images/About/cards_img3.png"
       },
       {
         "id": 4,
         "title": "Robert Fox",
         "category": "Senior Farmer Manager",
-        "linkImg":
-          "/assets/images/About/cards_img4.png"
+        "linkImg": "/assets/images/About/cards_img4.png"
       },
       {
         "id": 5,
         "title": "Jenny Wilson",
         "category": "Ceo & Founder",
-        "linkImg":
-          "/assets/images/About/cards_img1.png"
+        "linkImg": "/assets/images/About/cards_img1.png"
       },
       {
         "id": 6,
         "title": "Jane Cooper",
         "category": "Worker",
-        "linkImg":
-          "/assets/images/About/cards_img2.png"
+        "linkImg": "/assets/images/About/cards_img2.png"
       },
       {
         "id": 7,
         "title": "Cody Fisher",
         "category": "Security Guard",
-        "linkImg":
-          "/assets/images/About/cards_img3.png"
+        "linkImg": "/assets/images/About/cards_img3.png"
       },
       {
         "id": 8,
         "title": "Robert Fox",
         "category": "Senior Farmer Manager",
-        "linkImg":
-          "/assets/images/About/cards_img4.png"
+        "linkImg": "/assets/images/About/cards_img4.png"
       }
     ]
   }
