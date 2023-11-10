@@ -24,6 +24,31 @@
       "shoppingCart": [],
       "checkout": [],
       "orders": []
+    },
+    {
+      "firstName": "John1",
+      "lastName": "Doe1",
+      "email": "johndoe1@gmail.com",
+      "role": "Customer1",
+      "phoneNumber": 80355501221,
+      "password": "X34sfsdfy34t7dsgf1",
+      "token": "x@fSDFYsd345d23saFsa326ASDghad23saFsa326ASDghasd%6Assd%6As1",
+      "avatar": "/assets/images/users/user1.png",
+      "billingAddress": {
+        "firstName": "John1",
+        "lastName": "Doe1",
+        "companyName": "Zakirsoft1",
+        "streetAddress": "4140 Parl1",
+        "country": "United States1",
+        "city": "Washington1",
+        "zipCode": "200031",
+        "email": "dianne.russell@gmail.com1",
+        "phone": 6935551231
+      },
+      "wishlist": [],
+      "shoppingCart": [],
+      "checkout": [],
+      "orders": []
     }
   ],
   "products": [

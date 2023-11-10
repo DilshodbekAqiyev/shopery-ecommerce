@@ -7,30 +7,51 @@ import { data } from './components/CountryData'
 import { useReducer, useState } from 'react'
 import { CHECKOUT_TYPES } from '../../contexts/checkoutUser/checkoutType'
 import { CheckoutReducer } from '../../contexts/checkoutUser/CheckoutInfo'
+import { useEffect } from 'react'
+import { instance } from '../../utils/apiRequest'
+import axios from 'axios'
 function Checkout() {
-  const [city, setCity] = useState([])
+  const [city1, setCity1] = useState([])
+  const [cor, setCor] = useState({})
+  const [newData, setNewData] = useState({})
+  const TOKEN = `x@fSDFYsd345d23saFsa326ASDghad23saFsa326ASDghasd%6Assd%6AsD`
   function setCountry(country) {
     const states = data.filter((el) => el.state === country)
-    setCity(states)
+    setCity1(states)
   }
 
-
-  
-  const initialState = {
-    firstName: '',
-    lastName: '',
-    companyName: '',
-    streetAdress: '',
-    region: '',
-    states: '',
-    zipCode: '',
-    email: '',
-    phone: '',
-    shipToDiffernAdress: false,
-    additionalInfo: '',
-  }
+  const initialState = { ...cor }
   const [state, dispatch] = useReducer(CheckoutReducer, initialState)
-  console.log(state)
+  useEffect(() => {
+    // eslint-disable-next-line no-extra-semi
+    ;(async () => {
+      const response = await instance.get(`users`)
+
+      const correctedData = response?.data?.filter((el) => el.token === TOKEN)
+      setCor(correctedData[0].billingAddress)
+      setNewData(correctedData)
+      // console.log(correctedData[0].billingAddress)
+    })()
+  }, [])
+
+  const editUser = async () => {
+    newData[0].billingAddress = { ...initialState, ...state }
+    // console.log({ ...newData })
+    // console.log({ ...newData, billingAddress: { ...initialState, ...state } })
+    axios
+      .patch(`https://jsonplaceholder.typicode.com/posts/${TOKEN}`, {
+        ...newData,
+      })
+      .then((response) => {
+        console.log(response.data)
+      })
+      .catch((error) => {
+        
+        console.error(error)
+      })
+  }
+
+  const { city, companyName, country, email, firstName, lastName, phone, streetAddress, zipCode } = cor
   return (
     <div className="container flex justify-between mt-5">
       <div className=" w-4/6 pr-6">
@@ -40,6 +61,7 @@ function Checkout() {
             <label>
               <p className=" mb-2">Firstname</p>
               <Input
+                defaultValue={firstName}
                 onChange={(e) => dispatch({ type: CHECKOUT_TYPES.FIRST_NAME, payload: e.target.value })}
                 placeholder="your firstname"
               />
@@ -49,6 +71,7 @@ function Checkout() {
             <label>
               <p className=" mb-2">Last name</p>
               <Input
+                defaultValue={lastName}
                 onChange={(e) => dispatch({ type: CHECKOUT_TYPES.LAST_NAME, payload: e.target.value })}
                 placeholder="your lastname"
               />
@@ -58,6 +81,7 @@ function Checkout() {
             <label>
               <p className=" mb-2">Company Name</p>
               <Input
+                defaultValue={companyName}
                 onChange={(e) => dispatch({ type: CHECKOUT_TYPES.COMPANY_NAME, payload: e.target.value })}
                 placeholder="Company name"
               />
@@ -68,6 +92,7 @@ function Checkout() {
           <label>
             <p className=" mb-2">Street Address</p>
             <Input
+              defaultValue={streetAddress}
               onChange={(e) => dispatch({ type: CHECKOUT_TYPES.STREET_ADRESS, payload: e.target.value })}
               placeholder="Email"
             />
@@ -84,7 +109,7 @@ function Checkout() {
                 }}
               >
                 <option selected disabled>
-                  Select
+                  {country}
                 </option>
                 {data?.map((el, idx) => {
                   return (
@@ -94,24 +119,6 @@ function Checkout() {
                   )
                 })}
               </select>
-              {/* <Select onChange={(val) => console.log(val.target.value)}>
-                <SelectTrigger className="w-max p-0  text-gray-600 font-normal text-xs hover:text-primary outline-none border-none gap-[6px] flex items-center justify-center">
-                  <SelectValue placeholder="Select" />
-                </SelectTrigger>
-                <SelectContent>
-                  {data?.map((el, idx) => {
-                    return (
-                      <SelectItem
-                        key={idx}
-                        value={el.country}
-                        className="cursor-pointer text-gray-600 font-normal text-xs"
-                      >
-                        {el.country}{' '}
-                      </SelectItem>
-                    )
-                  })}
-                </SelectContent>
-              </Select> */}
             </label>
           </div>
           <div className=" w-1/6">
@@ -119,9 +126,9 @@ function Checkout() {
               <p className=" mb-2">States</p>
               <select onChange={(e) => dispatch({ type: CHECKOUT_TYPES.STATES, payload: e.target.value })}>
                 <option selected disabled>
-                  Selects
+                  {city}
                 </option>
-                {city[0]?.cities?.map((el, idx) => {
+                {city1[0]?.cities?.map((el, idx) => {
                   return (
                     <option key={idx} value={el} className="cursor-pointer text-gray-600 font-normal text-xs">
                       {el}
@@ -129,31 +136,18 @@ function Checkout() {
                   )
                 })}
               </select>
-              {/* <Select>
-                <SelectTrigger className="w-max p-0  text-gray-600 font-normal text-xs hover:text-primary outline-none border-none gap-[6px] flex items-center justify-center">
-                  <SelectValue placeholder="Select" />
-                </SelectTrigger>
-                <SelectContent>
-                  {city[0]?.cities?.map((el, idx) => {
-                    return (
-                      <SelectItem key={idx} value="usd" className="cursor-pointer text-gray-600 font-normal text-xs">
-                        {el}
-                        {console.log(el)}
-                      </SelectItem>
-                    )
-                  })}
-                </SelectContent>
-              </Select> */}
             </label>
           </div>
           <div className=" w-1/4">
             <label>
               <p className=" mb-2">Zip code</p>
               <Input
+                defaultValue={zipCode}
                 onChange={(e) => dispatch({ type: CHECKOUT_TYPES.ZIP_CODE, payload: e.target.value })}
                 placeholder="zip code"
               />
             </label>
+            
           </div>
         </div>
         <div className=" flex mt-5 justify-between">
@@ -161,6 +155,7 @@ function Checkout() {
             <label>
               <p className=" mb-2">Email</p>
               <Input
+                defaultValue={email}
                 onChange={(e) => dispatch({ type: CHECKOUT_TYPES.EMAIL, payload: e.target.value })}
                 placeholder="Email Address"
               />
@@ -170,6 +165,7 @@ function Checkout() {
             <label>
               <p className=" mb-2">Phone</p>
               <Input
+                defaultValue={phone}
                 type="number"
                 onChange={(e) => dispatch({ type: CHECKOUT_TYPES.PHONE, payload: e.target.value })}
                 placeholder="Phone number"
@@ -180,11 +176,12 @@ function Checkout() {
         <div className=" mt-5">
           <label className="flex">
             {' '}
-            <Checkbox />
+            <Checkbox onCheckedChange={(e) => console.log(e.onChange)} type="checkbox" checked={true} />
             <span className=" ml-2 text-[14px]"> Ship to a different address</span>
           </label>
         </div>
         <div className=" h-[1px] bg-slate-300 my-8"></div>
+
         <div>
           <h1 className=" text-[24px] font-medium">Additional Info</h1>
           <div className=" mt-5">
@@ -220,7 +217,9 @@ function Checkout() {
           </RadioGroup>
         </div>
         <div className=" my-6 flex justify-center">
-          <Button className=" w-full rounded-3xl">Place Order</Button>
+          <Button onClick={() => editUser()} className=" w-full rounded-3xl">
+            Place Order
+          </Button>
         </div>
       </div>
     </div>
