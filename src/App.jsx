@@ -1,10 +1,4 @@
-import {
-  createBrowserRouter,
-  RouterProvider,
-  createRoutesFromElements,
-  Route,
-  Navigate,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider, createRoutesFromElements, Route, Navigate } from 'react-router-dom'
 
 // Pages
 import Home from './pages/Home/Home'
@@ -29,13 +23,12 @@ import ShopProvider from './contexts/shop/ShopContext'
 import Index from './pages/Blog/Index'
 import BlogCards from './pages/Blog/components/BlogCards'
 import SingleBlog from './pages/Blog/Single Blog/SingleBlog'
-import DashboardInfo from "./pages/Dashboard/components/DashboardInfo";
-import OrderDetail from "./pages/Dashboard/components/OrderDetail";
-import UserAddress from "./pages/Dashboard/components/UserAddress";
-import Settings from "./pages/Dashboard/components/Settings";
-import OrderHistory from "./pages/Dashboard/components/OrderHistory";
-import History from "./pages/Dashboard/components/History";
-
+import DashboardInfo from './pages/Dashboard/components/DashboardInfo'
+import OrderDetail from './pages/Dashboard/components/OrderDetail'
+import UserAddress from './pages/Dashboard/components/UserAddress'
+import Settings from './pages/Dashboard/components/Settings'
+import OrderHistory from './pages/Dashboard/components/OrderHistory'
+import History from './pages/Dashboard/components/History'
 
 export default function App() {
   const routes = createBrowserRouter(
@@ -61,10 +54,10 @@ export default function App() {
         <Route path="dashboard" element={<Dashboard />}>
           <Route index element={<DashboardInfo />} />
           <Route path="order-history" element={<OrderHistory />}>
-            <Route path="history" index  element = {<History></History>}/>
-            <Route path="order-detail"  element={<OrderDetail></OrderDetail>} />
+            <Route path="history" index element={<History></History>} />
+            <Route path="order-detail" element={<OrderDetail></OrderDetail>} />
           </Route>
-          <Route path="settings" element={<Settings></Settings>}/>
+          <Route path="settings" element={<Settings></Settings>} />
           <Route path="wishlist" element={<UserAddress />} />
           <Route path="addProduct" element={<AddProduct />} />
         </Route>
@@ -76,7 +69,7 @@ export default function App() {
         {/* <Route path="*" element={<Navigate to={'/PageNotFound'} />} /> */}
       </Route>
     )
-  );
+  )
 
-  return <RouterProvider router={routes} />;
+  return <RouterProvider router={routes} />
 }

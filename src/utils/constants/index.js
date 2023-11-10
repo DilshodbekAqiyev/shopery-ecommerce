@@ -1,5 +1,7 @@
 export const CLOUDINARY_UPLOAD_NAME = 'shopery'
 
+export const token = localStorage.getItem('token')
+
 export const initialProductState = {
   id: new Date().getTime(),
   name: '',
