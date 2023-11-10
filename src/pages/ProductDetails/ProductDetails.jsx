@@ -16,10 +16,11 @@ function ProductDetails() {
   useEffect(() => {
     // eslint-disable-next-line no-extra-semi
     ;(async () => {
-      const response = await instance.get(`products/${productID}`)
+      const response = await  instance.get(`products/${productID}`)
       setFoundProduct(response.data)
     })()
-  }, [productID])
+
+  }, [productID] )
 
   return (
     <div className="max-w-[1320px] mx-auto">

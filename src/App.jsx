@@ -61,7 +61,7 @@ export default function App() {
         <Route path="dashboard" element={<Dashboard />}>
           <Route index element={<DashboardInfo />} />
           <Route path="order-history" element={<OrderHistory />}>
-            <Route path="history" index  element = {<History></History>}/>
+            <Route  index  element = {<History></History>}/>
             <Route path="order-detail"  element={<OrderDetail></OrderDetail>} />
           </Route>
           <Route path="settings" element={<Settings></Settings>}/>
