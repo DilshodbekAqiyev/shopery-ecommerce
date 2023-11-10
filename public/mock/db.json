@@ -1031,9 +1031,39 @@
       "tags": ["Healthy", "Dinner", "Meat"],
       "comments": [
         {
+          "id": "c1",
+          "userImg": "",
           "fullName": "John Doe",
-          "date": 23453342532,
-          "comment": "lorem ipsum lorem ipsum, lorem ipsum"
+          "date": "26 Apr, 2021",
+          "comment": "In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam."
+        },
+        {
+          "id": "c2",
+          "userImg": "",
+          "fullName": "Devon Lane",
+          "date": "24 Apr, 2021",
+          "comment": "Quisque eget tortor lobortis, facilisis metus eu, elementum est. Nunc sit amet erat quis ex convallis suscipit. Nam hendrerit, velit ut aliquam euismod, nibh tortor rutrum nisi, ac sodales nunc eros porta nisi. Sed scelerisque, est eget aliquam venenatis, est sem tempor eros."
+        },
+        {
+          "id": "c3",
+          "userImg": "",
+          "fullName": "Jacob Jones",
+          "date": "20 Apr, 2021",
+          "comment": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."
+        },
+        {
+          "id": "c4",
+          "userImg": "",
+          "fullName": "Jane Cooper",
+          "date": "18 Apr, 2021",
+          "comment": "Pellentesque feugiat, nibh vel vehicula pretium, nibh nibh bibendum elit, a volutpat arcu dui nec orci. Aenean dui odio, ullamcorper quis turpis ac, volutpat imperdiet ex."
+        },
+        {
+          "id": "c5",
+          "userImg": "",
+          "fullName": "Darrell Steward",
+          "date": "7 Apr, 2021",
+          "comment": "Nulla molestie interdum ultricies. "
         }
       ]
     },
