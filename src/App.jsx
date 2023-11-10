@@ -29,6 +29,12 @@ import ShopProvider from './contexts/shop/ShopContext'
 import Index from './pages/Blog/Index'
 import BlogCards from './pages/Blog/components/BlogCards'
 import SingleBlog from './pages/Blog/Single Blog/SingleBlog'
+import DashboardInfo from "./pages/Dashboard/components/DashboardInfo";
+import OrderDetail from "./pages/Dashboard/components/OrderDetail";
+import UserAddress from "./pages/Dashboard/components/UserAddress";
+import Settings from "./pages/Dashboard/components/Settings";
+import OrderHistory from "./pages/Dashboard/components/OrderHistory";
+
 
 export default function App() {
   const routes = createBrowserRouter(
@@ -51,21 +57,12 @@ export default function App() {
         <Route path="product/:productID" element={<ProductDetails />} />
         <Route path="sign-in" element={<Signup />} />
         <Route path="sign-up" element={<Signin />} />
-        {/* <Route pa
-        th="dashboard" element={<Dashboard />}>
-
-          <Route index  element={<DashboardInfo/>} />
-          <Route path="order-history" element = {<OrderHistory/>}>
-          <Route path="order-detail" element= {<OrderDetail></OrderDetail>}></Route>
-          </Route>
-          <Route path="wishlist" element={<UserAddress />} />
-        </Route> */}
         <Route path="dashboard" element={<Dashboard />}>
           <Route index element={<DashboardInfo />} />
-          {/* <Route path="order-history" element={<OrderHistory  />}> */}
-          <Route path="order-history" element={<OrderDetail />}>
+          <Route path="order-history" element={<OrderHistory />}>
             <Route path="order-detail" index element={<OrderDetail></OrderDetail>} />
           </Route>
+          <Route path="settings" element={<Settings></Settings>}/>
           <Route path="wishlist" element={<UserAddress />} />
           <Route path="addProduct" element={<AddProduct />} />
         </Route>

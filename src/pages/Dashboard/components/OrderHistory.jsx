@@ -1,4 +1,4 @@
-import { Link, Outlet } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 
 const orderHistoryData = [
   {
@@ -45,9 +45,12 @@ function OrderHistory() {
           <h3 className="text-[20px] leading-[30px]  font-[500]">
             Recet Order History
           </h3>
+          
+          <NavLink to={"/dashboard/order-history/order-detail"} >
           <button className=" border-none outline-none  text-primary  font-semibold leading-[24px] fontSize-textMedium">
             View All
           </button>
+          </NavLink>
         </div>
         <div>
           <div className="  border flex gap-[122px] items-center py-[12px]  pl-[24px] hover:bg-grays-gray0.5">
@@ -74,12 +77,12 @@ function OrderHistory() {
                 <p className="text-[14px]">{data.date}</p>
                 <p className="text-[14px]">{data.total}</p>
                 <p className="text-[14px]">{data.status}</p>
-                <Link
+                <NavLink
                   to={"/dashboard/order-history/order-detail"}
                   className="text-[14px] leading-[27px] text-primary font-semibold"
                 >
                   {data.link}
-                </Link>
+                </NavLink>
               </div>
             ))}
           </div>
