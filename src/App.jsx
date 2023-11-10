@@ -22,7 +22,6 @@ import AddProduct from './pages/Dashboard/components/AddProduct'
 
 //Contexts
 import ShopProvider from './contexts/shop/ShopContext'
-
 import Index from './pages/Blog/Index'
 import BlogCards from './pages/Blog/components/BlogCards'
 import SingleBlog from './pages/Blog/Single Blog/SingleBlog'
