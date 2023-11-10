@@ -147,6 +147,7 @@ function Checkout() {
                 placeholder="zip code"
               />
             </label>
+            
           </div>
         </div>
         <div className=" flex mt-5 justify-between">
