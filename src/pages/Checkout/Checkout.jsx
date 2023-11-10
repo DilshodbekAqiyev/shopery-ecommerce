@@ -37,7 +37,6 @@ function Checkout() {
   const editUser = async () => {
     newData[0].billingAddress = { ...initialState, ...state }
     // console.log({ ...newData })
-
     // console.log({ ...newData, billingAddress: { ...initialState, ...state } })
     axios
       .patch(`https://jsonplaceholder.typicode.com/posts/${TOKEN}`, {
