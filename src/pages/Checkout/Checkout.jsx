@@ -7,6 +7,8 @@ import { data } from './components/CountryData'
 import { useReducer, useState } from 'react'
 import { CHECKOUT_TYPES } from '../../contexts/checkoutUser/checkoutType'
 import { CheckoutReducer } from '../../contexts/checkoutUser/CheckoutInfo'
+import { useEffect } from 'react'
+import { instance } from '../../utils/apiRequest'
 function Checkout() {
   const [city, setCity] = useState([])
   function setCountry(country) {
@@ -29,6 +31,14 @@ function Checkout() {
   }
   const [state, dispatch] = useReducer(CheckoutReducer, initialState)
   console.log(state)
+
+  useEffect(() => {
+    // eslint-disable-next-line no-extra-semi
+    ;(async () => {
+      const response = await instance.get(`users`)
+      console.log(response.data)
+    })()
+  }, [])
   return (
     <div className="container flex justify-between mt-5">
       <div className=" w-4/6 pr-6">
@@ -178,14 +188,19 @@ function Checkout() {
         <div className=" mt-5">
           <label className="flex">
             {' '}
-            <Checkbox />
+            <label htmlFor="x" id="x">
+              <input name="x" type="checkbox" />
+              <Checkbox name="x" />
+            </label>
             <span className=" ml-2 text-[14px]"> Ship to a different address</span>
           </label>
         </div>
         <div className=" h-[1px] bg-slate-300 my-8"></div>
+        
         <div>
           <h1 className=" text-[24px] font-medium">Additional Info</h1>
           <div className=" mt-5">
+
             <label>
               <p className=" mb-2">Order Notes (Optional)</p>
               <Input
