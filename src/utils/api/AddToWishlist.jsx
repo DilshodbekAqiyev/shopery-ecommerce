@@ -1,15 +1,19 @@
 import PropTypes from 'prop-types'
 import { instance } from '../apiRequest'
+import { getUser } from '../utils'
 export const AddToWishlist = ({ id }) => {
-  //   const { id, name, category, originalPrice, discountPrice, status, images } = product
+  // name, category, originalPrice, discountPrice, status, images
 
-  const request = instance.post(`users/wishlist`, {
-    id: id,
-    name: 'suhrob',
-    category: 'vegetables',
+  getUser().then((user) => {
+    const request = instance.post(`users/${user.wishlist}/1`, {
+      id: id,
+      name: 'suhrob',
+      category: 'vegetables',
+    })
+    console.log(user.wishlist)
+    console.log(request)
   })
-  console.log(request)
 }
 AddToWishlist.propTypes = {
-  product: PropTypes.object,
+  id: PropTypes.number,
 }
