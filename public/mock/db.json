@@ -117,7 +117,13 @@
         }
       ],
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": ["Vegetables", "Healthy", "Chinese", "Cabbage", "Green Cabbage"],
+      "tag": [
+        "Vegetables",
+        "Healthy",
+        "Chinese",
+        "Cabbage",
+        "Green Cabbage"
+      ],
       "reviews": [
         {
           "id": 1,
@@ -228,7 +234,13 @@
         }
       ],
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": ["Vegetables", "Healthy", "Chinese", "Cabbage", "Green Cabbage"],
+      "tag": [
+        "Vegetables",
+        "Healthy",
+        "Chinese",
+        "Cabbage",
+        "Green Cabbage"
+      ],
       "reviews": [
         {
           "id": 1,
@@ -339,7 +351,13 @@
         }
       ],
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": ["Vegetables", "Healthy", "Chinese", "Cabbage", "Green Cabbage"],
+      "tag": [
+        "Vegetables",
+        "Healthy",
+        "Chinese",
+        "Cabbage",
+        "Green Cabbage"
+      ],
       "reviews": [
         {
           "id": 1,
@@ -450,7 +468,12 @@
         }
       ],
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": ["Vegetables", "Healthy", "Cabbage", "Green Cabbage"],
+      "tag": [
+        "Vegetables",
+        "Healthy",
+        "Cabbage",
+        "Green Cabbage"
+      ],
       "reviews": [
         {
           "id": 1,
@@ -561,7 +584,12 @@
         }
       ],
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": ["Vegetables", "Healthy", "Cabbage", "Green Cabbage"],
+      "tag": [
+        "Vegetables",
+        "Healthy",
+        "Cabbage",
+        "Green Cabbage"
+      ],
       "reviews": [
         {
           "id": 1,
@@ -672,7 +700,12 @@
         }
       ],
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": ["Vegetables", "Healthy", "Cabbage", "Green Cabbage"],
+      "tag": [
+        "Vegetables",
+        "Healthy",
+        "Cabbage",
+        "Green Cabbage"
+      ],
       "reviews": [
         {
           "id": 1,
@@ -783,7 +816,12 @@
         }
       ],
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": ["Vegetables", "Healthy", "Cabbage", "Green Cabbage"],
+      "tag": [
+        "Vegetables",
+        "Healthy",
+        "Cabbage",
+        "Green Cabbage"
+      ],
       "reviews": [
         {
           "id": 1,
@@ -894,7 +932,12 @@
         }
       ],
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": ["Vegetables", "Healthy", "Cabbage", "Green Cabbage"],
+      "tag": [
+        "Vegetables",
+        "Healthy",
+        "Cabbage",
+        "Green Cabbage"
+      ],
       "reviews": [
         {
           "id": 1,
@@ -945,7 +988,585 @@
         }
       ],
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": ["Vegetables"],
+      "tag": [
+        "Vegetables"
+      ],
+      "reviews": []
+    },
+    {
+      "id": 1699591160736,
+      "name": "test1",
+      "category": "Vegetables",
+      "discountPrice": "99.56",
+      "originalPrice": 144433,
+      "discountPercentage": 0,
+      "status": "",
+      "statusColor": "1A1A1A",
+      "rating": 1,
+      "available": 1,
+      "littleDescription": "nimadir",
+      "description": "",
+      "images": {
+        "src": "",
+        "imageDescription": "Image",
+        "otherImages": [
+          {
+            "id": 1,
+            "src": "/assets/images/products/potato.png",
+            "otherImageDescription": "Picture of a large potato from the left"
+          }
+        ]
+      },
+      "additionalInformation": [
+        {
+          "title": "Weight:",
+          "description": "02"
+        }
+      ],
+      "brand": "/assets/images/products/brands/farmary.svg",
+      "tag": [
+        "Vegetables"
+      ],
+      "reviews": []
+    },
+    {
+      "id": 1699591382290,
+      "name": "test2",
+      "category": "Vegetables",
+      "discountPrice": "1000.00",
+      "originalPrice": 1000,
+      "discountPercentage": 0,
+      "status": "",
+      "statusColor": "1A1A1A",
+      "rating": 1,
+      "available": 1,
+      "littleDescription": "1000",
+      "description": "",
+      "images": {
+        "src": "",
+        "imageDescription": "Image",
+        "otherImages": [
+          {
+            "id": 1,
+            "src": "/assets/images/products/potato.png",
+            "otherImageDescription": "Picture of a large potato from the left"
+          }
+        ]
+      },
+      "additionalInformation": [
+        {
+          "title": "Weight:",
+          "description": "02"
+        }
+      ],
+      "brand": "/assets/images/products/brands/farmary.svg",
+      "tag": [
+        "Vegetables"
+      ],
+      "reviews": []
+    },
+    {
+      "id": 1699594018412,
+      "name": "test5",
+      "category": "Cooking",
+      "discountPrice": null,
+      "originalPrice": "1233",
+      "discountPercentage": null,
+      "status": "",
+      "statusColor": "1A1A1A",
+      "rating": 1,
+      "available": 1,
+      "littleDescription": "niamdir",
+      "description": "",
+      "images": {
+        "src": "",
+        "imageDescription": "Image",
+        "otherImages": [
+          {
+            "id": 1,
+            "src": "/assets/images/products/potato.png",
+            "otherImageDescription": "Picture of a large potato from the left"
+          }
+        ]
+      },
+      "additionalInformation": [
+        {
+          "title": "Weight:",
+          "description": "02"
+        }
+      ],
+      "brand": "/assets/images/products/brands/farmary.svg",
+      "tag": [
+        "Vegetables"
+      ],
+      "reviews": []
+    },
+    {
+      "id": 1699594291668,
+      "name": "test6",
+      "category": "Cooking",
+      "discountPrice": "1234",
+      "originalPrice": null,
+      "discountPercentage": null,
+      "status": "",
+      "statusColor": "1A1A1A",
+      "rating": 1,
+      "available": 1,
+      "littleDescription": "nimadir",
+      "description": "",
+      "images": {
+        "src": "",
+        "imageDescription": "Image",
+        "otherImages": [
+          {
+            "id": 1,
+            "src": "/assets/images/products/potato.png",
+            "otherImageDescription": "Picture of a large potato from the left"
+          }
+        ]
+      },
+      "additionalInformation": [
+        {
+          "title": "Weight:",
+          "description": "02"
+        }
+      ],
+      "brand": "/assets/images/products/brands/farmary.svg",
+      "tag": [
+        "Vegetables"
+      ],
+      "reviews": []
+    },
+    {
+      "id": 1699594482159,
+      "name": "test6",
+      "category": "Cooking",
+      "discountPrice": "12345",
+      "originalPrice": null,
+      "discountPercentage": null,
+      "status": "",
+      "statusColor": "1A1A1A",
+      "rating": 1,
+      "available": 1,
+      "littleDescription": "nimadir",
+      "description": "",
+      "images": {
+        "src": "https://res.cloudinary.com/dezjflp5d/image/upload/v1699594425/c1vczgqvbi6snhtpmph8.png",
+        "imageDescription": "Image",
+        "otherImages": [
+          {
+            "id": 1,
+            "src": "/assets/images/products/potato.png",
+            "otherImageDescription": "Picture of a large potato from the left"
+          }
+        ]
+      },
+      "additionalInformation": [
+        {
+          "title": "Weight:",
+          "description": "02"
+        }
+      ],
+      "brand": "/assets/images/products/brands/farmary.svg",
+      "tag": [
+        "Vegetables"
+      ],
+      "reviews": []
+    },
+    {
+      "id": 1699594557719,
+      "name": "test6",
+      "category": "Cooking",
+      "discountPrice": "12345",
+      "originalPrice": null,
+      "discountPercentage": null,
+      "status": "",
+      "statusColor": "1A1A1A",
+      "rating": 1,
+      "available": 1,
+      "littleDescription": "nimadir",
+      "description": "",
+      "images": {
+        "src": "https://res.cloudinary.com/dezjflp5d/image/upload/v1699594500/n6tdj3surromqfflpteb.png",
+        "imageDescription": "Image",
+        "otherImages": [
+          {
+            "id": 1,
+            "src": "/assets/images/products/potato.png",
+            "otherImageDescription": "Picture of a large potato from the left"
+          }
+        ]
+      },
+      "additionalInformation": [
+        {
+          "title": "Weight:",
+          "description": "02"
+        }
+      ],
+      "brand": "/assets/images/products/brands/farmary.svg",
+      "tag": [
+        "Vegetables"
+      ],
+      "reviews": []
+    },
+    {
+      "id": 1699594593043,
+      "name": "test7",
+      "category": "Cooking",
+      "discountPrice": "12345",
+      "originalPrice": null,
+      "discountPercentage": null,
+      "status": "",
+      "statusColor": "1A1A1A",
+      "rating": 1,
+      "available": 1,
+      "littleDescription": "nimadir",
+      "description": "",
+      "images": {
+        "src": "https://res.cloudinary.com/dezjflp5d/image/upload/v1699594536/zsisenmrlk02kvqcf0ub.png",
+        "imageDescription": "Image",
+        "otherImages": [
+          {
+            "id": 1,
+            "src": "/assets/images/products/potato.png",
+            "otherImageDescription": "Picture of a large potato from the left"
+          }
+        ]
+      },
+      "additionalInformation": [
+        {
+          "title": "Weight:",
+          "description": "02"
+        }
+      ],
+      "brand": "/assets/images/products/brands/farmary.svg",
+      "tag": [
+        "Vegetables"
+      ],
+      "reviews": []
+    },
+    {
+      "id": 1699594724674,
+      "name": "test8",
+      "category": "Cooking",
+      "discountPrice": "12",
+      "originalPrice": null,
+      "discountPercentage": null,
+      "status": "",
+      "statusColor": "1A1A1A",
+      "rating": 1,
+      "available": 1,
+      "littleDescription": "nimadir",
+      "description": "",
+      "images": {
+        "src": "",
+        "imageDescription": "Image",
+        "otherImages": [
+          {
+            "id": 1,
+            "src": "/assets/images/products/potato.png",
+            "otherImageDescription": "Picture of a large potato from the left"
+          }
+        ]
+      },
+      "additionalInformation": [
+        {
+          "title": "Weight:",
+          "description": "02"
+        }
+      ],
+      "brand": "/assets/images/products/brands/farmary.svg",
+      "tag": [
+        "Vegetables"
+      ],
+      "reviews": []
+    },
+    {
+      "id": 1699594795843,
+      "name": "test9",
+      "category": "Vegetables",
+      "discountPrice": "120",
+      "originalPrice": null,
+      "discountPercentage": null,
+      "status": "",
+      "statusColor": "1A1A1A",
+      "rating": 1,
+      "available": 1,
+      "littleDescription": "nimadir",
+      "description": "",
+      "images": {
+        "src": "",
+        "imageDescription": "Image",
+        "otherImages": [
+          {
+            "id": 1,
+            "src": "/assets/images/products/potato.png",
+            "otherImageDescription": "Picture of a large potato from the left"
+          }
+        ]
+      },
+      "additionalInformation": [
+        {
+          "title": "Weight:",
+          "description": "02"
+        }
+      ],
+      "brand": "/assets/images/products/brands/farmary.svg",
+      "tag": [
+        "Vegetables"
+      ],
+      "reviews": []
+    },
+    {
+      "id": 1699595062833,
+      "name": "test10",
+      "category": "Vegetables",
+      "discountPrice": "1200",
+      "originalPrice": null,
+      "discountPercentage": null,
+      "status": "",
+      "statusColor": "1A1A1A",
+      "rating": 1,
+      "available": 1,
+      "littleDescription": "nimadir",
+      "description": "",
+      "images": {
+        "src": "https://res.cloudinary.com/dezjflp5d/image/upload/v1699595006/nbsgu7odsqyhadz8uait.png",
+        "imageDescription": "Image",
+        "otherImages": [
+          {
+            "id": 1,
+            "src": "/assets/images/products/potato.png",
+            "otherImageDescription": "Picture of a large potato from the left"
+          }
+        ]
+      },
+      "additionalInformation": [
+        {
+          "title": "Weight:",
+          "description": "02"
+        }
+      ],
+      "brand": "/assets/images/products/brands/farmary.svg",
+      "tag": [
+        "Vegetables"
+      ],
+      "reviews": []
+    },
+    {
+      "id": 1699595296102,
+      "name": "test11",
+      "category": "Vegetables",
+      "discountPrice": "1200",
+      "originalPrice": null,
+      "discountPercentage": null,
+      "status": "",
+      "statusColor": "1A1A1A",
+      "rating": 1,
+      "available": 1,
+      "littleDescription": "nimadir",
+      "description": "",
+      "images": {
+        "src": "https://res.cloudinary.com/dezjflp5d/image/upload/v1699595239/kkmbiljzdpk7jj0trwrl.png",
+        "imageDescription": "Image",
+        "otherImages": [
+          {
+            "id": 1,
+            "src": "/assets/images/products/potato.png",
+            "otherImageDescription": "Picture of a large potato from the left"
+          }
+        ]
+      },
+      "additionalInformation": [
+        {
+          "title": "Weight:",
+          "description": "02"
+        }
+      ],
+      "brand": "/assets/images/products/brands/farmary.svg",
+      "tag": [
+        "Vegetables"
+      ],
+      "reviews": []
+    },
+    {
+      "id": 1699595773417,
+      "name": "",
+      "category": "",
+      "discountPrice": null,
+      "originalPrice": null,
+      "discountPercentage": null,
+      "status": "",
+      "statusColor": "1A1A1A",
+      "rating": 1,
+      "available": 1,
+      "littleDescription": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla nibh diam, blandit vel consequat nec, ultrices et ipsum. Nulla varius magna a consequat pulvinar.",
+      "description": "",
+      "images": {
+        "src": "https://res.cloudinary.com/dezjflp5d/image/upload/v1699595716/nobhx2npbyggoey7cpoi.png",
+        "imageDescription": "Image",
+        "otherImages": [
+          {
+            "id": 1,
+            "src": "/assets/images/products/potato.png",
+            "otherImageDescription": "Picture of a large potato from the left"
+          }
+        ]
+      },
+      "additionalInformation": [
+        {
+          "title": "Weight:",
+          "description": "02"
+        }
+      ],
+      "brand": "/assets/images/products/brands/farmary.svg",
+      "tag": [
+        "Vegetables"
+      ],
+      "reviews": []
+    },
+    {
+      "id": 1699595787561,
+      "name": "test12",
+      "category": "",
+      "discountPrice": null,
+      "originalPrice": null,
+      "discountPercentage": null,
+      "status": "",
+      "statusColor": "1A1A1A",
+      "rating": 1,
+      "available": 1,
+      "littleDescription": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla nibh diam, blandit vel consequat nec, ultrices et ipsum. Nulla varius magna a consequat pulvinar.",
+      "description": "",
+      "images": {
+        "src": "https://res.cloudinary.com/dezjflp5d/image/upload/v1699595730/ykqnavaprtdbbgkbddrm.png",
+        "imageDescription": "Image",
+        "otherImages": [
+          {
+            "id": 1,
+            "src": "/assets/images/products/potato.png",
+            "otherImageDescription": "Picture of a large potato from the left"
+          }
+        ]
+      },
+      "additionalInformation": [
+        {
+          "title": "Weight:",
+          "description": "02"
+        }
+      ],
+      "brand": "/assets/images/products/brands/farmary.svg",
+      "tag": [
+        "Vegetables"
+      ],
+      "reviews": []
+    },
+    {
+      "id": 1699595867183,
+      "name": "test13",
+      "category": "Vegetables",
+      "discountPrice": "120000",
+      "originalPrice": null,
+      "discountPercentage": null,
+      "status": "",
+      "statusColor": "1A1A1A",
+      "rating": 1,
+      "available": 1,
+      "littleDescription": "120000",
+      "description": "",
+      "images": {
+        "src": "https://res.cloudinary.com/dezjflp5d/image/upload/v1699595810/xiupxu49wk7w5x5kcflr.png",
+        "imageDescription": "Image",
+        "otherImages": [
+          {
+            "id": 1,
+            "src": "/assets/images/products/potato.png",
+            "otherImageDescription": "Picture of a large potato from the left"
+          }
+        ]
+      },
+      "additionalInformation": [
+        {
+          "title": "Weight:",
+          "description": "02"
+        }
+      ],
+      "brand": "/assets/images/products/brands/farmary.svg",
+      "tag": [
+        "Vegetables"
+      ],
+      "reviews": []
+    },
+    {
+      "id": 1699595944695,
+      "name": "vsaasdv",
+      "category": "",
+      "discountPrice": null,
+      "originalPrice": null,
+      "discountPercentage": null,
+      "status": "",
+      "statusColor": "1A1A1A",
+      "rating": 1,
+      "available": 1,
+      "littleDescription": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla nibh diam, blandit vel consequat nec, ultrices et ipsum. Nulla varius magna a consequat pulvinar.",
+      "description": "",
+      "images": {
+        "src": "https://res.cloudinary.com/dezjflp5d/image/upload/v1699595887/n5g3x4cvnlv2vnc1jwii.png",
+        "imageDescription": "Image",
+        "otherImages": [
+          {
+            "id": 1,
+            "src": "/assets/images/products/potato.png",
+            "otherImageDescription": "Picture of a large potato from the left"
+          }
+        ]
+      },
+      "additionalInformation": [
+        {
+          "title": "Weight:",
+          "description": "02"
+        }
+      ],
+      "brand": "/assets/images/products/brands/farmary.svg",
+      "tag": [
+        "Vegetables"
+      ],
+      "reviews": []
+    },
+    {
+      "id": 1699595981153,
+      "name": "",
+      "category": "",
+      "discountPrice": "023",
+      "originalPrice": null,
+      "discountPercentage": null,
+      "status": "",
+      "statusColor": "1A1A1A",
+      "rating": 1,
+      "available": 1,
+      "littleDescription": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla nibh diam, blandit vel consequat nec, ultrices et ipsum. Nulla varius magna a consequat pulvinar.",
+      "description": "",
+      "images": {
+        "src": "https://res.cloudinary.com/dezjflp5d/image/upload/v1699595924/hstxw0dy9h1lehxsh2ji.png",
+        "imageDescription": "Image",
+        "otherImages": [
+          {
+            "id": 1,
+            "src": "/assets/images/products/potato.png",
+            "otherImageDescription": "Picture of a large potato from the left"
+          }
+        ]
+      },
+      "additionalInformation": [
+        {
+          "title": "Weight:",
+          "description": "02"
+        }
+      ],
+      "brand": "/assets/images/products/brands/farmary.svg",
+      "tag": [
+        "Vegetables"
+      ],
       "reviews": []
     }
   ],
@@ -959,7 +1580,11 @@
       "category": "Cooking",
       "readingTime": 4,
       "content": "<p>lorem ipsum</p>",
-      "tags": ["Healthy", "Dinner", "Meat"],
+      "tags": [
+        "Healthy",
+        "Dinner",
+        "Meat"
+      ],
       "comments": [
         {
           "fullName": "John Doe",
@@ -977,7 +1602,11 @@
       "category": "Beverages",
       "readingTime": 5,
       "content": "<p>lorem ipsum</p>",
-      "tags": ["Lounch", "Kid foods", "Vegetarian"],
+      "tags": [
+        "Lounch",
+        "Kid foods",
+        "Vegetarian"
+      ],
       "comments": [
         {
           "fullName": "John Doe",
@@ -995,7 +1624,11 @@
       "category": "Vegetables",
       "readingTime": 6,
       "content": "<p>lorem ipsum</p>",
-      "tags": ["Tiffin", "Vitamins", "Bread"],
+      "tags": [
+        "Tiffin",
+        "Vitamins",
+        "Bread"
+      ],
       "comments": [
         {
           "fullName": "John Doe",
@@ -1013,7 +1646,11 @@
       "category": "Bread & Bakery",
       "readingTime": 6,
       "content": "<p>lorem ipsum</p>",
-      "tags": ["Snacks", "Tiffin", "Low fat"],
+      "tags": [
+        "Snacks",
+        "Tiffin",
+        "Low fat"
+      ],
       "comments": [
         {
           "fullName": "John Doe",
@@ -1031,7 +1668,11 @@
       "category": "Beauty & Health",
       "readingTime": 6,
       "content": "<p>lorem ipsum</p>",
-      "tags": ["Kid foods", "Healthy", "Low fat"],
+      "tags": [
+        "Kid foods",
+        "Healthy",
+        "Low fat"
+      ],
       "comments": [
         {
           "fullName": "John Doe",
@@ -1049,7 +1690,11 @@
       "category": "Fresh Fruit",
       "readingTime": 4,
       "content": "<p>lorem ipsum</p>",
-      "tags": ["Fresh Fruit", "Meat", "Bread"],
+      "tags": [
+        "Fresh Fruit",
+        "Meat",
+        "Bread"
+      ],
       "comments": [
         {
           "fullName": "John Doe",
@@ -1067,7 +1712,11 @@
       "category": "Vegetables",
       "readingTime": 6,
       "content": "<p>lorem ipsum</p>",
-      "tags": ["Meat", "Dinner", "Vegetarian"],
+      "tags": [
+        "Meat",
+        "Dinner",
+        "Vegetarian"
+      ],
       "comments": [
         {
           "fullName": "John Doe",
@@ -1085,7 +1734,11 @@
       "category": "Fresh Fruit",
       "readingTime": 6,
       "content": "<p>lorem ipsum</p>",
-      "tags": ["Healthy", "Snacks", "Tiffin"],
+      "tags": [
+        "Healthy",
+        "Snacks",
+        "Tiffin"
+      ],
       "comments": [
         {
           "fullName": "John Doe",
@@ -1103,7 +1756,11 @@
       "category": "Fresh Fruit",
       "readingTime": 4,
       "content": "<p>lorem ipsum</p>",
-      "tags": ["Launch", "Snacks", "Bread"],
+      "tags": [
+        "Launch",
+        "Snacks",
+        "Bread"
+      ],
       "comments": [
         {
           "fullName": "John Doe",
@@ -1121,7 +1778,11 @@
       "category": "Vegetables",
       "readingTime": 4,
       "content": "<p>lorem ipsum</p>",
-      "tags": ["Vegetarian", "Vitamins", "Dinner"],
+      "tags": [
+        "Vegetarian",
+        "Vitamins",
+        "Dinner"
+      ],
       "comments": [
         {
           "fullName": "John Doe",
