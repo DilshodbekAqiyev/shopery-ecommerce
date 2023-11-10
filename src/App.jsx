@@ -53,16 +53,15 @@ export default function App() {
           }
         />
         <Route path="product/:productID" element={<ProductDetails />} />
-        <Route path="sign-in" element={<Signup />} />
-        <Route path="sign-up" element={<Signin />} />
+        <Route path="sign-up" element={<Signup />} />
+        <Route path="sign-in" element={<Signin />} />
         <Route path="dashboard" element={<Dashboard />}>
           <Route index element={<DashboardInfo />} />
-          
           <Route path="order-history" element={<OrderDetail />}>
             <Route path="order-detail" index element={<OrderDetail></OrderDetail>} />
           </Route>
           <Route path="wishlist" element={<UserAddress />} />
-          <Route path="settings" element={<Settings/>}/>
+          <Route path="settings" element={<Settings />} />
           <Route path="addProduct" element={<AddProduct />} />
         </Route>
         <Route path="about" element={<About />} />
