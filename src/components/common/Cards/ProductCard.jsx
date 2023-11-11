@@ -36,10 +36,12 @@ const ProductCard = (props) => {
     })()
   }, [id])
 
+
+
   return (
     <>
       <div
-        className={`w-[330px] bg-white shadow-lg  p-4 relative cursor-pointer transition-transform border-[2px] border-solid border-branding-[#2C742F] hover:shadow-[#00B207] hover:shadow-md ${isHovered ? 'border-[#2C742F]' : ''
+        className={`w-[300px] bg-white shadow-lg  p-4 relative cursor-pointer transition-transform border-[2px] border-solid border-branding-[#2C742F] hover:shadow-[#00B207] hover:shadow-md ${isHovered ? 'border-[#2C742F]' : ''
           } ${featrues ? 'border border-[#E6E6E6] w-1/5 h-auto' : ''}`}
         onMouseEnter={handleHover}
         onMouseLeave={handleMouseLeave}
