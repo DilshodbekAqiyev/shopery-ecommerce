@@ -8,10 +8,12 @@ import AllCategoriesComponent from './components/AllCategories'
 import SliderComponent from './components/SliderComponent'
 import Rating from './components/Rating'
 import TopComponent from './components/TopComponent'
+import { getUser } from '../../utils/utils'
 
 function Shop() {
   const { state, dispatch } = useShopContext()
   const [newData, setNewData] = useState([])
+  const [wishlist, setWishlist] = useState({})
 
   useEffect(() => {
     const getData = async () => {
@@ -58,6 +60,17 @@ function Shop() {
     filterData()
   }, [state.categoryFilter, state.ratingFilter, newData, dispatch])
 
+  useEffect(() => {
+    getUser().then((user) =>
+      setWishlist(
+        user.wishlist.findIndex((wishItem) => {
+          wishItem.id === state.data.id
+          console.log('wishItem:=>' + wishItem)
+        }) === -1
+      )
+    )
+  }, [])
+
   return (
     <div className="max-w-[1320px] mx-auto pt-8 transition-all ease-linear duration-500">
       <div className="pb-6 flex justify-between items-center">
@@ -76,12 +89,12 @@ function Shop() {
           <div className="flex justify-around flex-wrap items-center gap-5">
             {state.categoryFilter === 'All Categories' ? (
               state?.data?.length ? (
-                state.data.map((item) => <ProductCard key={item.id} {...item} />)
+                state.data.map((item) => <ProductCard isLiked={wishlist} key={item.id} {...item} />)
               ) : (
                 <h1>No products match the selected filters.</h1>
               )
             ) : state.filteredProducts?.length ? (
-              state.filteredProducts.map((item) => <ProductCard key={item.id} {...item} />)
+              state.filteredProducts.map((item) => <ProductCard isLiked={wishlist} key={item.id} {...item} />)
             ) : (
               <h1>No results were found for these queries</h1>
             )}
