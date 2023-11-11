@@ -26,7 +26,7 @@ const BlogPopularTag = () => {
     }
   }
 
-  console.log(clicked)
+  // console.log(clicked)
   useEffect(() => {
     // const newFilterData = []
     // filterData.forEach((d) => {

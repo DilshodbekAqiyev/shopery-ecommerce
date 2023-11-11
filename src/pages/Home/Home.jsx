@@ -9,10 +9,7 @@ import SwiperTop from '../../components/ui/swiper'
 import Featured from '../../components/common/featured/featured'
 import { instance } from '../../utils/apiRequest'
 
-
-
 const vegetablesData = ['All', 'Vegetables', 'Fruit', 'Meat & Fish', ' View All']
-
 
 const Home = () => {
   const [dataProduct, setdataProduct] = useState([])
@@ -21,10 +18,10 @@ const Home = () => {
   }, [])
 
   useEffect(() => {
-    ; (async () => {
+    ;(async () => {
       const dataProductPage = await instance.get(`/products`)
       setdataProduct(dataProductPage.data)
-      console.log(dataProductPage);
+      // console.log(dataProductPage);
     })()
   }, [])
 
@@ -51,7 +48,6 @@ const Home = () => {
                 </span>{' '}
                 {index < vegetablesData.length - 1 ? (
                   <span className="mx-[10px] text-[#B4CCB4] font-[400]">|</span>
-                  
                 ) : (
                   ''
                 )}
@@ -61,12 +57,10 @@ const Home = () => {
         </div>
         <div className="border px-[146px]">
           <div className="flex flex-wrap">
-            {
-              dataProduct.map((data) => {
-                console.log(data);
-                return <ProductCard key={data.id} {...data} />
-              })
-            }
+            {dataProduct.map((data) => {
+              // console.log(data)
+              return <ProductCard key={data.id} {...data} />
+            })}
           </div>
         </div>
       </div>
@@ -82,9 +76,7 @@ const Home = () => {
         </div>
 
         <div className="bg-white">
-          <div className="container">
-            {/* <FeaturedProducts dataFeatures={data} /> */}
-          </div>
+          <div className="container">{/* <FeaturedProducts dataFeatures={data} /> */}</div>
         </div>
 
         <div className=" bg-latestWhiteGrayReverse">
