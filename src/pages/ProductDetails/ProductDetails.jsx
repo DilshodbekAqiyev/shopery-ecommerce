@@ -12,8 +12,6 @@ function ProductDetails() {
   const [foundProduct, setFoundProduct] = useState({})
   const [sliceProduct, setSliceProduct] = useState([])
 
-  console.log(foundProduct)
-
   useEffect(() => {
     ;(async () => {
       const response = await instance.get(`products/${productID}`)
