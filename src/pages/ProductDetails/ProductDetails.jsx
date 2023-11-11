@@ -33,7 +33,7 @@ function ProductDetails() {
   useEffect(() => {
     ;(async () => {
       const response = await instance.get(`products?_start=1&_end=5`)
-      console.log(response.data)
+      // console.log(response.data)
       setSliceProduct(response.data)
     })()
   }, [])

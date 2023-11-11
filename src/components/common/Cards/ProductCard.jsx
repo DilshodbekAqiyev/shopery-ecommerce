@@ -8,6 +8,8 @@ import { Dialog, DialogContent, DialogHeader, DialogTrigger } from '../../ui/dia
 import ModalDetails from '../../../pages/ProductDetails/components/ModalDetails'
 import { instance } from '../../../utils/apiRequest'
 import { AddToWishlist } from '../../../utils/api/AddToWishlist'
+import bag from '../../../../public/assets/icons/bag.svg'
+import bag_white from '../../../../public/assets/icons/bag-white.svg'
 
 const ProductCard = (props, { isLiked }) => {
   const [isHovered, setIsHovered] = useState(false)
@@ -92,12 +94,7 @@ const ProductCard = (props, { isLiked }) => {
             }`}
             onClick={handleClick}
           >
-            <img
-              src={`/assets/icons/   'bag-white' : 'bag'}.svg`}
-              alt="bag icon"
-              loading="lazy"
-              className="w-[20px] h-[20px]"
-            />
+            <img src={isHovered ? bag_white : bag} alt="bag icon" loading="lazy" className="w-[20px] h-[20px]" />
           </div>
         </div>
         {isHovered ? (
@@ -169,7 +166,7 @@ ProductCard.propTypes = {
   name: PropTypes.string,
   originalPrice: PropTypes.number,
   discountPrice: PropTypes.number,
-  images: PropTypes.string,
+  images: PropTypes.any,
   rating: PropTypes.number,
   status: PropTypes.string,
   statusColor: PropTypes.string,

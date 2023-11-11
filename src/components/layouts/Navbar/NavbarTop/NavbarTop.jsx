@@ -28,7 +28,7 @@ const NavbarTop = () => {
               <SelectValue placeholder="Eng" />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="en" selectValue className="cursor-pointer text-gray-300 font-normal text-xs">
+              <SelectItem value="en" className="cursor-pointer text-gray-300 font-normal text-xs">
                 Eng
               </SelectItem>
               <SelectItem value="ru" className="cursor-pointer text-gray-300 font-normal text-xs">

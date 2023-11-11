@@ -65,7 +65,7 @@ function Shop() {
       setWishlist(
         user.wishlist.findIndex((wishItem) => {
           wishItem.id === state.data.id
-          console.log('wishItem:=>' + wishItem)
+          // console.log('wishItem:=>' + wishItem)
         }) === -1
       )
     )
