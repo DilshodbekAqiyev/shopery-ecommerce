@@ -21,7 +21,10 @@ const SingleBlog = () => {
   console.log(CardID)
   const { data } = useContext(BlogContext)
   // const { data } = DATA
+
   const singleCardData = data.filter((card) => card.id == CardID)
+
+  // singleCardData  shu datani ichida to`liq ma`lumotlar bor shu object orqali foydalanamiz !!!
 
   console.log(singleCardData)
   return (
