@@ -7,6 +7,7 @@ import { useNavigate } from 'react-router-dom'
 import { Dialog, DialogContent, DialogHeader, DialogTrigger } from '../../ui/dialog'
 import ModalDetails from '../../../pages/ProductDetails/components/ModalDetails'
 import { instance } from '../../../utils/apiRequest'
+import { AddToWishlist } from '../../../utils/api/AddToWishlist'
 
 const ProductCard = (props) => {
   const [isHovered, setIsHovered] = useState(false)
@@ -45,7 +46,7 @@ const ProductCard = (props) => {
           } ${featrues ? 'border border-[#E6E6E6] w-1/5 h-auto' : ''}`}
         onMouseEnter={handleHover}
         onMouseLeave={handleMouseLeave}
-        onClick={() => navigate('/product/' + id)}
+        onClick={() => navigate('/shop/' + id)}
       >
         <LazyLoadImage
           delayTime={300}
@@ -96,7 +97,13 @@ const ProductCard = (props) => {
         </div>
         {isHovered ? (
           <div className="absolute top-3 right-3 z-10 rounded-full  transition-transform">
-            <div className="bg-white rounded-full p-2 shadow-md hover:scale-110 cursor-pointer" onClick={handleClick}>
+            <div
+              className="bg-white rounded-full p-2 shadow-md hover:scale-110 cursor-pointer"
+              onClick={(e) => {
+                e.stopPropagation()
+                AddToWishlist(id)
+              }}
+            >
               <img src="/assets/icons/heart.svg" alt="heart image" loading="lazy" className="w-[20px] h-[20px]" />
             </div>
             <Dialog

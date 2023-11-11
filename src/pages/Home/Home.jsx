@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react'
 import ProductCard from '../../components/common/Cards/ProductCard'
 import FeaturedProducts from './FeaturedProducts'
 import Video from '../../components/common/video/video'
-import SendEmail from '../../components/common/sendEmail/sendEmail'
 import LatestCard from '../../components/common/Cards/LatestCard'
 import OurSpecial from './components/OurSpecial'
 import Timer from './components/timer'
@@ -104,9 +103,6 @@ const Home = () => {
               <LatestCard key={item} {...data} />
             ))} */}
           </div>
-        </div>
-        <div className=" border-y bg-greenGrays-greenGray0.5">
-          <SendEmail />
         </div>
       </div>
     </div>
