@@ -7,31 +7,29 @@ import BlogContext from '../context/BlogContext'
 import SocialMediaIcons from '../../../components/common/SocialMediaIcons'
 import { BsArrowRightShort } from 'react-icons/bs'
 
-import main_image from './images/mainImage.svg'
 import user_image from './images/user_image.svg'
-import product_image_1 from './images/product_image_1.svg'
-import product_image_2 from './images/product_image_2.svg'
+
 import { Button } from '../../../components/ui/button'
 
 import './single-blog.css'
 
 const SingleBlog = () => {
   const { CardID } = useParams()
-
-  console.log(CardID)
   const { data } = useContext(BlogContext)
-  // const { data } = DATA
+  const singleCardData = data?.filter((card) => card.id == CardID)
 
-  const singleCardData = data.filter((card) => card.id == CardID)
+  const { previewImage, extraImages } = singleCardData[0]
+  // const { data } = DATA
 
   // singleCardData  shu datani ichida to`liq ma`lumotlar bor shu object orqali foydalanamiz !!!
 
-  console.log(singleCardData)
+  console.log(data, 'data')
+
   return (
     <div className="singleBlog w-[872px]">
       <div className="flex flex-col gap-8">
-        <div className="w-full rounded-[8px]">
-          <img src={main_image} alt="main product image" loading="lazy" className="w-full" />
+        <div className="w-full rounded-[12px] overflow-hidden">
+          <img src={previewImage} alt="main product image" loading="lazy" className="w-full " />
         </div>
         <div className="w-full">
           <div className="">
@@ -107,10 +105,10 @@ const SingleBlog = () => {
         </p>
         <div className="w-full grid grid-cols-2 gap-6 mb-6 max-md:grid-cols-1">
           <div className="w-full">
-            <img src={product_image_1} alt="product_image_1" loading="lazy" />
+            <img src={extraImages[0]} alt="product_image_1" loading="lazy" />
           </div>
           <div className="w-full">
-            <img src={product_image_2} alt="product_image_2" loading="lazy" />
+            <img src={extraImages[1]} alt="product_image_2" loading="lazy" />
           </div>
         </div>
         <p>
