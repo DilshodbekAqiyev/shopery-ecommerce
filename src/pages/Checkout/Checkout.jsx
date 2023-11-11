@@ -29,16 +29,17 @@ function Checkout() {
     ;(async () => {
       const response = await instance.get(`users`)
       const correctedData = response?.data?.filter((el) => el.token === token)
-      setCor(correctedData[0].billingAddress)
+      setCor(correctedData[0]?.billingAddress)
       setNewData(correctedData)
     })()
   }, [])
   const editUser = async () => {
     newData[0].billingAddress = { ...initialState, ...state }
-    console.log({ newData })
+    // console.log({ ...newData })
     axios
       .patch(`https://jsonplaceholder.typicode.com/posts/${token}`, newData)
       .then((response) => {
+        console.log(response)
         console.log(response.data)
       })
       .catch((error) => {
