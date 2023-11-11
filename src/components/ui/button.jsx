@@ -16,7 +16,7 @@ const buttonVariants = cva(
         ghost: 'bg-grays-gray100 text-primary rounded-full font-bold hover:bg-grays-gray200 hover:text-hardPrimary',
         fill: 'bg-primary rounded-full text-white hover:bg-hardPrimary',
         link: 'text-primary underline-offset-4 hover:underline',
-        secondary: 'bg-white text-primary rounded-full hover:text-hardPrimary font-[600]',
+        secondary: 'bg-white border-2 border-primary text-primary rounded-full hover:text-hardPrimary font-[600]',
       },
       size: {
         default: 'px-6 py-[14px]',
