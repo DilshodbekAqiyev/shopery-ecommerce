@@ -78,7 +78,7 @@ const ProductCard = (props) => {
             // onClick={handleClick}
           >
             <img
-              src={`/assets/icons/${isHovered ? 'bag-white' : 'bag'}.svg`}
+              src={`/assets/icons/   'bag-white' : 'bag'}.svg`}
               alt="bag icon"
               loading="lazy"
               className="w-[20px] h-[20px]"
