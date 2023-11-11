@@ -2,33 +2,25 @@ import { createBrowserRouter, RouterProvider, createRoutesFromElements, Route, N
 
 // Pages
 import Home from './pages/Home/Home'
+
 import Shop from './pages/Shop'
 import ProductDetails from './pages/ProductDetails/ProductDetails'
 import Signup from './pages/Auth/Signup'
 import Signin from './pages/Auth/Signin'
-
 import PageNotFound from './pages/PageNotFound'
 import About from './pages/About/About'
-import Checkout from './pages/Checkout/Checkout'
-import Wishlist from './pages/Wishlist/Wishlist'
-import ShoppingCart from './pages/ShoppingCart/ShoppingCart'
 
-// Layouts
-import RootLayout from './components/layouts/RootLayout'
-import Dashboard from './pages/Dashboard/Dashboard'
-import AddProduct from './pages/Dashboard/components/AddProduct'
-
-//Contexts
-import ShopProvider from './contexts/shop/ShopContext'
-import Index from './pages/Blog/Index'
 import BlogCards from './pages/Blog/components/BlogCards'
 import SingleBlog from './pages/Blog/Single Blog/SingleBlog'
 import DashboardInfo from './pages/Dashboard/components/DashboardInfo'
 import OrderDetail from './pages/Dashboard/components/OrderDetail'
 import UserAddress from './pages/Dashboard/components/UserAddress'
-import Settings from './pages/Dashboard/components/Settings'
-import OrderHistory from './pages/Dashboard/components/OrderHistory'
-import History from './pages/Dashboard/components/History'
+import Dashboard from './pages/Dashboard/Dashboard'
+
+// Layouts
+import RootLayout from './components/layouts/RootLayout'
+import Index from './pages/Blog/Index'
+import ShopProvider from './contexts/shop/ShopContext'
 
 export default function App() {
   const routes = createBrowserRouter(
@@ -51,22 +43,31 @@ export default function App() {
         <Route path="product/:productID" element={<ProductDetails />} />
         <Route path="sign-in" element={<Signup />} />
         <Route path="sign-up" element={<Signin />} />
+        {/* <Route pa
+        th="dashboard" element={<Dashboard />}>
+
+          <Route index  element={<DashboardInfo/>} />
+          <Route path="order-history" element = {<OrderHistory/>}>
+          <Route path="order-detail" element= {<OrderDetail></OrderDetail>}></Route>
+          </Route>
+          <Route path="wishlist" element={<UserAddress />} />
+        </Route> */}
         <Route path="dashboard" element={<Dashboard />}>
           <Route index element={<DashboardInfo />} />
-          <Route path="order-history" element={<OrderHistory />}>
-            <Route path="history" index element={<History></History>} />
-            <Route path="order-detail" element={<OrderDetail></OrderDetail>} />
+          {/* <Route path="order-history" element={<OrderHistory  />}> */}
+          <Route path="order-history" element={<OrderDetail />}>
+            <Route path="order-detail" index element={<OrderDetail></OrderDetail>} />
           </Route>
-          <Route path="settings" element={<Settings></Settings>} />
           <Route path="wishlist" element={<UserAddress />} />
-          <Route path="addProduct" element={<AddProduct />} />
         </Route>
+        <Route path="blog/:CardID" element={<SingleBlog />} />
+        <Route path="shop" element={<Shop />} />
+        <Route path="shop/:productID" element={<ProductDetails />} />
+        <Route path="sign-up" element={<Signup />} />
+        <Route path="sign-in" element={<Signin />} />
         <Route path="about" element={<About />} />
-        <Route path="checkout" element={<Checkout />} />
-        <Route path="wishlist" element={<Wishlist />} />
-        <Route path="shopping-cart" element={<ShoppingCart />} />
         <Route path="PageNotFound" element={<PageNotFound />} />
-        {/* <Route path="*" element={<Navigate to={'/PageNotFound'} />} /> */}
+        <Route path="*" element={<Navigate to={'/PageNotFound'} />} />
       </Route>
     )
   )
