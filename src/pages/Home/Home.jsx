@@ -7,32 +7,25 @@ import OurSpecial from './components/OurSpecial'
 import Timer from './components/timer'
 import SwiperTop from '../../components/ui/swiper'
 import Featured from '../../components/common/featured/featured'
+import { instance } from '../../utils/apiRequest'
 
-const data = {
-  name: 'Green Apple',
-  originalPrice: 20.99,
-  discountPrice: 14.99,
-  images: {
-    src: 'https://www.freepngimg.com/thumb/apple/89-green-apple-png-image.png',
-  },
-  rating: 4,
-  status: 'Scale 50%',
-  statusColor: 'green',
-  featrues: true,
-  title: 'Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.',
-  description:
-    'Sed commodo aliquam dui ac porta. Fusce ipsum felis, imperdiet at posuere ac, viverra at mauris. Maecenas tincidunt ligula a sem vestibulum pharetra. Maecenas auctor tortor lacus, nec laoreet nisi porttitor vel. Etiam tincidunt metus vel dui interdum sollicitudin. Mauris sem ante, vestibulum nec orci vitae, aliquam mollis lacus. Sed et condimentum arcu, id molestie tellus. Nulla facilisi. Nam scelerisque vitae justo a convallis. Morbi urna ipsum, placerat quis commodo quis, egestas elementum leo. Donec convallis mollis enim. Aliquam id mi quam. Phasellus nec fringilla elit. Nulla mauris tellus, feugiat quis pharetra sed, gravida ac dui. Sed iaculis, metus faucibus elementum tincidunt, turpis mi viverra velit, pellentesque tristique neque mi eget nulla. Proin luctus elementum neque et pharetra. ',
-  date: {
-    year: '2023',
-    month: 'Nov',
-    day: '12',
-  },
-}
+
 
 const vegetablesData = ['All', 'Vegetables', 'Fruit', 'Meat & Fish', ' View All']
+
+
 const Home = () => {
+  const [dataProduct, setdataProduct] = useState([])
   useEffect(() => {
     window.scrollTo(0, 0)
+  }, [])
+
+  useEffect(() => {
+    ; (async () => {
+      const dataProductPage = await instance.get(`/products`)
+      setdataProduct(dataProductPage.data)
+      console.log(dataProductPage);
+    })()
   }, [])
 
   const [matches, setMatches] = useState(window.matchMedia('(min-width: 570px)').matches)
@@ -67,15 +60,13 @@ const Home = () => {
           })}
         </div>
         <div className="border px-[146px]">
-          <div className="flex">
-            {Array.from(Array(4)).map((_, idx) => {
-              return <ProductCard key={idx} {...data} />
-            })}
-          </div>
-          <div className="flex">
-            {Array.from(Array(4)).map((_, idx) => {
-              return <ProductCard key={idx} {...data} />
-            })}
+          <div className="flex flex-wrap">
+            {
+              dataProduct.map((data) => {
+                console.log(data);
+                return <ProductCard key={data.id} {...data} />
+              })
+            }
           </div>
         </div>
       </div>
@@ -92,7 +83,7 @@ const Home = () => {
 
         <div className="bg-white">
           <div className="container">
-            <FeaturedProducts dataFeatures={data} />
+            {/* <FeaturedProducts dataFeatures={data} /> */}
           </div>
         </div>
 
@@ -109,9 +100,9 @@ const Home = () => {
         <div className="flex items-center justify-start flex-col h-[712px] max-xl:h-auto gap-[34px] bg-latestWhiteGray">
           <p className="font-semibold text-[40px]">Latest News</p>
           <div className=" flex gap-[24px] items-center justify-center max-xl:flex-wrap">
-            {Array.from(Array(3).keys()).map((item) => (
+            {/* {Array.from(Array(3).keys()).map((item) => (
               <LatestCard key={item} {...data} />
-            ))}
+            ))} */}
           </div>
         </div>
       </div>

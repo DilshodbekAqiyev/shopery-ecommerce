@@ -9,7 +9,6 @@ import { useEffect, useState } from 'react'
 function ProductDetails() {
   const { productID } = useParams()
   const [foundProduct, setFoundProduct] = useState({})
-  // const context = createContext()
 
   console.log(foundProduct)
 

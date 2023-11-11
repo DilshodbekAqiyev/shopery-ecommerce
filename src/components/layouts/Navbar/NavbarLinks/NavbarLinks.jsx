@@ -4,7 +4,7 @@ import axios from 'axios'
 import { Link } from 'react-router-dom'
 import LogoIcon from '../images/LogoIcon'
 import { AiOutlineMenu } from 'react-icons/ai'
-// import { AiOutlineHeart, AiOutlinePlus } from 'react-icons/ai'
+import { AiOutlineHeart } from 'react-icons/ai'
 // import { BsHandbag } from 'react-icons/bs'
 import { FiPhoneCall } from 'react-icons/fi'
 // import { CiSearch, CiLocationOn } from 'react-icons/ci'
@@ -51,13 +51,10 @@ const NavbarLinks = () => {
                       </a>
                       <div className="dropdown">
                         {nav.dropdown.map((dropMenu, _) => {
-                          const { image: Icon } = dropMenu
                           return (
                             <Fragment key={_}>
                               <Link to={`/${dropMenu.link}`}>
-                                <p style={{ fontSize: 20 }}>
-                                  <Icon />
-                                </p>
+                                <p style={{ fontSize: 20 }}>{<AiOutlineHeart />}</p>
                                 <p>{dropMenu.name}</p>
                               </Link>
                             </Fragment>
