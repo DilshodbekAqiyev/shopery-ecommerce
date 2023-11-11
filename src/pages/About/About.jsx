@@ -4,6 +4,10 @@ import Container from "../../components/common/Container"
 import { LazyLoadImage } from "react-lazy-load-image-component"
 import { Button } from "../../components/ui/button"
 import { Link } from "react-router-dom"
+import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai"
+import { BiLogoFacebook, BiLogoInstagram, BiLogoTwitter } from "react-icons/bi"
+import { FaPinterestP } from "react-icons/fa"
+import Icon from "./components/icon"
 
 function About() {
   const [data, setData] = useState({})
@@ -18,9 +22,26 @@ function About() {
     getData()
   }, [])
 
+  const Left = () => {
+    let Slider = document.querySelector("#slider")
+    Slider.scrollLeft = Slider.scrollLeft + 337
+  }
+  const Right = () => {
+    let Slider = document.querySelector("#slider")
+    Slider.scrollLeft = Slider.scrollLeft - 345
+  }
+
+  const ClientSliderLeft = () => {
+    let ClientSlider = document.querySelector("#client-slider")
+    ClientSlider.scrollLeft = ClientSlider.scrollLeft - 440
+  }
+  const ClientSliderRight = () => {
+    let ClientSlider = document.querySelector("#client-slider")
+    ClientSlider.scrollLeft = ClientSlider.scrollLeft + 440
+  }
 
   return (
-    <div>
+    <>
       <Container >
         <div className="mt-[80px] flex justify-between items-center gap-[41px]">
           <div>
@@ -36,6 +57,8 @@ function About() {
           />
         </div>
       </Container>
+      
+
       <div className="max-w-[1620px] mx-auto mt-[80px]  flex gap-[32px] bg-[url('/assets/images/About/about_bg.png')] bg-no-repeat">
         <LazyLoadImage
           delayTime={300}
@@ -75,28 +98,29 @@ function About() {
               <div className="flex items-center gap-[16px]">
                 <img src="/assets/images/About/about-icon-earphone.svg" alt="" />
                 <div>
-                  <h2 className="text-[18px] font-[500]">100% Organic food</h2>
-                  <p className="mt-[5px] text-[14px] text-gray-600 ">100% healthy & Fresh food.</p>
+                  <h2 className="text-[18px] font-[500]">Great Support 24/7</h2>
+                  <p className="mt-[5px] text-[14px] text-gray-600 ">Instant access to Contact</p>
                 </div>
               </div>
               <div className="flex items-center gap-[16px] mt-[24px]">
                 <img src="/assets/images/About/about-icon-shop.svg" alt="" />
                 <div>
-                  <h2 className="text-[18px] font-[500]">Customer Feedback</h2>
-                  <p className="mt-[5px] text-[14px] text-gray-600 ">Our happy customer</p>
+                  <h2 className="text-[18px] font-[500]">100% Sucure Payment</h2>
+                  <p className="mt-[5px] text-[14px] text-gray-600 ">We ensure your money is save</p>
                 </div>
               </div>
               <div className="flex items-center gap-[16px]  mt-[24px]">
                 <img src="/assets/images/About/about-icon-organ-food.svg" alt="" />
                 <div>
-                  <h2 className="text-[18px] font-[500]">Free Shipping</h2>
-                  <p className="mt-[5px] text-[14px] text-gray-600 ">Free shipping with discount</p>
+                  <h2 className="text-[18px] font-[500]">100% Organic Food</h2>
+                  <p className="mt-[5px] text-[14px] text-gray-600 ">100% healthy & Fresh food.</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
       <Container>
         <div className="mt-[160px] flex items-center  justify-between gap-[29px] ">
           <div className="">
@@ -129,20 +153,42 @@ function About() {
           </div>
         </div>
       </Container>
-      <div className="bg-gradient-to-r from-[#F2F2F2] to-[#FFF] ">
+
+      <div className="bg-gradient-to-b from-[#F2F2F2] to-[#FFF] ">
         <Container>
           <div className="pt-[80px] text-center">
             <h1 className="text-[48px] font-[600]">Our Awesome Team</h1>
             <p className="w-[640px] mx-auto text-gray-600 text-[16px]">Pellentesque a ante vulputate leo porttitor luctus sed eget eros. Nulla et rhoncus neque. Duis non diam eget est luctus tincidunt a a mi.</p>
           </div>
-
-          <div className=" mt-[100px] mb-[100px] flex overflow-hidden gap-[24px] pr-[10px]">
+          <div className="flex gap-[20px] relative">
+            <div className="border p-[13px] absolute top-[260px] left-[-70px] rounded-[50px] cursor-pointer bg-white hover:bg-[#00B207] hover:text-white" onClick={Right}><AiOutlineArrowLeft /></div>
+            <div className="border p-[13px] absolute top-[255px] right-[-70px] rounded-[50px] cursor-pointer bg-white hover:bg-[#00B207] hover:text-white" onClick={Left}><AiOutlineArrowRight /></div>
+          </div>
+          <div id="slider" className="scroll-smooth mt-[100px] pb-[100px] flex overflow-x-scroll  scrollbar-hide gap-[24px] pr-[10px]">
             {data.cards?.map((item) => (<div key={item.id}>
-              <div className="border w-[312px] h-[368px] bg-white rounded-[8px] mt-[20px] shadow-[0_20px_48px_0_rgba(0,38,3,0.08)]">
-                <img src={item.linkImg} alt="" />
+              <div className="border w-[312px] h-[368px] bg-white rounded-[8px] shadow-[0_20px_48px_0_rgba(0,38,3,0.08)]">
+                <img className="w-[312px] h-[280px]" src={item.linkImg} alt="" />
                 <div className="pt-[16px] pl-[20px]">
                   <h3 className="text-[18px] font-[500]">{item.title}</h3>
                   <p className="text-gray-500 text-[14px]">{item.category}</p>
+                </div>
+                <div className="overlay relative ">
+                  <div className="h-[280px] w-[311px]  content opacity-0 hover:opacity-100 cursor-pointer hover:bg-black hover:bg-opacity-40 rounded-t-lg flex items-center justify-center gap-[4px] absolute top-[-344px] left-0 hover:transition-all">
+                    <div className="flex items-center gap-1">
+                      <div className="hover:bg-primary text-white p-2 cursor-pointer rounded-full transition-all ease-in-out duration-500 hover:text-white">
+                        <BiLogoFacebook fontSize={24} />
+                      </div>
+                      <div className="hover:bg-primary text-white p-2 cursor-pointer rounded-full transition-all ease-in-out duration-500 hover:text-white">
+                        <BiLogoTwitter fontSize={24} />
+                      </div>
+                      <div className="hover:bg-primary text-white p-2 cursor-pointer rounded-full transition-all ease-in-out duration-500 hover:text-white">
+                        <FaPinterestP fontSize={24} />
+                      </div>
+                      <div className="hover:bg-primary text-white p-2 cursor-pointer rounded-full transition-all ease-in-out duration-500 hover:text-white">
+                        <BiLogoInstagram fontSize={24} />
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>))}
@@ -150,9 +196,53 @@ function About() {
         </Container>
       </div>
 
-    </div>
+      <div className=" bg-gradient-to-t from-gray-50 to-[#F2F2F2] pt-[100px]  pb-[100px]">
+        <Container>
+          <div className="flex items-center justify-between ">
+            <h1 className="text-[48px] font-[600]">Client Testimonail</h1>
+            <div className="flex items-center gap-[12px]">
+              <div className="border p-[13px] rounded-[50px] cursor-pointer bg-white hover:bg-[#00B207] hover:text-white" onClick={ClientSliderLeft}><AiOutlineArrowLeft /></div>
+              <div className="border p-[13px] rounded-[50px] cursor-pointer bg-white hover:bg-[#00B207] hover:text-white" onClick={ClientSliderRight}><AiOutlineArrowRight /></div>
+            </div>
+          </div>
+          <div id="client-slider" className="scroll-smooth mt-[50px] flex gap-[24px] overflow-x-scroll  scrollbar-hide">
+            {data.client?.map((item) => (
+              <div key={item.id}>
+                <div className="w-[420px] h-[250px] p-[24px] px-[24px] rounded-[8px] bg-white shadow-[0_10px_20px_0_rgba(0,0,0,0.01)]">
+                  <img src={item.icon} alt="icon" />
+                  <p className="w-[376px] text-[14px] my-[16px] text-gray-700">{item.title}</p>
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-[12px]">
+                      <img src={item.linkImg} alt="img" className="cursor-pointer " />
+                      <div>
+                        <h1 className="text-[16px] font-[500]">{item.user}</h1>
+                        <p className="text-[14px] text-gray-400">{item.category}</p>
+                      </div>
+                    </div>
+                    <div className="flex">
+                      {Array(5)
+                        .fill(undefined)
+                        .map((_, index) => (
+                          <img key={index} src="/assets/images/About/star-img.svg" alt="Star" />
+                        ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </Container>
+      </div>
 
+      <Container>
+        <div className="py-[80px]">
+          <a href="#">
+              <Icon></Icon>
+          </a>
+        </div>
+      </Container>
 
+    </>
   )
 }
 

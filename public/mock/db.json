@@ -1586,7 +1586,7 @@
         "id": 1,
         "title": "Jenny Wilson",
         "category": "Ceo & Founder",
-        "linkImg": "/assets/images/About/cards_img1.png"
+        "linkImg": "/assets/images/About/cards_people_img1.png"
       },
       {
         "id": 2,
@@ -1610,7 +1610,7 @@
         "id": 5,
         "title": "Jenny Wilson",
         "category": "Ceo & Founder",
-        "linkImg": "/assets/images/About/cards_img1.png"
+        "linkImg": "/assets/images/About/cards_people_img1.png"
       },
       {
         "id": 6,
@@ -1629,6 +1629,56 @@
         "title": "Robert Fox",
         "category": "Senior Farmer Manager",
         "linkImg": "/assets/images/About/cards_img4.png"
+      }
+    ],
+    "client": [
+      {
+        "id": 1,
+        "title": "Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet elit eu magna dictum, bibendum cursus velit sodales. Donec sed neque eget",
+        "user": "Robert Fox",
+        "category": "Customer",
+        "linkImg": "/assets/images/About/client-img1.svg",
+        "icon": "/assets/images/About/client-icon1.svg"
+      },
+      {
+        "id": 2,
+        "title": "Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet elit eu magna dictum, bibendum cursus velit sodales. Donec sed neque eget",
+        "user": "Dianne Russell",
+        "category": "Customer",
+        "linkImg": "/assets/images/About/client-img2.svg",
+        "icon": "/assets/images/About/client-icon1.svg"
+      },
+      {
+        "id": 3,
+        "title": "Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet elit eu magna dictum, bibendum cursus velit sodales. Donec sed neque eget",
+        "user": "Eleanor Pena",
+        "category": "Customer",
+        "linkImg": "/assets/images/About/client-img3.svg",
+        "icon": "/assets/images/About/client-icon1.svg"
+      },
+      {
+        "id": 4,
+        "title": "Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet elit eu magna dictum, bibendum cursus velit sodales. Donec sed neque eget",
+        "user": "Robert Fox",
+        "category": "Customer",
+        "linkImg": "/assets/images/About/client-img1.svg",
+        "icon": "/assets/images/About/client-icon1.svg"
+      },
+      {
+        "id": 5,
+        "title": "Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet elit eu magna dictum, bibendum cursus velit sodales. Donec sed neque eget",
+        "user": "Robert Fox",
+        "category": "Customer",
+        "linkImg": "/assets/images/About/client-img2.svg",
+        "icon": "/assets/images/About/client-icon1.svg"
+      },
+      {
+        "id": 6,
+        "title": "Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet elit eu magna dictum, bibendum cursus velit sodales. Donec sed neque eget",
+        "user": "Robert Fox",
+        "category": "Customer",
+        "linkImg": "/assets/images/About/client-img3.svg",
+        "icon": "/assets/images/About/client-icon1.svg"
       }
     ]
   },
