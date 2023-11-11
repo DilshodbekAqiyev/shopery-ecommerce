@@ -38,6 +38,7 @@
       "orders": []
     },
     {
+      "id": 2,
       "firstName": "John1",
       "lastName": "Doe1",
       "email": "johndoe1@gmail.com",
@@ -61,6 +62,11 @@
       "shoppingCart": [],
       "checkout": [],
       "orders": []
+    },
+    {
+      "id": 3,
+      "name": "suhrob",
+      "category": "vegetables"
     }
   ],
   "products": [

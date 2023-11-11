@@ -29,7 +29,7 @@ function Checkout() {
     ;(async () => {
       const response = await instance.get(`users`)
       const correctedData = response?.data?.filter((el) => el.token === token)
-      setCor(correctedData[0].billingAddress)
+      setCor(correctedData[0]?.billingAddress)
       setNewData(correctedData)
     })()
   }, [])
