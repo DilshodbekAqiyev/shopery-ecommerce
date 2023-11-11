@@ -9,7 +9,6 @@ import SliderComponent from './components/SliderComponent'
 import Rating from './components/Rating'
 import TopComponent from './components/TopComponent'
 import { getUser } from '../../utils/utils'
-// import { LogIn } from 'lucide-react'
 
 function Shop() {
   const { state, dispatch } = useShopContext()
