@@ -168,6 +168,7 @@ function Checkout() {
             </label>
           </div>
           <div className=" w-2/5">
+            
             <label>
               <p className=" mb-2">Phone</p>
               <Input
