@@ -51,6 +51,7 @@ const Home = () => {
                 </span>{' '}
                 {index < vegetablesData.length - 1 ? (
                   <span className="mx-[10px] text-[#B4CCB4] font-[400]">|</span>
+                  
                 ) : (
                   ''
                 )}
