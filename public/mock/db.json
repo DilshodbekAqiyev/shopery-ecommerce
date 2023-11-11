@@ -21,18 +21,7 @@
         "email": "dianne.russell@gmail.com",
         "phone": 6935551232
       },
-      "wishlist": [
-        {
-          "id": 1,
-          "name": "Big Potatos",
-          "category": "Vegetables"
-        },
-        {
-          "id": 2,
-          "name": "Fresh Mango",
-          "category": "Health"
-        }
-      ],
+      "wishlist": [],
       "shoppingCart": [],
       "checkout": [],
       "orders": []
@@ -62,11 +51,6 @@
       "shoppingCart": [],
       "checkout": [],
       "orders": []
-    },
-    {
-      "id": 3,
-      "name": "suhrob",
-      "category": "vegetables"
     }
   ],
   "products": [
