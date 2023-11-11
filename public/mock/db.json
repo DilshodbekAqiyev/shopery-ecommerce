@@ -38,6 +38,7 @@
       "orders": []
     },
     {
+      "id": 2,
       "firstName": "John1",
       "lastName": "Doe1",
       "email": "johndoe1@gmail.com",
@@ -959,8 +960,8 @@
       "title": "Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.",
       "previewImage": "/assets/images/blog/img1.svg",
       "extraImages": [
-        "https://yandex.com/images/search?cbir_id=1604867%2F8YTLOEM7AEGEFJ0nkSEaBQ1714&pos=11&rpt=imageview&img_url=https%3A%2F%2Fthumbs.dreamstime.com%2Fb%2Ffruits-3286980.jpg&lr=10335&cbir_page=similar&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F1604867%2F8YTLOEM7AEGEFJ0nkSEaBQ1714%2Forig",
-        "https://yandex.com/images/search?cbir_id=1604867%2F8YTLOEM7AEGEFJ0nkSEaBQ1714&p=2&text=url%3A%22avatars.mds.yandex.net%2Fget-images-cbir%2F1604867%2F8YTLOEM7AEGEFJ0nkSEaBQ1714%2Forig%22&pos=26&rpt=imageview&img_url=https%3A%2F%2Fordinacija-petricevic.hr%2Fwp-content%2Fuploads%2F2021%2F12%2FCitrusi-1-rotated.jpg&lr=10335&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F1604867%2F8YTLOEM7AEGEFJ0nkSEaBQ1714%2Forig&cbir_page=similar"
+        "https://avatars.mds.yandex.net/i?id=4def4eca67406ceac50a683e32818cf3c9540037-8207729-images-thumbs&ref=rim&n=33&w=391&h=313",
+        "https://avatars.mds.yandex.net/i?id=bc082c7b6c1a3873028078aeaed429757d5b9238-10025687-images-thumbs&ref=rim&n=33&w=367&h=313"
       ],
       "author": "kimdir@gmail.com",
       "createdDate": "Tue Nov 07 2023 15:05:24 GMT+0500 (GMT+05:00)",
@@ -1116,7 +1117,7 @@
       "title": "Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.",
       "previewImage": "/assets/images/blog/img4.svg",
       "extraImages": [
-        "https://yandex.com/images/search?cbir_id=4079919%2FLgi36tFdxACGjEhUZdRcHg2088&pos=0&rpt=imageview&img_url=https%3A%2F%2Fs0.rbk.ru%2Fv6_top_pics%2Fmedia%2Fimg%2F8%2F50%2F756550812981508.jpg&lr=10335&cbir_page=similar&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4079919%2FLgi36tFdxACGjEhUZdRcHg2088%2Forig",
+        "https://avatars.mds.yandex.net/i?id=721e159f5136d2ad304056e30ac8cddc1fd0f4f4-9678040-images-thumbs&n=13",
         "https://avatars.mds.yandex.net/i?id=4d0242f70df50a9ac2d5b95c772ae587d0d96476-5232014-images-thumbs&n=13"
       ],
       "author": "nimadir@gmail.com",
@@ -1220,9 +1221,10 @@
       "title": "Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.",
       "previewImage": "/assets/images/blog/img6.svg",
       "extraImages": [
-        "https://avatars.mds.yandex.net/i?id=4f5e938db6785addad8508c435f1300010bb43ca-7756591-images-thumbs&n=13",
-        "https://avatars.mds.yandex.net/i?id=fec9ea2fd5ccf595c3d3330831b95d3c0bf6a954-6968696-images-thumbs&n=13"
+        "https://avatars.mds.yandex.net/i?id=b850af6b745c221b42499945e5fd7af816d69844-9223337-images-thumbs&n=13",
+        "https://avatars.mds.yandex.net/i?id=b850af6b745c221b42499945e5fd7af816d69844-9223337-images-thumbs&n=13"
       ],
+
       "author": "nimadir@gmail.com",
       "createdDate": "Wen Nov 01 2023 15:05:24 GMT+0500 (GMT+05:00)",
       "category": "Fresh Fruit",
@@ -1377,8 +1379,8 @@
       "title": "Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.",
       "previewImage": "/assets/images/blog/img9.svg",
       "extraImages": [
-        "https://avatars.mds.yandex.net/i?id=421bcf30d93b8079c2f75c12491d10d8d8a240d3-10639796-images-thumbs&n=13",
-        "https://avatars.mds.yandex.net/i?id=c501aa526e28b17da3f59fd03472143c-5502450-images-thumbs&n=13"
+        "https://avatars.mds.yandex.net/i?id=4f5e938db6785addad8508c435f1300010bb43ca-7756591-images-thumbs&n=13",
+        "https://avatars.mds.yandex.net/i?id=fec9ea2fd5ccf595c3d3330831b95d3c0bf6a954-6968696-images-thumbs&n=13"
       ],
       "author": "nimadir@gmail.com",
       "createdDate": "Wen Nov 01 2023 15:05:24 GMT+0500 (GMT+05:00)",
@@ -1429,9 +1431,10 @@
       "title": "Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.",
       "previewImage": "/assets/images/blog/img10.svg",
       "extraImages": [
-        "https://avatars.mds.yandex.net/i?id=b850af6b745c221b42499945e5fd7af816d69844-9223337-images-thumbs&n=13",
-        "https://avatars.mds.yandex.net/i?id=b850af6b745c221b42499945e5fd7af816d69844-9223337-images-thumbs&n=13"
+        "https://avatars.mds.yandex.net/i?id=421bcf30d93b8079c2f75c12491d10d8d8a240d3-10639796-images-thumbs&n=13",
+        "https://avatars.mds.yandex.net/i?id=c501aa526e28b17da3f59fd03472143c-5502450-images-thumbs&n=13"
       ],
+
       "author": "nimadir@gmail.com",
       "createdDate": "Mon Nov 06 2023 15:05:24 GMT+0500 (GMT+05:00)",
       "category": "Vegetables",
@@ -1468,7 +1471,6 @@
           "date": "7 Apr, 2021",
           "comment": "Nulla molestie interdum ultricies. "
         },
-
         {
           "id": "c5",
           "userImg": "",
@@ -1494,11 +1496,8 @@
       {
         "title": "We Delivered, You Enjoy Your Order.",
         "content": "Ut suscipit egestas suscipit. Sed posuere pellentesque nunc, ultrices consectetur velit dapibus eu. Mauris sollicitudin dignissim diam, ac mattis eros accumsan rhoncus. Curabitur auctor bibendum nunc eget elementum.",
-        "image": "/assets/images/about/nimadir.png",
-        "button": {
-          "text": "Shop Now",
-          "link": "/shop"
-        }
+        "image": "/assets/images/About/fruit-about-img.png",
+        "button": "Shop Now"
       }
     ],
     "cards": [
@@ -1506,7 +1505,7 @@
         "id": 1,
         "title": "Jenny Wilson",
         "category": "Ceo & Founder",
-        "linkImg": "/assets/images/About/cards_img1.png"
+        "linkImg": "/assets/images/About/cards_people_img1.png"
       },
       {
         "id": 2,
@@ -1530,7 +1529,7 @@
         "id": 5,
         "title": "Jenny Wilson",
         "category": "Ceo & Founder",
-        "linkImg": "/assets/images/About/cards_img1.png"
+        "linkImg": "/assets/images/About/cards_people_img1.png"
       },
       {
         "id": 6,
@@ -1549,6 +1548,56 @@
         "title": "Robert Fox",
         "category": "Senior Farmer Manager",
         "linkImg": "/assets/images/About/cards_img4.png"
+      }
+    ],
+    "client": [
+      {
+        "id": 1,
+        "title": "Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet elit eu magna dictum, bibendum cursus velit sodales. Donec sed neque eget",
+        "user": "Robert Fox",
+        "category": "Customer",
+        "linkImg": "/assets/images/About/client-img1.svg",
+        "icon": "/assets/images/About/client-icon1.svg"
+      },
+      {
+        "id": 2,
+        "title": "Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet elit eu magna dictum, bibendum cursus velit sodales. Donec sed neque eget",
+        "user": "Dianne Russell",
+        "category": "Customer",
+        "linkImg": "/assets/images/About/client-img2.svg",
+        "icon": "/assets/images/About/client-icon1.svg"
+      },
+      {
+        "id": 3,
+        "title": "Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet elit eu magna dictum, bibendum cursus velit sodales. Donec sed neque eget",
+        "user": "Eleanor Pena",
+        "category": "Customer",
+        "linkImg": "/assets/images/About/client-img3.svg",
+        "icon": "/assets/images/About/client-icon1.svg"
+      },
+      {
+        "id": 4,
+        "title": "Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet elit eu magna dictum, bibendum cursus velit sodales. Donec sed neque eget",
+        "user": "Robert Fox",
+        "category": "Customer",
+        "linkImg": "/assets/images/About/client-img1.svg",
+        "icon": "/assets/images/About/client-icon1.svg"
+      },
+      {
+        "id": 5,
+        "title": "Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet elit eu magna dictum, bibendum cursus velit sodales. Donec sed neque eget",
+        "user": "Robert Fox",
+        "category": "Customer",
+        "linkImg": "/assets/images/About/client-img2.svg",
+        "icon": "/assets/images/About/client-icon1.svg"
+      },
+      {
+        "id": 6,
+        "title": "Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet elit eu magna dictum, bibendum cursus velit sodales. Donec sed neque eget",
+        "user": "Robert Fox",
+        "category": "Customer",
+        "linkImg": "/assets/images/About/client-img3.svg",
+        "icon": "/assets/images/About/client-icon1.svg"
       }
     ]
   }
