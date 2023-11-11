@@ -1,14 +1,14 @@
-import BlogSearch from './components/Search'
-import BlogFilterButton from './components/FilterButton'
-import BlogTopCategories from './components/TopCategories'
-import BlogPopularTag from './components/PopularTag'
-import BlogOurGallery from './components/OurGallery'
-import BlogRecentlyAdded from './components/RecentlyAdded'
+import BlogSearch from './Search'
+import BlogFilterButton from './FilterButton'
+import BlogTopCategories from './TopCategories'
+import BlogPopularTag from './PopularTag'
+import BlogOurGallery from './OurGallery'
+import BlogRecentlyAdded from './RecentlyAdded'
 
-import Line from './components/Line'
+import Line from './Line'
 
 import { useContext } from 'react'
-import BlogContext from './context/BlogContext'
+import BlogContext from '../context/BlogContext'
 
 const BlogControl = () => {
   const DATA = useContext(BlogContext)

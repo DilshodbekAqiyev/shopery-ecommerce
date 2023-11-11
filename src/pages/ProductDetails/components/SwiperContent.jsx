@@ -55,7 +55,7 @@ function SwiperContent({ product }) {
           className="cursor-pointer transition-all ease-in-out duration-300 hover:text-primary text-gray-400"
         />
       </div>
-      <div className="w-[556px] h-[556px] border-2">
+      <div className="w-[556px] h-[556px]">
         <img src={mainImg} alt="sliderImg" loading="lazy" className="w-full h-full" />
       </div>
     </div>

@@ -2,29 +2,24 @@ import { createBrowserRouter, RouterProvider, createRoutesFromElements, Route, N
 
 // Pages
 import Home from './pages/Home/Home'
+
 import Shop from './pages/Shop'
 import ProductDetails from './pages/ProductDetails/ProductDetails'
 import Signup from './pages/Auth/Signup'
 import Signin from './pages/Auth/Signin'
 import PageNotFound from './pages/PageNotFound'
 import About from './pages/About/About'
-import Checkout from './pages/Checkout/Checkout'
-import Wishlist from './pages/Wishlist/Wishlist'
-import ShoppingCart from './pages/ShoppingCart/ShoppingCart'
+
+import BlogCards from './pages/Blog/components/BlogCards'
+import SingleBlog from './pages/Blog/Single Blog/SingleBlog'
+import DashboardInfo from './pages/Dashboard/components/DashboardInfo'
+import OrderDetail from './pages/Dashboard/components/OrderDetail'
+import UserAddress from './pages/Dashboard/components/UserAddress'
+import Dashboard from './pages/Dashboard/Dashboard'
 
 // Layouts
 import RootLayout from './components/layouts/RootLayout'
-import Dashboard from './pages/Dashboard/Dashboard'
-import UserAddress from './pages/Dashboard/components/UserAddress'
-import DashboardInfo from './pages/Dashboard/components/DashboardInfo'
-import OrderDetail from './pages/Dashboard/components/OrderDetail'
-
-//Contexts
-import ShopProvider from './contexts/shop/ShopContext'
-
 import Index from './pages/Blog/Index'
-import BlogCards from './pages/Blog/components/BlogCards'
-import SingleBlog from './pages/Blog/Single Blog/SingleBlog'
 
 export default function App() {
   const routes = createBrowserRouter(
@@ -64,10 +59,12 @@ export default function App() {
           </Route>
           <Route path="wishlist" element={<UserAddress />} />
         </Route>
+        <Route path="blog/:CardID" element={<SingleBlog />} />
+        <Route path="shop" element={<Shop />} />
+        <Route path="shop/:productID" element={<ProductDetails />} />
+        <Route path="sign-up" element={<Signup />} />
+        <Route path="sign-in" element={<Signin />} />
         <Route path="about" element={<About />} />
-        <Route path="checkout" element={<Checkout />} />
-        <Route path="wishlist" element={<Wishlist />} />
-        <Route path="shopping-cart" element={<ShoppingCart />} />
         <Route path="PageNotFound" element={<PageNotFound />} />
         <Route path="*" element={<Navigate to={'/PageNotFound'} />} />
       </Route>
