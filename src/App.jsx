@@ -12,7 +12,7 @@ import About from './pages/About/About'
 import Checkout from './pages/Checkout/Checkout'
 import Wishlist from './pages/Wishlist/Wishlist'
 import ShoppingCart from './pages/ShoppingCart/ShoppingCart'
-
+import Faqs from './pages/Faqs/Faqs'
 // Layouts
 import RootLayout from './components/layouts/RootLayout'
 import Dashboard from './pages/Dashboard/Dashboard'
@@ -70,6 +70,7 @@ export default function App() {
         <Route path="about" element={<About />} />
         <Route path="checkout" element={<Checkout />} />
         <Route path="wishlist" element={<Wishlist />} />
+        <Route path="faqs" element={<Faqs />} />
         <Route path="shopping-cart" element={<ShoppingCart />} />
         <Route path="PageNotFound" element={<PageNotFound />} />
         <Route path="*" element={<Navigate to={'/PageNotFound'} />} />
