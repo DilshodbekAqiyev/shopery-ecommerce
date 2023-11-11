@@ -31,18 +31,19 @@ const ProductCard = (props) => {
 
   useEffect(() => {
     // eslint-disable-next-line no-extra-semi
-    ;(async () => {
+    ; (async () => {
       const response = await instance.get(`products/${id}`)
       setFoundProduct(response.data)
     })()
   }, [id])
 
+
+
   return (
     <>
       <div
-        className={`w-[330px] bg-white shadow-lg  p-4 relative cursor-pointer transition-transform border-[2px] border-solid border-branding-[#2C742F] hover:shadow-[#00B207] hover:shadow-md ${
-          isHovered ? 'border-[#2C742F]' : ''
-        } ${featrues ? 'border border-[#E6E6E6] w-1/5 h-auto' : ''}`}
+        className={`w-[300px] bg-white shadow-lg  p-4 relative cursor-pointer transition-transform border-[2px] border-solid border-branding-[#2C742F] hover:shadow-[#00B207] hover:shadow-md ${isHovered ? 'border-[#2C742F]' : ''
+          } ${featrues ? 'border border-[#E6E6E6] w-1/5 h-auto' : ''}`}
         onMouseEnter={handleHover}
         onMouseLeave={handleMouseLeave}
         onClick={() => navigate('/shop/' + id)}
@@ -64,9 +65,8 @@ const ProductCard = (props) => {
         <div className={`mt-[20px] flex justify-between items-center ${featrues ? 'mt-[10px]' : ' '}`}>
           <div>
             <div
-              className={`text-base font-[400] text-[16px] leading-6 text-[#2B572E] ${featrues ? 'text-[14px]' : ' '} ${
-                isHovered ? 'text-[#00B207]' : ''
-              }`}
+              className={`text-base font-[400] text-[16px] leading-6 text-[#2B572E] ${featrues ? 'text-[14px]' : ' '} ${isHovered ? 'text-[#00B207]' : ''
+                }`}
             >
               {name}
             </div>
@@ -83,9 +83,8 @@ const ProductCard = (props) => {
             </div>
           </div>
           <div
-            className={`p-3 rounded-full w-[40px] h-[40px] flex justify-center items-center ${
-              isHovered ? 'bg-[#00B207]' : 'bg-grays-gray0.5'
-            }`}
+            className={`p-3 rounded-full w-[40px] h-[40px] flex justify-center items-center ${isHovered ? 'bg-[#00B207]' : 'bg-grays-gray0.5'
+              }`}
             onClick={handleClick}
           >
             <img
