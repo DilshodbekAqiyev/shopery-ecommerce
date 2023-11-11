@@ -34,19 +34,21 @@ function Checkout() {
     })()
   }, [])
   const editUser = async () => {
+    console.log(newData[0].id)
     newData[0].billingAddress = { ...initialState, ...state }
     // console.log({ ...newData })
     axios
-      .patch(`https://jsonplaceholder.typicode.com/posts/${token}`, newData)
+      .patch(`http://localhost:3000/users/${newData[0].id}`, newData[0])
       .then((response) => {
-        console.log(response.data)
+        console.log(response)
+        console.log(response?.data)
       })
       .catch((error) => {
         console.error(error)
       })
   }
 
-  const { city, companyName, country, email, firstName, lastName, phone, streetAddress, zipCode } = cor
+  const { city, companyName, country, email, firstName, lastName, phone, streetAddress, zipCode } = cor || {}
   return (
     <div className="container flex justify-between mt-5">
       <div className=" w-4/6 pr-6">
@@ -103,8 +105,13 @@ function Checkout() {
                   dispatch({ type: CHECKOUT_TYPES.REGION, payload: val.target.value })
                 }}
               >
+                {country}?{' '}
                 <option selected disabled>
                   {country}
+                </option>
+                :
+                <option selected disabled>
+                  country
                 </option>
                 {data?.map((el, idx) => {
                   return (
@@ -120,8 +127,13 @@ function Checkout() {
             <label>
               <p className=" mb-2">States</p>
               <select onChange={(e) => dispatch({ type: CHECKOUT_TYPES.STATES, payload: e.target.value })}>
+                {city}?{' '}
                 <option selected disabled>
                   {city}
+                </option>
+                :
+                <option selected disabled>
+                  city
                 </option>
                 {city1[0]?.cities?.map((el, idx) => {
                   return (
@@ -156,6 +168,7 @@ function Checkout() {
             </label>
           </div>
           <div className=" w-2/5">
+            
             <label>
               <p className=" mb-2">Phone</p>
               <Input
