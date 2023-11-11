@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
 
-function Icon() {
+function MangoIcon() {
     const [isHovered, setIsHovered] = useState(false);
     return (
         <div className={`svg-container ${isHovered ? 'hovered' : ''}`}
@@ -128,4 +128,4 @@ function Icon() {
     )
 }
 
-export default Icon
+export default MangoIcon

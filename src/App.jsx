@@ -20,6 +20,7 @@ import Dashboard from './pages/Dashboard/Dashboard'
 // Layouts
 import RootLayout from './components/layouts/RootLayout'
 import Index from './pages/Blog/Index'
+import ShopProvider from './contexts/shop/ShopContext'
 
 export default function App() {
   const routes = createBrowserRouter(

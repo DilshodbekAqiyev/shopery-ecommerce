@@ -1573,12 +1573,9 @@
       {
         "title": "We Delivered, You Enjoy Your Order.",
         "content": "Ut suscipit egestas suscipit. Sed posuere pellentesque nunc, ultrices consectetur velit dapibus eu. Mauris sollicitudin dignissim diam, ac mattis eros accumsan rhoncus. Curabitur auctor bibendum nunc eget elementum.",
-        "image": "/assets/images/about/nimadir.png",
-        "button": {
-          "text": "Shop Now",
-          "link": "/shop"
+        "image":  "/assets/images/About/fruit-about-img.png",
+        "button": "Shop Now"
         }
-      }
     ],
     "cards": [
       {
