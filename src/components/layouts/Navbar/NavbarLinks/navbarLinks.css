@@ -102,3 +102,57 @@
 .navigationTel:hover a {
   color: #00b207;
 }
+
+@media (max-width: 1120px) {
+  .navbarLinks li a {
+    padding: 20px 12px;
+  }
+  .mainMenu {
+    gap: 12px;
+  }
+  .navbarLinks li.navbarDropdown a {
+    gap: 6px;
+  }
+  .navigationTel a {
+    gap: 12px;
+  }
+}
+
+@media (max-width: 968px) {
+  #sheet {
+    display: initial;
+  }
+}
+
+@media (min-width: 968px) {
+  #sheet {
+    display: none;
+  }
+}
+
+@media (max-width: 968px) {
+  .navigationTel {
+    display: none;
+  }
+  #menus2 {
+    display: none;
+  }
+  .navbarLinks li a {
+    padding: 20px 8px;
+  }
+  .mainMenu {
+    gap: 8px;
+  }
+  .navbarLinks li.navbarDropdown a {
+    gap: 4px;
+  }
+}
+
+@media (max-width: 640px) {
+  #menus {
+    display: none;
+  }
+  .mainMenu {
+    gap: 16px;
+  }
+}

@@ -145,13 +145,7 @@
         }
       ],
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": [
-        "Vegetables",
-        "Healthy",
-        "Chinese",
-        "Cabbage",
-        "Green Cabbage"
-      ],
+      "tag": ["Vegetables", "Healthy", "Chinese", "Cabbage", "Green Cabbage"],
       "reviews": [
         {
           "id": 1,
@@ -262,13 +256,7 @@
         }
       ],
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": [
-        "Vegetables",
-        "Healthy",
-        "Chinese",
-        "Cabbage",
-        "Green Cabbage"
-      ],
+      "tag": ["Vegetables", "Healthy", "Chinese", "Cabbage", "Green Cabbage"],
       "reviews": [
         {
           "id": 1,
@@ -379,13 +367,7 @@
         }
       ],
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": [
-        "Vegetables",
-        "Healthy",
-        "Chinese",
-        "Cabbage",
-        "Green Cabbage"
-      ],
+      "tag": ["Vegetables", "Healthy", "Chinese", "Cabbage", "Green Cabbage"],
       "reviews": [
         {
           "id": 1,
@@ -496,12 +478,7 @@
         }
       ],
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": [
-        "Vegetables",
-        "Healthy",
-        "Cabbage",
-        "Green Cabbage"
-      ],
+      "tag": ["Vegetables", "Healthy", "Cabbage", "Green Cabbage"],
       "reviews": [
         {
           "id": 1,
@@ -612,12 +589,7 @@
         }
       ],
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": [
-        "Vegetables",
-        "Healthy",
-        "Cabbage",
-        "Green Cabbage"
-      ],
+      "tag": ["Vegetables", "Healthy", "Cabbage", "Green Cabbage"],
       "reviews": [
         {
           "id": 1,
@@ -728,12 +700,7 @@
         }
       ],
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": [
-        "Vegetables",
-        "Healthy",
-        "Cabbage",
-        "Green Cabbage"
-      ],
+      "tag": ["Vegetables", "Healthy", "Cabbage", "Green Cabbage"],
       "reviews": [
         {
           "id": 1,
@@ -844,12 +811,7 @@
         }
       ],
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": [
-        "Vegetables",
-        "Healthy",
-        "Cabbage",
-        "Green Cabbage"
-      ],
+      "tag": ["Vegetables", "Healthy", "Cabbage", "Green Cabbage"],
       "reviews": [
         {
           "id": 1,
@@ -960,12 +922,7 @@
         }
       ],
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": [
-        "Vegetables",
-        "Healthy",
-        "Cabbage",
-        "Green Cabbage"
-      ],
+      "tag": ["Vegetables", "Healthy", "Cabbage", "Green Cabbage"],
       "reviews": [
         {
           "id": 1,
@@ -992,19 +949,15 @@
       "title": "Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.",
       "previewImage": "/assets/images/blog/img1.svg",
       "extraImages": [
-        "https://yandex.com/images/search?cbir_id=1604867%2F8YTLOEM7AEGEFJ0nkSEaBQ1714&pos=11&rpt=imageview&img_url=https%3A%2F%2Fthumbs.dreamstime.com%2Fb%2Ffruits-3286980.jpg&lr=10335&cbir_page=similar&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F1604867%2F8YTLOEM7AEGEFJ0nkSEaBQ1714%2Forig",
-        "https://yandex.com/images/search?cbir_id=1604867%2F8YTLOEM7AEGEFJ0nkSEaBQ1714&p=2&text=url%3A%22avatars.mds.yandex.net%2Fget-images-cbir%2F1604867%2F8YTLOEM7AEGEFJ0nkSEaBQ1714%2Forig%22&pos=26&rpt=imageview&img_url=https%3A%2F%2Fordinacija-petricevic.hr%2Fwp-content%2Fuploads%2F2021%2F12%2FCitrusi-1-rotated.jpg&lr=10335&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F1604867%2F8YTLOEM7AEGEFJ0nkSEaBQ1714%2Forig&cbir_page=similar"
+        "https://avatars.mds.yandex.net/i?id=4def4eca67406ceac50a683e32818cf3c9540037-8207729-images-thumbs&ref=rim&n=33&w=391&h=313",
+        "https://avatars.mds.yandex.net/i?id=bc082c7b6c1a3873028078aeaed429757d5b9238-10025687-images-thumbs&ref=rim&n=33&w=367&h=313"
       ],
       "author": "kimdir@gmail.com",
       "createdDate": "Tue Nov 07 2023 15:05:24 GMT+0500 (GMT+05:00)",
       "category": "Cooking",
       "readingTime": 4,
       "content": "<p>lorem ipsum</p>",
-      "tags": [
-        "Healthy",
-        "Dinner",
-        "Meat"
-      ],
+      "tags": ["Healthy", "Dinner", "Meat"],
       "comments": [
         {
           "id": "c1",
@@ -1056,11 +1009,7 @@
       "category": "Beverages",
       "readingTime": 5,
       "content": "<p>lorem ipsum</p>",
-      "tags": [
-        "Lounch",
-        "Kid foods",
-        "Vegetarian"
-      ],
+      "tags": ["Lounch", "Kid foods", "Vegetarian"],
       "comments": [
         {
           "id": "c1",
@@ -1090,6 +1039,7 @@
           "date": "26 Apr, 2021",
           "comment": "In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam."
         },
+
         {
           "id": "c5",
           "userImg": "",
@@ -1112,11 +1062,7 @@
       "category": "Vegetables",
       "readingTime": 6,
       "content": "<p>lorem ipsum</p>",
-      "tags": [
-        "Tiffin",
-        "Vitamins",
-        "Bread"
-      ],
+      "tags": ["Tiffin", "Vitamins", "Bread"],
       "comments": [
         {
           "id": "c1",
@@ -1160,7 +1106,7 @@
       "title": "Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.",
       "previewImage": "/assets/images/blog/img4.svg",
       "extraImages": [
-        "https://yandex.com/images/search?cbir_id=4079919%2FLgi36tFdxACGjEhUZdRcHg2088&pos=0&rpt=imageview&img_url=https%3A%2F%2Fs0.rbk.ru%2Fv6_top_pics%2Fmedia%2Fimg%2F8%2F50%2F756550812981508.jpg&lr=10335&cbir_page=similar&url=https%3A%2F%2Favatars.mds.yandex.net%2Fget-images-cbir%2F4079919%2FLgi36tFdxACGjEhUZdRcHg2088%2Forig",
+        "https://avatars.mds.yandex.net/i?id=721e159f5136d2ad304056e30ac8cddc1fd0f4f4-9678040-images-thumbs&n=13",
         "https://avatars.mds.yandex.net/i?id=4d0242f70df50a9ac2d5b95c772ae587d0d96476-5232014-images-thumbs&n=13"
       ],
       "author": "nimadir@gmail.com",
@@ -1168,11 +1114,7 @@
       "category": "Bread & Bakery",
       "readingTime": 6,
       "content": "<p>lorem ipsum</p>",
-      "tags": [
-        "Snacks",
-        "Tiffin",
-        "Low fat"
-      ],
+      "tags": ["Snacks", "Tiffin", "Low fat"],
       "comments": [
         {
           "id": "c1",
@@ -1224,11 +1166,7 @@
       "category": "Beauty & Health",
       "readingTime": 6,
       "content": "<p>lorem ipsum</p>",
-      "tags": [
-        "Kid foods",
-        "Healthy",
-        "Low fat"
-      ],
+      "tags": ["Kid foods", "Healthy", "Low fat"],
       "comments": [
         {
           "id": "c1",
@@ -1272,19 +1210,16 @@
       "title": "Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.",
       "previewImage": "/assets/images/blog/img6.svg",
       "extraImages": [
-        "https://avatars.mds.yandex.net/i?id=4f5e938db6785addad8508c435f1300010bb43ca-7756591-images-thumbs&n=13",
-        "https://avatars.mds.yandex.net/i?id=fec9ea2fd5ccf595c3d3330831b95d3c0bf6a954-6968696-images-thumbs&n=13"
+        "https://avatars.mds.yandex.net/i?id=b850af6b745c221b42499945e5fd7af816d69844-9223337-images-thumbs&n=13",
+        "https://avatars.mds.yandex.net/i?id=b850af6b745c221b42499945e5fd7af816d69844-9223337-images-thumbs&n=13"
       ],
+
       "author": "nimadir@gmail.com",
       "createdDate": "Wen Nov 01 2023 15:05:24 GMT+0500 (GMT+05:00)",
       "category": "Fresh Fruit",
       "readingTime": 4,
       "content": "<p>lorem ipsum</p>",
-      "tags": [
-        "Fresh Fruit",
-        "Meat",
-        "Bread"
-      ],
+      "tags": ["Fresh Fruit", "Meat", "Bread"],
       "comments": [
         {
           "id": "c1",
@@ -1314,6 +1249,7 @@
           "date": "26 Apr, 2021",
           "comment": "In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam."
         },
+
         {
           "id": "c5",
           "userImg": "",
@@ -1336,11 +1272,7 @@
       "category": "Vegetables",
       "readingTime": 6,
       "content": "<p>lorem ipsum</p>",
-      "tags": [
-        "Meat",
-        "Dinner",
-        "Vegetarian"
-      ],
+      "tags": ["Meat", "Dinner", "Vegetarian"],
       "comments": [
         {
           "id": "c1",
@@ -1392,11 +1324,7 @@
       "category": "Fresh Fruit",
       "readingTime": 6,
       "content": "<p>lorem ipsum</p>",
-      "tags": [
-        "Healthy",
-        "Snacks",
-        "Tiffin"
-      ],
+      "tags": ["Healthy", "Snacks", "Tiffin"],
       "comments": [
         {
           "id": "c1",
@@ -1440,19 +1368,15 @@
       "title": "Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.",
       "previewImage": "/assets/images/blog/img9.svg",
       "extraImages": [
-        "https://avatars.mds.yandex.net/i?id=421bcf30d93b8079c2f75c12491d10d8d8a240d3-10639796-images-thumbs&n=13",
-        "https://avatars.mds.yandex.net/i?id=c501aa526e28b17da3f59fd03472143c-5502450-images-thumbs&n=13"
+        "https://avatars.mds.yandex.net/i?id=4f5e938db6785addad8508c435f1300010bb43ca-7756591-images-thumbs&n=13",
+        "https://avatars.mds.yandex.net/i?id=fec9ea2fd5ccf595c3d3330831b95d3c0bf6a954-6968696-images-thumbs&n=13"
       ],
       "author": "nimadir@gmail.com",
       "createdDate": "Wen Nov 01 2023 15:05:24 GMT+0500 (GMT+05:00)",
       "category": "Fresh Fruit",
       "readingTime": 4,
       "content": "<p>lorem ipsum</p>",
-      "tags": [
-        "Launch",
-        "Snacks",
-        "Bread"
-      ],
+      "tags": ["Launch", "Snacks", "Bread"],
       "comments": [
         {
           "id": "c1",
@@ -1496,19 +1420,16 @@
       "title": "Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.",
       "previewImage": "/assets/images/blog/img10.svg",
       "extraImages": [
-        "https://avatars.mds.yandex.net/i?id=b850af6b745c221b42499945e5fd7af816d69844-9223337-images-thumbs&n=13",
-        "https://avatars.mds.yandex.net/i?id=b850af6b745c221b42499945e5fd7af816d69844-9223337-images-thumbs&n=13"
+        "https://avatars.mds.yandex.net/i?id=421bcf30d93b8079c2f75c12491d10d8d8a240d3-10639796-images-thumbs&n=13",
+        "https://avatars.mds.yandex.net/i?id=c501aa526e28b17da3f59fd03472143c-5502450-images-thumbs&n=13"
       ],
+
       "author": "nimadir@gmail.com",
       "createdDate": "Mon Nov 06 2023 15:05:24 GMT+0500 (GMT+05:00)",
       "category": "Vegetables",
       "readingTime": 4,
       "content": "<p>lorem ipsum</p>",
-      "tags": [
-        "Vegetarian",
-        "Vitamins",
-        "Dinner"
-      ],
+      "tags": ["Vegetarian", "Vitamins", "Dinner"],
       "comments": [
         {
           "id": "c1",
@@ -1524,6 +1445,7 @@
           "date": "26 Apr, 2021",
           "comment": "In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam."
         },
+
         {
           "id": "c3",
           "userImg": "",
@@ -1563,11 +1485,8 @@
       {
         "title": "We Delivered, You Enjoy Your Order.",
         "content": "Ut suscipit egestas suscipit. Sed posuere pellentesque nunc, ultrices consectetur velit dapibus eu. Mauris sollicitudin dignissim diam, ac mattis eros accumsan rhoncus. Curabitur auctor bibendum nunc eget elementum.",
-        "image": "/assets/images/about/nimadir.png",
-        "button": {
-          "text": "Shop Now",
-          "link": "/shop"
-        }
+        "image": "/assets/images/About/fruit-about-img.png",
+        "button": "Shop Now"
       }
     ],
     "cards": [
@@ -1670,216 +1589,5 @@
         "icon": "/assets/images/About/client-icon1.svg"
       }
     ]
-  },
-  "navbar": [
-    {
-      "id": 1,
-      "class": "mainMenu",
-      "name": "All Categories",
-      "link": "",
-      "type": "dropdown",
-      "dropdown": [
-        {
-          "id": 1,
-          "image": "LuApple",
-          "link": "",
-          "name": "Fresh Fruit"
-        },
-        {
-          "id": 2,
-          "image": "TbSalad",
-          "link": "",
-          "name": "Vegetables"
-        },
-        {
-          "id": 3,
-          "image": "LuApple",
-          "link": "",
-          "name": "River Fish"
-        },
-        {
-          "id": 4,
-          "image": "TbMeat",
-          "link": "",
-          "name": "Chicken & Meat"
-        },
-        {
-          "id": 5,
-          "image": "SiBuymeacoffee",
-          "link": "",
-          "name": "Drink & Watert"
-        },
-        {
-          "id": 6,
-          "image": "TbIceCream",
-          "link": "",
-          "name": "Yogurt & Ice Cream"
-        },
-        {
-          "id": 7,
-          "link": "",
-          "image": "GiCakeSlice",
-          "name": "Cake & Bread"
-        },
-        {
-          "id": 8,
-          "image": "GiCupcake",
-          "link": "",
-          "name": "Butter & Cream"
-        },
-        {
-          "id": 9,
-          "image": "PiCookingPot",
-          "link": "",
-          "name": "Cooking"
-        },
-        {
-          "id": 10,
-          "image": "AiOutlinePlus",
-          "link": "",
-          "name": "View all Categor"
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "name": "Home",
-      "link": "",
-      "type": "dropdown",
-      "dropdown": [
-        {
-          "name": "Ladoo",
-          "link": ""
-        },
-        {
-          "name": "Besan Ladoo",
-          "link": ""
-        },
-        {
-          "name": "Ghee Besan Ladoo",
-          "link": ""
-        },
-        {
-          "name": "Nariyal Ladoo",
-          "link": ""
-        },
-        {
-          "name": "Kaju Katli",
-          "link": ""
-        },
-        {
-          "name": "Rasgulla",
-          "link": ""
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "name": "Shop",
-      "link": "shop",
-      "type": "dropdown",
-      "dropdown": [
-        {
-          "name": "Ladoo",
-          "link": ""
-        },
-        {
-          "name": "Besan Ladoo",
-          "link": ""
-        },
-        {
-          "name": "Ghee Besan Ladoo",
-          "link": ""
-        },
-        {
-          "name": "Nariyal Ladoo",
-          "link": ""
-        },
-        {
-          "name": "Kaju Katli",
-          "link": ""
-        },
-        {
-          "name": "Rasgulla",
-          "link": ""
-        }
-      ]
-    },
-    {
-      "id": 4,
-      "name": "Pages",
-      "link": "",
-      "type": "dropdown",
-      "dropdown": [
-        {
-          "name": "Ladoo",
-          "link": ""
-        },
-        {
-          "name": "Besan Ladoo",
-          "link": ""
-        },
-        {
-          "name": "Ghee Besan Ladoo",
-          "link": ""
-        },
-        {
-          "name": "Nariyal Ladoo",
-          "link": ""
-        },
-        {
-          "name": "Kaju Katli",
-          "link": ""
-        },
-        {
-          "name": "Rasgulla",
-          "link": ""
-        }
-      ]
-    },
-    {
-      "id": 5,
-      "name": "Blog",
-      "link": "blog",
-      "type": "dropdown",
-      "dropdown": [
-        {
-          "name": "Ladoo",
-          "link": ""
-        },
-        {
-          "name": "Besan Ladoo",
-          "link": ""
-        },
-        {
-          "name": "Ghee Besan Ladoo",
-          "link": ""
-        },
-        {
-          "name": "Nariyal Ladoo",
-          "link": ""
-        },
-        {
-          "name": "Kaju Katli",
-          "link": ""
-        },
-        {
-          "name": "Rasgulla",
-          "link": ""
-        }
-      ]
-    },
-    {
-      "id": 6,
-      "name": "About Us",
-      "link": "about",
-      "type": "single"
-    },
-    {
-      "id": 7,
-      "name": "Contact Us",
-      "link": "",
-      "type": "single"
-    }
-  ]
+  }
 }
