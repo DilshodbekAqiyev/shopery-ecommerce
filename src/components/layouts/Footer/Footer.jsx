@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import LogoIcon from '../../../../public/assets/images/navbar/LogoIcon'
+import LogoIcon from '../Navbar/images/LogoIcon'
 import { FaCcApplePay, FaCcVisa, FaCcDiscover, FaCcMastercard } from 'react-icons/fa'
 import { RiSecurePaymentFill } from 'react-icons/ri'
 
