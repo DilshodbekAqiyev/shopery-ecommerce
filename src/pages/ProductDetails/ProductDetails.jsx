@@ -3,14 +3,25 @@ import PropTypes from 'prop-types'
 import ModalDetails from './components/ModalDetails'
 import TabBar from './components/Tabs'
 import { useParams } from 'react-router-dom'
-import { instance } from '../../utils/apiRequest'
-import { useEffect, useState } from 'react'
+import { instance, useReducer } from '../../utils/apiRequest'
+import { useEffect } from 'react'
 import ProductCard from '../../components/common/Cards/ProductCard'
+import { detailsReducer } from '../../contexts/productDetails/DetailsReducer'
+import { ACTION_TYPES } from '../../contexts/productDetails/ActioinTypes'
 
 function ProductDetails() {
   const { productID } = useParams()
-  const [foundProduct, setFoundProduct] = useState({})
-  const [sliceProduct, setSliceProduct] = useState([])
+  const [state, dispatch] = useReducer(detailsReducer, {
+    foundProduct: {},
+    sliceProduct: [],
+  })
+
+  const setSliceProduct = (data) => {
+    dispatch({ type: ACTION_TYPES.SLICE_PRODUCT, payload: data })
+  }
+  const setFoundProduct = (data) => {
+    dispatch({ type: ACTION_TYPES.FOUND_PRODUCT, payload: data })
+  }
 
   useEffect(() => {
     ;(async () => {
@@ -29,11 +40,11 @@ function ProductDetails() {
 
   return (
     <div className="max-w-[1320px] mx-auto">
-      <ModalDetails product={foundProduct} />
-      <TabBar product={foundProduct} />
+      <ModalDetails product={state.foundProduct} />
+      <TabBar product={state.foundProduct} />
       <h1 className="text-heading05 font-[600] text-center mb-8">Related Products</h1>
       <div className="flex justify-between">
-        {sliceProduct?.map((item) => {
+        {state?.sliceProduct?.map((item) => {
           return <ProductCard key={item.id} {...item} />
         })}
       </div>
