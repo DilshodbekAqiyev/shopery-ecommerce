@@ -51,15 +51,6 @@ export default function App() {
         <Route path="product/:productID" element={<ProductDetails />} />
         <Route path="sign-in" element={<Signup />} />
         <Route path="sign-up" element={<Signin />} />
-        {/* <Route pa
-        th="dashboard" element={<Dashboard />}>
-
-          <Route index  element={<DashboardInfo/>} />
-          <Route path="order-history" element = {<OrderHistory/>}>
-          <Route path="order-detail" element= {<OrderDetail></OrderDetail>}></Route>
-          </Route>
-          <Route path="wishlist" element={<UserAddress />} />
-        </Route> */}
         <Route path="dashboard" element={<Dashboard />}>
           <Route index element={<DashboardInfo />} />
           <Route path="order-history" element={<OrderHistory />}>

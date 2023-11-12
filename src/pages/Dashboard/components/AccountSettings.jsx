@@ -40,7 +40,7 @@ function AccountSettings() {
     e.preventDefault();
     try {
       const id = data.id;
-      await instance.patch(`data/${id}`, data);
+      await instance.patch(`users/${id}`, data);
 
       const updatedResponse = await getUser();
       setData({
@@ -63,8 +63,8 @@ function AccountSettings() {
         <h3 className="mx-[24px] my-[16px] text-[20px] font-[500] leading-[30px] text-grays-gray900 ">
           Account Settings
         </h3>
-        <div className="w-100% h-[1.5px] bg-[#E5E5E5]"></div>
-        <div onSubmit={handleSaveChanges} className="flex gap-[100px] ">
+        <div className=" w-100% h-[1.5px] bg-[#E5E5E5]"></div>
+        <div onSubmit={handleSaveChanges} className="flex   gap-[100px] ">
           <div className="mx-[24px] my-[24px]">
             <div className="mb-[16px]">
               <Label
@@ -83,7 +83,58 @@ function AccountSettings() {
                 value={data.firstName}
               />
             </div>
-            {/* input */}
+            <div className="mb-[16px]">
+            <Label
+              htmlFor={`lastName`}
+              className="block text-grays-gray900  text-[14px ] leading-[21px] font-[400] cursor-pointer"
+            >
+              Last Name
+            </Label>
+            <input
+              className="border-solid focus:grays-gray600  outline-none drop-shadow-sm transition-all duration-200 ease-in-out   focus:bg-white focus:ring-1 focus:ring-[#234f1e] text-grays-gray600 border mt-[6px]  w-[512px] rounded-lg py-[14px] px-[16px] text-[16px] font-[400]  leading-[21px]"
+              type="text"
+              id="lastName"
+              onChange={(e) =>
+                setData({ ...data, lastName: e.target.value })
+              }
+              value={data.lastName}
+            />
+          </div>
+          <div className="mb-[16px]">
+            <Label
+              htmlFor={`email`}
+              className="block text-grays-gray900  text-[14px ] leading-[21px] font-[400] cursor-pointer"
+            >
+              Email
+            </Label>
+            <input
+              className="border-solid focus:grays-gray600  outline-none drop-shadow-sm transition-all duration-200 ease-in-out   focus:bg-white focus:ring-1 focus:ring-[#234f1e] text-grays-gray600 border mt-[6px]  w-[512px] rounded-lg py-[14px] px-[16px] text-[16px] font-[400]  leading-[21px]"
+              type="email"
+              id="email"
+              onChange={(e) =>
+                setData({ ...data, email: e.target.value })
+              }
+              value={data.email}
+            />
+          </div>
+          <div className="mb-[16px]">
+            <Label
+              htmlFor={`phoneNumber`}
+              className="block text-grays-gray900  text-[14px ] leading-[21px] font-[400] cursor-pointer"
+            >
+              Phone Number
+            </Label>
+            <input
+              className="block border-solid focus:grays-gray600  outline-none drop-shadow-sm transition-all duration-200 ease-in-out   focus:bg-white focus:ring-1 focus:ring-[#234f1e]  text-grays-gray600 border mt-[6px]  w-[512px] rounded-lg py-[14px] px-[16px] text-[16px] font-[400]  leading-[21px]"
+              type="text"
+                id="phoneNumber"
+                onChange={(e) =>
+                  setData({ ...data, phoneNumber: e.target.value })
+                }
+                value={data.phoneNumber}
+              />
+              </div>
+            {/* =============================== */}
             <Button
               className="mt-[16px] text-[14px] rounded-[43px] font-[600] leading-[16px] hover:bg-[#234f1e]"
               onClick={handleSaveChanges}
@@ -91,8 +142,7 @@ function AccountSettings() {
               Save Changes
             </Button>
           </div>
-        </div>
-        <div>
+          <div className="mt-[10px]">
           <div
             onClick={handleImageClick}
             className="mt-[56px] w-[224px] h-[224px] "
@@ -117,9 +167,12 @@ function AccountSettings() {
             Choose Image
           </button>
         </div>
+
+        </div>
+         
       </div>
     </div>
   );
 }
 
-export default AccountSettings;
+export default AccountSettings
