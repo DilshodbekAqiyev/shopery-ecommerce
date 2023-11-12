@@ -29,42 +29,42 @@ export default function ShoppingCart() {
   const [cart, setCart] = useState([]);
   const [totalPrice, setTotalPrice] = useState(0);
 
-  const addToCart = (product) => {
-    const existingProduct = cart.find(item => item.id === product.id);
+  // const addToCart = (product) => {
+  //   const existingProduct = cart.find(item => item.id === product.id);
 
-    if (existingProduct) {
-      setCart(
-        cart.map(item =>
-          item.id === product.id
-            ? { ...item, quantity: item.quantity + 1 }
-            : item
-        )
-      );
-    } else {
-      setCart([...cart, { ...product, quantity: 1 }]);
-    }
+  //   if (existingProduct) {
+  //     setCart(
+  //       cart.map(item =>
+  //         item.id === product.id
+  //           ? { ...item, quantity: item.quantity + 1 }
+  //           : item
+  //       )
+  //     );
+  //   } else {
+  //     setCart([...cart, { ...product, quantity: 1 }]);
+  //   }
 
-    setTotalPrice(totalPrice + product.price);
-  };
+  //   setTotalPrice(totalPrice + product.price);
+  // };
 
-  const removeFromCart = (product) => {
-    const existingProduct = cart.find(item => item.id === product.id);
+  // const removeFromCart = (product) => {
+  //   const existingProduct = cart.find(item => item.id === product.id);
 
-    if (existingProduct && existingProduct.quantity > 1) {
-      setCart(
-        cart.map(item =>
-          item.id === product.id
-            ? { ...item, quantity: item.quantity - 1 }
-            : item
-        )
-      );
-      setTotalPrice(totalPrice - product.price);
-    } else {
-      const updatedCart = cart.filter(item => item.id !== product.id);
-      setCart(updatedCart);
-      setTotalPrice(totalPrice - product.price * product.quantity);
-    }
-  };
+  //   if (existingProduct && existingProduct.quantity > 1) {
+  //     setCart(
+  //       cart.map(item =>
+  //         item.id === product.id
+  //           ? { ...item, quantity: item.quantity - 1 }
+  //           : item
+  //       )
+  //     );
+  //     setTotalPrice(totalPrice - product.price);
+  //   } else {
+  //     const updatedCart = cart.filter(item => item.id !== product.id);
+  //     setCart(updatedCart);
+  //     setTotalPrice(totalPrice - product.price * product.quantity);
+  //   }
+  // };
 
   const removeProduct = (product) => {
     const updatedCart = cart.filter(item => item.id !== product.id);
