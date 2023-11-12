@@ -6,25 +6,84 @@
       "lastName": "Doe",
       "email": "johndoe@gmail.com",
       "role": "Customer",
-      "phoneNumber": 80355501223,
+      "phoneNumber": "803558",
       "password": "X34sfsdfy34t7dsgfh",
       "token": "x@fSDFYsd345d23saFsa326ASDghad23saFsa326ASDghasd%6Assd%6AsD",
       "avatar": "/assets/images/users/user1.png",
       "billingAddress": {
-        "firstName": "John",
-        "lastName": "Doe",
-        "companyName": "Zakirsoft",
-        "streetAddress": "4140 Parl",
-        "country": "United States",
-        "city": "Washington",
-        "zipCode": "20003",
-        "email": "dianne.russell@gmail.com",
-        "phone": 6935551232
+        "phone": "99 255 08 76"
       },
-      "wishlist": [],
+      "wishlist": [
+        {
+          "id": 1,
+          "name": "Big Potatos",
+          "category": "Vegetables",
+          "discountPrice": 14.99,
+          "originalPrice": 48,
+          "status": "",
+          "images": {
+            "src": "/assets/images/products/potato.png",
+            "imageDescription": "Big potato images",
+            "otherImages": [
+              {
+                "id": 1,
+                "src": "/assets/images/products/potato.png",
+                "otherImageDescription": "Picture of a large potato from the left"
+              },
+              {
+                "id": 2,
+                "src": "https://imgs.search.brave.com/oVlHBWXyz2eqlN7NlOV2_ToywFbiLHaTIa7bjXyqOSc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9wb3Rh/dG9lcy0yMzI5NjAu/anBn",
+                "otherImageDescription": "Picture of a large potato from the right"
+              },
+              {
+                "id": 3,
+                "src": "https://imgs.search.brave.com/1_ynpB5LqS7jY14dU35roWI6bDzFpaiUg9ck8ecysvg/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAyLzY1LzQ4Lzg2/LzM2MF9GXzI2NTQ4/ODY1NV9jTEk5WDRs/eDdIU3VnNW5QTnp0/QnNTNnlhNThvRnVW/aS5qcGc",
+                "otherImageDescription": "Picture of a large potato from above"
+              },
+              {
+                "id": 4,
+                "src": "https://imgs.search.brave.com/66j22hu8FZvfcWc4VfiEfDBgj0_QDNbGXY32Sjlp_UA/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAwLzU3Lzk3LzMx/LzM2MF9GXzU3OTcz/MTgzX3ZtblpTMnNk/MkQ0RkNTWGZESjEy/V2gwSTdLc0t4T3Rp/LmpwZw",
+                "otherImageDescription": "Picture of a big potato shot from the front"
+              },
+              {
+                "id": 5,
+                "src": "https://imgs.search.brave.com/_jEOu3lxGg1GKIcFREUDele-U04H2pkONG_0qZ76y_U/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9zdC5k/ZXBvc2l0cGhvdG9z/LmNvbS8xMDAzNDk1/LzE5NTgvaS82MDAv/ZGVwb3NpdHBob3Rv/c18xOTU4MDc4My1z/dG9jay1waG90by1w/b3RhdG9lcy5qcGc",
+                "otherImageDescription": "Picture of a large potato from the left"
+              },
+              {
+                "id": 6,
+                "src": "https://imgs.search.brave.com/oVlHBWXyz2eqlN7NlOV2_ToywFbiLHaTIa7bjXyqOSc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9wb3Rh/dG9lcy0yMzI5NjAu/anBn",
+                "otherImageDescription": "Picture of a large potato from the right"
+              },
+              {
+                "id": 7,
+                "src": "https://imgs.search.brave.com/1_ynpB5LqS7jY14dU35roWI6bDzFpaiUg9ck8ecysvg/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAyLzY1LzQ4Lzg2/LzM2MF9GXzI2NTQ4/ODY1NV9jTEk5WDRs/eDdIU3VnNW5QTnp0/QnNTNnlhNThvRnVW/aS5qcGc",
+                "otherImageDescription": "Picture of a large potato from above"
+              },
+              {
+                "id": 8,
+                "src": "https://imgs.search.brave.com/66j22hu8FZvfcWc4VfiEfDBgj0_QDNbGXY32Sjlp_UA/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAwLzU3Lzk3LzMx/LzM2MF9GXzU3OTcz/MTgzX3ZtblpTMnNk/MkQ0RkNTWGZESjEy/V2gwSTdLc0t4T3Rp/LmpwZw",
+                "otherImageDescription": "Picture of a big potato shot from the front"
+              },
+              {
+                "id": 9,
+                "src": "/assets/images/products/potato.png",
+                "otherImageDescription": "Picture of a big potato shot from the front"
+              }
+            ]
+          }
+        }
+      ],
       "shoppingCart": [],
       "checkout": [],
-      "orders": []
+      "orders": [],
+      "phone": "803558",
+      "companyName": "Zakirsoft",
+      "streetAddress": "4140 Parl",
+      "country": "United State",
+      "state": "",
+      "city": "Washing",
+      "zipCode": "20003"
     },
     {
       "id": 2,
@@ -145,7 +204,13 @@
         }
       ],
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": ["Vegetables", "Healthy", "Chinese", "Cabbage", "Green Cabbage"],
+      "tag": [
+        "Vegetables",
+        "Healthy",
+        "Chinese",
+        "Cabbage",
+        "Green Cabbage"
+      ],
       "reviews": [
         {
           "id": 1,
@@ -256,7 +321,13 @@
         }
       ],
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": ["Vegetables", "Healthy", "Chinese", "Cabbage", "Green Cabbage"],
+      "tag": [
+        "Vegetables",
+        "Healthy",
+        "Chinese",
+        "Cabbage",
+        "Green Cabbage"
+      ],
       "reviews": [
         {
           "id": 1,
@@ -367,7 +438,13 @@
         }
       ],
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": ["Vegetables", "Healthy", "Chinese", "Cabbage", "Green Cabbage"],
+      "tag": [
+        "Vegetables",
+        "Healthy",
+        "Chinese",
+        "Cabbage",
+        "Green Cabbage"
+      ],
       "reviews": [
         {
           "id": 1,
@@ -478,7 +555,12 @@
         }
       ],
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": ["Vegetables", "Healthy", "Cabbage", "Green Cabbage"],
+      "tag": [
+        "Vegetables",
+        "Healthy",
+        "Cabbage",
+        "Green Cabbage"
+      ],
       "reviews": [
         {
           "id": 1,
@@ -589,7 +671,12 @@
         }
       ],
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": ["Vegetables", "Healthy", "Cabbage", "Green Cabbage"],
+      "tag": [
+        "Vegetables",
+        "Healthy",
+        "Cabbage",
+        "Green Cabbage"
+      ],
       "reviews": [
         {
           "id": 1,
@@ -700,7 +787,12 @@
         }
       ],
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": ["Vegetables", "Healthy", "Cabbage", "Green Cabbage"],
+      "tag": [
+        "Vegetables",
+        "Healthy",
+        "Cabbage",
+        "Green Cabbage"
+      ],
       "reviews": [
         {
           "id": 1,
@@ -811,7 +903,12 @@
         }
       ],
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": ["Vegetables", "Healthy", "Cabbage", "Green Cabbage"],
+      "tag": [
+        "Vegetables",
+        "Healthy",
+        "Cabbage",
+        "Green Cabbage"
+      ],
       "reviews": [
         {
           "id": 1,
@@ -922,7 +1019,12 @@
         }
       ],
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": ["Vegetables", "Healthy", "Cabbage", "Green Cabbage"],
+      "tag": [
+        "Vegetables",
+        "Healthy",
+        "Cabbage",
+        "Green Cabbage"
+      ],
       "reviews": [
         {
           "id": 1,
@@ -957,39 +1059,43 @@
       "category": "Cooking",
       "readingTime": 4,
       "content": "<p>lorem ipsum</p>",
-      "tags": ["Healthy", "Dinner", "Meat"],
+      "tags": [
+        "Healthy",
+        "Dinner",
+        "Meat"
+      ],
       "comments": [
         {
           "id": "c1",
-          "userImg": "",
+          "userImg": "https://thumbs.dreamstime.com/b/default-avatar-profile-icon-social-media-user-vector-default-avatar-profile-icon-social-media-user-vector-portrait-176194876.jpg",
           "fullName": "John Doe",
           "date": "26 Apr, 2021",
           "comment": "In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam."
         },
         {
           "id": "c2",
-          "userImg": "",
+          "userImg": "https://thumbs.dreamstime.com/b/default-avatar-profile-icon-social-media-user-vector-default-avatar-profile-icon-social-media-user-vector-portrait-176194876.jpg",
           "fullName": "Devon Lane",
           "date": "24 Apr, 2021",
           "comment": "Quisque eget tortor lobortis, facilisis metus eu, elementum est. Nunc sit amet erat quis ex convallis suscipit. Nam hendrerit, velit ut aliquam euismod, nibh tortor rutrum nisi, ac sodales nunc eros porta nisi. Sed scelerisque, est eget aliquam venenatis, est sem tempor eros."
         },
         {
           "id": "c3",
-          "userImg": "",
+          "userImg": "https://thumbs.dreamstime.com/b/default-avatar-profile-icon-social-media-user-vector-default-avatar-profile-icon-social-media-user-vector-portrait-176194876.jpg",
           "fullName": "Jacob Jones",
           "date": "20 Apr, 2021",
           "comment": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."
         },
         {
           "id": "c4",
-          "userImg": "",
+          "userImg": "https://thumbs.dreamstime.com/b/default-avatar-profile-icon-social-media-user-vector-default-avatar-profile-icon-social-media-user-vector-portrait-176194876.jpg",
           "fullName": "Jane Cooper",
           "date": "18 Apr, 2021",
           "comment": "Pellentesque feugiat, nibh vel vehicula pretium, nibh nibh bibendum elit, a volutpat arcu dui nec orci. Aenean dui odio, ullamcorper quis turpis ac, volutpat imperdiet ex."
         },
         {
           "id": "c5",
-          "userImg": "",
+          "userImg": "https://thumbs.dreamstime.com/b/default-avatar-profile-icon-social-media-user-vector-default-avatar-profile-icon-social-media-user-vector-portrait-176194876.jpg",
           "fullName": "Darrell Steward",
           "date": "7 Apr, 2021",
           "comment": "Nulla molestie interdum ultricies. "
@@ -1009,39 +1115,43 @@
       "category": "Beverages",
       "readingTime": 5,
       "content": "<p>lorem ipsum</p>",
-      "tags": ["Lounch", "Kid foods", "Vegetarian"],
+      "tags": [
+        "Lounch",
+        "Kid foods",
+        "Vegetarian"
+      ],
       "comments": [
         {
           "id": "c1",
-          "userImg": "",
+          "userImg": "https://thumbs.dreamstime.com/b/default-avatar-profile-icon-social-media-user-vector-default-avatar-profile-icon-social-media-user-vector-portrait-176194876.jpg",
           "fullName": "Devon Lane",
           "date": "24 Apr, 2021",
           "comment": "Quisque eget tortor lobortis, facilisis metus eu, elementum est. Nunc sit amet erat quis ex convallis suscipit. Nam hendrerit, velit ut aliquam euismod, nibh tortor rutrum nisi, ac sodales nunc eros porta nisi. Sed scelerisque, est eget aliquam venenatis, est sem tempor eros."
         },
         {
           "id": "c2",
-          "userImg": "",
+          "userImg": "https://thumbs.dreamstime.com/b/default-avatar-profile-icon-social-media-user-vector-default-avatar-profile-icon-social-media-user-vector-portrait-176194876.jpg",
           "fullName": "Jacob Jones",
           "date": "20 Apr, 2021",
           "comment": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."
         },
         {
           "id": "c3",
-          "userImg": "",
+          "userImg": "https://thumbs.dreamstime.com/b/default-avatar-profile-icon-social-media-user-vector-default-avatar-profile-icon-social-media-user-vector-portrait-176194876.jpg",
           "fullName": "Jane Cooper",
           "date": "18 Apr, 2021",
           "comment": "Pellentesque feugiat, nibh vel vehicula pretium, nibh nibh bibendum elit, a volutpat arcu dui nec orci. Aenean dui odio, ullamcorper quis turpis ac, volutpat imperdiet ex."
         },
         {
           "id": "c4",
-          "userImg": "",
+          "userImg": "https://thumbs.dreamstime.com/b/default-avatar-profile-icon-social-media-user-vector-default-avatar-profile-icon-social-media-user-vector-portrait-176194876.jpg",
           "fullName": "John Doe",
           "date": "26 Apr, 2021",
           "comment": "In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam."
         },
         {
           "id": "c5",
-          "userImg": "",
+          "userImg": "https://thumbs.dreamstime.com/b/default-avatar-profile-icon-social-media-user-vector-default-avatar-profile-icon-social-media-user-vector-portrait-176194876.jpg",
           "fullName": "Darrell Steward",
           "date": "7 Apr, 2021",
           "comment": "Nulla molestie interdum ultricies. "
@@ -1061,39 +1171,43 @@
       "category": "Vegetables",
       "readingTime": 6,
       "content": "<p>lorem ipsum</p>",
-      "tags": ["Tiffin", "Vitamins", "Bread"],
+      "tags": [
+        "Tiffin",
+        "Vitamins",
+        "Bread"
+      ],
       "comments": [
         {
           "id": "c1",
-          "userImg": "",
+          "userImg": "https://thumbs.dreamstime.com/b/default-avatar-profile-icon-social-media-user-vector-default-avatar-profile-icon-social-media-user-vector-portrait-176194876.jpg",
           "fullName": "Darrell Steward",
           "date": "7 Apr, 2021",
           "comment": "Nulla molestie interdum ultricies. "
         },
         {
           "id": "c2",
-          "userImg": "",
+          "userImg": "https://thumbs.dreamstime.com/b/default-avatar-profile-icon-social-media-user-vector-default-avatar-profile-icon-social-media-user-vector-portrait-176194876.jpg",
           "fullName": "John Doe",
           "date": "26 Apr, 2021",
           "comment": "In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam."
         },
         {
           "id": "c3",
-          "userImg": "",
+          "userImg": "https://thumbs.dreamstime.com/b/default-avatar-profile-icon-social-media-user-vector-default-avatar-profile-icon-social-media-user-vector-portrait-176194876.jpg",
           "fullName": "Devon Lane",
           "date": "24 Apr, 2021",
           "comment": "Quisque eget tortor lobortis, facilisis metus eu, elementum est. Nunc sit amet erat quis ex convallis suscipit. Nam hendrerit, velit ut aliquam euismod, nibh tortor rutrum nisi, ac sodales nunc eros porta nisi. Sed scelerisque, est eget aliquam venenatis, est sem tempor eros."
         },
         {
           "id": "c4",
-          "userImg": "",
+          "userImg": "https://thumbs.dreamstime.com/b/default-avatar-profile-icon-social-media-user-vector-default-avatar-profile-icon-social-media-user-vector-portrait-176194876.jpg",
           "fullName": "Jacob Jones",
           "date": "20 Apr, 2021",
           "comment": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."
         },
         {
           "id": "c5",
-          "userImg": "",
+          "userImg": "https://thumbs.dreamstime.com/b/default-avatar-profile-icon-social-media-user-vector-default-avatar-profile-icon-social-media-user-vector-portrait-176194876.jpg",
           "fullName": "Jane Cooper",
           "date": "18 Apr, 2021",
           "comment": "Pellentesque feugiat, nibh vel vehicula pretium, nibh nibh bibendum elit, a volutpat arcu dui nec orci. Aenean dui odio, ullamcorper quis turpis ac, volutpat imperdiet ex."
@@ -1113,39 +1227,43 @@
       "category": "Bread & Bakery",
       "readingTime": 6,
       "content": "<p>lorem ipsum</p>",
-      "tags": ["Snacks", "Tiffin", "Low fat"],
+      "tags": [
+        "Snacks",
+        "Tiffin",
+        "Low fat"
+      ],
       "comments": [
         {
           "id": "c1",
-          "userImg": "",
+          "userImg": "https://thumbs.dreamstime.com/b/default-avatar-profile-icon-social-media-user-vector-default-avatar-profile-icon-social-media-user-vector-portrait-176194876.jpg",
           "fullName": "John Doe",
           "date": "26 Apr, 2021",
           "comment": "In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam."
         },
         {
           "id": "c2",
-          "userImg": "",
+          "userImg": "https://thumbs.dreamstime.com/b/default-avatar-profile-icon-social-media-user-vector-default-avatar-profile-icon-social-media-user-vector-portrait-176194876.jpg",
           "fullName": "Devon Lane",
           "date": "24 Apr, 2021",
           "comment": "Quisque eget tortor lobortis, facilisis metus eu, elementum est. Nunc sit amet erat quis ex convallis suscipit. Nam hendrerit, velit ut aliquam euismod, nibh tortor rutrum nisi, ac sodales nunc eros porta nisi. Sed scelerisque, est eget aliquam venenatis, est sem tempor eros."
         },
         {
           "id": "c3",
-          "userImg": "",
+          "userImg": "https://thumbs.dreamstime.com/b/default-avatar-profile-icon-social-media-user-vector-default-avatar-profile-icon-social-media-user-vector-portrait-176194876.jpg",
           "fullName": "Jacob Jones",
           "date": "20 Apr, 2021",
           "comment": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."
         },
         {
           "id": "c4",
-          "userImg": "",
+          "userImg": "https://thumbs.dreamstime.com/b/default-avatar-profile-icon-social-media-user-vector-default-avatar-profile-icon-social-media-user-vector-portrait-176194876.jpg",
           "fullName": "Jane Cooper",
           "date": "18 Apr, 2021",
           "comment": "Pellentesque feugiat, nibh vel vehicula pretium, nibh nibh bibendum elit, a volutpat arcu dui nec orci. Aenean dui odio, ullamcorper quis turpis ac, volutpat imperdiet ex."
         },
         {
           "id": "c5",
-          "userImg": "",
+          "userImg": "https://thumbs.dreamstime.com/b/default-avatar-profile-icon-social-media-user-vector-default-avatar-profile-icon-social-media-user-vector-portrait-176194876.jpg",
           "fullName": "Darrell Steward",
           "date": "7 Apr, 2021",
           "comment": "Nulla molestie interdum ultricies. "
@@ -1165,39 +1283,43 @@
       "category": "Beauty & Health",
       "readingTime": 6,
       "content": "<p>lorem ipsum</p>",
-      "tags": ["Kid foods", "Healthy", "Low fat"],
+      "tags": [
+        "Kid foods",
+        "Healthy",
+        "Low fat"
+      ],
       "comments": [
         {
           "id": "c1",
-          "userImg": "",
+          "userImg": "https://thumbs.dreamstime.com/b/default-avatar-profile-icon-social-media-user-vector-default-avatar-profile-icon-social-media-user-vector-portrait-176194876.jpg",
           "fullName": "Darrell Steward",
           "date": "7 Apr, 2021",
           "comment": "Nulla molestie interdum ultricies. "
         },
         {
           "id": "c2",
-          "userImg": "",
+          "userImg": "https://thumbs.dreamstime.com/b/default-avatar-profile-icon-social-media-user-vector-default-avatar-profile-icon-social-media-user-vector-portrait-176194876.jpg",
           "fullName": "John Doe",
           "date": "26 Apr, 2021",
           "comment": "In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam."
         },
         {
           "id": "c3",
-          "userImg": "",
+          "userImg": "https://thumbs.dreamstime.com/b/default-avatar-profile-icon-social-media-user-vector-default-avatar-profile-icon-social-media-user-vector-portrait-176194876.jpg",
           "fullName": "Devon Lane",
           "date": "24 Apr, 2021",
           "comment": "Quisque eget tortor lobortis, facilisis metus eu, elementum est. Nunc sit amet erat quis ex convallis suscipit. Nam hendrerit, velit ut aliquam euismod, nibh tortor rutrum nisi, ac sodales nunc eros porta nisi. Sed scelerisque, est eget aliquam venenatis, est sem tempor eros."
         },
         {
           "id": "c4",
-          "userImg": "",
+          "userImg": "https://thumbs.dreamstime.com/b/default-avatar-profile-icon-social-media-user-vector-default-avatar-profile-icon-social-media-user-vector-portrait-176194876.jpg",
           "fullName": "Jacob Jones",
           "date": "20 Apr, 2021",
           "comment": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."
         },
         {
           "id": "c5",
-          "userImg": "",
+          "userImg": "https://thumbs.dreamstime.com/b/default-avatar-profile-icon-social-media-user-vector-default-avatar-profile-icon-social-media-user-vector-portrait-176194876.jpg",
           "fullName": "Jane Cooper",
           "date": "18 Apr, 2021",
           "comment": "Pellentesque feugiat, nibh vel vehicula pretium, nibh nibh bibendum elit, a volutpat arcu dui nec orci. Aenean dui odio, ullamcorper quis turpis ac, volutpat imperdiet ex."
@@ -1209,47 +1331,51 @@
       "title": "Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.",
       "previewImage": "/assets/images/blog/img6.svg",
       "extraImages": [
-        "https://avatars.mds.yandex.net/i?id=b850af6b745c221b42499945e5fd7af816d69844-9223337-images-thumbs&n=13",
-        "https://avatars.mds.yandex.net/i?id=b850af6b745c221b42499945e5fd7af816d69844-9223337-images-thumbs&n=13"
+        "https://avatars.mds.yandex.net/i?id=6795782dec9060f7ea9ff227deec6754d0a64788-6661455-images-thumbs&n=13",
+        "https://yandex-images.clstorage.net/o9jSr9384/ec3a6ea9g/fj4sKkMKfGm74nvEdkaGP_Ya3gpCUVo8gjl_LYoeLKk_h9SM6WlqXvC1c4DHYwKs7GhzmDGFsFedr-NDIpCXCT5_fTtyB3AI6qdXqVd2mhvmZ_J_YlBGTcoVI0DSJiSxxitEBGjFw9MNbJ50rgciqblUGvAA4Cnv0e6SNroseoCefoRil_4JsVN6ktRCaq5zzm_iLjJIDj3amY74e0_5PXb_cND0FbefaShSEOanAnFNHfJE-GyBRkUqqjpOMD4Yfvb0zoum0bmj1qYgyg6yP0pH_gpa5KpR0r0KSCfPSbl-30SshBlbP33EIgAKD6o19Tm2uCjk4foB_n5CwkTyHOZCjEIbSokVCzImSMJ21s86f2LaBpBezaYJvoCjO-nZNkOIVNSFs38xyHYoAjM2tbVtLmjoXIV6cQ4SykYEmuxObmSmV34JQauyqshWzgKn0mNiYuaMwp3WxdIE0x8xTT7H5IT0DUfbhSSGXB5bUvn9OY64YPz9JkFyZtZKyNLY6ip8SofOpUHvUoLk8g6i80rzjtpO5PK15ilWdC_HebHin5iUqG3fW30gBlD-XwoN9fkunGiQxcbpQmI2_kw2HOpeGOrf2hE5a67qcK4SnpdOo87WYkBiJbJ1jhg_R9UdauvoOKjpu6sdFFqMIpuOHTEpciR8sPmqsbqCrmaEshze8izqe3oR9ds6OmQGluJnisPihoKkXim2STIw95Mt5XqXBMx0MXOD5UAyqA633t3NPTroMDxBLuU68tYShNb8TiacapNS2QkL_qrkAoamt4ojajZqFHo5GjEmFG_j3T3eG0xUuPl3RwHA7vwW29rRdW3y2LRgZTJp4u46FohexCbGuKr3IiGRg-aO5ApmAqf6yyYicljukeLV0hiLC63lmheIrLyhY1cVPB58lk8KNfF5-mSgkNmmRa6mTqLcNrgqRiA-y1KtOa_CFtjKbnK7uqfiftrM-lEuEbqwixuw"
       ],
       "author": "nimadir@gmail.com",
       "createdDate": "Wen Nov 01 2023 15:05:24 GMT+0500 (GMT+05:00)",
       "category": "Fresh Fruit",
       "readingTime": 4,
       "content": "<p>lorem ipsum</p>",
-      "tags": ["Fresh Fruit", "Meat", "Bread"],
+      "tags": [
+        "Fresh Fruit",
+        "Meat",
+        "Bread"
+      ],
       "comments": [
         {
           "id": "c1",
-          "userImg": "",
+          "userImg": "https://thumbs.dreamstime.com/b/default-avatar-profile-icon-social-media-user-vector-default-avatar-profile-icon-social-media-user-vector-portrait-176194876.jpg",
           "fullName": "Devon Lane",
           "date": "24 Apr, 2021",
           "comment": "Quisque eget tortor lobortis, facilisis metus eu, elementum est. Nunc sit amet erat quis ex convallis suscipit. Nam hendrerit, velit ut aliquam euismod, nibh tortor rutrum nisi, ac sodales nunc eros porta nisi. Sed scelerisque, est eget aliquam venenatis, est sem tempor eros."
         },
         {
           "id": "c2",
-          "userImg": "",
+          "userImg": "https://thumbs.dreamstime.com/b/default-avatar-profile-icon-social-media-user-vector-default-avatar-profile-icon-social-media-user-vector-portrait-176194876.jpg",
           "fullName": "Jacob Jones",
           "date": "20 Apr, 2021",
           "comment": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."
         },
         {
           "id": "c3",
-          "userImg": "",
+          "userImg": "https://thumbs.dreamstime.com/b/default-avatar-profile-icon-social-media-user-vector-default-avatar-profile-icon-social-media-user-vector-portrait-176194876.jpg",
           "fullName": "Jane Cooper",
           "date": "18 Apr, 2021",
           "comment": "Pellentesque feugiat, nibh vel vehicula pretium, nibh nibh bibendum elit, a volutpat arcu dui nec orci. Aenean dui odio, ullamcorper quis turpis ac, volutpat imperdiet ex."
         },
         {
           "id": "c4",
-          "userImg": "",
+          "userImg": "https://thumbs.dreamstime.com/b/default-avatar-profile-icon-social-media-user-vector-default-avatar-profile-icon-social-media-user-vector-portrait-176194876.jpg",
           "fullName": "John Doe",
           "date": "26 Apr, 2021",
           "comment": "In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam."
         },
         {
           "id": "c5",
-          "userImg": "",
+          "userImg": "https://thumbs.dreamstime.com/b/default-avatar-profile-icon-social-media-user-vector-default-avatar-profile-icon-social-media-user-vector-portrait-176194876.jpg",
           "fullName": "Darrell Steward",
           "date": "7 Apr, 2021",
           "comment": "Nulla molestie interdum ultricies. "
@@ -1269,39 +1395,43 @@
       "category": "Vegetables",
       "readingTime": 6,
       "content": "<p>lorem ipsum</p>",
-      "tags": ["Meat", "Dinner", "Vegetarian"],
+      "tags": [
+        "Meat",
+        "Dinner",
+        "Vegetarian"
+      ],
       "comments": [
         {
           "id": "c1",
-          "userImg": "",
+          "userImg": "https://thumbs.dreamstime.com/b/default-avatar-profile-icon-social-media-user-vector-default-avatar-profile-icon-social-media-user-vector-portrait-176194876.jpg",
           "fullName": "John Doe",
           "date": "26 Apr, 2021",
           "comment": "In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam."
         },
         {
           "id": "c2",
-          "userImg": "",
+          "userImg": "https://thumbs.dreamstime.com/b/default-avatar-profile-icon-social-media-user-vector-default-avatar-profile-icon-social-media-user-vector-portrait-176194876.jpg",
           "fullName": "Devon Lane",
           "date": "24 Apr, 2021",
           "comment": "Quisque eget tortor lobortis, facilisis metus eu, elementum est. Nunc sit amet erat quis ex convallis suscipit. Nam hendrerit, velit ut aliquam euismod, nibh tortor rutrum nisi, ac sodales nunc eros porta nisi. Sed scelerisque, est eget aliquam venenatis, est sem tempor eros."
         },
         {
           "id": "c3",
-          "userImg": "",
+          "userImg": "https://thumbs.dreamstime.com/b/default-avatar-profile-icon-social-media-user-vector-default-avatar-profile-icon-social-media-user-vector-portrait-176194876.jpg",
           "fullName": "Jacob Jones",
           "date": "20 Apr, 2021",
           "comment": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."
         },
         {
           "id": "c4",
-          "userImg": "",
+          "userImg": "https://thumbs.dreamstime.com/b/default-avatar-profile-icon-social-media-user-vector-default-avatar-profile-icon-social-media-user-vector-portrait-176194876.jpg",
           "fullName": "Jane Cooper",
           "date": "18 Apr, 2021",
           "comment": "Pellentesque feugiat, nibh vel vehicula pretium, nibh nibh bibendum elit, a volutpat arcu dui nec orci. Aenean dui odio, ullamcorper quis turpis ac, volutpat imperdiet ex."
         },
         {
           "id": "c5",
-          "userImg": "",
+          "userImg": "https://thumbs.dreamstime.com/b/default-avatar-profile-icon-social-media-user-vector-default-avatar-profile-icon-social-media-user-vector-portrait-176194876.jpg",
           "fullName": "Darrell Steward",
           "date": "7 Apr, 2021",
           "comment": "Nulla molestie interdum ultricies. "
@@ -1313,47 +1443,51 @@
       "title": "Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.",
       "previewImage": "/assets/images/blog/img8.svg",
       "extraImages": [
-        "https://avatars.mds.yandex.net/i?id=6795782dec9060f7ea9ff227deec6754d0a64788-6661455-images-thumbs&n=13",
-        "https://yandex-images.clstorage.net/o9jSr9384/ec3a6ea9g/fj4sKkMKfGm74nvEdkaGP_Ya3gpCUVo8gjl_LYoeLKk_h9SM6WlqXvC1c4DHYwKs7GhzmDGFsFedr-NDIpCXCT5_fTtyB3AI6qdXqVd2mhvmZ_J_YlBGTcoVI0DSJiSxxitEBGjFw9MNbJ50rgciqblUGvAA4Cnv0e6SNroseoCefoRil_4JsVN6ktRCaq5zzm_iLjJIDj3amY74e0_5PXb_cND0FbefaShSEOanAnFNHfJE-GyBRkUqqjpOMD4Yfvb0zoum0bmj1qYgyg6yP0pH_gpa5KpR0r0KSCfPSbl-30SshBlbP33EIgAKD6o19Tm2uCjk4foB_n5CwkTyHOZCjEIbSokVCzImSMJ21s86f2LaBpBezaYJvoCjO-nZNkOIVNSFs38xyHYoAjM2tbVtLmjoXIV6cQ4SykYEmuxObmSmV34JQauyqshWzgKn0mNiYuaMwp3WxdIE0x8xTT7H5IT0DUfbhSSGXB5bUvn9OY64YPz9JkFyZtZKyNLY6ip8SofOpUHvUoLk8g6i80rzjtpO5PK15ilWdC_HebHin5iUqG3fW30gBlD-XwoN9fkunGiQxcbpQmI2_kw2HOpeGOrf2hE5a67qcK4SnpdOo87WYkBiJbJ1jhg_R9UdauvoOKjpu6sdFFqMIpuOHTEpciR8sPmqsbqCrmaEshze8izqe3oR9ds6OmQGluJnisPihoKkXim2STIw95Mt5XqXBMx0MXOD5UAyqA633t3NPTroMDxBLuU68tYShNb8TiacapNS2QkL_qrkAoamt4ojajZqFHo5GjEmFG_j3T3eG0xUuPl3RwHA7vwW29rRdW3y2LRgZTJp4u46FohexCbGuKr3IiGRg-aO5ApmAqf6yyYicljukeLV0hiLC63lmheIrLyhY1cVPB58lk8KNfF5-mSgkNmmRa6mTqLcNrgqRiA-y1KtOa_CFtjKbnK7uqfiftrM-lEuEbqwixuw"
+        "https://avatars.mds.yandex.net/i?id=421bcf30d93b8079c2f75c12491d10d8d8a240d3-10639796-images-thumbs&n=13",
+        "https://avatars.mds.yandex.net/i?id=c501aa526e28b17da3f59fd03472143c-5502450-images-thumbs&n=13"
       ],
       "author": "nimadir@gmail.com",
       "createdDate": "Wen Nov 01 2023 15:05:24 GMT+0500 (GMT+05:00)",
       "category": "Fresh Fruit",
       "readingTime": 6,
       "content": "<p>lorem ipsum</p>",
-      "tags": ["Healthy", "Snacks", "Tiffin"],
+      "tags": [
+        "Healthy",
+        "Snacks",
+        "Tiffin"
+      ],
       "comments": [
         {
           "id": "c1",
-          "userImg": "",
+          "userImg": "https://thumbs.dreamstime.com/b/default-avatar-profile-icon-social-media-user-vector-default-avatar-profile-icon-social-media-user-vector-portrait-176194876.jpg",
           "fullName": "Darrell Steward",
           "date": "7 Apr, 2021",
           "comment": "Nulla molestie interdum ultricies. "
         },
         {
           "id": "c2",
-          "userImg": "",
+          "userImg": "https://thumbs.dreamstime.com/b/default-avatar-profile-icon-social-media-user-vector-default-avatar-profile-icon-social-media-user-vector-portrait-176194876.jpg",
           "fullName": "John Doe",
           "date": "26 Apr, 2021",
           "comment": "In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam."
         },
         {
           "id": "c3",
-          "userImg": "",
+          "userImg": "https://thumbs.dreamstime.com/b/default-avatar-profile-icon-social-media-user-vector-default-avatar-profile-icon-social-media-user-vector-portrait-176194876.jpg",
           "fullName": "Devon Lane",
           "date": "24 Apr, 2021",
           "comment": "Quisque eget tortor lobortis, facilisis metus eu, elementum est. Nunc sit amet erat quis ex convallis suscipit. Nam hendrerit, velit ut aliquam euismod, nibh tortor rutrum nisi, ac sodales nunc eros porta nisi. Sed scelerisque, est eget aliquam venenatis, est sem tempor eros."
         },
         {
           "id": "c4",
-          "userImg": "",
+          "userImg": "https://thumbs.dreamstime.com/b/default-avatar-profile-icon-social-media-user-vector-default-avatar-profile-icon-social-media-user-vector-portrait-176194876.jpg",
           "fullName": "Jacob Jones",
           "date": "20 Apr, 2021",
           "comment": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."
         },
         {
           "id": "c5",
-          "userImg": "",
+          "userImg": "https://thumbs.dreamstime.com/b/default-avatar-profile-icon-social-media-user-vector-default-avatar-profile-icon-social-media-user-vector-portrait-176194876.jpg",
           "fullName": "Jane Cooper",
           "date": "18 Apr, 2021",
           "comment": "Pellentesque feugiat, nibh vel vehicula pretium, nibh nibh bibendum elit, a volutpat arcu dui nec orci. Aenean dui odio, ullamcorper quis turpis ac, volutpat imperdiet ex."
@@ -1373,39 +1507,43 @@
       "category": "Fresh Fruit",
       "readingTime": 4,
       "content": "<p>lorem ipsum</p>",
-      "tags": ["Launch", "Snacks", "Bread"],
+      "tags": [
+        "Launch",
+        "Snacks",
+        "Bread"
+      ],
       "comments": [
         {
           "id": "c1",
-          "userImg": "",
+          "userImg": "https://thumbs.dreamstime.com/b/default-avatar-profile-icon-social-media-user-vector-default-avatar-profile-icon-social-media-user-vector-portrait-176194876.jpg",
           "fullName": "John Doe",
           "date": "26 Apr, 2021",
           "comment": "In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam."
         },
         {
           "id": "c2",
-          "userImg": "",
+          "userImg": "https://thumbs.dreamstime.com/b/default-avatar-profile-icon-social-media-user-vector-default-avatar-profile-icon-social-media-user-vector-portrait-176194876.jpg",
           "fullName": "Devon Lane",
           "date": "24 Apr, 2021",
           "comment": "Quisque eget tortor lobortis, facilisis metus eu, elementum est. Nunc sit amet erat quis ex convallis suscipit. Nam hendrerit, velit ut aliquam euismod, nibh tortor rutrum nisi, ac sodales nunc eros porta nisi. Sed scelerisque, est eget aliquam venenatis, est sem tempor eros."
         },
         {
           "id": "c3",
-          "userImg": "",
+          "userImg": "https://thumbs.dreamstime.com/b/default-avatar-profile-icon-social-media-user-vector-default-avatar-profile-icon-social-media-user-vector-portrait-176194876.jpg",
           "fullName": "Jacob Jones",
           "date": "20 Apr, 2021",
           "comment": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."
         },
         {
           "id": "c4",
-          "userImg": "",
+          "userImg": "https://thumbs.dreamstime.com/b/default-avatar-profile-icon-social-media-user-vector-default-avatar-profile-icon-social-media-user-vector-portrait-176194876.jpg",
           "fullName": "Jane Cooper",
           "date": "18 Apr, 2021",
           "comment": "Pellentesque feugiat, nibh vel vehicula pretium, nibh nibh bibendum elit, a volutpat arcu dui nec orci. Aenean dui odio, ullamcorper quis turpis ac, volutpat imperdiet ex."
         },
         {
           "id": "c5",
-          "userImg": "",
+          "userImg": "https://thumbs.dreamstime.com/b/default-avatar-profile-icon-social-media-user-vector-default-avatar-profile-icon-social-media-user-vector-portrait-176194876.jpg",
           "fullName": "Darrell Steward",
           "date": "7 Apr, 2021",
           "comment": "Nulla molestie interdum ultricies. "
@@ -1417,47 +1555,51 @@
       "title": "Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.",
       "previewImage": "/assets/images/blog/img10.svg",
       "extraImages": [
-        "https://avatars.mds.yandex.net/i?id=421bcf30d93b8079c2f75c12491d10d8d8a240d3-10639796-images-thumbs&n=13",
-        "https://avatars.mds.yandex.net/i?id=c501aa526e28b17da3f59fd03472143c-5502450-images-thumbs&n=13"
+        "https://avatars.mds.yandex.net/i?id=b850af6b745c221b42499945e5fd7af816d69844-9223337-images-thumbs&n=13",
+        "https://avatars.mds.yandex.net/i?id=b850af6b745c221b42499945e5fd7af816d69844-9223337-images-thumbs&n=13"
       ],
       "author": "nimadir@gmail.com",
       "createdDate": "Mon Nov 06 2023 15:05:24 GMT+0500 (GMT+05:00)",
       "category": "Vegetables",
       "readingTime": 4,
       "content": "<p>lorem ipsum</p>",
-      "tags": ["Vegetarian", "Vitamins", "Dinner"],
+      "tags": [
+        "Vegetarian",
+        "Vitamins",
+        "Dinner"
+      ],
       "comments": [
         {
           "id": "c1",
-          "userImg": "",
+          "userImg": "https://thumbs.dreamstime.com/b/default-avatar-profile-icon-social-media-user-vector-default-avatar-profile-icon-social-media-user-vector-portrait-176194876.jpg",
           "fullName": "Devon Lane",
           "date": "24 Apr, 2021",
           "comment": "Quisque eget tortor lobortis, facilisis metus eu, elementum est. Nunc sit amet erat quis ex convallis suscipit. Nam hendrerit, velit ut aliquam euismod, nibh tortor rutrum nisi, ac sodales nunc eros porta nisi. Sed scelerisque, est eget aliquam venenatis, est sem tempor eros."
         },
         {
           "id": "c2",
-          "userImg": "",
+          "userImg": "https://thumbs.dreamstime.com/b/default-avatar-profile-icon-social-media-user-vector-default-avatar-profile-icon-social-media-user-vector-portrait-176194876.jpg",
           "fullName": "John Doe",
           "date": "26 Apr, 2021",
           "comment": "In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam."
         },
         {
           "id": "c3",
-          "userImg": "",
+          "userImg": "https://thumbs.dreamstime.com/b/default-avatar-profile-icon-social-media-user-vector-default-avatar-profile-icon-social-media-user-vector-portrait-176194876.jpg",
           "fullName": "Jacob Jones",
           "date": "20 Apr, 2021",
           "comment": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."
         },
         {
           "id": "c4",
-          "userImg": "",
+          "userImg": "https://thumbs.dreamstime.com/b/default-avatar-profile-icon-social-media-user-vector-default-avatar-profile-icon-social-media-user-vector-portrait-176194876.jpg",
           "fullName": "Darrell Steward",
           "date": "7 Apr, 2021",
           "comment": "Nulla molestie interdum ultricies. "
         },
         {
           "id": "c5",
-          "userImg": "",
+          "userImg": "https://thumbs.dreamstime.com/b/default-avatar-profile-icon-social-media-user-vector-default-avatar-profile-icon-social-media-user-vector-portrait-176194876.jpg",
           "fullName": "Jane Cooper",
           "date": "18 Apr, 2021",
           "comment": "Pellentesque feugiat, nibh vel vehicula pretium, nibh nibh bibendum elit, a volutpat arcu dui nec orci. Aenean dui odio, ullamcorper quis turpis ac, volutpat imperdiet ex."

@@ -1,4 +1,5 @@
-import OrderHistory from "./OrderHistory"
+
+import History from "./History"
 import Profile from "./Profile"
 import UserAddress from "./UserAddress"
 
@@ -9,7 +10,7 @@ function DashboardInfo() {
             <Profile/>
             <UserAddress/>
         </div>
-        <OrderHistory/>
+        <History/>
     </div>
   )
 }
