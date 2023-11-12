@@ -19,7 +19,7 @@ function ChangePassword() {
     })();
   }, []);
 
-  console.log(data);
+  // console.log(data);
 
   const handleSaveChanges = async (e) => {
     e.preventDefault();

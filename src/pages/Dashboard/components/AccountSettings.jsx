@@ -34,7 +34,7 @@ function AccountSettings() {
     })();
   }, []);
 
-  console.log(data);
+  // console.log(data);
 
   const handleSaveChanges = async (e) => {
     e.preventDefault();

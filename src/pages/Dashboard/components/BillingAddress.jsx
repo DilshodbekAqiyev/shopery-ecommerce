@@ -5,64 +5,42 @@ import { getUser } from "../../../utils/utils";
 import { instance } from "../../../utils/apiRequest";
 
 function BillingAddress() {
-  const [data, setData] = useState({
-    firstName: "",
-    lastName: "",
-    email: "",
-    phone: "",
-    password: "",
-    companyName: "",
-    streetAddress: "",
-    country: "",
-    state: "",
-    city: "",
-    zipCode: "",
-  });
+  const [data, setData] = useState(null);
   useEffect(() => {
     (async () => {
       const response = await getUser();
-      setData({
-        ...data,
-        firstName: response.firstName,
-        lastName: response.lastName,
-        phone: response.phoneNumber,
-        email: response.email,
-        id: response.id,
-        password: response.password,
-        companyName: response.billingAddress.companyName,
-        streetAddress: response.billingAddress.streetAddress,
-        country: response.billingAddress.country,
-        city: response.billingAddress.city,
-        zipCode: response.billingAddress.zipCode,
-      });
+      setData(response );
     })();
   }, []);
 
-  console.log(data);
+ 
 
   const handleSaveChanges = async (e) => {
     e.preventDefault();
     try {
       const id = data.id;
-      await instance.patch(`users/billingAddress/${id}`, data);
+      await instance.patch(`users/${id}`, data);
 
-      const updatedResponse = await getUser();
-      setData({
-        ...data,
-        firstName: updatedResponse.firstName,
-        lastName: updatedResponse.lastName,
-        phone: updatedResponse.phoneNumber,
-        email: updatedResponse.email,
-        companyName: updatedResponse.billingAddress.companyName,
-        streetAddress: updatedResponse.billingAddress.streetAddress,
-        country: updatedResponse.billingAddress.country,
-        city: updatedResponse.billingAddress.city,
-        zipCode: updatedResponse.billingAddress.zipCode,
-      });
+      // const updatedResponse = await getUser();
+      // setData({
+      //   ...updatedResponse,
+      //   billingAddress:{
+      //     firstName: updatedResponse.firstName,
+      //     lastName: updatedResponse.lastName,
+      //     phone: updatedResponse.phoneNumber,
+      //     email: updatedResponse.email,
+      //     companyName: updatedResponse.companyName,
+      //     streetAddress: updatedResponse.streetAddress,
+      //     country: updatedResponse.country,
+      //     city: updatedResponse.city,
+      //     zipCode: updatedResponse.zipCode,
+      //   }
+      // });
     } catch (error) {
       console.error("error ", error);
     }
   };
+  console.log(data);
   return (
     <div>
       <div className="border w-[984px] mt-[40px] rounded-lg">
@@ -83,10 +61,8 @@ function BillingAddress() {
                 className="border-solid focus:grays-gray600  outline-none drop-shadow-sm transition-all duration-200 ease-in-out   focus:bg-white focus:ring-1 focus:ring-[#234f1e] text-grays-gray600 border mt-[6px]  w-[302px] rounded-lg py-[14px] px-[16px] text-[16px] font-[400]  leading-[21px]"
                 type="text"
                 id="firstName"
-                onChange={(e) =>
-                  setData({ ...data, firstName: e.target.value })
-                }
-                value={data.firstName}
+                onChange={(e) => setData({ ...data, billingAddress: {firstName: e.target.value}})}
+                value={data?.billingAddress.firstName}
               />
             </div>
             <div className="mb-[16px]">
@@ -100,8 +76,8 @@ function BillingAddress() {
                 className="border-solid focus:grays-gray600  outline-none drop-shadow-sm transition-all duration-200 ease-in-out   focus:bg-white focus:ring-1 focus:ring-[#234f1e] text-grays-gray600 border mt-[6px]  w-[302px] rounded-lg py-[14px] px-[16px] text-[16px] font-[400]  leading-[21px]"
                 type="text"
                 id="lasName"
-                onChange={(e) => setData({ ...data, lastName: e.target.value })}
-                value={data.lastName}
+                onChange={(e) => setData({ ...data, billingAddress: {lastName: e.target.value}})}
+                value={data?.billingAddress.lastName}
               />
             </div>
             <div className="mb-[16px]">
@@ -118,8 +94,8 @@ function BillingAddress() {
                 className="border-solid focus:grays-gray600  outline-none drop-shadow-sm transition-all duration-200 ease-in-out   focus:bg-white focus:ring-1 focus:ring-[#234f1e] text-grays-gray600 border mt-[6px]  w-[302px] rounded-lg py-[14px] px-[16px] text-[16px] font-[400]  leading-[21px]"
                 type="text"
                 id="company"
-                onChange={(e) => setData({ ...data, companyName: e.target.value })}
-                value={data.companyName}
+                onChange={(e) => setData({ ...data, billingAddress: {companyName: e.target.value}})}
+                value={data?.billingAddress.companyName}
               />
             </div>
           </div>
@@ -134,11 +110,10 @@ function BillingAddress() {
               className="block w-[936px] border-solid focus:grays-gray600  outline-none drop-shadow-sm transition-all duration-200 ease-in-out   focus:bg-white focus:ring-1 focus:ring-[#234f1e]  text-grays-gray900 border mt-[6px]   rounded-lg py-[14px] px-[16px] text-[16px] font-[400]  leading-[21px]"
               type="text"
               id="address"
-              onChange={(e) =>
-                setData({ ...data, streetAddress: e.target.value })
-              }
-              value={data.streetAddress}
+              onChange={(e) => setData({ ...data, billingAddress: {streetAddress: e.target.value}})}
+              value={data?.billingAddress.streetAddress}
             />
+
 
             <div className="mt-[30px]  flex  gap-[20px] items-center pt-[50px]">
               <div className="w-[302px]">
@@ -148,10 +123,9 @@ function BillingAddress() {
                   className="block w-[302px] border-solid focus:grays-gray600  outline-none drop-shadow-sm transition-all duration-200 ease-in-out   focus:bg-white focus:ring-1 focus:ring-[#234f1e]  text-grays-gray600  border mt-[6px]   rounded-lg py-[14px] px-[16px] text-[16px] font-[400]  leading-[21px]"
                   type="text"
                   id="country"
-                  onChange={(e) =>
-                    setData({ ...data, country: e.target.value })
-                  }
-                  value={data.country}
+                  onChange={(e) => setData({ ...data, billingAddress: {country: e.target.value}})}
+                  value={data?.billingAddress.country}
+
                 />
               </div>
               <div>
@@ -160,10 +134,8 @@ function BillingAddress() {
                   className="block w-[302px] border-solid focus:grays-gray600  outline-none drop-shadow-sm transition-all duration-200 ease-in-out   focus:bg-white focus:ring-1 focus:ring-[#234f1e]  text-grays-gray600 border mt-[6px]   rounded-lg py-[14px] px-[16px] text-[16px] font-[400]  leading-[21px]"
                   type="text"
                   id="state"
-                  onChange={(e) =>
-                    setData({ ...data, city: e.target.value })
-                  }
-                  value={data.city}
+                  onChange={(e) => setData({ ...data, billingAddress: {city: e.target.value}})}
+                  value={data?.billingAddress.city}
                 />
               </div>
               <div className="w-[302px] ">
@@ -172,10 +144,8 @@ function BillingAddress() {
                   className="block w-[302px] border-solid focus:grays-gray600  outline-none drop-shadow-sm transition-all duration-200 ease-in-out   focus:bg-white focus:ring-1 focus:ring-[#234f1e]  text-grays-gray600 border mt-[6px]   rounded-lg py-[14px] px-[16px] text-[16px] font-[400]  leading-[21px]"
                   type="text"
                   id="zipCode"
-                  onChange={(e) =>
-                    setData({ ...data, zipCode: e.target.value })
-                  }
-                  value={data.zipCode}
+                  onChange={(e) => setData({ ...data, billingAddress: {zipCode: e.target.value}})}
+                  value={data?.billingAddress.zipCode}
                 />
               </div>
             </div>
@@ -191,10 +161,9 @@ function BillingAddress() {
                   className="border-[1.5px]  text-grays-gray600 text-[14px ] leading-[21px] w-[460px] px-[14px] py-[11px] rounded-[6px] border-solid focus:grays-gray600  outline-none drop-shadow-sm transition-all duration-200 ease-in-out   focus:bg-white focus:ring-1 focus:ring-[#234f1e] v"
                   id="emailBill"
                   type="email"
-                  onChange={(e) =>
-                    setData({ ...data, email: e.target.value })
-                  }
-                  value={data.email}
+                  onChange={(e) => setData({ ...data, billingAddress: {email: e.target.value}})}
+                  value={data?.billingAddress.email}
+                  
                 />
               </div>
               <div>
@@ -208,11 +177,8 @@ function BillingAddress() {
                   className="border-[1.5px] text-[14px ] text-grays-gray600 leading-[21px] w-[460px] px-[14px] py-[11px] rounded-[6px] border-solid focus:grays-gray600  outline-none drop-shadow-sm transition-all duration-200 ease-in-out   focus:bg-white focus:ring-1 focus:ring-[#234f1e] v"
                   id="phone"
                   type="phone"
-                  
-                  onChange={(e) =>
-                    setData({ ...data, phone: e.target.value })
-                  }
-                  value={data.phone}
+                  onChange={(e) => setData({ ...data, billingAddress: {phone: e.target.value}})}
+                  value={data?.billingAddress.phone}
                 />
               </div>
             </div>
