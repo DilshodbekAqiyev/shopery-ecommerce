@@ -42,8 +42,6 @@ export default function App() {
           }
         />
         <Route path="product/:productID" element={<ProductDetails />} />
-        <Route path="sign-in" element={<Signup />} />
-        <Route path="sign-up" element={<Signin />} />
         {/* <Route pa
         th="dashboard" element={<Dashboard />}>
 

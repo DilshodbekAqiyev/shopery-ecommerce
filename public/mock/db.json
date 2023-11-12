@@ -1,227 +1,25 @@
 {
   "users": [
     {
-      "id": 1,
-      "firstName": "John",
-      "lastName": "Doe",
-      "email": "johndoe@gmail.com",
+      "id": "a1157062-12d7-428b-844f-9f46da48d9b9",
+      "firstName": "",
+      "lastName": "",
+      "email": "test@gmail.com",
       "role": "Customer",
-      "phoneNumber": "803558",
-      "password": "X34sfsdfy34t7dsgfh",
-      "token": "x@fSDFYsd345d23saFsa326ASDghad23saFsa326ASDghasd%6Assd%6AsD",
+      "phoneNumber": null,
+      "password": "test",
+      "token": "13891a2c-077d-4f80-9f0d-14fa70fa5494",
       "avatar": "/assets/images/users/user1.png",
       "billingAddress": {
-        "phone": "99 255 08 76"
-      },
-      "wishlist": [
-        {
-          "id": 1,
-          "name": "Big Potatos",
-          "category": "Vegetables",
-          "discountPrice": 14.99,
-          "originalPrice": 48,
-          "status": "",
-          "images": {
-            "src": "/assets/images/products/potato.png",
-            "imageDescription": "Big potato images",
-            "otherImages": [
-              {
-                "id": 1,
-                "src": "/assets/images/products/potato.png",
-                "otherImageDescription": "Picture of a large potato from the left"
-              },
-              {
-                "id": 2,
-                "src": "https://imgs.search.brave.com/oVlHBWXyz2eqlN7NlOV2_ToywFbiLHaTIa7bjXyqOSc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9wb3Rh/dG9lcy0yMzI5NjAu/anBn",
-                "otherImageDescription": "Picture of a large potato from the right"
-              },
-              {
-                "id": 3,
-                "src": "https://imgs.search.brave.com/1_ynpB5LqS7jY14dU35roWI6bDzFpaiUg9ck8ecysvg/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAyLzY1LzQ4Lzg2/LzM2MF9GXzI2NTQ4/ODY1NV9jTEk5WDRs/eDdIU3VnNW5QTnp0/QnNTNnlhNThvRnVW/aS5qcGc",
-                "otherImageDescription": "Picture of a large potato from above"
-              },
-              {
-                "id": 4,
-                "src": "https://imgs.search.brave.com/66j22hu8FZvfcWc4VfiEfDBgj0_QDNbGXY32Sjlp_UA/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAwLzU3Lzk3LzMx/LzM2MF9GXzU3OTcz/MTgzX3ZtblpTMnNk/MkQ0RkNTWGZESjEy/V2gwSTdLc0t4T3Rp/LmpwZw",
-                "otherImageDescription": "Picture of a big potato shot from the front"
-              },
-              {
-                "id": 5,
-                "src": "https://imgs.search.brave.com/_jEOu3lxGg1GKIcFREUDele-U04H2pkONG_0qZ76y_U/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9zdC5k/ZXBvc2l0cGhvdG9z/LmNvbS8xMDAzNDk1/LzE5NTgvaS82MDAv/ZGVwb3NpdHBob3Rv/c18xOTU4MDc4My1z/dG9jay1waG90by1w/b3RhdG9lcy5qcGc",
-                "otherImageDescription": "Picture of a large potato from the left"
-              },
-              {
-                "id": 6,
-                "src": "https://imgs.search.brave.com/oVlHBWXyz2eqlN7NlOV2_ToywFbiLHaTIa7bjXyqOSc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9wb3Rh/dG9lcy0yMzI5NjAu/anBn",
-                "otherImageDescription": "Picture of a large potato from the right"
-              },
-              {
-                "id": 7,
-                "src": "https://imgs.search.brave.com/1_ynpB5LqS7jY14dU35roWI6bDzFpaiUg9ck8ecysvg/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAyLzY1LzQ4Lzg2/LzM2MF9GXzI2NTQ4/ODY1NV9jTEk5WDRs/eDdIU3VnNW5QTnp0/QnNTNnlhNThvRnVW/aS5qcGc",
-                "otherImageDescription": "Picture of a large potato from above"
-              },
-              {
-                "id": 8,
-                "src": "https://imgs.search.brave.com/66j22hu8FZvfcWc4VfiEfDBgj0_QDNbGXY32Sjlp_UA/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAwLzU3Lzk3LzMx/LzM2MF9GXzU3OTcz/MTgzX3ZtblpTMnNk/MkQ0RkNTWGZESjEy/V2gwSTdLc0t4T3Rp/LmpwZw",
-                "otherImageDescription": "Picture of a big potato shot from the front"
-              },
-              {
-                "id": 9,
-                "src": "/assets/images/products/potato.png",
-                "otherImageDescription": "Picture of a big potato shot from the front"
-              }
-            ]
-          }
-        },
-        {
-          "id": 3,
-          "name": "Ladies Finger",
-          "category": "Vegetables",
-          "discountPrice": 14.99,
-          "originalPrice": 20.99,
-          "discountPercentage": 64,
-          "status": "Out of Stock",
-          "statusColor": "1A1A1A",
-          "rating": 5,
-          "available": 5413,
-          "littleDesCription": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla nibh diam, blandit vel consequat nec, ultrices et ipsum. Nulla varius magna a consequat pulvinar.",
-          "description": "Sed commodo aliquam dui ac porta. Fusce ipsum felis, imperdiet at posuere ac, viverra at mauris. Maecenas tincidunt ligula a sem vestibulum pharetra. Maecenas auctor tortor lacus, nec laoreet nisi porttitor vel. Etiam tincidunt metus vel dui interdum sollicitudin. Mauris sem ante, vestibulum nec orci vitae, aliquam mollis lacus. Sed et condimentum arcu, id molestie tellus. Nulla facilisi. Nam scelerisque vitae justo a convallis. Morbi urna ipsum, placerat quis commodo quis, egestas elementum leo. Donec convallis mollis enim. Aliquam id mi quam. Phasellus nec fringilla elit. Nulla mauris tellus, feugiat quis pharetra sed, gravida ac dui. Sed iaculis, metus faucibus elementum tincidunt, turpis mi viverra velit, pellentesque tristique neque mi eget nulla. Proin luctus elementum neque et pharetra. ",
-          "images": {
-            "src": "/assets/images/products/ladiesFinger.png",
-            "imageDescription": "Ladies finger images",
-            "otherImages": [
-              {
-                "id": 1,
-                "src": "/assets/images/products/ladiesFinger.png",
-                "otherImageDescription": "Picture of a large potato from the left"
-              },
-              {
-                "id": 2,
-                "src": "https://imgs.search.brave.com/iJ0i5AV9pEgyoKSJK0-v1q0X87tU1ba8RcAmXXEdnSQ/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTE0/MzI4NDk3MC9waG90/by9va3JhLW9yLWxh/ZHlzLWZpbmdlci5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/WEF0c0otcDJaUHFU/VlZFNy1Pd1BmTTlN/N0plWDQ2TF8xWV95/MUZnY05pVT0",
-                "otherImageDescription": "Picture of a large potato from the right"
-              },
-              {
-                "id": 3,
-                "src": "https://imgs.search.brave.com/dRNqXC2zeXbTkI6XbEXZyj4uImlSwap_HEveBUMuS6Q/rs:fit:860:0:0/g:ce/aHR0cHM6Ly95YXlh/cGFwYXlhLmNvbS5z/Zy9zaG9wL2ltYWdl/L2NhY2hlL2NhdGFs/b2cvbGFkeWZpbmdl/ci0zNjB4MzYwLmpw/Zw",
-                "otherImageDescription": "Picture of a large potato from above"
-              },
-              {
-                "id": 4,
-                "src": "https://imgs.search.brave.com/wbZrZcu4mjfF-GzJNeQ4CamGCen0IwqXArpq68o-nzM/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTE0/MzcyMDg0NS9waG90/by9sYWR5cy1maW5n/ZXItb3Itb2tyYS1p/bWFnZS5qcGc_cz02/MTJ4NjEyJnc9MCZr/PTIwJmM9QlF0NkZ1/aUptSHV2VFYxbl84/dnF3NV9UNmJYN2N0/Zi02RGhpUDRpbjlj/az0",
-                "otherImageDescription": "Picture of a big potato shot from the front"
-              },
-              {
-                "id": 5,
-                "src": "https://imgs.search.brave.com/knaDyYxi6sCtzHpUmzVrHLXv1vNPcL1QYwz3sH2sIaE/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9oZWFs/dGh5YnVkZGhhLmlu/L2ltYWdlL2NhY2hl/L2NhdGFsb2cvMzNs/YWRpZXNmaW5nZXIt/NTAweDUxNS5qcGc",
-                "otherImageDescription": "Picture of a large potato from the left"
-              },
-              {
-                "id": 6,
-                "src": "https://imgs.search.brave.com/iJ0i5AV9pEgyoKSJK0-v1q0X87tU1ba8RcAmXXEdnSQ/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTE0/MzI4NDk3MC9waG90/by9va3JhLW9yLWxh/ZHlzLWZpbmdlci5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/WEF0c0otcDJaUHFU/VlZFNy1Pd1BmTTlN/N0plWDQ2TF8xWV95/MUZnY05pVT0",
-                "otherImageDescription": "Picture of a large potato from the right"
-              },
-              {
-                "id": 7,
-                "src": "https://imgs.search.brave.com/dRNqXC2zeXbTkI6XbEXZyj4uImlSwap_HEveBUMuS6Q/rs:fit:860:0:0/g:ce/aHR0cHM6Ly95YXlh/cGFwYXlhLmNvbS5z/Zy9zaG9wL2ltYWdl/L2NhY2hlL2NhdGFs/b2cvbGFkeWZpbmdl/ci0zNjB4MzYwLmpw/Zw",
-                "otherImageDescription": "Picture of a large potato from above"
-              },
-              {
-                "id": 8,
-                "src": "https://imgs.search.brave.com/wbZrZcu4mjfF-GzJNeQ4CamGCen0IwqXArpq68o-nzM/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTE0/MzcyMDg0NS9waG90/by9sYWR5cy1maW5n/ZXItb3Itb2tyYS1p/bWFnZS5qcGc_cz02/MTJ4NjEyJnc9MCZr/PTIwJmM9QlF0NkZ1/aUptSHV2VFYxbl84/dnF3NV9UNmJYN2N0/Zi02RGhpUDRpbjlj/az0",
-                "otherImageDescription": "Picture of a big potato shot from the front"
-              },
-              {
-                "id": 9,
-                "src": "/assets/images/products/ladiesFinger.png",
-                "otherImageDescription": "Picture of a large potato from the right"
-              }
-            ]
-          },
-          "additionalInformation": [
-            {
-              "title": "Weight:",
-              "description": "01"
-            },
-            {
-              "title": "Color:",
-              "description": "Green"
-            },
-            {
-              "title": "Type:",
-              "description": "Organic"
-            },
-            {
-              "title": "Category:",
-              "description": "Vegetables"
-            },
-            {
-              "title": "Stock Status:",
-              "description": "Available (3,413)"
-            },
-            {
-              "title": "Tags:",
-              "description": "Green Cabbage Cabbage Chinese Healthy Vegetables"
-            }
-          ],
-          "brand": "/assets/images/products/brands/farmary.svg",
-          "tag": [
-            "Vegetables",
-            "Healthy",
-            "Chinese",
-            "Cabbage",
-            "Green Cabbage"
-          ],
-          "reviews": [
-            {
-              "id": 1,
-              "userName": "Kristin Watson",
-              "userImage": "/assets/images/users/KristinWatson.svg",
-              "rating": 5,
-              "description": "Duis at ullamcorper nulla, eu dictum eros.",
-              "date": ""
-            },
-            {
-              "id": 2,
-              "userName": "Jane Cooper",
-              "userImage": "/assets/images/users/user.svg",
-              "rating": 4,
-              "description": "Keep the soil evenly moist for the healthiest growth. If the sun gets too hot, Chinese cabbage tends to 'bolt' or go to seed; in long periods of heat, some kind of shade may be helpful. Watch out for snails, as they will harm the plants.",
-              "date": ""
-            }
-          ]
-        }
-      ],
-      "shoppingCart": [],
-      "checkout": [],
-      "orders": [],
-      "phone": "803558",
-      "companyName": "Zakirsoft",
-      "streetAddress": "4140 Parl",
-      "country": "United State",
-      "state": "",
-      "city": "Washing",
-      "zipCode": "20003"
-    },
-    {
-      "id": 2,
-      "firstName": "John1",
-      "lastName": "Doe1",
-      "email": "johndoe1@gmail.com",
-      "role": "Customer1",
-      "phoneNumber": 80355501221,
-      "password": "X34sfsdfy34t7dsgf1",
-      "token": "x@fSDFYsd345d23saFsa326ASDghad23saFsa326ASDghasd%6Assd%6As1",
-      "avatar": "/assets/images/users/user1.png",
-      "billingAddress": {
-        "firstName": "John1",
-        "lastName": "Doe1",
-        "companyName": "Zakirsoft1",
-        "streetAddress": "4140 Parl1",
-        "country": "United States1",
-        "city": "Washington1",
-        "zipCode": "200031",
-        "email": "dianne.russell@gmail.com1",
-        "phone": 6935551231
+        "firstName": "",
+        "lastName": "",
+        "companyName": "",
+        "streetAddress": "",
+        "country": "",
+        "city": "",
+        "zipCode": "",
+        "email": "",
+        "phone": null
       },
       "wishlist": [],
       "shoppingCart": [],
