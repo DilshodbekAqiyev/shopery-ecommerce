@@ -9,6 +9,7 @@ import ModalDetails from '../../../pages/ProductDetails/components/ModalDetails'
 import { instance } from '../../../utils/apiRequest'
 import bag from '../../../../public/assets/icons/bag.svg'
 import bag_white from '../../../../public/assets/icons/bag-white.svg'
+import { AddToWishlist } from '../../../utils/api/AddToWishlist'
 
 const ProductCard = (props) => {
   const [isHovered, setIsHovered] = useState(false)
@@ -31,6 +32,7 @@ const ProductCard = (props) => {
 
   const handleLikeClick = (e) => {
     e.stopPropagation()
+    AddToWishlist(props)
   }
 
   useEffect(() => {

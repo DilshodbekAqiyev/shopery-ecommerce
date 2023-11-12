@@ -33,12 +33,12 @@ const NavbarMiddle = () => {
           </div>
         </div>
         <div className="flex items-center gap-4">
-          <div className="cursor-pointer relative">
+          <Link to="wishlist" className="cursor-pointer relative">
             <AiOutlineHeart size={30} />
             <p className="flex items-center justify-center border-[1px] border-white absolute right-[-3px] top-[-5px] w-[18px] h-[18px] rounded-full bg-hardPrimary text-white text-[10px] ">
               0
             </p>
-          </div>
+          </Link>
           <div className="h-6 w-[1px] bg-gray-200 "></div>
           <div className="flex items-center gap-3">
             <div className="cursor-pointer relative">
