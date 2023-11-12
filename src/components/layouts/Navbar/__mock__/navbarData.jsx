@@ -76,75 +76,68 @@ export const navbarData = [
       },
     ],
   },
+  // {
+  //   id: 2,
+  //   name: 'Home',
+  //   link: '',
+  //   type: 'dropdown',
+  //   dropdown: [
+  //     {
+  //       name: 'Ladoo',
+  //       link: '',
+  //     },
+  //     {
+  //       name: 'Besan Ladoo',
+  //       link: '',
+  //     },
+  //     {
+  //       name: 'Ghee Besan Ladoo',
+  //       link: '',
+  //     },
+  //     {
+  //       name: 'Nariyal Ladoo',
+  //       link: '',
+  //     },
+  //     {
+  //       name: 'Kaju Katli',
+  //       link: '',
+  //     },
+  //     {
+  //       name: 'Rasgulla',
+  //       link: '',
+  //     },
+  //   ],
+  // },
+
   {
-    id: 2,
-    name: 'Home',
+    id: 4,
+    name: 'Pages',
     link: '',
     type: 'dropdown',
     dropdown: [
       {
-        name: 'Ladoo',
-        link: '',
+        name: 'Wishlist',
+        link: 'wishlist',
       },
       {
-        name: 'Besan Ladoo',
-        link: '',
+        name: 'Shopping Cart',
+        link: 'shoppingCart',
       },
       {
-        name: 'Ghee Besan Ladoo',
-        link: '',
+        name: 'Checkout',
+        link: 'checkout',
       },
       {
-        name: 'Nariyal Ladoo',
-        link: '',
-      },
-      {
-        name: 'Kaju Katli',
-        link: '',
-      },
-      {
-        name: 'Rasgulla',
-        link: '',
-      },
+        name: 'Faqs',
+        link: 'faqs',
+      }
     ],
   },
   {
     id: 3,
     name: 'Shop',
     link: 'shop',
-    type: 'dropdown',
-    dropdown: [
-      {
-        name: 'Ladoo',
-        link: '',
-      },
-      {
-        name: 'Besan Ladoo',
-        link: '',
-      },
-      {
-        name: 'Ghee Besan Ladoo',
-        link: '',
-      },
-      {
-        name: 'Nariyal Ladoo',
-        link: '',
-      },
-      {
-        name: 'Kaju Katli',
-        link: '',
-      },
-      {
-        name: 'Rasgulla',
-        link: '',
-      },
-    ],
-  },
-  {
-    id: 4,
-    name: 'Pages',
-    link: '',
-    type: 'dropdown',
+    type: 'single',
     dropdown: [
       {
         name: 'Ladoo',
@@ -176,7 +169,7 @@ export const navbarData = [
     id: 5,
     name: 'Blog',
     link: 'blog',
-    type: 'dropdown',
+    type: 'single',
     dropdown: [
       {
         name: 'Ladoo',
@@ -210,10 +203,10 @@ export const navbarData = [
     link: 'about',
     type: 'single',
   },
-  {
-    id: 7,
-    name: 'Contact Us',
-    link: '',
-    type: 'single',
-  },
+  // {
+  //   id: 7,
+  //   name: 'Contact Us',
+  //   link: '',
+  //   type: 'single',
+  // },
 ]

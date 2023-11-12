@@ -2,14 +2,15 @@ import { useState } from 'react'
 import { useEffect } from 'react'
 import { instance } from '../../utils/apiRequest'
 import SocialMediaIcons from '../../components/common/SocialMediaIcons'
+import { getUser } from '../../utils/utils'
 
 export default function Wishlist() {
   const [wishlistData, setWishlistData] = useState([])
 
   const getWishData = async () => {
-    const data = await instance.get('users/1')
+    const res = await getUser()
+    const data = await instance.get(`users/${res.id}`)
     setWishlistData(data.data.wishlist)
-    console.log(data.data.wishlist)
   }
 
   useEffect(() => {

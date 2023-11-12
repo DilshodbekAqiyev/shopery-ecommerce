@@ -2,15 +2,12 @@ import PropTypes from 'prop-types'
 
 import { useEffect, useState } from 'react'
 import ProductCard from '../../components/common/Cards/ProductCard'
-// import FeaturedProducts from './FeaturedProducts'
 import Video from '../../components/common/video/video'
-// import LatestCard from '../../components/common/Cards/LatestCard'
 import OurSpecial from './components/OurSpecial'
 import Timer from './components/timer'
 import SwiperTop from '../../components/ui/swiper'
 import Featured from '../../components/common/featured/featured'
 import { instance } from '../../utils/apiRequest'
-import Container from '../../components/common/Container'
 
 const vegetablesData = ['All', 'Vegetables', 'Fruit', 'Meat & Fish']
 
@@ -48,7 +45,7 @@ const Home = () => {
   window.matchMedia('(min-width: 570px)').addEventListener('change', (e) => setMatches(e.matches))
 
   return (
-    <Container>
+    <div>
       <div className="relative max-w-[1320px] m-auto">
         <SwiperTop />
         <div>
@@ -61,7 +58,7 @@ const Home = () => {
           {vegetablesData.map((item, index) => {
             return (
               // eslint-disable-next-line react/jsx-key
-              <a href="#0" key={index} onClick={() => filteredData(item)}>
+              <a className='cursor-pointer' key={index} onClick={() => filteredData(item)}>
                 <span className="hover:border-b-2 hover:text-[#00B207] text-[#808080] text-[16px] font-[500] border-[#20B526] py-[8px] px-[12px]">
                   {item}
                 </span>{' '}
@@ -74,8 +71,8 @@ const Home = () => {
             )
           })}
         </div>
-        <div className="border px-[146px]">
-          <div className="flex flex-wrap">
+        <div className="border">
+          <div className="flex flex-wrap justify-center mx-auto w-[1320px]">
             {dataProduct.map((data) => {
               return <ProductCard key={data.id} {...data} />
             })}
@@ -116,7 +113,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-    </Container>
+    </div>
   )
 }
 

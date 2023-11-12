@@ -10,11 +10,23 @@ import { instance } from '../../../utils/apiRequest'
 import bag from '../../../../public/assets/icons/bag.svg'
 import bag_white from '../../../../public/assets/icons/bag-white.svg'
 import { AddToWishlist } from '../../../utils/api/AddToWishlist'
+import { getUser } from '../../../utils/utils'
+import { useProviderContext } from '../../../contexts/Provider'
 
 const ProductCard = (props) => {
+  const { wishlist, setWishlist } = useProviderContext()
   const [isHovered, setIsHovered] = useState(false)
   const [foundProduct, setFoundProduct] = useState({})
+  const [logged, setLogged] = useState(false)
   const navigate = useNavigate()
+
+  useEffect(() => {
+    (async () => {
+      const res = await getUser()
+      setLogged(res !== null)
+      setWishlist(res.wishlist)
+    })()
+  }, [])
 
   const { id, name, originalPrice, discountPrice, images, rating, status, featrues } = props
 
@@ -32,12 +44,22 @@ const ProductCard = (props) => {
 
   const handleLikeClick = (e) => {
     e.stopPropagation()
-    AddToWishlist(props)
+    if (logged) {
+      AddToWishlist(props)
+      const el = wishlist.find((wishitem) => wishitem.id === props.id)
+      if (!el) {
+        setWishlist(prev => [...prev, props])
+      } else {
+        setWishlist(wishlist.filter((wishitem) => wishitem.id !== el.id))
+      }
+    } else {
+      alert("Please Log In")
+    }
   }
 
   useEffect(() => {
     // eslint-disable-next-line no-extra-semi
-    ;(async () => {
+    ; (async () => {
       const response = await instance.get(`products/${id}`)
       setFoundProduct(response.data)
     })()
@@ -46,9 +68,8 @@ const ProductCard = (props) => {
   return (
     <>
       <div
-        className={`w-[300px] bg-white shadow-lg  p-4 relative cursor-pointer transition-transform border-[2px] border-solid border-branding-[#2C742F] hover:shadow-[#00B207] hover:shadow-md ${
-          isHovered ? 'border-[#2C742F]' : ''
-        } ${featrues ? 'border border-[#E6E6E6] w-1/5 h-auto' : ''}`}
+        className={`w-[300px] bg-white shadow-lg  p-4 relative cursor-pointer transition-transform border-[2px] border-solid border-branding-[#2C742F] hover:shadow-[#00B207] hover:shadow-md ${isHovered ? 'border-[#2C742F]' : ''
+          } ${featrues ? 'border border-[#E6E6E6] w-1/5 h-auto' : ''}`}
         onMouseEnter={handleHover}
         onMouseLeave={handleMouseLeave}
         onClick={() => navigate('/shop/' + id)}
@@ -70,9 +91,8 @@ const ProductCard = (props) => {
         <div className={`mt-[20px] flex justify-between items-center ${featrues ? 'mt-[10px]' : ' '}`}>
           <div>
             <div
-              className={`text-base font-[400] text-[16px] leading-6 text-[#2B572E] ${featrues ? 'text-[14px]' : ' '} ${
-                isHovered ? 'text-[#00B207]' : ''
-              }`}
+              className={`text-base font-[400] text-[16px] leading-6 text-[#2B572E] ${featrues ? 'text-[14px]' : ' '} ${isHovered ? 'text-[#00B207]' : ''
+                }`}
             >
               {name}
             </div>
@@ -89,9 +109,8 @@ const ProductCard = (props) => {
             </div>
           </div>
           <div
-            className={`p-3 rounded-full w-[40px] h-[40px] flex justify-center items-center ${
-              isHovered ? 'bg-[#00B207]' : 'bg-grays-gray0.5'
-            }`}
+            className={`p-3 rounded-full w-[40px] h-[40px] flex justify-center items-center ${isHovered ? 'bg-[#00B207]' : 'bg-grays-gray0.5'
+              }`}
             onClick={handleClick}
           >
             <img src={isHovered ? bag_white : bag} alt="bag icon" loading="lazy" className="w-[20px] h-[20px]" />
@@ -103,16 +122,28 @@ const ProductCard = (props) => {
               className="bg-white rounded-full p-2 shadow-md hover:scale-110 cursor-pointer"
               onClick={handleLikeClick}
             >
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g id="Heart">
-                  <path
-                    id="Vector"
-                    d="M9.9996 17.5451C-6.66672 8.33333 4.99993 -1.66667 9.9996 4.65671C14.9999 -1.66667 26.6666 8.33333 9.9996 17.5451Z"
-                    stroke="#1A1A1A"
-                    strokeWidth="1.5"
-                  />
-                </g>
-              </svg>
+              {wishlist.find((wishitem) => wishitem.id === props.id) ? (
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g id="Heart">
+                    <path
+                      id="Vector"
+                      d="M9.9996 17.5451C-6.66672 8.33333 4.99993 -1.66667 9.9996 4.65671C14.9999 -1.66667 26.6666 8.33333 9.9996 17.5451Z"
+                      fill="red"
+                    />
+                  </g>
+                </svg>
+              ) : (
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g id="Heart">
+                    <path
+                      id="Vector"
+                      d="M9.9996 17.5451C-6.66672 8.33333 4.99993 -1.66667 9.9996 4.65671C14.9999 -1.66667 26.6666 8.33333 9.9996 17.5451Z"
+                      stroke="#1A1A1A"
+                      strokeWidth="1.5"
+                    />
+                  </g>
+                </svg>
+              )}
             </div>
             <Dialog
               onClick={(e) => {

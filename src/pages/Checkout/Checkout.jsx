@@ -25,19 +25,19 @@ function Checkout() {
   const [state, dispatch] = useReducer(CheckoutReducer, initialState)
   useEffect(() => {
     setToken(localStorage.getItem('token'))
-    // eslint-disable-next-line no-extra-semi
-    ;(async () => {
-      const response = await instance.get(`users`)
-      const correctedData = response?.data?.filter((el) => el.token === token)
-      setCor(correctedData[0]?.billingAddress)
-      setNewData(correctedData)
-    })()
+      // eslint-disable-next-line no-extra-semi
+      ; (async () => {
+        const response = await instance.get(`users`)
+        const correctedData = response?.data?.filter((el) => el.token === token)
+        setCor(correctedData[0]?.billingAddress)
+        setNewData(correctedData)
+      })()
   }, [])
   const editUser = async () => {
     // console.log(newData[0].id)
-    newData[0].billingAddress = { ...initialState, ...state }  
+    newData[0].billingAddress = { ...initialState, ...state }
     // console.log({ ...newData })
-    axios  
+    axios
       .patch(`http://localhost:3000/users/${newData[0].id}`, newData[0])
       .then((response) => {
         // console.log(response)
@@ -50,7 +50,7 @@ function Checkout() {
 
   const { city, companyName, country, email, firstName, lastName, phone, streetAddress, zipCode } = cor || {}
   return (
-    <div className="container flex justify-between mt-5">
+    <div className="container flex justify-between my-10">
       <div className=" w-4/6 pr-6">
         <h1 className=" text-[24px] font-medium">Billing Information</h1>
         <div className=" flex mt-5 justify-between">

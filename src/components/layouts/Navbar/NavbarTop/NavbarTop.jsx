@@ -5,8 +5,16 @@ import { Link } from 'react-router-dom'
 
 import { useTranslation } from 'react-i18next'
 import { translationKeys } from '../../../../utils/translation/translationKeys'
+import { useEffect, useState } from 'react'
+import { getUser } from '../../../../utils/utils'
 
 const NavbarTop = () => {
+  const [logged, setLogged] = useState(false)
+
+  useEffect(() => {
+    getUser().then(user => setLogged(user !== null))
+  }, [])
+
   const { t, i18n } = useTranslation()
 
   const changeLanguage = (lang) => {
@@ -40,7 +48,7 @@ const NavbarTop = () => {
             </SelectContent>
           </Select>
 
-          <Select>
+          {/* <Select>
             <SelectTrigger className="focus:ring-offset-0 h-full rounded-none placeholder:text-muted-foreground focus:outline-none focus:ring-0 disabled:opacity-100 w-max p-0 text-gray-300 font-normal bg-gray-800 text-xs hover:text-primary outline-none border-input border-none gap-[6px] flex items-center justify-center">
               <SelectValue placeholder="USD" />
             </SelectTrigger>
@@ -55,16 +63,24 @@ const NavbarTop = () => {
                 SUM
               </SelectItem>
             </SelectContent>
-          </Select>
+          </Select> */}
           <div className="w-[1px] h-[15px] bg-gray-100"></div>
           <div className="flex items-center gap-1 w-full">
-            <Link to="/sign-in" className="hover:text-primary">
-              {t(translationKeys['Sign In'])}
-            </Link>
-            <p>/</p>
-            <Link to="/sign-up" className="hover:text-primary">
-              {t(translationKeys['Sign Up'])}
-            </Link>
+            {!logged ? (
+              <>
+                <Link to="/sign-in" className="hover:text-primary">
+                  {t(translationKeys['Sign In'])}
+                </Link>
+                <p>/</p>
+                <Link to="/sign-up" className="hover:text-primary">
+                  {t(translationKeys['Sign Up'])}
+                </Link>
+              </>
+            ) : (
+              <Link to="/dashboard" className="hover:text-primary">
+                Profile
+              </Link>
+            )}
           </div>
         </div>
       </div>

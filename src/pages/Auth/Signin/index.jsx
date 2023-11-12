@@ -6,10 +6,30 @@ import { Checkbox } from "../../../components/ui/checkbox";
 import { Button } from "../../../components/ui/button";
 
 import Container from "../../../components/common/Container";
+import { useState } from "react";
+import { instance } from "../../../utils/apiRequest";
 
 export default function Signup() {
-  const createUser = () => {
-    console.log('Hi')
+  const [data, setData] = useState({
+    email: '',
+    password: '',
+  })
+
+  const Login = async () => {
+    const response = await instance.get('users')
+
+    const isUser = response.data.find(user => {
+      if (user.password === data.password && user.email === user.email) {
+        return user
+      }
+    })
+
+    if (isUser) {
+      localStorage.setItem('token', isUser.token)
+      location.href = '/dashboard'
+    } else {
+      alert('User not found')
+    }
   }
 
   return (
@@ -23,12 +43,14 @@ export default function Signup() {
               <Input
                 className="border-none focus-visible:ring-0 p-0 placeholder:text-gray-400"
                 type="text"
+                onChange={(e) => setData(prev => ({ ...prev, email: e.target.value }))}
                 placeholder="Email" />
             </div>
             <div className="w-[100%] flex h-[49px] gap-2 items-center px-[14px] border rounded-md">
               <Input
                 className="border-none h-[100%] focus-visible:ring-0 focus:outline-none p-0 placeholder:text-gray-400"
                 type="password"
+                onChange={(e) => setData(prev => ({ ...prev, password: e.target.value }))}
                 placeholder="Password" />
               <AiOutlineEye size={24} />
             </div>
@@ -37,7 +59,7 @@ export default function Signup() {
               <span className="text-gray-500">Remember Me</span>
             </label>
           </div>
-          <Button onClick={createUser} className="w-full rounded-[30px]">Login</Button>
+          <Button onClick={Login} className="w-full rounded-[30px]">Login</Button>
           <p className="text-gray-500">Don`t have account? <Link to="/sign-up" className="text-black font-bold">Register</Link></p>
         </div>
       </div>

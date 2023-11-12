@@ -25,7 +25,7 @@ const NavbarLinks = () => {
                   <li className="navbarDropdown">
                     {nav.id == 1 ? (
                       <>
-                        <a href="#" className="mainMenu">
+                        <a className="mainMenu cursor-pointer">
                           <div className="mainMenu">
                             <AiOutlineMenu />
                             <p>{nav.name}</p>

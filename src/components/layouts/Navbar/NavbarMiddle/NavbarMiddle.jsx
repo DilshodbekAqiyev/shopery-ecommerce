@@ -7,15 +7,17 @@ import { CiSearch } from 'react-icons/ci'
 
 import { useTranslation } from 'react-i18next'
 import { translationKeys } from '../../../../utils/translation/translationKeys'
+import { useProviderContext } from '../../../../contexts/Provider'
 
 const NavbarMiddle = () => {
+  const { wishlist } = useProviderContext()
   const { t } = useTranslation()
 
   return (
     <div className="py-6">
       <div className="flex items-center justify-between max-w-[1320px] m-auto">
         <div className="">
-          <Link to="/" className="cursor-pointer hover:opacity-90 transition-all active:scale-95 inline-block">
+          <Link to="/" className="cursor-pointer hover:opacity-90 transition-all inline-block">
             {<LogoIcon />}
           </Link>
         </div>
@@ -36,7 +38,7 @@ const NavbarMiddle = () => {
           <Link to="wishlist" className="cursor-pointer relative">
             <AiOutlineHeart size={30} />
             <p className="flex items-center justify-center border-[1px] border-white absolute right-[-3px] top-[-5px] w-[18px] h-[18px] rounded-full bg-hardPrimary text-white text-[10px] ">
-              0
+              {wishlist.length || 0}
             </p>
           </Link>
           <div className="h-6 w-[1px] bg-gray-200 "></div>

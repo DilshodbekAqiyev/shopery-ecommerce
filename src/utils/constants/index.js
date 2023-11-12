@@ -2,8 +2,6 @@ import { v4 as uuidv4 } from 'uuid';
 
 export const CLOUDINARY_UPLOAD_NAME = 'shopery'
 
-export const token = localStorage.getItem('token')
-
 export const initialProductState = {
   id: uuidv4(),
   name: '',
@@ -24,7 +22,7 @@ export const initialProductState = {
     otherImages: [
       {
         id: 1,
-        src: '/assets/images/products/potato.png',
+        src: '',
         otherImageDescription: 'Picture of a large potato from the left',
       },
     ],

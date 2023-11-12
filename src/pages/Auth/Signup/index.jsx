@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 
 import { Input } from "../../../components/ui/input";
@@ -20,7 +20,6 @@ export default function Signup() {
     seller: false
   });
   const { errors, validateForm, onBlurField } = useLoginFormValidator(form);
-  const navigate = useNavigate()
 
   const onUpdateField = e => {
     const field = e.target.name;
@@ -55,7 +54,7 @@ export default function Signup() {
     instance.post('users/', newUser)
     localStorage.setItem('token', newUser.token)
 
-    navigate('/dashboard')
+    location.href = '/dashboard'
   };
 
   return (
