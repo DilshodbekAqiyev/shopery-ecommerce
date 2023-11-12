@@ -202,7 +202,7 @@ const SingleBlog = () => {
             return (
               <>
                 <div className="py-6 w-full flex gap-3 border-b border-gray-400">
-                  <div className="">
+                  <div className="w-[50px] ">
                     <img src={comment.userImg || user_image} alt="User image" loading="lazy" />
                   </div>
                   <div className="w-full flex flex-col gap-[5px] text-[14px]">

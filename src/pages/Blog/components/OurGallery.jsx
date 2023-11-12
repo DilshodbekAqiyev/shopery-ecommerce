@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from 'react'
 import BlogContext from '../context/BlogContext'
-import { NavLink } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 const BlogOurGallery = () => {
   const [state, setState] = useState([])
@@ -18,14 +18,16 @@ const BlogOurGallery = () => {
     }
   }, [data])
 
+  const navigate = useNavigate()
+
   return (
     <div>
       <h2 className="text-gray-900 font-bold">Our Gallery</h2>
       <div className="flex flex-wrap my-[20px] gap-[8px]">
         {state.map(({ previewImage, id }) => (
-          <NavLink to={`/blog/${id}`} key={id} className="cursor-pointer">
+          <a onClick={() => navigate('blog/' + id)} key={id} className="cursor-pointer">
             <img src={previewImage} alt="img" className="w-[100px] h-[100px] rounded-[6px] " loading="lazy" />
-          </NavLink>
+          </a>
         ))}
       </div>
     </div>
