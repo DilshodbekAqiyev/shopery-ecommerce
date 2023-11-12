@@ -1,6 +1,6 @@
 import SocialMediaIcons from "../../components/common/SocialMediaIcons"
-import { instance } from '../../utils/apiRequest'   
-import { useEffect, useState } from 'react'
+// import { instance } from '../../utils/apiRequest'   
+// import { useEffect, useState } from 'react'
 
 export default function Wishlist() {
   const data = [
@@ -66,16 +66,16 @@ export default function Wishlist() {
         <div className="flex gap-x-[136px] items-center">
           <h3 className="text-[#2C742F] text-[14px] bg-[#CAE8CC] text-center px-[8px] py-[4px]">{data.stockTitle}</h3>
           <div className="flex gap-x-[24px] items-center">
-            <button className="bg-[#00B207] rounded-[43px] text-[white] px-[32px] py-[15px]">{data.btn}</button>
-           <button className="w-[24px] h-[24px] p-[2px] rounded-[50%] border-gray-500">x</button>
+            <button className="bg-[#00B207] rounded-[43px] text-[white] px-[32px] py-[15px] hover:bg-[#19BA1F] transition">{data.btn}</button>
+           <button className="w-[24px] h-[24px] p-[2px] rounded-[50%] border-gray-500"><i className="fa-regular fa-circle-xmark text-[gray] scale-[1.2]"></i></button>
           </div>   
         </div>   
         :
         <div className="flex gap-x-[106px] items-center">
           <h3 className="text-[#EA4B48] text-[14px] bg-[#F3D3D2] px-[8px] py-[4px]">{data.stockTitle}</h3>
           <div className="flex gap-x-[24px] items-center">
-            <button className="bg-[#F2F2F2] rounded-[43px] text-[#B3B3B3] px-[32px] py-[15px]">{data.btn}</button>
-           <button className="w-[24px] h-[24px] rounded-[50%] border-gray-500 ">x</button>
+            <button className="bg-[#F2F2F2] rounded-[43px] text-[#B3B3B3] px-[32px] py-[15px] cursor-not-allowed">{data.btn}</button>
+           <button className="w-[24px] h-[24px] rounded-[50%] border-gray-500 "><i className="fa-regular fa-circle-xmark text-[gray] scale-[1.2]"></i></button>
           </div>
         </div>
       }
@@ -92,7 +92,5 @@ export default function Wishlist() {
   </div>
   </div>  
   </div>
-
-  console.log(instance);
   )
 }

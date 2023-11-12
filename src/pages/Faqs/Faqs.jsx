@@ -56,8 +56,8 @@ function Faqs() {
  <div>
     <h1 className="w-[532px] text-[48px] text-[#1A1A1A] font-semibold">Welcome, Let’s Talk About Our Ecobazar</h1>
     <div className='h-[300px]'> 
-            <div className="p-2 m-8"> 
-                {accordions.map((accordion) => (
+            <div className="mt-[30px]"> 
+                {accordions.map((accordion) => (   
                     <Accordions 
                         key={accordion.key} 
                         title={accordion.title} 

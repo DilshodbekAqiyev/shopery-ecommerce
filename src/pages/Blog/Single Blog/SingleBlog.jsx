@@ -12,6 +12,10 @@ import user_image from './images/user_image.svg'
 import { Button } from '../../../components/ui/button'
 
 import './single-blog.css'
+import { Label } from '../../../components/ui/label'
+import { Input } from '../../../components/ui/input'
+// import { none } from '@cloudinary/url-gen/qualifiers/fontHinting'
+import { Checkbox } from '../../../components/ui/checkbox'
 
 const SingleBlog = () => {
   const { CardID } = useParams()
@@ -64,7 +68,7 @@ const SingleBlog = () => {
               Maecenas tempor urna sed quam mollis, a placerat dui fringill Suspendisse.
             </h4>
           </div>
-          <div className="flex items-center justify-between border-b mb-8">
+          <div className="flex items-center justify-between border-b mb-8 max-md:flex-col">
             <NavLink to="/dashboard" className="flex items-center gap-3 min-w-[240px] py-8">
               <div className="rounded-full">
                 <img src={user_image} alt="User iamge" loading="lazy" />
@@ -105,10 +109,10 @@ const SingleBlog = () => {
         </p>
         <div className="w-full grid grid-cols-2 gap-6 mb-6 max-md:grid-cols-1">
           <div className="w-full">
-            <img src={extraImages[0]} alt="product_image_1" loading="lazy" />
+            <img src={extraImages[0]} className="rounded-[8px]" alt="product_image_1" loading="lazy" />
           </div>
           <div className="w-full">
-            <img src={extraImages[1]} alt="product_image_2" loading="lazy" />
+            <img src={extraImages[1]} className="rounded-[8px]" alt="product_image_2" loading="lazy" />
           </div>
         </div>
         <p>
@@ -126,7 +130,7 @@ const SingleBlog = () => {
           <div className="">
             <p className="text-gray-400 text-[14px] font-medium">Summer Sales</p>
             <h2 className="text-white text-[36px] font-semibold">Fresh Fruit</h2>
-            <Button className="flex items-center gap-3 mt-[10px] rounded-[43px]">
+            <Button className="flex items-center gap-3 mt-[10px] rounded-[43px] font-semibold">
               <p className="text-[16px]">Shop Now</p>
               <p>
                 <BsArrowRightShort size={30} />
@@ -140,6 +144,88 @@ const SingleBlog = () => {
               <p>Off</p>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="flex flex-col gap-4 w-full mb-[40px]">
+        <div className="w-full">
+          <h2 className="text-gray-900 text-[24px] font-semibold w-full">Leave a Comment</h2>
+        </div>
+        <div className="grid grid-cols-2 gap-4 w-full max-md:grid-cols-1">
+          <div className="flex flex-col gap-2 w-full">
+            <Label htmlFor="fullName" className="text-gray-900 text-[14px] font-medium">
+              Full Name
+            </Label>
+            <Input
+              id="fullName"
+              className="border-gray-200 text-gray-900 text-[16px] font-normal py-[14px] px-[16px] outline-none focus:border-primary"
+              placeholder="Full name"
+              defaultValue="Zakir Hossen"
+            />
+          </div>
+          <div className="flex flex-col gap-2 w-full">
+            <Label htmlFor="Email" className="text-gray-900 text-[14px] font-medium">
+              Email
+            </Label>
+            <Input type="email" id="Email" placeholder="Email" defaultValue="zakirsoft.20@g|" />
+          </div>
+        </div>
+        <div className="flex flex-col gap-2 w-full">
+          <Label className="text-gray-900 text-[14px] font-medium w-full" htmlFor="textarea">
+            Message
+          </Label>
+          <textarea
+            name="comment"
+            placeholder="Write your comment here…"
+            id="textarea"
+            className="h-[98px] px-4 focus:border-primary py-[14px] text-gray-900 text-[16px] font-normal border rounded-[6px] border-gray-200 w-full outline-none resize-none"
+          ></textarea>
+        </div>
+        <div className="flex items-center space-x-2 w-full">
+          <Checkbox id="saveComment" className="border border-[#ccc] hover:border-primary" />
+          <label
+            htmlFor="saveComment"
+            className="text-sm leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 w-full text-gray-600 text-[14px] font-normal"
+          >
+            Save my name and email in this browser for the next time I comment.
+          </label>
+        </div>
+        <div className="w-full mt-2">
+          <Button className="rounded-[43px] px-[46px] py-[16px] font-semibold text-[16px]">Post Comments</Button>
+        </div>
+      </div>
+      <div className="w-full">
+        <div className="">
+          <h2 className="text-[24px] text-gray-900 font-semibold">Comments</h2>
+        </div>
+        <div className="w-full flex flex-col mb-[40px]">
+          {singleCardData[0]?.comments?.map((comment) => {
+            return (
+              <>
+                <div className="py-6 w-full flex gap-3 border-b border-gray-400">
+                  <div className="w-[50px] ">
+                    <img src={comment.userImg || user_image} alt="User image" loading="lazy" />
+                  </div>
+                  <div className="w-full flex flex-col gap-[5px] text-[14px]">
+                    <p className="flex items-center gap-[6px] text-gray-900">
+                      <a href="#comments" className="hover:text-primary text-gray-900 font-medium">
+                        {comment.fullName}
+                      </a>
+                      <span className="w-[2px] h-[2px] bg-gray-900 rounded-full"></span>
+                      <span className="text-gray-400 ">{comment.date}</span>
+                    </p>
+                    <div className="w-full">
+                      <p className="font-normal text-gray-400 text-[14px]">{comment.comment}</p>
+                    </div>
+                  </div>
+                </div>
+              </>
+            )
+          })}
+        </div>
+        <div className="">
+          <Button variant="secondary" className="rounded-[43px] py-[16px] px-[32px] te">
+            Load More
+          </Button>
         </div>
       </div>
     </div>

@@ -1,6 +1,6 @@
 import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from '../../../ui/sheet'
 import { Fragment } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import LogoIcon from '../images/LogoIcon'
 import { AiOutlineMenu } from 'react-icons/ai'
 import { FiPhoneCall } from 'react-icons/fi'
@@ -85,14 +85,18 @@ const NavbarLinks = () => {
                 </SheetTitle>
                 <SheetDescription className="flex flex-col mx-auto items-center gap-6 text-[20px] font-semibold">
                   {navbarData?.map((nav) => {
-                    return nav.id > 1 ? (
-                      <>
-                        <Link to={`/${nav.link}`} className="hover:text-primary transition-all">
-                          {nav.name}
-                        </Link>
-                      </>
-                    ) : (
-                      <></>
+                    return (
+                      <Fragment key={nav.id}>
+                        {nav.id > 1 ? (
+                          <Fragment key={nav.id}>
+                            <NavLink to={`/${nav.link}`} key={nav.id} className="hover:text-primary transition-all">
+                              {nav.name}
+                            </NavLink>
+                          </Fragment>
+                        ) : (
+                          <Fragment key={nav.id}></Fragment>
+                        )}
+                      </Fragment>
                     )
                   })}
                 </SheetDescription>
