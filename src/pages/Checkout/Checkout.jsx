@@ -35,9 +35,9 @@ function Checkout() {
   }, [])
   const editUser = async () => {
     // console.log(newData[0].id)
-    newData[0].billingAddress = { ...initialState, ...state }
+    newData[0].billingAddress = { ...initialState, ...state }  
     // console.log({ ...newData })
-    axios
+    axios  
       .patch(`http://localhost:3000/users/${newData[0].id}`, newData[0])
       .then((response) => {
         // console.log(response)
