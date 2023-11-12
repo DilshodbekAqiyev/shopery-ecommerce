@@ -10,7 +10,6 @@ import Container from "../../../components/common/Container";
 import { useLoginFormValidator } from "../useLoginFormValidator";
 import { instance } from "../../../utils/apiRequest";
 import { initialUserData } from '../../../utils/constants'
-import bcrypt from 'bcryptjs'
 
 export default function Signup() {
   const [passwordVisible, setPasswordVisible] = useState({ p1: false, p2: false })
@@ -49,7 +48,7 @@ export default function Signup() {
     const newUser = {
       ...initialUserData,
       email: form.email,
-      password: bcrypt.hash(form.password, 10), // test
+      password: form.password,
       role: form.seller ? "Seller" : "Customer"
     }
 
