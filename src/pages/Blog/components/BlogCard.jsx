@@ -36,7 +36,7 @@ const BlogCard = ({ prop }) => {
             </a>
           </li>
           <li>
-            <a onClick={() => navigate('SingleBlog/' + id)} className="flex items-center gap-1 hover:text-primary">
+            <a onClick={() => navigate('blog/' + id)} className="flex items-center gap-1 hover:text-primary">
               <BsChatSquare className="w-[16px] h-[16px]  font-bold" />
 
               <span>{comments.length} Comments</span>
@@ -45,7 +45,7 @@ const BlogCard = ({ prop }) => {
         </ul>
         <h4 className="text-[18px] mt-2 mb-5 font-[500]">{title}</h4>
         <a
-          onClick={() => navigate('SingleBlog/' + id)}
+          onClick={() => navigate('blog/' + id)}
           className="flex gap-[12px] text-primary text-[16px] font-[600] cursor-pointer"
         >
           <span>Read More </span>

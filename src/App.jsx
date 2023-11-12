@@ -30,7 +30,7 @@ export default function App() {
 
         <Route path="blog" element={<Index />}>
           <Route index element={<BlogCards />}></Route>
-          <Route path="SingleBlog/:CardID" element={<SingleBlog />} />
+          <Route path="blog/:CardID" element={<SingleBlog />} />
         </Route>
         <Route
           path="shop"
