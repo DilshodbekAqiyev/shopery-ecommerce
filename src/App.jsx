@@ -1,7 +1,7 @@
 import { createBrowserRouter, RouterProvider, createRoutesFromElements, Route, Navigate } from 'react-router-dom'
 
 // Pages
-// import Home from './pages/Home/Home'
+import Home from './pages/Home/Home'
 
 import Shop from './pages/Shop'
 import ProductDetails from './pages/ProductDetails/ProductDetails'
@@ -70,7 +70,7 @@ export default function App() {
         <Route path="*" element={<Navigate to={'/PageNotFound'} />} />
       </Route>
     )
-  );
+  )
 
-  return <RouterProvider router={routes} />;
+  return <RouterProvider router={routes} />
 }

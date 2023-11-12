@@ -3,14 +3,14 @@ import PropTypes from 'prop-types'
 import ModalDetails from './components/ModalDetails'
 import TabBar from './components/Tabs'
 import { useParams } from 'react-router-dom'
-import { instance } from '../../utils/apiRequest'   
-import { useEffect, useState } from 'react'
-import {  useReducer } from 'react'
+import { instance } from '../../utils/apiRequest'
+import { useEffect } from 'react'
+import { useReducer } from 'react'
 import ProductCard from '../../components/common/Cards/ProductCard'
 import { detailsReducer } from '../../contexts/productDetails/DetailsReducer'
 import { ACTION_TYPES } from '../../contexts/productDetails/ActioinTypes'
 
-function ProductDetails() {             
+function ProductDetails() {
   const { productID } = useParams()
   const [state, dispatch] = useReducer(detailsReducer, {
     foundProduct: {},
@@ -26,11 +26,10 @@ function ProductDetails() {
 
   useEffect(() => {
     ;(async () => {
-      const response = await  instance.get(`products/${productID}`)
+      const response = await instance.get(`products/${productID}`)
       setFoundProduct(response.data)
     })()
-
-  }, [productID] )
+  }, [productID])
 
   useEffect(() => {
     ;(async () => {
