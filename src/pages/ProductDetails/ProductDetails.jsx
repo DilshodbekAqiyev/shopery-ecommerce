@@ -25,10 +25,11 @@ function ProductDetails() {
 
   useEffect(() => {
     ;(async () => {
-      const response = await instance.get(`products/${productID}`)
+      const response = await  instance.get(`products/${productID}`)
       setFoundProduct(response.data)
     })()
-  }, [productID])
+
+  }, [productID] )
 
   useEffect(() => {
     ;(async () => {
