@@ -17,14 +17,14 @@ export const AddToWishlist = (product) => {
         images,
       })
       const request = instance.patch(`users/1`, user)
-      console.log(request)
-      console.log('added: =>' + user)
+      // console.log(request)
+      // console.log('added: =>' + user)
     } else {
       const newData = user.wishlist.filter((item) => item.id !== el.id)
       user.wishlist = newData
       const request = instance.patch(`users/1`, user)
-      console.log(request)
-      console.log('deleted: =>' + user)
+      // console.log(request)
+      // console.log('deleted: =>' + user)
     }
   })
 }

@@ -4,3 +4,9 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+#textarea::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background-color: #fff;
+  background-image: -webkit-gradient(linear, 40% 0%, 75% 84%, from(#4d9c41), to(#19911d), color-stop(0.6, #54de5d));
+}

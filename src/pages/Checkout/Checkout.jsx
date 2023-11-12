@@ -34,14 +34,14 @@ function Checkout() {
     })()
   }, [])
   const editUser = async () => {
-    console.log(newData[0].id)
+    // console.log(newData[0].id)
     newData[0].billingAddress = { ...initialState, ...state }
     // console.log({ ...newData })
     axios
       .patch(`http://localhost:3000/users/${newData[0].id}`, newData[0])
       .then((response) => {
-        console.log(response)
-        console.log(response?.data)
+        // console.log(response)
+        // console.log(response?.data)
       })
       .catch((error) => {
         console.error(error)
@@ -168,7 +168,6 @@ function Checkout() {
             </label>
           </div>
           <div className=" w-2/5">
-            
             <label>
               <p className=" mb-2">Phone</p>
               <Input
