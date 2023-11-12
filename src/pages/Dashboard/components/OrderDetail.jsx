@@ -1,6 +1,17 @@
 import Stepper from "./Stepper/Stepper";
 import { Link } from "react-router-dom";
+import { useState } from 'react';
+import { useEffect } from 'react';
+import { getUser } from '/src/utils/utils.js';
 function OrderDetail() {
+  const [data, setData] = useState({});
+  useEffect(() => {
+    // eslint-disable-next-line no-extra-semi
+    (async () => {
+      const response = await getUser();
+      setData(response);
+    })();
+  }, []);
   return (
     <div className="  border mt-[30px] rounded-[8px] ">
       <div className="flex m-[24px]  justify-between items-center gap-[300px]">
@@ -37,13 +48,13 @@ function OrderDetail() {
               Email
             </label>
             <p className=" text-[14px] font-[400]  leading-[21px] mb-[12px] ">
-              dainne.ressell@gmail.com
+              {data.email}
             </p>
             <label className="text-[12px] uppercase  font-[500] leading-[12px]   text-grays-gray400">
               Phone
             </label>
             <p className="text-[14px] font-[400]  leading-[21px] mb-[12px]">
-              (671) 555-0110
+              {data.phoneNumber}
             </p>
           </div>
         </div>
@@ -66,13 +77,13 @@ function OrderDetail() {
               Email
             </label>
             <p className=" text-[14px] font-[400]  leading-[21px] mb-[12px] ">
-              dainne.ressell@gmail.com
+              {data.email}
             </p>
             <label className="text-[12px] uppercase  font-[500] leading-[12px]   text-grays-gray400">
               Phone
             </label>
             <p className="text-[14px] font-[400]  leading-[21px] mb-[12px]">
-              (671) 555-0110
+              {data.phoneNumber}
             </p>
           </div>
         </div>
