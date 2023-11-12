@@ -7,11 +7,11 @@ import { useNavigate } from 'react-router-dom'
 import { Dialog, DialogContent, DialogHeader, DialogTrigger } from '../../ui/dialog'
 import ModalDetails from '../../../pages/ProductDetails/components/ModalDetails'
 import { instance } from '../../../utils/apiRequest'
-import { AddToWishlist } from '../../../utils/api/AddToWishlist'
 import bag from '../../../../public/assets/icons/bag.svg'
 import bag_white from '../../../../public/assets/icons/bag-white.svg'
+import { AddToWishlist } from '../../../utils/api/AddToWishlist'
 
-const ProductCard = (props, { isLiked }) => {
+const ProductCard = (props) => {
   const [isHovered, setIsHovered] = useState(false)
   const [foundProduct, setFoundProduct] = useState({})
   const navigate = useNavigate()
@@ -103,28 +103,16 @@ const ProductCard = (props, { isLiked }) => {
               className="bg-white rounded-full p-2 shadow-md hover:scale-110 cursor-pointer"
               onClick={handleLikeClick}
             >
-              {!isLiked ? (
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g id="Heart">
-                    <path
-                      id="Vector"
-                      d="M9.9996 17.5451C-6.66672 8.33333 4.99993 -1.66667 9.9996 4.65671C14.9999 -1.66667 26.6666 8.33333 9.9996 17.5451Z"
-                      fill="red"
-                    />
-                  </g>
-                </svg>
-              ) : (
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g id="Heart">
-                    <path
-                      id="Vector"
-                      d="M9.9996 17.5451C-6.66672 8.33333 4.99993 -1.66667 9.9996 4.65671C14.9999 -1.66667 26.6666 8.33333 9.9996 17.5451Z"
-                      stroke="#1A1A1A"
-                      strokeWidth="1.5"
-                    />
-                  </g>
-                </svg>
-              )}
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="Heart">
+                  <path
+                    id="Vector"
+                    d="M9.9996 17.5451C-6.66672 8.33333 4.99993 -1.66667 9.9996 4.65671C14.9999 -1.66667 26.6666 8.33333 9.9996 17.5451Z"
+                    stroke="#1A1A1A"
+                    strokeWidth="1.5"
+                  />
+                </g>
+              </svg>
             </div>
             <Dialog
               onClick={(e) => {
@@ -171,4 +159,5 @@ ProductCard.propTypes = {
   status: PropTypes.string,
   statusColor: PropTypes.string,
   featrues: PropTypes.bool,
+  AddToWishlist: PropTypes.func,
 }

@@ -4,10 +4,10 @@
       "id": "a1157062-12d7-428b-844f-9f46da48d9b9",
       "firstName": "",
       "lastName": "",
-      "email": "baxriddin@gmail.com",
+      "email": "test@gmail.com",
       "role": "Customer",
       "phoneNumber": null,
-      "password": "baxriddin",
+      "password": "test",
       "token": "13891a2c-077d-4f80-9f0d-14fa70fa5494",
       "avatar": "/assets/images/users/user1.png",
       "billingAddress": {
