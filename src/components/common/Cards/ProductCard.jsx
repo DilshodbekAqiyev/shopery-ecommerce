@@ -7,8 +7,9 @@ import { useNavigate } from 'react-router-dom'
 import { Dialog, DialogContent, DialogHeader, DialogTrigger } from '../../ui/dialog'
 import ModalDetails from '../../../pages/ProductDetails/components/ModalDetails'
 import { instance } from '../../../utils/apiRequest'
+import { AddToWishlist } from '../../../utils/api/AddToWishlist'
 
-const ProductCard = (props) => {
+const ProductCard = (props, { isLiked }) => {
   const [isHovered, setIsHovered] = useState(false)
   const [foundProduct, setFoundProduct] = useState({})
   const navigate = useNavigate()
@@ -25,7 +26,11 @@ const ProductCard = (props) => {
 
   const handleClick = (e) => {
     e.stopPropagation()
-    console.log(e)
+  }
+
+  const handleLikeClick = (e) => {
+    e.stopPropagation()
+    AddToWishlist(props)
   }
 
   useEffect(() => {
@@ -39,12 +44,12 @@ const ProductCard = (props) => {
   return (
     <>
       <div
-        className={`w-[330px] bg-white shadow-lg  p-4 relative cursor-pointer transition-transform border-[2px] border-solid border-branding-[#2C742F] hover:shadow-[#00B207] hover:shadow-md ${
+        className={`w-[300px] bg-white shadow-lg  p-4 relative cursor-pointer transition-transform border-[2px] border-solid border-branding-[#2C742F] hover:shadow-[#00B207] hover:shadow-md ${
           isHovered ? 'border-[#2C742F]' : ''
         } ${featrues ? 'border border-[#E6E6E6] w-1/5 h-auto' : ''}`}
         onMouseEnter={handleHover}
         onMouseLeave={handleMouseLeave}
-        onClick={() => navigate('/product/' + id)}
+        onClick={() => navigate('/shop/' + id)}
       >
         <LazyLoadImage
           delayTime={300}
@@ -88,7 +93,7 @@ const ProductCard = (props) => {
             onClick={handleClick}
           >
             <img
-              src={`/assets/icons/${isHovered ? 'bag-white' : 'bag'}.svg`}
+              src={`/assets/icons/   'bag-white' : 'bag'}.svg`}
               alt="bag icon"
               loading="lazy"
               className="w-[20px] h-[20px]"
@@ -97,10 +102,39 @@ const ProductCard = (props) => {
         </div>
         {isHovered ? (
           <div className="absolute top-3 right-3 z-10 rounded-full  transition-transform">
-            <div className="bg-white rounded-full p-2 shadow-md hover:scale-110 cursor-pointer" onClick={handleClick}>
-              <img src="/assets/icons/heart.svg" alt="heart image" loading="lazy" className="w-[20px] h-[20px]" />
+            <div
+              className="bg-white rounded-full p-2 shadow-md hover:scale-110 cursor-pointer"
+              onClick={handleLikeClick}
+            >
+              {!isLiked ? (
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g id="Heart">
+                    <path
+                      id="Vector"
+                      d="M9.9996 17.5451C-6.66672 8.33333 4.99993 -1.66667 9.9996 4.65671C14.9999 -1.66667 26.6666 8.33333 9.9996 17.5451Z"
+                      fill="red"
+                    />
+                  </g>
+                </svg>
+              ) : (
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g id="Heart">
+                    <path
+                      id="Vector"
+                      d="M9.9996 17.5451C-6.66672 8.33333 4.99993 -1.66667 9.9996 4.65671C14.9999 -1.66667 26.6666 8.33333 9.9996 17.5451Z"
+                      stroke="#1A1A1A"
+                      strokeWidth="1.5"
+                    />
+                  </g>
+                </svg>
+              )}
             </div>
-            <Dialog>
+            <Dialog
+              onClick={(e) => {
+                e.stopPropagation()
+                setIsHovered(false)
+              }}
+            >
               <DialogTrigger asChild>
                 <div
                   className="bg-white rounded-full p-2 mt-3 shadow-md hover:scale-110 cursor-pointer"

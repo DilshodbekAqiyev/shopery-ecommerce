@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 
 function UserAddress() {
   return (
@@ -7,7 +9,10 @@ function UserAddress() {
         <p className="text-grays-gray600 w-[264px]  text-[14px] mb-[8px]">4140 Parker Rd. Allentown, New Mexico 31134</p>
         <p className=" text-[16px]  font-medium  mb-[12px] leading-[27px]">dainne.ressell@gmail.com</p>
         <h4 className="text-[16px]  font-medium  mb-[20px] leading-[27px]">(671) 555-0110</h4>
-        <button  className="border-none  outline-none  text-[16px] font-semibold mb-[32px]   text-[#00B207]">Edit Address</button>
+        <Link to={'settings'}>
+          <button  className="border-none  outline-none  text-[16px] font-semibold mb-[32px]   text-[#00B207]">Edit Address</button>
+        
+        </Link>
     </div>
   )
 }

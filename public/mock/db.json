@@ -1,6 +1,7 @@
 {
   "users": [
     {
+      "id": 1,
       "firstName": "John",
       "lastName": "Doe",
       "email": "johndoe@gmail.com",
@@ -22,7 +23,34 @@
       },
       "wishlist": [],
       "shoppingCart": [],
-      "checkout": []
+      "checkout": [],
+      "orders": []
+    },
+    {
+      "id": 2,
+      "firstName": "John1",
+      "lastName": "Doe1",
+      "email": "johndoe1@gmail.com",
+      "role": "Customer1",
+      "phoneNumber": 80355501221,
+      "password": "X34sfsdfy34t7dsgf1",
+      "token": "x@fSDFYsd345d23saFsa326ASDghad23saFsa326ASDghasd%6Assd%6As1",
+      "avatar": "/assets/images/users/user1.png",
+      "billingAddress": {
+        "firstName": "John1",
+        "lastName": "Doe1",
+        "companyName": "Zakirsoft1",
+        "streetAddress": "4140 Parl1",
+        "country": "United States1",
+        "city": "Washington1",
+        "zipCode": "200031",
+        "email": "dianne.russell@gmail.com1",
+        "phone": 6935551231
+      },
+      "wishlist": [],
+      "shoppingCart": [],
+      "checkout": [],
+      "orders": []
     }
   ],
   "products": [
@@ -117,13 +145,7 @@
         }
       ],
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": [
-        "Vegetables",
-        "Healthy",
-        "Chinese",
-        "Cabbage",
-        "Green Cabbage"
-      ],
+      "tag": ["Vegetables", "Healthy", "Chinese", "Cabbage", "Green Cabbage"],
       "reviews": [
         {
           "id": 1,
@@ -234,13 +256,7 @@
         }
       ],
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": [
-        "Vegetables",
-        "Healthy",
-        "Chinese",
-        "Cabbage",
-        "Green Cabbage"
-      ],
+      "tag": ["Vegetables", "Healthy", "Chinese", "Cabbage", "Green Cabbage"],
       "reviews": [
         {
           "id": 1,
@@ -351,13 +367,7 @@
         }
       ],
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": [
-        "Vegetables",
-        "Healthy",
-        "Chinese",
-        "Cabbage",
-        "Green Cabbage"
-      ],
+      "tag": ["Vegetables", "Healthy", "Chinese", "Cabbage", "Green Cabbage"],
       "reviews": [
         {
           "id": 1,
@@ -468,12 +478,7 @@
         }
       ],
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": [
-        "Vegetables",
-        "Healthy",
-        "Cabbage",
-        "Green Cabbage"
-      ],
+      "tag": ["Vegetables", "Healthy", "Cabbage", "Green Cabbage"],
       "reviews": [
         {
           "id": 1,
@@ -584,12 +589,7 @@
         }
       ],
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": [
-        "Vegetables",
-        "Healthy",
-        "Cabbage",
-        "Green Cabbage"
-      ],
+      "tag": ["Vegetables", "Healthy", "Cabbage", "Green Cabbage"],
       "reviews": [
         {
           "id": 1,
@@ -700,12 +700,7 @@
         }
       ],
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": [
-        "Vegetables",
-        "Healthy",
-        "Cabbage",
-        "Green Cabbage"
-      ],
+      "tag": ["Vegetables", "Healthy", "Cabbage", "Green Cabbage"],
       "reviews": [
         {
           "id": 1,
@@ -816,12 +811,7 @@
         }
       ],
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": [
-        "Vegetables",
-        "Healthy",
-        "Cabbage",
-        "Green Cabbage"
-      ],
+      "tag": ["Vegetables", "Healthy", "Cabbage", "Green Cabbage"],
       "reviews": [
         {
           "id": 1,
@@ -932,12 +922,7 @@
         }
       ],
       "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": [
-        "Vegetables",
-        "Healthy",
-        "Cabbage",
-        "Green Cabbage"
-      ],
+      "tag": ["Vegetables", "Healthy", "Cabbage", "Green Cabbage"],
       "reviews": [
         {
           "id": 1,
@@ -956,114 +941,6 @@
           "date": ""
         }
       ]
-    },
-    {
-      "id": 1699545417557,
-      "name": "test",
-      "category": "Cooking",
-      "discountPrice": "100.00",
-      "originalPrice": 1000,
-      "discountPercentage": 0,
-      "status": "",
-      "statusColor": "1A1A1A",
-      "rating": 1,
-      "available": 1,
-      "littleDescription": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla nibh diam, blandit vel consequat nec, ultrices et ipsum. Nulla varius magna a consequat pulvinar.",
-      "description": "Sed commodo aliquam dui ac porta. Fusce ipsum felis, imperdiet at posuere ac, viverra at mauris. Maecenas tincidunt ligula a sem vestibulum pharetra. Maecenas auctor tortor lacus, nec laoreet nisi porttitor vel. Etiam tincidunt metus vel dui interdum sollicitudin. Mauris sem ante, vestibulum nec orci vitae, aliquam mollis lacus. Sed et condimentum arcu, id molestie tellus. Nulla facilisi. Nam scelerisque vitae justo a convallis. Morbi urna ipsum, placerat quis commodo quis, egestas elementum leo. Donec convallis mollis enim. Aliquam id mi quam. Phasellus nec fringilla elit. Nulla mauris tellus, feugiat quis pharetra sed, gravida ac dui. Sed iaculis, metus faucibus elementum tincidunt, turpis mi viverra velit, pellentesque tristique neque mi eget nulla. Proin luctus elementum neque et pharetra.",
-      "images": {
-        "src": "",
-        "imageDescription": "Image",
-        "otherImages": [
-          {
-            "id": 1,
-            "src": "/assets/images/products/potato.png",
-            "otherImageDescription": "Picture of a large potato from the left"
-          }
-        ]
-      },
-      "additionalInformation": [
-        {
-          "title": "Weight:",
-          "description": "02"
-        }
-      ],
-      "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": [
-        "Vegetables"
-      ],
-      "reviews": []
-    },
-    {
-      "id": 1699545530736,
-      "name": "dv",
-      "category": "Cooking",
-      "discountPrice": "25.39",
-      "originalPrice": 11111,
-      "discountPercentage": 0,
-      "status": "",
-      "statusColor": "1A1A1A",
-      "rating": 1,
-      "available": 1,
-      "littleDescription": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla nibh diam, blandit vel consequat nec, ultrices et ipsum. Nulla varius magna a consequat pulvinar.",
-      "description": "Sed commodo aliquam dui ac porta. Fusce ipsum felis, imperdiet at posuere ac, viverra at mauris. Maecenas tincidunt ligula a sem vestibulum pharetra. Maecenas auctor tortor lacus, nec laoreet nisi porttitor vel. Etiam tincidunt metus vel dui interdum sollicitudin. Mauris sem ante, vestibulum nec orci vitae, aliquam mollis lacus. Sed et condimentum arcu, id molestie tellus. Nulla facilisi. Nam scelerisque vitae justo a convallis. Morbi urna ipsum, placerat quis commodo quis, egestas elementum leo. Donec convallis mollis enim. Aliquam id mi quam. Phasellus nec fringilla elit. Nulla mauris tellus, feugiat quis pharetra sed, gravida ac dui. Sed iaculis, metus faucibus elementum tincidunt, turpis mi viverra velit, pellentesque tristique neque mi eget nulla. Proin luctus elementum neque et pharetra.",
-      "images": {
-        "src": "http://res.cloudinary.com/dezjflp5d/image/upload/v1699545475/u0jdlpyaswh9veqnc7ad.png",
-        "imageDescription": "Image",
-        "otherImages": [
-          {
-            "id": 1,
-            "src": "/assets/images/products/potato.png",
-            "otherImageDescription": "Picture of a large potato from the left"
-          }
-        ]
-      },
-      "additionalInformation": [
-        {
-          "title": "Weight:",
-          "description": "02"
-        }
-      ],
-      "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": [
-        "Vegetables"
-      ],
-      "reviews": []
-    },
-    {
-      "id": 1699545507877,
-      "name": "test",
-      "category": "Vegetables",
-      "discountPrice": "100.00",
-      "originalPrice": 12,
-      "discountPercentage": 0,
-      "status": "",
-      "statusColor": "1A1A1A",
-      "rating": 1,
-      "available": 1,
-      "littleDescription": "",
-      "description": "Sed commodo aliquam dui ac porta. Fusce ipsum felis, imperdiet at posuere ac, viverra at mauris. Maecenas tincidunt ligula a sem vestibulum pharetra. Maecenas auctor tortor lacus, nec laoreet nisi porttitor vel. Etiam tincidunt metus vel dui interdum sollicitudin. Mauris sem ante, vestibulum nec orci vitae, aliquam mollis lacus. Sed et condimentum arcu, id molestie tellus. Nulla facilisi. Nam scelerisque vitae justo a convallis. Morbi urna ipsum, placerat quis commodo quis, egestas elementum leo. Donec convallis mollis enim. Aliquam id mi quam. Phasellus nec fringilla elit. Nulla mauris tellus, feugiat quis pharetra sed, gravida ac dui. Sed iaculis, metus faucibus elementum tincidunt, turpis mi viverra velit, pellentesque tristique neque mi eget nulla. Proin luctus elementum neque et pharetra.",
-      "images": {
-        "src": "",
-        "imageDescription": "Image",
-        "otherImages": [
-          {
-            "id": 1,
-            "src": "/assets/images/products/potato.png",
-            "otherImageDescription": "Picture of a large potato from the left"
-          }
-        ]
-      },
-      "additionalInformation": [
-        {
-          "title": "Weight:",
-          "description": "02"
-        }
-      ],
-      "brand": "/assets/images/products/brands/farmary.svg",
-      "tag": [
-        "Vegetables"
-      ],
-      "reviews": []
     }
   ],
   "articles": [
@@ -1071,21 +948,51 @@
       "id": 1,
       "title": "Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.",
       "previewImage": "/assets/images/blog/img1.svg",
+      "extraImages": [
+        "https://avatars.mds.yandex.net/i?id=4def4eca67406ceac50a683e32818cf3c9540037-8207729-images-thumbs&ref=rim&n=33&w=391&h=313",
+        "https://avatars.mds.yandex.net/i?id=bc082c7b6c1a3873028078aeaed429757d5b9238-10025687-images-thumbs&ref=rim&n=33&w=367&h=313"
+      ],
       "author": "kimdir@gmail.com",
       "createdDate": "Tue Nov 07 2023 15:05:24 GMT+0500 (GMT+05:00)",
       "category": "Cooking",
       "readingTime": 4,
       "content": "<p>lorem ipsum</p>",
-      "tags": [
-        "Healthy",
-        "Dinner",
-        "Meat"
-      ],
+      "tags": ["Healthy", "Dinner", "Meat"],
       "comments": [
         {
+          "id": "c1",
+          "userImg": "",
           "fullName": "John Doe",
-          "date": 23453342532,
-          "comment": "lorem ipsum lorem ipsum, lorem ipsum"
+          "date": "26 Apr, 2021",
+          "comment": "In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam."
+        },
+        {
+          "id": "c2",
+          "userImg": "",
+          "fullName": "Devon Lane",
+          "date": "24 Apr, 2021",
+          "comment": "Quisque eget tortor lobortis, facilisis metus eu, elementum est. Nunc sit amet erat quis ex convallis suscipit. Nam hendrerit, velit ut aliquam euismod, nibh tortor rutrum nisi, ac sodales nunc eros porta nisi. Sed scelerisque, est eget aliquam venenatis, est sem tempor eros."
+        },
+        {
+          "id": "c3",
+          "userImg": "",
+          "fullName": "Jacob Jones",
+          "date": "20 Apr, 2021",
+          "comment": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."
+        },
+        {
+          "id": "c4",
+          "userImg": "",
+          "fullName": "Jane Cooper",
+          "date": "18 Apr, 2021",
+          "comment": "Pellentesque feugiat, nibh vel vehicula pretium, nibh nibh bibendum elit, a volutpat arcu dui nec orci. Aenean dui odio, ullamcorper quis turpis ac, volutpat imperdiet ex."
+        },
+        {
+          "id": "c5",
+          "userImg": "",
+          "fullName": "Darrell Steward",
+          "date": "7 Apr, 2021",
+          "comment": "Nulla molestie interdum ultricies. "
         }
       ]
     },
@@ -1093,21 +1000,52 @@
       "id": 2,
       "title": "Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.",
       "previewImage": "/assets/images/blog/img2.svg",
+      "extraImages": [
+        "https://yandex-images.clstorage.net/o9jSr9384/ec3a6ea9g/fj4sKkMKfGm74nvEdkaGP_Ya3gpCUVo8gjl_LYo2BKBbt9CNpCA3Hv3gP52PSw6w7Hk7tDTE3E7Zq_tfQ8nzPRs3ZTtzZgVVk-Z7yEJi6hvqNv4LI0Uq5QKZ6tAX76lZpnN45OQBbw_IyDbw_v_nueUdHjCMPAn2yQqi2sqkcoDywgAqb1JtfZv2KphaKpoLZptGokqYplXWrT5Mx5vlPeK_HKxEIbf7gSCCCHJXTi0hJRLEkHiRFkF6DsaSfHpwXvb0ogtOIfmz6g7w9o72A0If9v7KKCJd9plCPMt3RSkOzwxA7InzQ6Vkftj6N_Jp9fFqSOS0lY71AoJWfiTW2Lp2nKpzKtGJi3berIJ6anf2qz56PohCFWpVumxXnwVlApskSNAVcwPx_K4YQlNyGQWd4syk3GUm2epmGkqkgng6-hw-y_65YZd2Zkye5joHOse6ChpQ1h3uOWpM32uh0e5rUFS4cT9LpVx-kOIrLil56f7AaJRRgp3yisr6CII82tIwmgte7fkHmt7k9tYSN9ZDyvbCGCrBtkV6EL_zISnq61y0vCnLQ2X8WpiOE86BSe0edOxwlYLpliqS7rz6uCa6pMYXYon9V9rSyFJGgmOKm6bmQrSGScI11hA7l9FJ3reAaHit24e1oOKMri-i2bENhuwk9JW2RaIqNk68NgiyarBukx55OTf2gii2eo5ntieOLpZMflm-2SLM41_5sYrfpERU_Rt7oeguwCKXJo0xff6YJJB1JpESqt5mdMrYdvowaoNaqTnXfjLABl6ey84zqrbmvKb9MpG6ACtbPVUKA_BcOPkXw_EgHkR-szoB6WESnCgYTU5xNmq6FoxSUG7eMGJj_rlJPzIm2ErKNjMqx6ZSDsx-uT5VQgRzTy1B9vNw3Kwp80flKKJQjg-uLaUpZih8cDFC8a7-hmYA-nxKRgyia46lCVP2enDe3vb_7q8OUh7QSgFedSawu8uA",
+        "https://avatars.mds.yandex.net/i?id=a5c9ccc248ab02dd884e9d8a5f29abbd-5660145-images-thumbs&n=13"
+      ],
       "author": "nimadir@gmail.com",
       "createdDate": "Tue Nov 07 2023 15:05:24 GMT+0500 (GMT+05:00)",
       "category": "Beverages",
       "readingTime": 5,
       "content": "<p>lorem ipsum</p>",
-      "tags": [
-        "Lounch",
-        "Kid foods",
-        "Vegetarian"
-      ],
+      "tags": ["Lounch", "Kid foods", "Vegetarian"],
       "comments": [
         {
+          "id": "c1",
+          "userImg": "",
+          "fullName": "Devon Lane",
+          "date": "24 Apr, 2021",
+          "comment": "Quisque eget tortor lobortis, facilisis metus eu, elementum est. Nunc sit amet erat quis ex convallis suscipit. Nam hendrerit, velit ut aliquam euismod, nibh tortor rutrum nisi, ac sodales nunc eros porta nisi. Sed scelerisque, est eget aliquam venenatis, est sem tempor eros."
+        },
+        {
+          "id": "c2",
+          "userImg": "",
+          "fullName": "Jacob Jones",
+          "date": "20 Apr, 2021",
+          "comment": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."
+        },
+        {
+          "id": "c3",
+          "userImg": "",
+          "fullName": "Jane Cooper",
+          "date": "18 Apr, 2021",
+          "comment": "Pellentesque feugiat, nibh vel vehicula pretium, nibh nibh bibendum elit, a volutpat arcu dui nec orci. Aenean dui odio, ullamcorper quis turpis ac, volutpat imperdiet ex."
+        },
+        {
+          "id": "c4",
+          "userImg": "",
           "fullName": "John Doe",
-          "date": 23453342532,
-          "comment": "lorem ipsum lorem ipsum, lorem ipsum"
+          "date": "26 Apr, 2021",
+          "comment": "In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam."
+        },
+
+        {
+          "id": "c5",
+          "userImg": "",
+          "fullName": "Darrell Steward",
+          "date": "7 Apr, 2021",
+          "comment": "Nulla molestie interdum ultricies. "
         }
       ]
     },
@@ -1115,21 +1053,51 @@
       "id": 3,
       "title": "Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.",
       "previewImage": "/assets/images/blog/img3.svg",
+      "extraImages": [
+        "https://avatars.mds.yandex.net/i?id=1f0b40dfd3812b8bd1255c8654f5852a2ade45d3-9149651-images-thumbs&n=13",
+        "https://avatars.mds.yandex.net/i?id=3aac3caa53c6f82bbc2f9a6d99083853e0479333-9214146-images-thumbs&n=13"
+      ],
       "author": "nimadir@gmail.com",
       "createdDate": "Tue Nov 07 2023 15:05:24 GMT+0500 (GMT+05:00)",
       "category": "Vegetables",
       "readingTime": 6,
       "content": "<p>lorem ipsum</p>",
-      "tags": [
-        "Tiffin",
-        "Vitamins",
-        "Bread"
-      ],
+      "tags": ["Tiffin", "Vitamins", "Bread"],
       "comments": [
         {
+          "id": "c1",
+          "userImg": "",
+          "fullName": "Darrell Steward",
+          "date": "7 Apr, 2021",
+          "comment": "Nulla molestie interdum ultricies. "
+        },
+        {
+          "id": "c2",
+          "userImg": "",
           "fullName": "John Doe",
-          "date": 23453342532,
-          "comment": "lorem ipsum lorem ipsum, lorem ipsum"
+          "date": "26 Apr, 2021",
+          "comment": "In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam."
+        },
+        {
+          "id": "c3",
+          "userImg": "",
+          "fullName": "Devon Lane",
+          "date": "24 Apr, 2021",
+          "comment": "Quisque eget tortor lobortis, facilisis metus eu, elementum est. Nunc sit amet erat quis ex convallis suscipit. Nam hendrerit, velit ut aliquam euismod, nibh tortor rutrum nisi, ac sodales nunc eros porta nisi. Sed scelerisque, est eget aliquam venenatis, est sem tempor eros."
+        },
+        {
+          "id": "c4",
+          "userImg": "",
+          "fullName": "Jacob Jones",
+          "date": "20 Apr, 2021",
+          "comment": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."
+        },
+        {
+          "id": "c5",
+          "userImg": "",
+          "fullName": "Jane Cooper",
+          "date": "18 Apr, 2021",
+          "comment": "Pellentesque feugiat, nibh vel vehicula pretium, nibh nibh bibendum elit, a volutpat arcu dui nec orci. Aenean dui odio, ullamcorper quis turpis ac, volutpat imperdiet ex."
         }
       ]
     },
@@ -1137,21 +1105,51 @@
       "id": 4,
       "title": "Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.",
       "previewImage": "/assets/images/blog/img4.svg",
+      "extraImages": [
+        "https://avatars.mds.yandex.net/i?id=721e159f5136d2ad304056e30ac8cddc1fd0f4f4-9678040-images-thumbs&n=13",
+        "https://avatars.mds.yandex.net/i?id=4d0242f70df50a9ac2d5b95c772ae587d0d96476-5232014-images-thumbs&n=13"
+      ],
       "author": "nimadir@gmail.com",
       "createdDate": "Mon Nov 06 2023 15:05:24 GMT+0500 (GMT+05:00)",
       "category": "Bread & Bakery",
       "readingTime": 6,
       "content": "<p>lorem ipsum</p>",
-      "tags": [
-        "Snacks",
-        "Tiffin",
-        "Low fat"
-      ],
+      "tags": ["Snacks", "Tiffin", "Low fat"],
       "comments": [
         {
+          "id": "c1",
+          "userImg": "",
           "fullName": "John Doe",
-          "date": 23453342532,
-          "comment": "lorem ipsum lorem ipsum, lorem ipsum"
+          "date": "26 Apr, 2021",
+          "comment": "In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam."
+        },
+        {
+          "id": "c2",
+          "userImg": "",
+          "fullName": "Devon Lane",
+          "date": "24 Apr, 2021",
+          "comment": "Quisque eget tortor lobortis, facilisis metus eu, elementum est. Nunc sit amet erat quis ex convallis suscipit. Nam hendrerit, velit ut aliquam euismod, nibh tortor rutrum nisi, ac sodales nunc eros porta nisi. Sed scelerisque, est eget aliquam venenatis, est sem tempor eros."
+        },
+        {
+          "id": "c3",
+          "userImg": "",
+          "fullName": "Jacob Jones",
+          "date": "20 Apr, 2021",
+          "comment": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."
+        },
+        {
+          "id": "c4",
+          "userImg": "",
+          "fullName": "Jane Cooper",
+          "date": "18 Apr, 2021",
+          "comment": "Pellentesque feugiat, nibh vel vehicula pretium, nibh nibh bibendum elit, a volutpat arcu dui nec orci. Aenean dui odio, ullamcorper quis turpis ac, volutpat imperdiet ex."
+        },
+        {
+          "id": "c5",
+          "userImg": "",
+          "fullName": "Darrell Steward",
+          "date": "7 Apr, 2021",
+          "comment": "Nulla molestie interdum ultricies. "
         }
       ]
     },
@@ -1159,21 +1157,51 @@
       "id": 5,
       "title": "Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.",
       "previewImage": "/assets/images/blog/img5.svg",
+      "extraImages": [
+        "https://avatars.mds.yandex.net/i?id=6ad93c1deed56f6cc0efbf1dff6439eea24e00cb-9183040-images-thumbs&n=13",
+        "https://avatars.mds.yandex.net/i?id=c1f1176d168ae271bd89a4e49173f4a96ca4c77a-7188894-images-thumbs&n=13"
+      ],
       "author": "nimadir@gmail.com",
       "createdDate": "Mon Nov 06 2023 15:05:24 GMT+0500 (GMT+05:00)",
       "category": "Beauty & Health",
       "readingTime": 6,
       "content": "<p>lorem ipsum</p>",
-      "tags": [
-        "Kid foods",
-        "Healthy",
-        "Low fat"
-      ],
+      "tags": ["Kid foods", "Healthy", "Low fat"],
       "comments": [
         {
+          "id": "c1",
+          "userImg": "",
+          "fullName": "Darrell Steward",
+          "date": "7 Apr, 2021",
+          "comment": "Nulla molestie interdum ultricies. "
+        },
+        {
+          "id": "c2",
+          "userImg": "",
           "fullName": "John Doe",
-          "date": 23453342532,
-          "comment": "lorem ipsum lorem ipsum, lorem ipsum"
+          "date": "26 Apr, 2021",
+          "comment": "In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam."
+        },
+        {
+          "id": "c3",
+          "userImg": "",
+          "fullName": "Devon Lane",
+          "date": "24 Apr, 2021",
+          "comment": "Quisque eget tortor lobortis, facilisis metus eu, elementum est. Nunc sit amet erat quis ex convallis suscipit. Nam hendrerit, velit ut aliquam euismod, nibh tortor rutrum nisi, ac sodales nunc eros porta nisi. Sed scelerisque, est eget aliquam venenatis, est sem tempor eros."
+        },
+        {
+          "id": "c4",
+          "userImg": "",
+          "fullName": "Jacob Jones",
+          "date": "20 Apr, 2021",
+          "comment": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."
+        },
+        {
+          "id": "c5",
+          "userImg": "",
+          "fullName": "Jane Cooper",
+          "date": "18 Apr, 2021",
+          "comment": "Pellentesque feugiat, nibh vel vehicula pretium, nibh nibh bibendum elit, a volutpat arcu dui nec orci. Aenean dui odio, ullamcorper quis turpis ac, volutpat imperdiet ex."
         }
       ]
     },
@@ -1181,21 +1209,53 @@
       "id": 6,
       "title": "Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.",
       "previewImage": "/assets/images/blog/img6.svg",
+      "extraImages": [
+        "https://avatars.mds.yandex.net/i?id=b850af6b745c221b42499945e5fd7af816d69844-9223337-images-thumbs&n=13",
+        "https://avatars.mds.yandex.net/i?id=b850af6b745c221b42499945e5fd7af816d69844-9223337-images-thumbs&n=13"
+      ],
+
       "author": "nimadir@gmail.com",
       "createdDate": "Wen Nov 01 2023 15:05:24 GMT+0500 (GMT+05:00)",
       "category": "Fresh Fruit",
       "readingTime": 4,
       "content": "<p>lorem ipsum</p>",
-      "tags": [
-        "Fresh Fruit",
-        "Meat",
-        "Bread"
-      ],
+      "tags": ["Fresh Fruit", "Meat", "Bread"],
       "comments": [
         {
+          "id": "c1",
+          "userImg": "",
+          "fullName": "Devon Lane",
+          "date": "24 Apr, 2021",
+          "comment": "Quisque eget tortor lobortis, facilisis metus eu, elementum est. Nunc sit amet erat quis ex convallis suscipit. Nam hendrerit, velit ut aliquam euismod, nibh tortor rutrum nisi, ac sodales nunc eros porta nisi. Sed scelerisque, est eget aliquam venenatis, est sem tempor eros."
+        },
+        {
+          "id": "c2",
+          "userImg": "",
+          "fullName": "Jacob Jones",
+          "date": "20 Apr, 2021",
+          "comment": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."
+        },
+        {
+          "id": "c3",
+          "userImg": "",
+          "fullName": "Jane Cooper",
+          "date": "18 Apr, 2021",
+          "comment": "Pellentesque feugiat, nibh vel vehicula pretium, nibh nibh bibendum elit, a volutpat arcu dui nec orci. Aenean dui odio, ullamcorper quis turpis ac, volutpat imperdiet ex."
+        },
+        {
+          "id": "c4",
+          "userImg": "",
           "fullName": "John Doe",
-          "date": 23453342532,
-          "comment": "lorem ipsum lorem ipsum, lorem ipsum"
+          "date": "26 Apr, 2021",
+          "comment": "In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam."
+        },
+
+        {
+          "id": "c5",
+          "userImg": "",
+          "fullName": "Darrell Steward",
+          "date": "7 Apr, 2021",
+          "comment": "Nulla molestie interdum ultricies. "
         }
       ]
     },
@@ -1203,21 +1263,51 @@
       "id": 7,
       "title": "Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.",
       "previewImage": "/assets/images/blog/img7.svg",
+      "extraImages": [
+        "https://avatars.mds.yandex.net/i?id=cb281c792f05138e365ce13772999edfb328e6c7-9095672-images-thumbs&n=13",
+        "https://avatars.mds.yandex.net/i?id=ed9dc9c38d5c923bcdf7338ea6949035-4290734-images-thumbs&n=13"
+      ],
       "author": "nimadir@gmail.com",
       "createdDate": "Wen Nov 01 2023 15:05:24 GMT+0500 (GMT+05:00)",
       "category": "Vegetables",
       "readingTime": 6,
       "content": "<p>lorem ipsum</p>",
-      "tags": [
-        "Meat",
-        "Dinner",
-        "Vegetarian"
-      ],
+      "tags": ["Meat", "Dinner", "Vegetarian"],
       "comments": [
         {
+          "id": "c1",
+          "userImg": "",
           "fullName": "John Doe",
-          "date": 23453342532,
-          "comment": "lorem ipsum lorem ipsum, lorem ipsum"
+          "date": "26 Apr, 2021",
+          "comment": "In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam."
+        },
+        {
+          "id": "c2",
+          "userImg": "",
+          "fullName": "Devon Lane",
+          "date": "24 Apr, 2021",
+          "comment": "Quisque eget tortor lobortis, facilisis metus eu, elementum est. Nunc sit amet erat quis ex convallis suscipit. Nam hendrerit, velit ut aliquam euismod, nibh tortor rutrum nisi, ac sodales nunc eros porta nisi. Sed scelerisque, est eget aliquam venenatis, est sem tempor eros."
+        },
+        {
+          "id": "c3",
+          "userImg": "",
+          "fullName": "Jacob Jones",
+          "date": "20 Apr, 2021",
+          "comment": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."
+        },
+        {
+          "id": "c4",
+          "userImg": "",
+          "fullName": "Jane Cooper",
+          "date": "18 Apr, 2021",
+          "comment": "Pellentesque feugiat, nibh vel vehicula pretium, nibh nibh bibendum elit, a volutpat arcu dui nec orci. Aenean dui odio, ullamcorper quis turpis ac, volutpat imperdiet ex."
+        },
+        {
+          "id": "c5",
+          "userImg": "",
+          "fullName": "Darrell Steward",
+          "date": "7 Apr, 2021",
+          "comment": "Nulla molestie interdum ultricies. "
         }
       ]
     },
@@ -1225,21 +1315,51 @@
       "id": 8,
       "title": "Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.",
       "previewImage": "/assets/images/blog/img8.svg",
+      "extraImages": [
+        "https://avatars.mds.yandex.net/i?id=6795782dec9060f7ea9ff227deec6754d0a64788-6661455-images-thumbs&n=13",
+        "https://yandex-images.clstorage.net/o9jSr9384/ec3a6ea9g/fj4sKkMKfGm74nvEdkaGP_Ya3gpCUVo8gjl_LYoeLKk_h9SM6WlqXvC1c4DHYwKs7GhzmDGFsFedr-NDIpCXCT5_fTtyB3AI6qdXqVd2mhvmZ_J_YlBGTcoVI0DSJiSxxitEBGjFw9MNbJ50rgciqblUGvAA4Cnv0e6SNroseoCefoRil_4JsVN6ktRCaq5zzm_iLjJIDj3amY74e0_5PXb_cND0FbefaShSEOanAnFNHfJE-GyBRkUqqjpOMD4Yfvb0zoum0bmj1qYgyg6yP0pH_gpa5KpR0r0KSCfPSbl-30SshBlbP33EIgAKD6o19Tm2uCjk4foB_n5CwkTyHOZCjEIbSokVCzImSMJ21s86f2LaBpBezaYJvoCjO-nZNkOIVNSFs38xyHYoAjM2tbVtLmjoXIV6cQ4SykYEmuxObmSmV34JQauyqshWzgKn0mNiYuaMwp3WxdIE0x8xTT7H5IT0DUfbhSSGXB5bUvn9OY64YPz9JkFyZtZKyNLY6ip8SofOpUHvUoLk8g6i80rzjtpO5PK15ilWdC_HebHin5iUqG3fW30gBlD-XwoN9fkunGiQxcbpQmI2_kw2HOpeGOrf2hE5a67qcK4SnpdOo87WYkBiJbJ1jhg_R9UdauvoOKjpu6sdFFqMIpuOHTEpciR8sPmqsbqCrmaEshze8izqe3oR9ds6OmQGluJnisPihoKkXim2STIw95Mt5XqXBMx0MXOD5UAyqA633t3NPTroMDxBLuU68tYShNb8TiacapNS2QkL_qrkAoamt4ojajZqFHo5GjEmFG_j3T3eG0xUuPl3RwHA7vwW29rRdW3y2LRgZTJp4u46FohexCbGuKr3IiGRg-aO5ApmAqf6yyYicljukeLV0hiLC63lmheIrLyhY1cVPB58lk8KNfF5-mSgkNmmRa6mTqLcNrgqRiA-y1KtOa_CFtjKbnK7uqfiftrM-lEuEbqwixuw"
+      ],
       "author": "nimadir@gmail.com",
       "createdDate": "Wen Nov 01 2023 15:05:24 GMT+0500 (GMT+05:00)",
       "category": "Fresh Fruit",
       "readingTime": 6,
       "content": "<p>lorem ipsum</p>",
-      "tags": [
-        "Healthy",
-        "Snacks",
-        "Tiffin"
-      ],
+      "tags": ["Healthy", "Snacks", "Tiffin"],
       "comments": [
         {
+          "id": "c1",
+          "userImg": "",
+          "fullName": "Darrell Steward",
+          "date": "7 Apr, 2021",
+          "comment": "Nulla molestie interdum ultricies. "
+        },
+        {
+          "id": "c2",
+          "userImg": "",
           "fullName": "John Doe",
-          "date": 23453342532,
-          "comment": "lorem ipsum lorem ipsum, lorem ipsum"
+          "date": "26 Apr, 2021",
+          "comment": "In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam."
+        },
+        {
+          "id": "c3",
+          "userImg": "",
+          "fullName": "Devon Lane",
+          "date": "24 Apr, 2021",
+          "comment": "Quisque eget tortor lobortis, facilisis metus eu, elementum est. Nunc sit amet erat quis ex convallis suscipit. Nam hendrerit, velit ut aliquam euismod, nibh tortor rutrum nisi, ac sodales nunc eros porta nisi. Sed scelerisque, est eget aliquam venenatis, est sem tempor eros."
+        },
+        {
+          "id": "c4",
+          "userImg": "",
+          "fullName": "Jacob Jones",
+          "date": "20 Apr, 2021",
+          "comment": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."
+        },
+        {
+          "id": "c5",
+          "userImg": "",
+          "fullName": "Jane Cooper",
+          "date": "18 Apr, 2021",
+          "comment": "Pellentesque feugiat, nibh vel vehicula pretium, nibh nibh bibendum elit, a volutpat arcu dui nec orci. Aenean dui odio, ullamcorper quis turpis ac, volutpat imperdiet ex."
         }
       ]
     },
@@ -1247,21 +1367,51 @@
       "id": 9,
       "title": "Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.",
       "previewImage": "/assets/images/blog/img9.svg",
+      "extraImages": [
+        "https://avatars.mds.yandex.net/i?id=4f5e938db6785addad8508c435f1300010bb43ca-7756591-images-thumbs&n=13",
+        "https://avatars.mds.yandex.net/i?id=fec9ea2fd5ccf595c3d3330831b95d3c0bf6a954-6968696-images-thumbs&n=13"
+      ],
       "author": "nimadir@gmail.com",
       "createdDate": "Wen Nov 01 2023 15:05:24 GMT+0500 (GMT+05:00)",
       "category": "Fresh Fruit",
       "readingTime": 4,
       "content": "<p>lorem ipsum</p>",
-      "tags": [
-        "Launch",
-        "Snacks",
-        "Bread"
-      ],
+      "tags": ["Launch", "Snacks", "Bread"],
       "comments": [
         {
+          "id": "c1",
+          "userImg": "",
           "fullName": "John Doe",
-          "date": 23453342532,
-          "comment": "lorem ipsum lorem ipsum, lorem ipsum"
+          "date": "26 Apr, 2021",
+          "comment": "In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam."
+        },
+        {
+          "id": "c2",
+          "userImg": "",
+          "fullName": "Devon Lane",
+          "date": "24 Apr, 2021",
+          "comment": "Quisque eget tortor lobortis, facilisis metus eu, elementum est. Nunc sit amet erat quis ex convallis suscipit. Nam hendrerit, velit ut aliquam euismod, nibh tortor rutrum nisi, ac sodales nunc eros porta nisi. Sed scelerisque, est eget aliquam venenatis, est sem tempor eros."
+        },
+        {
+          "id": "c3",
+          "userImg": "",
+          "fullName": "Jacob Jones",
+          "date": "20 Apr, 2021",
+          "comment": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."
+        },
+        {
+          "id": "c4",
+          "userImg": "",
+          "fullName": "Jane Cooper",
+          "date": "18 Apr, 2021",
+          "comment": "Pellentesque feugiat, nibh vel vehicula pretium, nibh nibh bibendum elit, a volutpat arcu dui nec orci. Aenean dui odio, ullamcorper quis turpis ac, volutpat imperdiet ex."
+        },
+        {
+          "id": "c5",
+          "userImg": "",
+          "fullName": "Darrell Steward",
+          "date": "7 Apr, 2021",
+          "comment": "Nulla molestie interdum ultricies. "
         }
       ]
     },
@@ -1269,21 +1419,53 @@
       "id": 10,
       "title": "Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.",
       "previewImage": "/assets/images/blog/img10.svg",
+      "extraImages": [
+        "https://avatars.mds.yandex.net/i?id=421bcf30d93b8079c2f75c12491d10d8d8a240d3-10639796-images-thumbs&n=13",
+        "https://avatars.mds.yandex.net/i?id=c501aa526e28b17da3f59fd03472143c-5502450-images-thumbs&n=13"
+      ],
+
       "author": "nimadir@gmail.com",
       "createdDate": "Mon Nov 06 2023 15:05:24 GMT+0500 (GMT+05:00)",
       "category": "Vegetables",
       "readingTime": 4,
       "content": "<p>lorem ipsum</p>",
-      "tags": [
-        "Vegetarian",
-        "Vitamins",
-        "Dinner"
-      ],
+      "tags": ["Vegetarian", "Vitamins", "Dinner"],
       "comments": [
         {
+          "id": "c1",
+          "userImg": "",
+          "fullName": "Devon Lane",
+          "date": "24 Apr, 2021",
+          "comment": "Quisque eget tortor lobortis, facilisis metus eu, elementum est. Nunc sit amet erat quis ex convallis suscipit. Nam hendrerit, velit ut aliquam euismod, nibh tortor rutrum nisi, ac sodales nunc eros porta nisi. Sed scelerisque, est eget aliquam venenatis, est sem tempor eros."
+        },
+        {
+          "id": "c2",
+          "userImg": "",
           "fullName": "John Doe",
-          "date": 23453342532,
-          "comment": "lorem ipsum lorem ipsum, lorem ipsum"
+          "date": "26 Apr, 2021",
+          "comment": "In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam."
+        },
+
+        {
+          "id": "c3",
+          "userImg": "",
+          "fullName": "Jacob Jones",
+          "date": "20 Apr, 2021",
+          "comment": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."
+        },
+        {
+          "id": "c4",
+          "userImg": "",
+          "fullName": "Darrell Steward",
+          "date": "7 Apr, 2021",
+          "comment": "Nulla molestie interdum ultricies. "
+        },
+        {
+          "id": "c5",
+          "userImg": "",
+          "fullName": "Jane Cooper",
+          "date": "18 Apr, 2021",
+          "comment": "Pellentesque feugiat, nibh vel vehicula pretium, nibh nibh bibendum elit, a volutpat arcu dui nec orci. Aenean dui odio, ullamcorper quis turpis ac, volutpat imperdiet ex."
         }
       ]
     }
@@ -1303,11 +1485,8 @@
       {
         "title": "We Delivered, You Enjoy Your Order.",
         "content": "Ut suscipit egestas suscipit. Sed posuere pellentesque nunc, ultrices consectetur velit dapibus eu. Mauris sollicitudin dignissim diam, ac mattis eros accumsan rhoncus. Curabitur auctor bibendum nunc eget elementum.",
-        "image": "/assets/images/about/nimadir.png",
-        "button": {
-          "text": "Shop Now",
-          "link": "/shop"
-        }
+        "image": "/assets/images/About/fruit-about-img.png",
+        "button": "Shop Now"
       }
     ],
     "cards": [
@@ -1315,57 +1494,99 @@
         "id": 1,
         "title": "Jenny Wilson",
         "category": "Ceo & Founder",
-        "linkImg":
-          "/assets/images/About/cards_img1.png"
+        "linkImg": "/assets/images/About/cards_people_img1.png"
       },
       {
         "id": 2,
         "title": "Jane Cooper",
         "category": "Worker",
-        "linkImg":
-          "/assets/images/About/cards_img2.png"
+        "linkImg": "/assets/images/About/cards_img2.png"
       },
       {
         "id": 3,
         "title": "Cody Fisher",
         "category": "Security Guard",
-        "linkImg":
-          "/assets/images/About/cards_img3.png"
+        "linkImg": "/assets/images/About/cards_img3.png"
       },
       {
         "id": 4,
         "title": "Robert Fox",
         "category": "Senior Farmer Manager",
-        "linkImg":
-          "/assets/images/About/cards_img4.png"
+        "linkImg": "/assets/images/About/cards_img4.png"
       },
       {
         "id": 5,
         "title": "Jenny Wilson",
         "category": "Ceo & Founder",
-        "linkImg":
-          "/assets/images/About/cards_img1.png"
+        "linkImg": "/assets/images/About/cards_people_img1.png"
       },
       {
         "id": 6,
         "title": "Jane Cooper",
         "category": "Worker",
-        "linkImg":
-          "/assets/images/About/cards_img2.png"
+        "linkImg": "/assets/images/About/cards_img2.png"
       },
       {
         "id": 7,
         "title": "Cody Fisher",
         "category": "Security Guard",
-        "linkImg":
-          "/assets/images/About/cards_img3.png"
+        "linkImg": "/assets/images/About/cards_img3.png"
       },
       {
         "id": 8,
         "title": "Robert Fox",
         "category": "Senior Farmer Manager",
-        "linkImg":
-          "/assets/images/About/cards_img4.png"
+        "linkImg": "/assets/images/About/cards_img4.png"
+      }
+    ],
+    "client": [
+      {
+        "id": 1,
+        "title": "Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet elit eu magna dictum, bibendum cursus velit sodales. Donec sed neque eget",
+        "user": "Robert Fox",
+        "category": "Customer",
+        "linkImg": "/assets/images/About/client-img1.svg",
+        "icon": "/assets/images/About/client-icon1.svg"
+      },
+      {
+        "id": 2,
+        "title": "Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet elit eu magna dictum, bibendum cursus velit sodales. Donec sed neque eget",
+        "user": "Dianne Russell",
+        "category": "Customer",
+        "linkImg": "/assets/images/About/client-img2.svg",
+        "icon": "/assets/images/About/client-icon1.svg"
+      },
+      {
+        "id": 3,
+        "title": "Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet elit eu magna dictum, bibendum cursus velit sodales. Donec sed neque eget",
+        "user": "Eleanor Pena",
+        "category": "Customer",
+        "linkImg": "/assets/images/About/client-img3.svg",
+        "icon": "/assets/images/About/client-icon1.svg"
+      },
+      {
+        "id": 4,
+        "title": "Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet elit eu magna dictum, bibendum cursus velit sodales. Donec sed neque eget",
+        "user": "Robert Fox",
+        "category": "Customer",
+        "linkImg": "/assets/images/About/client-img1.svg",
+        "icon": "/assets/images/About/client-icon1.svg"
+      },
+      {
+        "id": 5,
+        "title": "Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet elit eu magna dictum, bibendum cursus velit sodales. Donec sed neque eget",
+        "user": "Robert Fox",
+        "category": "Customer",
+        "linkImg": "/assets/images/About/client-img2.svg",
+        "icon": "/assets/images/About/client-icon1.svg"
+      },
+      {
+        "id": 6,
+        "title": "Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet elit eu magna dictum, bibendum cursus velit sodales. Donec sed neque eget",
+        "user": "Robert Fox",
+        "category": "Customer",
+        "linkImg": "/assets/images/About/client-img3.svg",
+        "icon": "/assets/images/About/client-icon1.svg"
       }
     ]
   }

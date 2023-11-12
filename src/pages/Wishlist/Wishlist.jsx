@@ -1,8 +1,10 @@
 import SocialMediaIcons from "../../components/common/SocialMediaIcons"
+import { instance } from '../../utils/apiRequest'   
+import { useEffect, useState } from 'react'
 
 export default function Wishlist() {
   const data = [
-    {
+    { 
    imgUrl:'https://seed2plant.in/cdn/shop/products/greencapsicum.jpg?v=1606107907',
    title:'Green Capsicum', 
    price:'$14.99',
@@ -90,5 +92,7 @@ export default function Wishlist() {
   </div>
   </div>  
   </div>
+
+  console.log(instance);
   )
 }

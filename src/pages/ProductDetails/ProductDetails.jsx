@@ -3,13 +3,12 @@ import PropTypes from 'prop-types'
 import ModalDetails from './components/ModalDetails'
 import TabBar from './components/Tabs'
 import { useParams } from 'react-router-dom'
-import { instance } from '../../utils/apiRequest'
+import { instance } from '../../utils/apiRequest'   
 import { useEffect, useState } from 'react'
 
-function ProductDetails() {
+function ProductDetails() {             
   const { productID } = useParams()
   const [foundProduct, setFoundProduct] = useState({})
-  // const context = createContext()
 
   console.log(foundProduct)
 
