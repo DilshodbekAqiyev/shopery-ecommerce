@@ -16,7 +16,7 @@ export default function Signup() {
     <Container>
       <div className="w-full h-[100vh] flex items-center justify-center">
         <div
-          className="w-[520px] h-[432px] flex flex-col items-center gap-[20px] shadow-[0px_0px_56px_0px_rgba(0,38,3,0.08)] rounded-md p-[24px]">
+          className="w-[520px] h-[470px] flex flex-col items-center gap-[20px] shadow-[0px_0px_56px_0px_rgba(0,38,3,0.08)] rounded-md p-[24px]">
           <h1 className="text-[32px] font-semibold">Create Account</h1>
           <div className="w-[100%] flex flex-col gap-[12px]">
             <div className="w-[100%] flex h-[49px] gap-2 items-center px-[14px] border rounded-md">
@@ -39,6 +39,10 @@ export default function Signup() {
                 placeholder="Confirm Password" />
               <AiOutlineEye size={24} />
             </div>
+            <label className="flex items-center gap-1 cursor-pointer w-[22%] select-none">
+              <Checkbox />
+              <span className="text-gray-500">I am Seller</span>
+            </label>
             <label className="flex items-center gap-1 cursor-pointer w-[55%] select-none">
               <Checkbox />
               <span className="text-gray-500">Accept all terms & Conditions</span>
