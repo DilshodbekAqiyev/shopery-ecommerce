@@ -24,10 +24,10 @@ function AddProduct() {
         formData.append('upload_preset', CLOUDINARY_UPLOAD_NAME)
 
         const response = await axios.post('https://api.cloudinary.com/v1_1/dezjflp5d/image/upload', formData)
-        console.log(response)
+        // console.log(response)
         if (response.statusText === 'OK') {
           const imageUrl = response.data.secure_url
-          console.log(imageUrl)
+          // console.log(imageUrl)
           setProduct({
             ...product,
             id: new Date().getTime(),
@@ -59,7 +59,7 @@ function AddProduct() {
       [name]: value,
     })
   }
-  console.log(fileInputRef)
+  // console.log(fileInputRef)
   const resetProductState = () => {
     setProduct(initialProductState)
     fileInputRef.current.value = ''

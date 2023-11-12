@@ -4,17 +4,26 @@ import ModalDetails from './components/ModalDetails'
 import TabBar from './components/Tabs'
 import { useParams } from 'react-router-dom'
 import { instance } from '../../utils/apiRequest'
-import { useEffect, useState } from 'react'
+import { useEffect, useReducer } from 'react'
+import ProductCard from '../../components/common/Cards/ProductCard'
+import { detailsReducer } from '../../contexts/productDetails/DetailsReducer'
+import { ACTION_TYPES } from '../../contexts/productDetails/ActioinTypes'
 
 function ProductDetails() {
   const { productID } = useParams()
-  const [foundProduct, setFoundProduct] = useState({})
-  // const context = createContext()
+  const [state, dispatch] = useReducer(detailsReducer, {
+    foundProduct: {},
+    sliceProduct: [],
+  })
 
-  console.log(foundProduct)
+  const setSliceProduct = (data) => {
+    dispatch({ type: ACTION_TYPES.SLICE_PRODUCT, payload: data })
+  }
+  const setFoundProduct = (data) => {
+    dispatch({ type: ACTION_TYPES.FOUND_PRODUCT, payload: data })
+  }
 
   useEffect(() => {
-    // eslint-disable-next-line no-extra-semi
     ;(async () => {
       const response = await  instance.get(`products/${productID}`)
       setFoundProduct(response.data)
@@ -22,13 +31,24 @@ function ProductDetails() {
 
   }, [productID] )
 
+  useEffect(() => {
+    ;(async () => {
+      const response = await instance.get(`products?_start=1&_end=5`)
+      // console.log(response.data)
+      setSliceProduct(response.data)
+    })()
+  }, [])
+
   return (
     <div className="max-w-[1320px] mx-auto">
-      <>
-        <ModalDetails product={foundProduct} />
-        <TabBar product={foundProduct} />
-      </>
+      <ModalDetails product={state.foundProduct} />
+      <TabBar product={state.foundProduct} />
       <h1 className="text-heading05 font-[600] text-center mb-8">Related Products</h1>
+      <div className="flex justify-between">
+        {state?.sliceProduct?.map((item) => {
+          return <ProductCard key={item.id} {...item} />
+        })}
+      </div>
     </div>
   )
 }

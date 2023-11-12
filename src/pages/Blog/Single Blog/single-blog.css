@@ -1,0 +1,12 @@
+#single_bg_card {
+  background-image: url('./images/single_blog_image.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#textarea::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background-color: #fff;
+  background-image: -webkit-gradient(linear, 40% 0%, 75% 84%, from(#4d9c41), to(#19911d), color-stop(0.6, #54de5d));
+}
