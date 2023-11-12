@@ -1,10 +1,4 @@
-import {
-  createBrowserRouter,
-  RouterProvider,
-  createRoutesFromElements,
-  Route,
-  Navigate,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider, createRoutesFromElements, Route, Navigate } from 'react-router-dom'
 
 // Pages
 import Home from './pages/Home/Home'
@@ -18,17 +12,17 @@ import About from './pages/About/About'
 //components
 import BlogCards from './pages/Blog/components/BlogCards'
 import SingleBlog from './pages/Blog/Single Blog/SingleBlog'
-import DashboardInfo from "./pages/Dashboard/components/DashboardInfo";
-import OrderDetail from "./pages/Dashboard/components/OrderDetail";
-import UserAddress from "./pages/Dashboard/components/UserAddress";
-import Settings from "./pages/Dashboard/components/Settings";
-import OrderHistory from "./pages/Dashboard/components/OrderHistory";
-import History from "./pages/Dashboard/components/History";
-import Dashboard from "./pages/Dashboard/Dashboard";
-import RootLayout from "./components/layouts/RootLayout";
-import Index from "./pages/Blog/Index";
-import ShopProvider from "./contexts/shop/ShopContext";
-import Wishlist from "./pages/Wishlist/Wishlist";
+import DashboardInfo from './pages/Dashboard/components/DashboardInfo'
+import OrderDetail from './pages/Dashboard/components/OrderDetail'
+import UserAddress from './pages/Dashboard/components/UserAddress'
+import Settings from './pages/Dashboard/components/Settings'
+import OrderHistory from './pages/Dashboard/components/OrderHistory'
+import History from './pages/Dashboard/components/History'
+import Dashboard from './pages/Dashboard/Dashboard'
+import RootLayout from './components/layouts/RootLayout'
+import Index from './pages/Blog/Index'
+import ShopProvider from './contexts/shop/ShopContext'
+import Wishlist from './pages/Wishlist/Wishlist'
 
 export default function App() {
   const routes = createBrowserRouter(
@@ -69,7 +63,7 @@ export default function App() {
         <Route path="*" element={<Navigate to={'/PageNotFound'} />} />
       </Route>
     )
-  );
+  )
 
-  return <RouterProvider router={routes} />;
+  return <RouterProvider router={routes} />
 }
