@@ -10,8 +10,9 @@ import Timer from './components/timer'
 import SwiperTop from '../../components/ui/swiper'
 import Featured from '../../components/common/featured/featured'
 import { instance } from '../../utils/apiRequest'
+import Container from '../../components/common/Container'
 
-const vegetablesData = ['All', 'Vegetables', 'Fruit', 'Meat & Fish', ' View All']
+const vegetablesData = ['All', 'Vegetables', 'Fruit', 'Meat & Fish']
 
 const Home = () => {
   const [dataProduct, setdataProduct] = useState([])
@@ -29,9 +30,6 @@ const Home = () => {
     } else if (item === 'Meat & Fish') {
       const dataCooking = await instance.get('products?category=Cooking')
       setdataProduct(dataCooking.data)
-    } else if (item === ' View All') {
-      const dataVAll = await instance.get(`/products`)
-      setdataProduct(dataVAll.data)
     } else if (item === 'All') {
       const dataAll = await instance.get(`/products`)
       setdataProduct(dataAll.data)
@@ -40,7 +38,7 @@ const Home = () => {
 
   useEffect(() => {
     // eslint-disable-next-line no-extra-semi
-    ;(async () => {
+    ; (async () => {
       const dataProductPage = await instance.get(`/products`)
       setdataProduct(dataProductPage.data)
     })()
@@ -50,7 +48,7 @@ const Home = () => {
   window.matchMedia('(min-width: 570px)').addEventListener('change', (e) => setMatches(e.matches))
 
   return (
-    <div>
+    <Container>
       <div className="relative max-w-[1320px] m-auto">
         <SwiperTop />
         <div>
@@ -118,7 +116,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-    </div>
+    </Container>
   )
 }
 
