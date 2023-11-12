@@ -16,5 +16,3 @@ if (rootEl) {
     </I18nextProvider>
   )
 }
-
-localStorage.setItem('token', 'x@fSDFYsd345d23saFsa326ASDghad23saFsa326ASDghasd%6Assd%6AsD')

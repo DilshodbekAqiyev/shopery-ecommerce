@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 
 import { Input } from "../../../components/ui/input";
@@ -8,6 +8,9 @@ import { Button } from "../../../components/ui/button";
 
 import Container from "../../../components/common/Container";
 import { useLoginFormValidator } from "../useLoginFormValidator";
+import { instance } from "../../../utils/apiRequest";
+import { initialUserData } from '../../../utils/constants'
+import bcrypt from 'bcryptjs'
 
 export default function Signup() {
   const [passwordVisible, setPasswordVisible] = useState({ p1: false, p2: false })
@@ -18,6 +21,7 @@ export default function Signup() {
     seller: false
   });
   const { errors, validateForm, onBlurField } = useLoginFormValidator(form);
+  const navigate = useNavigate()
 
   const onUpdateField = e => {
     const field = e.target.name;
@@ -41,7 +45,18 @@ export default function Signup() {
   const createUser = () => {
     const { isValid } = validateForm({ form, errors, forceTouchErrors: true });
     if (!isValid) return;
-    alert(JSON.stringify(form, null, 2));
+
+    const newUser = {
+      ...initialUserData,
+      email: form.email,
+      password: bcrypt.hash(form.password, 10), // test
+      role: form.seller ? "Seller" : "Customer"
+    }
+
+    instance.post('users/', newUser)
+    localStorage.setItem('token', newUser.token)
+
+    navigate('/dashboard')
   };
 
   return (

@@ -5,10 +5,11 @@ import { instance } from './apiRequest'
 
 // shadcn helper
 export function cn(...inputs) {
-  
+
   return twMerge(clsx(inputs))
 }
 
+// Get Current logged user
 export const getUser = async () => {
   const res = await instance.get('users')
   if (res.statusText == 'OK') {
@@ -25,5 +26,3 @@ export const getUser = async () => {
   }
   return token
 }
-
-// getUser().then((user) => console.log(user))

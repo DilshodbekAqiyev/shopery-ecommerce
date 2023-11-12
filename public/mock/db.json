@@ -1,170 +1,25 @@
 {
   "users": [
     {
-      "id": 1,
-      "firstName": "John",
-      "lastName": "Doe",
-      "email": "johndoe@gmail.com",
+      "id": "a1157062-12d7-428b-844f-9f46da48d9b9",
+      "firstName": "",
+      "lastName": "",
+      "email": "baxriddin@gmail.com",
       "role": "Customer",
-      "phoneNumber": 80355501223,
-      "password": "X34sfsdfy34t7dsgfh",
-      "token": "x@fSDFYsd345d23saFsa326ASDghad23saFsa326ASDghasd%6Assd%6AsD",
+      "phoneNumber": null,
+      "password": "baxriddin",
+      "token": "13891a2c-077d-4f80-9f0d-14fa70fa5494",
       "avatar": "/assets/images/users/user1.png",
       "billingAddress": {
-        "firstName": "John",
-        "lastName": "Doe",
-        "companyName": "Zakirsoft",
-        "streetAddress": "4140 Parl",
-        "country": "United States",
-        "city": "Washington",
-        "zipCode": "20003",
-        "email": "dianne.russell@gmail.com",
-        "phone": 6935551232
-      },
-      "wishlist": [
-        {
-          "id": 1,
-          "name": "Big Potatos",
-          "category": "Vegetables",
-          "discountPrice": 14.99,
-          "originalPrice": 48,
-          "status": "",
-          "images": {
-            "src": "/assets/images/products/potato.png",
-            "imageDescription": "Big potato images",
-            "otherImages": [
-              {
-                "id": 1,
-                "src": "/assets/images/products/potato.png",
-                "otherImageDescription": "Picture of a large potato from the left"
-              },
-              {
-                "id": 2,
-                "src": "https://imgs.search.brave.com/oVlHBWXyz2eqlN7NlOV2_ToywFbiLHaTIa7bjXyqOSc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9wb3Rh/dG9lcy0yMzI5NjAu/anBn",
-                "otherImageDescription": "Picture of a large potato from the right"
-              },
-              {
-                "id": 3,
-                "src": "https://imgs.search.brave.com/1_ynpB5LqS7jY14dU35roWI6bDzFpaiUg9ck8ecysvg/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAyLzY1LzQ4Lzg2/LzM2MF9GXzI2NTQ4/ODY1NV9jTEk5WDRs/eDdIU3VnNW5QTnp0/QnNTNnlhNThvRnVW/aS5qcGc",
-                "otherImageDescription": "Picture of a large potato from above"
-              },
-              {
-                "id": 4,
-                "src": "https://imgs.search.brave.com/66j22hu8FZvfcWc4VfiEfDBgj0_QDNbGXY32Sjlp_UA/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAwLzU3Lzk3LzMx/LzM2MF9GXzU3OTcz/MTgzX3ZtblpTMnNk/MkQ0RkNTWGZESjEy/V2gwSTdLc0t4T3Rp/LmpwZw",
-                "otherImageDescription": "Picture of a big potato shot from the front"
-              },
-              {
-                "id": 5,
-                "src": "https://imgs.search.brave.com/_jEOu3lxGg1GKIcFREUDele-U04H2pkONG_0qZ76y_U/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9zdC5k/ZXBvc2l0cGhvdG9z/LmNvbS8xMDAzNDk1/LzE5NTgvaS82MDAv/ZGVwb3NpdHBob3Rv/c18xOTU4MDc4My1z/dG9jay1waG90by1w/b3RhdG9lcy5qcGc",
-                "otherImageDescription": "Picture of a large potato from the left"
-              },
-              {
-                "id": 6,
-                "src": "https://imgs.search.brave.com/oVlHBWXyz2eqlN7NlOV2_ToywFbiLHaTIa7bjXyqOSc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9wb3Rh/dG9lcy0yMzI5NjAu/anBn",
-                "otherImageDescription": "Picture of a large potato from the right"
-              },
-              {
-                "id": 7,
-                "src": "https://imgs.search.brave.com/1_ynpB5LqS7jY14dU35roWI6bDzFpaiUg9ck8ecysvg/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAyLzY1LzQ4Lzg2/LzM2MF9GXzI2NTQ4/ODY1NV9jTEk5WDRs/eDdIU3VnNW5QTnp0/QnNTNnlhNThvRnVW/aS5qcGc",
-                "otherImageDescription": "Picture of a large potato from above"
-              },
-              {
-                "id": 8,
-                "src": "https://imgs.search.brave.com/66j22hu8FZvfcWc4VfiEfDBgj0_QDNbGXY32Sjlp_UA/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAwLzU3Lzk3LzMx/LzM2MF9GXzU3OTcz/MTgzX3ZtblpTMnNk/MkQ0RkNTWGZESjEy/V2gwSTdLc0t4T3Rp/LmpwZw",
-                "otherImageDescription": "Picture of a big potato shot from the front"
-              },
-              {
-                "id": 9,
-                "src": "/assets/images/products/potato.png",
-                "otherImageDescription": "Picture of a big potato shot from the front"
-              }
-            ]
-          }
-        },
-        {
-          "id": 4,
-          "name": "Eggplant",
-          "category": "Vegetables",
-          "discountPrice": 14.99,
-          "originalPrice": 20.99,
-          "status": "",
-          "images": {
-            "src": "/assets/images/products/eggplant.png",
-            "imageDescription": "Eggplant images",
-            "otherImages": [
-              {
-                "id": 1,
-                "src": "/assets/images/products/eggplant.png",
-                "otherImageDescription": "Picture of a large potato from the left"
-              },
-              {
-                "id": 2,
-                "src": "https://imgs.search.brave.com/8luRKJnNy1kwSwC85zi6RaQS5ZhuDEb2dgFPJ-l-BmA/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAwLzc4LzM3Lzc0/LzM2MF9GXzc4Mzc3/NDU5X1laMmd4ZTQ2/UEptZ3RwWGplSEM1/bDZxUU9MdElmcGUz/LmpwZw",
-                "otherImageDescription": "Picture of a large potato from the right"
-              },
-              {
-                "id": 3,
-                "src": "https://imgs.search.brave.com/E21ARpN9hOeHeQ2gprDnE5KzQ5Bnjhe2g0U1jlanLJU/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTcx/MjY5NDA1L3Bob3Rv/L2VnZ3BsYW50cy5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/RU1KZU5KQm10SHd0/MnpzNnRUd1BSQjE4/VGE2bEcxQmtpSmdI/ampUSkhMUT0",
-                "otherImageDescription": "Picture of a large potato from above"
-              },
-              {
-                "id": 4,
-                "src": "https://imgs.search.brave.com/pKOlQ6jBREwzxqMYaeQKUB004AfqEg0oLo7HT_XCXrw/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNDgz/OTEwODg3L3Bob3Rv/L2NoaW5lc2UtZWdn/cGxhbnQuanBnP3M9/NjEyeDYxMiZ3PTAm/az0yMCZjPTRJYnBD/VzhQajUtdXBBQndq/UEVKUHJTYUp4Y0s0/bmMzYUR6dFo2ZHNU/Qnc9",
-                "otherImageDescription": "Picture of a big potato shot from the front"
-              },
-              {
-                "id": 5,
-                "src": "https://imgs.search.brave.com/IOwA8oPlEKvxPKoGX_62E67KbWv_vkcKFd5s8ZPCqVg/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTcz/ODc5ODg3L3Bob3Rv/L2VnZ3BsYW50cy1p/c29sYXRlZC5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9QTFs/VnhTbDNKM0dsdVlR/XzlsZlIycmxCSWY3/VlZFVW9KcmtlVXp2/YmRXUT0",
-                "otherImageDescription": "Picture of a large potato from the left"
-              },
-              {
-                "id": 6,
-                "src": "/assets/images/products/eggplant.png",
-                "otherImageDescription": "Picture of a large potato from the left"
-              },
-              {
-                "id": 7,
-                "src": "https://imgs.search.brave.com/8luRKJnNy1kwSwC85zi6RaQS5ZhuDEb2dgFPJ-l-BmA/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAwLzc4LzM3Lzc0/LzM2MF9GXzc4Mzc3/NDU5X1laMmd4ZTQ2/UEptZ3RwWGplSEM1/bDZxUU9MdElmcGUz/LmpwZw",
-                "otherImageDescription": "Picture of a large potato from the right"
-              },
-              {
-                "id": 8,
-                "src": "https://imgs.search.brave.com/E21ARpN9hOeHeQ2gprDnE5KzQ5Bnjhe2g0U1jlanLJU/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTcx/MjY5NDA1L3Bob3Rv/L2VnZ3BsYW50cy5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/RU1KZU5KQm10SHd0/MnpzNnRUd1BSQjE4/VGE2bEcxQmtpSmdI/ampUSkhMUT0",
-                "otherImageDescription": "Picture of a large potato from above"
-              },
-              {
-                "id": 9,
-                "src": "https://imgs.search.brave.com/pKOlQ6jBREwzxqMYaeQKUB004AfqEg0oLo7HT_XCXrw/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNDgz/OTEwODg3L3Bob3Rv/L2NoaW5lc2UtZWdn/cGxhbnQuanBnP3M9/NjEyeDYxMiZ3PTAm/az0yMCZjPTRJYnBD/VzhQajUtdXBBQndq/UEVKUHJTYUp4Y0s0/bmMzYUR6dFo2ZHNU/Qnc9",
-                "otherImageDescription": "Picture of a big potato shot from the front"
-              }
-            ]
-          }
-        }
-      ],
-      "shoppingCart": [],
-      "checkout": [],
-      "orders": []
-    },
-    {
-      "id": 2,
-      "firstName": "John1",
-      "lastName": "Doe1",
-      "email": "johndoe1@gmail.com",
-      "role": "Customer1",
-      "phoneNumber": 80355501221,
-      "password": "X34sfsdfy34t7dsgf1",
-      "token": "x@fSDFYsd345d23saFsa326ASDghad23saFsa326ASDghasd%6Assd%6As1",
-      "avatar": "/assets/images/users/user1.png",
-      "billingAddress": {
-        "firstName": "John1",
-        "lastName": "Doe1",
-        "companyName": "Zakirsoft1",
-        "streetAddress": "4140 Parl1",
-        "country": "United States1",
-        "city": "Washington1",
-        "zipCode": "200031",
-        "email": "dianne.russell@gmail.com1",
-        "phone": 6935551231
+        "firstName": "",
+        "lastName": "",
+        "companyName": "",
+        "streetAddress": "",
+        "country": "",
+        "city": "",
+        "zipCode": "",
+        "email": "",
+        "phone": null
       },
       "wishlist": [],
       "shoppingCart": [],
