@@ -38,6 +38,7 @@ const orderHistoryData = [
     },
   ];
 function  History() {
+  
   return (
     <div className=" border-solid border-2 border-gray100 rounded-[10px] mt-10  w-[984px]">
         <div className="flex justify-between m-[24px] items-center">
