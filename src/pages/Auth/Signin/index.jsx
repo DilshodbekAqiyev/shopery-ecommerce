@@ -16,7 +16,7 @@ export default function Signup() {
     <Container>
       <div className="w-full h-[100vh] flex items-center justify-center">
         <div
-          className="w-[520px] h-[470px] flex flex-col items-center gap-[20px] shadow-[0px_0px_56px_0px_rgba(0,38,3,0.08)] rounded-md p-[24px]">
+          className="w-[520px] h-[380px] flex flex-col items-center gap-[20px] shadow-[0px_0px_56px_0px_rgba(0,38,3,0.08)] rounded-md p-[24px]">
           <h1 className="text-[32px] font-semibold">Sign In</h1>
           <div className="w-[100%] flex flex-col gap-[12px]">
             <div className="w-[100%] flex h-[49px] gap-2 items-center px-[14px] border rounded-md">
@@ -32,20 +32,13 @@ export default function Signup() {
                 placeholder="Password" />
               <AiOutlineEye size={24} />
             </div>
-            <div className="w-[100%] flex h-[49px] gap-2 items-center px-[14px] border rounded-md">
-              <Input
-                className="border-none h-[100%] focus-visible:ring-0 focus:outline-none p-0 placeholder:text-gray-400"
-                type="password"
-                placeholder="Confirm Password" />
-              <AiOutlineEye size={24} />
-            </div>
-            <label className="flex items-center gap-1 cursor-pointer w-[55%] select-none">
+            <label className="flex items-center gap-1 cursor-pointer w-[31%] select-none">
               <Checkbox />
               <span className="text-gray-500">Remember Me</span>
             </label>
           </div>
           <Button onClick={createUser} className="w-full rounded-[30px]">Login</Button>
-          <p className="text-gray-500">Already have account? <Link to="/sign-in" className="text-black font-bold">Login</Link></p>
+          <p className="text-gray-500">Don`t have account? <Link to="/sign-up" className="text-black font-bold">Register</Link></p>
         </div>
       </div>
     </Container>
