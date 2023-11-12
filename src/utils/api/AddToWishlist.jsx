@@ -1,12 +1,12 @@
 import PropTypes from 'prop-types'
-import { instance } from '../apiRequest'
+import { instance } from '../apiRequest' 
 import { getUser } from '../utils'
 export const AddToWishlist = (product) => {
   const { id, name, category, originalPrice, discountPrice, status, images } = product
   // console.log(id)
   getUser().then((user) => {
     const el = user.wishlist.find((wishitem) => wishitem.id === id)
-    if (!el) {
+    if (!el) {  
       user.wishlist.push({
         id,
         name,
