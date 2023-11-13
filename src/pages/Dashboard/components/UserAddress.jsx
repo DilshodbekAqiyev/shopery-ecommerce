@@ -19,16 +19,16 @@ function UserAddress() {
         Billing Address
       </p>
       <h4 className=" text-[18px]  leading-[27px] font-semibold mb-[8px]">
-        {data.firstName} {data.lastName}
+        {data?.firstName} {data?.lastName}
       </h4>
       <p className="text-grays-gray600 w-[264px]  text-[14px] mb-[8px]">
-        4140 Parker Rd. Allentown, New Mexico 31134
+        {data?.billingAddress?.country} {data?.billingAddress?.city} {data?.billingAddress?.streetAddress}
       </p>
       <p className=" text-[16px]  font-medium  mb-[12px] leading-[27px]">
-        {data.email}
+        {data?.billingAddress?.email}
       </p>
       <h4 className="text-[16px]  font-medium  mb-[20px] leading-[27px]">
-        {data.phoneNumber}
+        {data?.billingAddress?.phoneNumber}
       </h4>
       <Link to={"settings"}>
         <button className="border-none  outline-none  text-[16px] font-semibold mb-[32px]   text-[#00B207]">

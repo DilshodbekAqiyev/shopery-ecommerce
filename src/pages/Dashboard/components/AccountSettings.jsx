@@ -24,13 +24,14 @@ function AccountSettings() {
   useEffect(() => {
     (async () => {
       const response = await getUser();
-      setData({...data , 
-      firstName:response.firstName, 
-      lastName:response.lastName,
-      phoneNumber:response.phoneNumber,
-      email:response.email ,
-      id: response.id,
-    });
+      setData({
+        ...data,
+        firstName: response.firstName,
+        lastName: response.lastName,
+        phoneNumber: response.phoneNumber,
+        email: response.email,
+        id: response.id,
+      });
     })();
   }, []);
 
@@ -84,56 +85,56 @@ function AccountSettings() {
               />
             </div>
             <div className="mb-[16px]">
-            <Label
-              htmlFor={`lastName`}
-              className="block text-grays-gray900  text-[14px ] leading-[21px] font-[400] cursor-pointer"
-            >
-              Last Name
-            </Label>
-            <input
-              className="border-solid focus:grays-gray600  outline-none drop-shadow-sm transition-all duration-200 ease-in-out   focus:bg-white focus:ring-1 focus:ring-[#234f1e] text-grays-gray600 border mt-[6px]  w-[512px] rounded-lg py-[14px] px-[16px] text-[16px] font-[400]  leading-[21px]"
-              type="text"
-              id="lastName"
-              onChange={(e) =>
-                setData({ ...data, lastName: e.target.value })
-              }
-              value={data.lastName}
-            />
-          </div>
-          <div className="mb-[16px]">
-            <Label
-              htmlFor={`email`}
-              className="block text-grays-gray900  text-[14px ] leading-[21px] font-[400] cursor-pointer"
-            >
-              Email
-            </Label>
-            <input
-              className="border-solid focus:grays-gray600  outline-none drop-shadow-sm transition-all duration-200 ease-in-out   focus:bg-white focus:ring-1 focus:ring-[#234f1e] text-grays-gray600 border mt-[6px]  w-[512px] rounded-lg py-[14px] px-[16px] text-[16px] font-[400]  leading-[21px]"
-              type="email"
-              id="email"
-              onChange={(e) =>
-                setData({ ...data, email: e.target.value })
-              }
-              value={data.email}
-            />
-          </div>
-          <div className="mb-[16px]">
-            <Label
-              htmlFor={`phoneNumber`}
-              className="block text-grays-gray900  text-[14px ] leading-[21px] font-[400] cursor-pointer"
-            >
-              Phone Number
-            </Label>
-            <input
-              className="block border-solid focus:grays-gray600  outline-none drop-shadow-sm transition-all duration-200 ease-in-out   focus:bg-white focus:ring-1 focus:ring-[#234f1e]  text-grays-gray600 border mt-[6px]  w-[512px] rounded-lg py-[14px] px-[16px] text-[16px] font-[400]  leading-[21px]"
-              type="text"
+              <Label
+                htmlFor={`lastName`}
+                className="block text-grays-gray900  text-[14px ] leading-[21px] font-[400] cursor-pointer"
+              >
+                Last Name
+              </Label>
+              <input
+                className="border-solid focus:grays-gray600  outline-none drop-shadow-sm transition-all duration-200 ease-in-out   focus:bg-white focus:ring-1 focus:ring-[#234f1e] text-grays-gray600 border mt-[6px]  w-[512px] rounded-lg py-[14px] px-[16px] text-[16px] font-[400]  leading-[21px]"
+                type="text"
+                id="lastName"
+                onChange={(e) =>
+                  setData({ ...data, lastName: e.target.value })
+                }
+                value={data.lastName}
+              />
+            </div>
+            <div className="mb-[16px]">
+              <Label
+                htmlFor={`email`}
+                className="block text-grays-gray900  text-[14px ] leading-[21px] font-[400] cursor-pointer"
+              >
+                Email
+              </Label>
+              <input
+                className="border-solid focus:grays-gray600  outline-none drop-shadow-sm transition-all duration-200 ease-in-out   focus:bg-white focus:ring-1 focus:ring-[#234f1e] text-grays-gray600 border mt-[6px]  w-[512px] rounded-lg py-[14px] px-[16px] text-[16px] font-[400]  leading-[21px]"
+                type="email"
+                id="email"
+                onChange={(e) =>
+                  setData({ ...data, email: e.target.value })
+                }
+                value={data.email}
+              />
+            </div>
+            <div className="mb-[16px]">
+              <Label
+                htmlFor={`phoneNumber`}
+                className="block text-grays-gray900  text-[14px ] leading-[21px] font-[400] cursor-pointer"
+              >
+                Phone Number
+              </Label>
+              <input
+                className="block border-solid focus:grays-gray600  outline-none drop-shadow-sm transition-all duration-200 ease-in-out   focus:bg-white focus:ring-1 focus:ring-[#234f1e]  text-grays-gray600 border mt-[6px]  w-[512px] rounded-lg py-[14px] px-[16px] text-[16px] font-[400]  leading-[21px]"
+                type="text"
                 id="phoneNumber"
                 onChange={(e) =>
                   setData({ ...data, phoneNumber: e.target.value })
                 }
                 value={data.phoneNumber}
               />
-              </div>
+            </div>
             {/* =============================== */}
             <Button
               className="mt-[16px] text-[14px] rounded-[43px] font-[600] leading-[16px] hover:bg-[#234f1e]"
@@ -143,33 +144,33 @@ function AccountSettings() {
             </Button>
           </div>
           <div className="mt-[10px]">
-          <div
-            onClick={handleImageClick}
-            className="mt-[56px] w-[224px] h-[224px] "
-          >
-            {image ? (
-              <img
-                className="rounded-full w-full h-full"
-                src={URL.createObjectURL(image)}
-                alt=""
+            <div
+              onClick={handleImageClick}
+              className="mt-[56px] w-[224px] h-[224px] "
+            >
+              {image ? (
+                <img
+                  className="rounded-full w-full h-full"
+                  src={URL.createObjectURL(image)}
+                  alt=""
+                />
+              ) : (
+                <img src="/assets/images/settings__user__img.svg" alt="" />
+              )}
+              <input
+                type="file"
+                ref={inputRef}
+                className="hidden"
+                onChange={handleImageChange}
               />
-            ) : (
-              <img src="/assets/images/settings__user__img.svg" alt="" />
-            )}
-            <input
-              type="file"
-              ref={inputRef}
-              className="hidden"
-              onChange={handleImageChange}
-            />
+            </div>
+            <button className="border-dotted border-2 border-primary text-primary text-[14px] font-semibold leading-[17px] ml-[30px] rounded-[43px] mt-[20px] py-[10px] px-[32px] ">
+              Choose Image
+            </button>
           </div>
-          <button className="border-dotted border-2 border-primary text-primary text-[14px] font-semibold leading-[17px] ml-[30px] rounded-[43px] mt-[20px] py-[10px] px-[32px] ">
-            Choose Image
-          </button>
-        </div>
 
         </div>
-         
+
       </div>
     </div>
   );

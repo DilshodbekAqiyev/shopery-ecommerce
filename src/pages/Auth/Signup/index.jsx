@@ -40,7 +40,7 @@ export default function Signup() {
     }
   };
 
-  const createUser = () => {
+  const createUser = async () => {
     const { isValid } = validateForm({ form, errors, forceTouchErrors: true });
     if (!isValid) return;
 
@@ -48,10 +48,14 @@ export default function Signup() {
       ...initialUserData,
       email: form.email,
       password: form.password,
-      role: form.seller ? "Seller" : "Customer"
+      role: form.seller ? "Seller" : "Customer",
+      billingAddress: {
+        ...initialUserData.billingAddress,
+        email: form.email
+      }
     }
 
-    instance.post('users/', newUser)
+    await instance.post('users/', newUser)
     localStorage.setItem('token', newUser.token)
 
     location.href = '/dashboard'
