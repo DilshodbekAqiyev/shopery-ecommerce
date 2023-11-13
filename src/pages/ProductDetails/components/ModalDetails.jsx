@@ -1,14 +1,17 @@
 import PropTypes from 'prop-types'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { PiHandbagBold } from 'react-icons/pi'
 import { AiOutlineHeart } from 'react-icons/ai'
 import { Button } from '../../../components/ui/button'
 import SwiperContent from './SwiperContent'
 import { Badge } from '../../../components/ui/badge'
 import SocialMediaIcons from '../../../components/common/SocialMediaIcons'
+import { AddToWishlist } from '../../../utils/api/AddToWishlist'
+import { useProviderContext } from '../../../contexts/Provider'
+import { getUser } from '../../../utils/utils'
+import { toggleCart } from '../../../utils/api/Cart'
 
 function ModalDetails({ product }) {
-  const [InputRef, setInputRef] = useState(1)
   const {
     name,
     status,
@@ -23,17 +26,52 @@ function ModalDetails({ product }) {
     discountPrice,
     littleDesCription,
   } = product
+  const { wishlist, setWishlist, shoppingCart, setShoppingCart } = useProviderContext()
+
+  const [logged, setLogged] = useState(false)
+
+  useEffect(() => {
+    (async () => {
+      const res = await getUser()
+      setLogged(res !== null)
+    })()
+  }, [])
+
   let tags = tag?.reduce((acc, curr) => {
     return (curr += ' ' + acc)
   })
 
-  const handleMinus = () => {
-    setInputRef((prev) => --prev)
+  const handleShopClick = (e) => {
+    e.stopPropagation()
+    if (logged) {
+      toggleCart({ ...product, quantity: 1 })
+      const el = shoppingCart.find((cart) => cart.id === product.id)
+      if (!el) {
+        setShoppingCart(prev => [...prev, { ...product, quantity: 1 }])
+        alert('Product added to Cart')
+      } else {
+        setShoppingCart(shoppingCart.filter((cart) => cart.id !== el.id))
+      }
+    } else {
+      alert("Please Log In")
+    }
   }
 
-  const handlePlus = () => {
-    setInputRef((prev) => ++prev)
+  const handleLikeClick = (e) => {
+    e.stopPropagation()
+    if (logged) {
+      AddToWishlist(product)
+      const el = wishlist.find((wishitem) => wishitem.id === product.id)
+      if (!el) {
+        setWishlist(prev => [...prev, product])
+      } else {
+        setWishlist(wishlist.filter((wishitem) => wishitem.id !== el.id))
+      }
+    } else {
+      alert("Please Log In")
+    }
   }
+
   return (
     <>
       <div className="flex items-start gap-6 mt-[34px] mb-1">
@@ -91,7 +129,7 @@ function ModalDetails({ product }) {
             <p className="text-gray-500 mt-4">{littleDesCription}</p>
           </div>
           <div className="flex items-center justify-between w-full gap-3 border-t-2 border-b-2 py-5">
-            <div className="flex items-center">
+            {/* <div className="flex items-center">
               <Button
                 className="rounded-full p-0 w-10 h-10 mr-[-45px] z-10"
                 variant="ghost"
@@ -101,7 +139,7 @@ function ModalDetails({ product }) {
               </Button>
               <input
                 type="number"
-                value={InputRef}
+                value={product.quantity}
                 className="rounded-full w-36 px-12 py-3 border-2 focus:outline-none"
               />
               <Button
@@ -111,12 +149,25 @@ function ModalDetails({ product }) {
               >
                 +
               </Button>
-            </div>
-            <Button variant="fill" className="flex items-center w-full gap-3">
+            </div> */}
+            <Button onClick={handleShopClick} variant="fill" className="flex items-center w-full gap-3">
               <p>Add to Cart</p> <PiHandbagBold size={17} />
             </Button>
-            <div className="p-4 w-fit bg-[#E9F8EA] rounded-full cursor-pointer">
-              <AiOutlineHeart size={20} className="text-hardPrimary" />
+            <div onClick={handleLikeClick}
+              className="p-4 w-fit bg-[#E9F8EA] rounded-full cursor-pointer">
+              {wishlist.find((wishitem) => wishitem.id === product.id) ? (
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g id="Heart">
+                    <path
+                      id="Vector"
+                      d="M9.9996 17.5451C-6.66672 8.33333 4.99993 -1.66667 9.9996 4.65671C14.9999 -1.66667 26.6666 8.33333 9.9996 17.5451Z"
+                      fill="red"
+                    />
+                  </g>
+                </svg>
+              ) : (
+                <AiOutlineHeart size={20} className="text-hardPrimary" />
+              )}
             </div>
           </div>
           <div>

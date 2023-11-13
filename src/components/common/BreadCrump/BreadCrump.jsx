@@ -21,9 +21,8 @@ function BreadCrump() {
   return (
     <div id="breadCrump">
       <div
-        className={`flex items-center gap-3 text-grays-gray400 pl-[100px] ${
-          location.pathname === '/' ? 'hidden' : ''
-        } w-full py-12 z-50`}
+        className={`flex items-center gap-3 text-grays-gray400 pl-[100px] ${location.pathname === '/' ? 'hidden' : ''
+          } w-full py-12 z-50`}
         id="div"
       >
         <Link to={'/'}>

@@ -25,27 +25,26 @@ function ProductDetails() {
   }
 
   useEffect(() => {
-    ;(async () => {
-      const response = await  instance.get(`products/${productID}`)
+    ; (async () => {
+      const response = await instance.get(`products/${productID}`)
       setFoundProduct(response.data)
     })()
 
-  }, [productID] )
+  }, [productID])
 
   useEffect(() => {
-    ;(async () => {
+    ; (async () => {
       const response = await instance.get(`products?_start=1&_end=5`)
-      // console.log(response.data)
       setSliceProduct(response.data)
     })()
   }, [])
 
   return (
     <div className="max-w-[1320px] mx-auto">
-      <ModalDetails product={state.foundProduct} />
+      <ModalDetails product={{ ...state.foundProduct, quantity: 1 }} />
       <TabBar product={state.foundProduct} />
       <h1 className="text-heading05 font-[600] text-center mb-8">Related Products</h1>
-      <div className="flex justify-between">
+      <div className="flex justify-between mb-8">
         {state?.sliceProduct?.map((item) => {
           return <ProductCard key={item.id} {...item} />
         })}

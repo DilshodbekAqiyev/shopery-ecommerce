@@ -7,7 +7,7 @@ function SendEmail() {
 
   const sendEmail = () => {
     // eslint-disable-next-line no-extra-semi
-    ;(async () => {
+    ; (async () => {
       try {
         emailjs.send(
           'service_9b1piuw',
@@ -32,7 +32,7 @@ function SendEmail() {
 
   return (
     <div className=" container flex items-center max-xl:flex-col max-xl:items-start max-xl:gap-5 justify-between py-12 bg-greenGrays-greenGray0.5">
-      <img src="./assets/Logo.png" alt="logo" className=" w-[223px] object-fill" />
+      <img src="/assets/Logo.png" alt="logo" className=" w-[223px] object-fill" />
       <div>
         <p className=" font-medium text-[24px]">Subcribe our Newsletter</p>
         <p className=" font-normal text-sm text-greenGrays-greenGray400">

@@ -10,11 +10,12 @@ import { instance } from '../../../utils/apiRequest'
 import bag from '../../../../public/assets/icons/bag.svg'
 import bag_white from '../../../../public/assets/icons/bag-white.svg'
 import { AddToWishlist } from '../../../utils/api/AddToWishlist'
+import { toggleCart } from '../../../utils/api/Cart'
 import { getUser } from '../../../utils/utils'
 import { useProviderContext } from '../../../contexts/Provider'
 
 const ProductCard = (props) => {
-  const { wishlist, setWishlist } = useProviderContext()
+  const { wishlist, setWishlist, shoppingCart, setShoppingCart } = useProviderContext()
   const [isHovered, setIsHovered] = useState(false)
   const [foundProduct, setFoundProduct] = useState({})
   const [logged, setLogged] = useState(false)
@@ -24,7 +25,6 @@ const ProductCard = (props) => {
     (async () => {
       const res = await getUser()
       setLogged(res !== null)
-      setWishlist(res.wishlist)
     })()
   }, [])
 
@@ -38,8 +38,20 @@ const ProductCard = (props) => {
     setIsHovered((prev) => !prev)
   }
 
-  const handleClick = (e) => {
+  const handleShopClick = (e) => {
     e.stopPropagation()
+    if (logged) {
+      toggleCart({ ...props, quantity: 1 })
+      const el = shoppingCart.find((cart) => cart.id === props.id)
+      if (!el) {
+        setShoppingCart(prev => [...prev, { ...props, quantity: 1 }])
+        alert('Product added to Cart')
+      } else {
+        setShoppingCart(shoppingCart.filter((cart) => cart.id !== el.id))
+      }
+    } else {
+      alert("Please Log In")
+    }
   }
 
   const handleLikeClick = (e) => {
@@ -111,7 +123,7 @@ const ProductCard = (props) => {
           <div
             className={`p-3 rounded-full w-[40px] h-[40px] flex justify-center items-center ${isHovered ? 'bg-[#00B207]' : 'bg-grays-gray0.5'
               }`}
-            onClick={handleClick}
+            onClick={handleShopClick}
           >
             <img src={isHovered ? bag_white : bag} alt="bag icon" loading="lazy" className="w-[20px] h-[20px]" />
           </div>
@@ -166,7 +178,7 @@ const ProductCard = (props) => {
                 }}
                 className="sm:max-w-[1200px]"
               >
-                <DialogHeader onClick={handleClick} className={'w-full h-full'}>
+                <DialogHeader className={'w-full h-full'}>
                   <ModalDetails product={foundProduct} />
                 </DialogHeader>
               </DialogContent>

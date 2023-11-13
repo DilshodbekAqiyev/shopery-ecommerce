@@ -1,21 +1,16 @@
-import { useState } from 'react'
-import { useEffect } from 'react'
-import { instance } from '../../utils/apiRequest'
 import SocialMediaIcons from '../../components/common/SocialMediaIcons'
-import { getUser } from '../../utils/utils'
+import { Link } from 'react-router-dom'
+import { AddToWishlist } from '../../utils/api/AddToWishlist'
+import { useProviderContext } from '../../contexts/Provider'
 
 export default function Wishlist() {
-  const [wishlistData, setWishlistData] = useState([])
+  const { wishlist, setWishlist } = useProviderContext()
 
-  const getWishData = async () => {
-    const res = await getUser()
-    const data = await instance.get(`users/${res.id}`)
-    setWishlistData(data.data.wishlist)
+  const removeProductFromWishlist = (data) => {
+    AddToWishlist(data)
+    setWishlist(wishlist.filter((wishitem) => wishitem.id !== data.id))
   }
 
-  useEffect(() => {
-    getWishData()
-  }, [])
   return (
     <div className="bg-[#F5F5F5]">
       <div className="container pt-[110px]  pb-[80px]">
@@ -29,13 +24,15 @@ export default function Wishlist() {
           </div>
           <hr className="bg-[#EDEDED] h-[1px] mb-[30px]" />
           <div className="pl-[24px] pr-[24px] pb-[24px]">
-            {wishlistData.map((data, index) => {
+            {wishlist.map((data, index) => {
               return (
                 <div className="flex mt-[24px] items-center justify-between w-[1272px] text-left" key={index}>
-                  <div className="flex gap-x-[20px] items-center">
-                    <img src={data.images.src} alt={data.images.imageDescription} className="w-[100px] h-[100px]" />
-                    <h4 className="text-[16px] text-[#1A1A1A]">{data.name}</h4>
-                  </div>
+                  <Link to={`/shop/${data.id}`}>
+                    <div className="flex gap-x-[20px] items-center">
+                      <img src={data.images.src} alt={data.images.imageDescription} className="w-[100px] h-[100px]" />
+                      <h4 className="text-[16px] text-[#1A1A1A]">{data.name}</h4>
+                    </div>
+                  </Link>
                   {data.originalPrice ? (
                     <div className="flex">
                       <h3 className="text-[#1A1A1A] text-[16px] text-left">{`$${data.discountPrice}`}</h3>
@@ -54,7 +51,7 @@ export default function Wishlist() {
                           <button className="bg-[#00B207] rounded-[43px] text-[white] px-[32px] py-[15px] hover:bg-[#19BA1F] transition">
                             Add to Cart
                           </button>
-                          <button className="w-[24px] h-[24px] p-[2px] rounded-[50%] border-gray-500">
+                          <button onClick={() => removeProductFromWishlist(data)} className="w-[24px] h-[24px] p-[2px] rounded-[50%] border-gray-500">
                             <i className="fa-regular fa-circle-xmark text-[gray] scale-[1.2]"></i>
                           </button>
                         </div>
@@ -66,7 +63,8 @@ export default function Wishlist() {
                           <button className="bg-[#F2F2F2] rounded-[43px] text-[#B3B3B3] px-[32px] py-[15px] cursor-not-allowed">
                             Add to Cart
                           </button>
-                          <button className="w-[24px] h-[24px] rounded-[50%] border-gray-500 ">
+                          <button onClick={() => removeProductFromWishlist(data)}
+                            className="w-[24px] h-[24px] rounded-[50%] border-gray-500 ">
                             <i className="fa-regular fa-circle-xmark text-[gray] scale-[1.2]"></i>
                           </button>
                         </div>
@@ -84,6 +82,6 @@ export default function Wishlist() {
           </div>
         </div>
       </div>
-    </div>
+    </div >
   )
 }

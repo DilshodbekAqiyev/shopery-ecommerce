@@ -5,9 +5,9 @@ import ChangePassword from "./ChangePassword"
 function Settings() {
   return (
     <div>
-        <AccountSettings></AccountSettings>
-        <BillingAddress></BillingAddress>
-        <ChangePassword></ChangePassword>
+      <AccountSettings></AccountSettings>
+      <BillingAddress></BillingAddress>
+      <ChangePassword></ChangePassword>
     </div>
   )
 }

@@ -8,7 +8,7 @@ import {
   SelectValue,
 } from '../../../components/ui/select'
 
-function TopComponent() {
+function TopComponent({ state }) {
   return (
     <>
       <div className="flex justify-between items-center gap-x-60">
@@ -36,7 +36,7 @@ function TopComponent() {
         </div>
       </div>
       <div className="text-grays-gray600 font-normal">
-        <span className="text-grays-gray900 inline-block font-bold text-base">52</span> Results Found
+        <span className="text-grays-gray900 inline-block font-bold text-base">8</span> Results Found
       </div>
     </>
   )

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { AiOutlineEye } from "react-icons/ai";
+import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 
 import { Input } from "../../../components/ui/input";
 import { Checkbox } from "../../../components/ui/checkbox";
@@ -10,6 +10,7 @@ import { useState } from "react";
 import { instance } from "../../../utils/apiRequest";
 
 export default function Signup() {
+  const [passwordVisible, setPasswordVisible] = useState(false)
   const [data, setData] = useState({
     email: '',
     password: '',
@@ -49,10 +50,18 @@ export default function Signup() {
             <div className="w-[100%] flex h-[49px] gap-2 items-center px-[14px] border rounded-md">
               <Input
                 className="border-none h-[100%] focus-visible:ring-0 focus:outline-none p-0 placeholder:text-gray-400"
-                type="password"
+                type={!passwordVisible ? 'password' : 'text'}
                 onChange={(e) => setData(prev => ({ ...prev, password: e.target.value }))}
                 placeholder="Password" />
-              <AiOutlineEye size={24} />
+              <div
+                className="cursor-pointer"
+                onClick={() => setPasswordVisible(prev => !prev)}>
+                {!passwordVisible ? (
+                  <AiOutlineEye size={24} />
+                ) : (
+                  <AiOutlineEyeInvisible size={24} />
+                )}
+              </div>
             </div>
             <label className="flex items-center gap-1 cursor-pointer w-[31%] select-none">
               <Checkbox />
