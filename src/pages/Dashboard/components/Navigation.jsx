@@ -32,7 +32,7 @@ function Navigation() {
           <div className="ml-[20px]">
             <DashboardIcon ></DashboardIcon>
           </div>
-          <p className="text-[16px] ">Dashboard</p>
+          <p className="text-[16px]">Dashboard</p>
         </div>
       </NavLink>
 
