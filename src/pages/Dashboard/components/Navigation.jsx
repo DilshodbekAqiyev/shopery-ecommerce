@@ -4,7 +4,18 @@ import SettingsIcon from '../icons/SettingsIcon'
 import ShoppingCartIcon from './../icons/ShoppingCartIcon'
 import LogOutIcon from './../icons/LogOutIcon'
 import { NavLink } from 'react-router-dom'
+import { useEffect, useState } from 'react'
+import { getUser } from '../../../utils/utils'
 function Navigation() {
+  const [user, setUser] = useState({})
+
+  useEffect(() => {
+    (async () => {
+      const res = await getUser()
+      setUser(res)
+    })()
+  }, [])
+
   const logoutUser = () => {
     localStorage.removeItem('token')
     location.href = '/'
@@ -44,16 +55,18 @@ function Navigation() {
           <p>Settings</p>
         </div>
       </NavLink>
-      <NavLink to={'addProduct'}>
-        <div
-          className="transition-all bg-white hover:bg-[#EDF2EE] cursor-pointer border-l-2 border-l-white hover:border-l-4 hover:border-l-lime-600  py-[16px]  flex  items-center gap-[10px] "
-        >
-          <div className="ml-[20px]">
-            <ShoppingCartIcon />
+      {user?.role === "Seller" ? (
+        <NavLink to={'addProduct'}>
+          <div
+            className="transition-all bg-white hover:bg-[#EDF2EE] cursor-pointer border-l-2 border-l-white hover:border-l-4 hover:border-l-lime-600  py-[16px]  flex  items-center gap-[10px] "
+          >
+            <div className="ml-[20px]">
+              <ShoppingCartIcon />
+            </div>
+            <p>Add Product</p>
           </div>
-          <p>Add Product</p>
-        </div>
-      </NavLink>
+        </NavLink>
+      ) : null}
 
       <div onClick={logoutUser}>
         <div

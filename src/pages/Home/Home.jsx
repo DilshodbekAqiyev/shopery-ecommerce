@@ -104,14 +104,6 @@ const Home = () => {
             />
           </div>
         </div>
-        <div className="flex items-center justify-start flex-col h-[712px] max-xl:h-auto gap-[34px] bg-latestWhiteGray">
-          <p className="font-semibold text-[40px]">Latest News</p>
-          <div className=" flex gap-[24px] items-center justify-center max-xl:flex-wrap">
-            {/* {Array.from(Array(3).keys()).map((item) => (
-              <LatestCard key={item} {...data} />
-            ))} */}
-          </div>
-        </div>
       </div>
     </div>
   )

@@ -2,13 +2,39 @@ import SocialMediaIcons from '../../components/common/SocialMediaIcons'
 import { Link } from 'react-router-dom'
 import { AddToWishlist } from '../../utils/api/AddToWishlist'
 import { useProviderContext } from '../../contexts/Provider'
+import { useEffect, useState } from 'react'
+import { toggleCart } from '../../utils/api/Cart'
+import { getUser } from '../../utils/utils'
 
 export default function Wishlist() {
-  const { wishlist, setWishlist } = useProviderContext()
+  const { wishlist, setWishlist, shoppingCart, setShoppingCart } = useProviderContext()
+  const [logged, setLogged] = useState(false)
 
   const removeProductFromWishlist = (data) => {
     AddToWishlist(data)
     setWishlist(wishlist.filter((wishitem) => wishitem.id !== data.id))
+  }
+
+  useEffect(() => {
+    (async () => {
+      const res = await getUser()
+      setLogged(res !== null)
+    })()
+  }, [])
+
+  const handleShopClick = (product) => {
+    if (logged) {
+      toggleCart({ ...product, quantity: 1 })
+      const el = shoppingCart.find((cart) => cart.id === product.id)
+      if (!el) {
+        setShoppingCart(prev => [...prev, { ...product, quantity: 1 }])
+        alert('Product added to Cart')
+      } else {
+        setShoppingCart(shoppingCart.filter((cart) => cart.id !== el.id))
+      }
+    } else {
+      alert("Please Log In")
+    }
   }
 
   return (
@@ -48,7 +74,7 @@ export default function Wishlist() {
                           In Stock
                         </h3>
                         <div className="flex gap-x-[24px] items-center">
-                          <button className="bg-[#00B207] rounded-[43px] text-[white] px-[32px] py-[15px] hover:bg-[#19BA1F] transition">
+                          <button onClick={() => handleShopClick(data)} className="bg-[#00B207] rounded-[43px] text-[white] px-[32px] py-[15px] hover:bg-[#19BA1F] transition">
                             Add to Cart
                           </button>
                           <button onClick={() => removeProductFromWishlist(data)} className="w-[24px] h-[24px] p-[2px] rounded-[50%] border-gray-500">

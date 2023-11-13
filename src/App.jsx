@@ -30,8 +30,21 @@ import AddProduct from "./pages/Dashboard/components/AddProduct";
 import ShoppingCart from "./pages/ShoppingCart/ShoppingCart";
 import Faqs from "./pages/Faqs/Faqs";
 import Checkout from "./pages/Checkout/Checkout";
+import { useEffect, useState } from "react";
+import { getUser } from "./utils/utils";
 
 export default function App() {
+  const [logged, setLogged] = useState(true)
+  const [user, setUser] = useState({})
+
+  useEffect(() => {
+    (async () => {
+      const res = await getUser()
+      setLogged(res !== null)
+      setUser(res)
+    })()
+  }, [])
+
   const routes = createBrowserRouter(
     createRoutesFromElements(
       <Route path="/" element={<RootLayout />}>
@@ -49,15 +62,19 @@ export default function App() {
           }
         />
         <Route path="product/:productID" element={<ProductDetails />} />
-        <Route path="dashboard" element={<Dashboard />}>
-          <Route index element={<DashboardInfo />} />
-          <Route path="order-history" element={<OrderHistory />}>
-            <Route index element={<History></History>} />
-            <Route path="order-detail" element={<OrderDetail></OrderDetail>} />
+        {logged ? (
+          <Route path="dashboard" element={<Dashboard />}>
+            <Route index element={<DashboardInfo />} />
+            <Route path="order-history" element={<OrderHistory />}>
+              <Route index element={<History></History>} />
+              <Route path="order-detail" element={<OrderDetail></OrderDetail>} />
+            </Route>
+            <Route path="settings" element={<Settings></Settings>} />
+            {user?.role === 'Seller' && (
+              <Route path="addProduct" element={<AddProduct />} />
+            )}
           </Route>
-          <Route path="settings" element={<Settings></Settings>} />
-          <Route path="addProduct" element={<AddProduct />} />
-        </Route>
+        ) : <Route path="PageNotFound" element={<PageNotFound />} />}
         <Route path="wishlist" element={<Wishlist />} />
         <Route path="shoppingCart" element={<ShoppingCart />} />
         <Route path="blog/:CardID" element={<SingleBlog />} />
